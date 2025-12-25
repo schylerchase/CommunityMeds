@@ -12,12 +12,25 @@ export interface DrugPrice {
     goodrx?: number;
     costco?: number;
     walmart?: number;
+    costplus?: number;
   };
   assistancePrograms?: {
     name: string;
     url: string;
     description: string;
   }[];
+}
+
+// Helper to convert null values to undefined for TypeScript compatibility
+function cleanPrices(prices: Record<string, number | null>): DrugPrice['prices'] {
+  return {
+    cash: prices.cash ?? 0,
+    withInsurance: prices.withInsurance ?? 0,
+    goodrx: prices.goodrx ?? undefined,
+    costco: prices.costco ?? undefined,
+    walmart: prices.walmart ?? undefined,
+    costplus: prices.costplus ?? undefined,
+  };
 }
 
 export function getPriceForDrug(drugName: string): DrugPrice | null {
@@ -37,7 +50,7 @@ export function getPriceForDrug(drugName: string): DrugPrice | null {
     genericName: drug.genericName,
     quantity: drug.quantity,
     unit: drug.unit,
-    prices: drug.prices,
+    prices: cleanPrices(drug.prices as Record<string, number | null>),
     assistancePrograms: drug.assistancePrograms,
   };
 }
@@ -57,7 +70,7 @@ export function searchPrices(query: string): DrugPrice[] {
       genericName: drug.genericName,
       quantity: drug.quantity,
       unit: drug.unit,
-      prices: drug.prices,
+      prices: cleanPrices(drug.prices as Record<string, number | null>),
       assistancePrograms: drug.assistancePrograms,
     }));
 }

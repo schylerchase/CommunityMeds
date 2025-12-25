@@ -4,14 +4,16 @@
       "id": "metformin-500",
       "name": "Metformin",
       "genericName": "Metformin HCL",
+      "category": "Diabetes",
       "quantity": 60,
-      "unit": "tablets",
+      "unit": "tablets (500mg)",
       "prices": {
         "cash": 45.00,
         "withInsurance": 10.00,
-        "goodrx": 8.50,
+        "goodrx": 4.00,
         "costco": 4.00,
-        "walmart": 4.00
+        "walmart": 4.00,
+        "costplus": 3.90
       },
       "assistancePrograms": [
         {
@@ -22,174 +24,44 @@
       ]
     },
     {
-      "id": "lisinopril-10",
-      "name": "Lisinopril",
-      "genericName": "Lisinopril",
-      "quantity": 30,
-      "unit": "tablets",
-      "prices": {
-        "cash": 35.00,
-        "withInsurance": 8.00,
-        "goodrx": 7.00,
-        "costco": 4.00,
-        "walmart": 4.00
-      },
-      "assistancePrograms": [
-        {
-          "name": "Walmart $4 Prescriptions",
-          "url": "https://www.walmart.com/cp/4-dollar-prescriptions/1078664",
-          "description": "30-day supply for $4, 90-day for $10"
-        }
-      ]
-    },
-    {
-      "id": "atorvastatin-20",
-      "name": "Atorvastatin",
-      "genericName": "Atorvastatin Calcium",
-      "quantity": 30,
-      "unit": "tablets",
-      "prices": {
-        "cash": 85.00,
-        "withInsurance": 15.00,
-        "goodrx": 9.00,
-        "costco": 7.50,
-        "walmart": 10.00
-      },
-      "assistancePrograms": []
-    },
-    {
-      "id": "omeprazole-20",
-      "name": "Omeprazole",
-      "genericName": "Omeprazole",
-      "quantity": 30,
-      "unit": "capsules",
+      "id": "metformin-1000",
+      "name": "Metformin 1000mg",
+      "genericName": "Metformin HCL",
+      "category": "Diabetes",
+      "quantity": 60,
+      "unit": "tablets (1000mg)",
       "prices": {
         "cash": 55.00,
         "withInsurance": 12.00,
-        "goodrx": 8.00,
-        "costco": 6.00,
-        "walmart": 4.00
-      },
-      "assistancePrograms": [
-        {
-          "name": "Walmart $4 Prescriptions",
-          "url": "https://www.walmart.com/cp/4-dollar-prescriptions/1078664",
-          "description": "30-day supply for $4, 90-day for $10"
-        }
-      ]
-    },
-    {
-      "id": "amlodipine-5",
-      "name": "Amlodipine",
-      "genericName": "Amlodipine Besylate",
-      "quantity": 30,
-      "unit": "tablets",
-      "prices": {
-        "cash": 40.00,
-        "withInsurance": 10.00,
-        "goodrx": 6.50,
-        "costco": 4.00,
-        "walmart": 4.00
-      },
-      "assistancePrograms": [
-        {
-          "name": "Walmart $4 Prescriptions",
-          "url": "https://www.walmart.com/cp/4-dollar-prescriptions/1078664",
-          "description": "30-day supply for $4, 90-day for $10"
-        }
-      ]
-    },
-    {
-      "id": "levothyroxine-50",
-      "name": "Levothyroxine",
-      "genericName": "Levothyroxine Sodium",
-      "quantity": 30,
-      "unit": "tablets",
-      "prices": {
-        "cash": 38.00,
-        "withInsurance": 10.00,
-        "goodrx": 9.00,
+        "goodrx": 4.00,
         "costco": 5.00,
-        "walmart": 4.00
+        "walmart": 4.00,
+        "costplus": 4.20
       },
       "assistancePrograms": []
     },
     {
-      "id": "gabapentin-300",
-      "name": "Gabapentin",
-      "genericName": "Gabapentin",
-      "quantity": 90,
-      "unit": "capsules",
-      "prices": {
-        "cash": 65.00,
-        "withInsurance": 15.00,
-        "goodrx": 12.00,
-        "costco": 10.00,
-        "walmart": 10.00
-      },
-      "assistancePrograms": []
-    },
-    {
-      "id": "losartan-50",
-      "name": "Losartan",
-      "genericName": "Losartan Potassium",
+      "id": "glipizide-5",
+      "name": "Glipizide",
+      "genericName": "Glipizide",
+      "category": "Diabetes",
       "quantity": 30,
-      "unit": "tablets",
+      "unit": "tablets (5mg)",
       "prices": {
-        "cash": 48.00,
-        "withInsurance": 12.00,
-        "goodrx": 8.00,
-        "costco": 5.00,
-        "walmart": 10.00
-      },
-      "assistancePrograms": []
-    },
-    {
-      "id": "sertraline-50",
-      "name": "Sertraline",
-      "genericName": "Sertraline HCL",
-      "quantity": 30,
-      "unit": "tablets",
-      "prices": {
-        "cash": 42.00,
-        "withInsurance": 10.00,
-        "goodrx": 7.50,
+        "cash": 35.00,
+        "withInsurance": 8.00,
+        "goodrx": 4.00,
         "costco": 4.00,
-        "walmart": 4.00
+        "walmart": 4.00,
+        "costplus": 3.50
       },
-      "assistancePrograms": [
-        {
-          "name": "Walmart $4 Prescriptions",
-          "url": "https://www.walmart.com/cp/4-dollar-prescriptions/1078664",
-          "description": "30-day supply for $4, 90-day for $10"
-        }
-      ]
-    },
-    {
-      "id": "albuterol-inhaler",
-      "name": "Albuterol Inhaler",
-      "genericName": "Albuterol Sulfate",
-      "quantity": 1,
-      "unit": "inhaler",
-      "prices": {
-        "cash": 75.00,
-        "withInsurance": 25.00,
-        "goodrx": 28.00,
-        "costco": 22.00,
-        "walmart": 30.00
-      },
-      "assistancePrograms": [
-        {
-          "name": "GSK Patient Assistance",
-          "url": "https://www.gskforyou.com/",
-          "description": "Free medications for qualifying patients"
-        }
-      ]
+      "assistancePrograms": []
     },
     {
       "id": "insulin-lantus",
       "name": "Lantus",
       "genericName": "Insulin Glargine",
+      "category": "Diabetes",
       "quantity": 1,
       "unit": "vial (10ml)",
       "prices": {
@@ -197,13 +69,14 @@
         "withInsurance": 75.00,
         "goodrx": 180.00,
         "costco": 165.00,
-        "walmart": 73.00
+        "walmart": 73.00,
+        "costplus": null
       },
       "assistancePrograms": [
         {
           "name": "Sanofi Patient Connection",
           "url": "https://www.sanofipatientsupport.com/",
-          "description": "Free Lantus for eligible patients"
+          "description": "Free Lantus for eligible uninsured patients"
         },
         {
           "name": "Walmart ReliOn",
@@ -213,53 +86,190 @@
       ]
     },
     {
-      "id": "amoxicillin-500",
-      "name": "Amoxicillin",
-      "genericName": "Amoxicillin",
-      "quantity": 21,
-      "unit": "capsules",
+      "id": "insulin-novolog",
+      "name": "Novolog",
+      "genericName": "Insulin Aspart",
+      "category": "Diabetes",
+      "quantity": 1,
+      "unit": "vial (10ml)",
       "prices": {
-        "cash": 25.00,
-        "withInsurance": 5.00,
-        "goodrx": 6.00,
+        "cash": 340.00,
+        "withInsurance": 70.00,
+        "goodrx": 170.00,
+        "costco": 155.00,
+        "walmart": null,
+        "costplus": null
+      },
+      "assistancePrograms": [
+        {
+          "name": "Novo Nordisk PAP",
+          "url": "https://www.novocare.com/",
+          "description": "Free insulin for qualifying patients"
+        }
+      ]
+    },
+    {
+      "id": "jardiance-10",
+      "name": "Jardiance",
+      "genericName": "Empagliflozin",
+      "category": "Diabetes",
+      "quantity": 30,
+      "unit": "tablets (10mg)",
+      "prices": {
+        "cash": 620.00,
+        "withInsurance": 45.00,
+        "goodrx": 540.00,
+        "costco": 525.00,
+        "walmart": null,
+        "costplus": null
+      },
+      "assistancePrograms": [
+        {
+          "name": "Boehringer Ingelheim Cares",
+          "url": "https://www.boehringer-ingelheim.com/us/our-responsibility/patient-assistance-program",
+          "description": "Free medication for eligible patients"
+        }
+      ]
+    },
+    {
+      "id": "lisinopril-10",
+      "name": "Lisinopril",
+      "genericName": "Lisinopril",
+      "category": "Blood Pressure",
+      "quantity": 30,
+      "unit": "tablets (10mg)",
+      "prices": {
+        "cash": 35.00,
+        "withInsurance": 8.00,
+        "goodrx": 4.00,
         "costco": 4.00,
-        "walmart": 4.00
+        "walmart": 4.00,
+        "costplus": 3.60
       },
       "assistancePrograms": [
         {
           "name": "Walmart $4 Prescriptions",
           "url": "https://www.walmart.com/cp/4-dollar-prescriptions/1078664",
-          "description": "30-day supply for $4"
+          "description": "30-day supply for $4, 90-day for $10"
         }
       ]
     },
     {
-      "id": "prednisone-10",
-      "name": "Prednisone",
-      "genericName": "Prednisone",
-      "quantity": 21,
-      "unit": "tablets",
+      "id": "lisinopril-20",
+      "name": "Lisinopril 20mg",
+      "genericName": "Lisinopril",
+      "category": "Blood Pressure",
+      "quantity": 30,
+      "unit": "tablets (20mg)",
       "prices": {
-        "cash": 18.00,
-        "withInsurance": 5.00,
-        "goodrx": 5.00,
-        "costco": 3.00,
-        "walmart": 4.00
+        "cash": 38.00,
+        "withInsurance": 8.00,
+        "goodrx": 4.00,
+        "costco": 4.00,
+        "walmart": 4.00,
+        "costplus": 3.80
       },
       "assistancePrograms": []
     },
     {
-      "id": "fluoxetine-20",
-      "name": "Fluoxetine",
-      "genericName": "Fluoxetine HCL",
+      "id": "amlodipine-5",
+      "name": "Amlodipine",
+      "genericName": "Amlodipine Besylate",
+      "category": "Blood Pressure",
       "quantity": 30,
-      "unit": "capsules",
+      "unit": "tablets (5mg)",
+      "prices": {
+        "cash": 40.00,
+        "withInsurance": 10.00,
+        "goodrx": 4.00,
+        "costco": 4.00,
+        "walmart": 4.00,
+        "costplus": 3.50
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "amlodipine-10",
+      "name": "Amlodipine 10mg",
+      "genericName": "Amlodipine Besylate",
+      "category": "Blood Pressure",
+      "quantity": 30,
+      "unit": "tablets (10mg)",
+      "prices": {
+        "cash": 45.00,
+        "withInsurance": 10.00,
+        "goodrx": 4.00,
+        "costco": 4.00,
+        "walmart": 4.00,
+        "costplus": 3.70
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "losartan-50",
+      "name": "Losartan",
+      "genericName": "Losartan Potassium",
+      "category": "Blood Pressure",
+      "quantity": 30,
+      "unit": "tablets (50mg)",
+      "prices": {
+        "cash": 48.00,
+        "withInsurance": 12.00,
+        "goodrx": 8.00,
+        "costco": 5.00,
+        "walmart": 10.00,
+        "costplus": 4.20
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "losartan-100",
+      "name": "Losartan 100mg",
+      "genericName": "Losartan Potassium",
+      "category": "Blood Pressure",
+      "quantity": 30,
+      "unit": "tablets (100mg)",
+      "prices": {
+        "cash": 55.00,
+        "withInsurance": 15.00,
+        "goodrx": 10.00,
+        "costco": 6.00,
+        "walmart": 12.00,
+        "costplus": 4.80
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "metoprolol-25",
+      "name": "Metoprolol Succinate",
+      "genericName": "Metoprolol Succinate ER",
+      "category": "Blood Pressure",
+      "quantity": 30,
+      "unit": "tablets (25mg)",
+      "prices": {
+        "cash": 42.00,
+        "withInsurance": 10.00,
+        "goodrx": 9.00,
+        "costco": 6.00,
+        "walmart": 4.00,
+        "costplus": 4.50
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "metoprolol-50",
+      "name": "Metoprolol Tartrate",
+      "genericName": "Metoprolol Tartrate",
+      "category": "Blood Pressure",
+      "quantity": 60,
+      "unit": "tablets (50mg)",
       "prices": {
         "cash": 35.00,
         "withInsurance": 8.00,
-        "goodrx": 6.00,
+        "goodrx": 4.00,
         "costco": 4.00,
-        "walmart": 4.00
+        "walmart": 4.00,
+        "costplus": 3.80
       },
       "assistancePrograms": []
     },
@@ -267,18 +277,964 @@
       "id": "hydrochlorothiazide-25",
       "name": "Hydrochlorothiazide",
       "genericName": "Hydrochlorothiazide",
+      "category": "Blood Pressure",
       "quantity": 30,
-      "unit": "tablets",
+      "unit": "tablets (25mg)",
       "prices": {
         "cash": 20.00,
         "withInsurance": 5.00,
         "goodrx": 4.00,
         "costco": 3.00,
-        "walmart": 4.00
+        "walmart": 4.00,
+        "costplus": 3.20
       },
       "assistancePrograms": []
+    },
+    {
+      "id": "carvedilol-25",
+      "name": "Carvedilol",
+      "genericName": "Carvedilol",
+      "category": "Blood Pressure",
+      "quantity": 60,
+      "unit": "tablets (25mg)",
+      "prices": {
+        "cash": 45.00,
+        "withInsurance": 10.00,
+        "goodrx": 4.00,
+        "costco": 5.00,
+        "walmart": 4.00,
+        "costplus": 4.10
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "atorvastatin-20",
+      "name": "Atorvastatin",
+      "genericName": "Atorvastatin Calcium",
+      "category": "Cholesterol",
+      "quantity": 30,
+      "unit": "tablets (20mg)",
+      "prices": {
+        "cash": 85.00,
+        "withInsurance": 15.00,
+        "goodrx": 9.00,
+        "costco": 7.50,
+        "walmart": 10.00,
+        "costplus": 4.20
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "atorvastatin-40",
+      "name": "Atorvastatin 40mg",
+      "genericName": "Atorvastatin Calcium",
+      "category": "Cholesterol",
+      "quantity": 30,
+      "unit": "tablets (40mg)",
+      "prices": {
+        "cash": 90.00,
+        "withInsurance": 15.00,
+        "goodrx": 9.00,
+        "costco": 8.00,
+        "walmart": 10.00,
+        "costplus": 4.50
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "simvastatin-20",
+      "name": "Simvastatin",
+      "genericName": "Simvastatin",
+      "category": "Cholesterol",
+      "quantity": 30,
+      "unit": "tablets (20mg)",
+      "prices": {
+        "cash": 65.00,
+        "withInsurance": 10.00,
+        "goodrx": 4.00,
+        "costco": 4.00,
+        "walmart": 4.00,
+        "costplus": 3.80
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "rosuvastatin-10",
+      "name": "Rosuvastatin",
+      "genericName": "Rosuvastatin Calcium",
+      "category": "Cholesterol",
+      "quantity": 30,
+      "unit": "tablets (10mg)",
+      "prices": {
+        "cash": 95.00,
+        "withInsurance": 15.00,
+        "goodrx": 12.00,
+        "costco": 10.00,
+        "walmart": 15.00,
+        "costplus": 5.20
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "pravastatin-40",
+      "name": "Pravastatin",
+      "genericName": "Pravastatin Sodium",
+      "category": "Cholesterol",
+      "quantity": 30,
+      "unit": "tablets (40mg)",
+      "prices": {
+        "cash": 75.00,
+        "withInsurance": 12.00,
+        "goodrx": 10.00,
+        "costco": 8.00,
+        "walmart": 4.00,
+        "costplus": 4.80
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "omeprazole-20",
+      "name": "Omeprazole",
+      "genericName": "Omeprazole",
+      "category": "Stomach/GI",
+      "quantity": 30,
+      "unit": "capsules (20mg)",
+      "prices": {
+        "cash": 55.00,
+        "withInsurance": 12.00,
+        "goodrx": 8.00,
+        "costco": 6.00,
+        "walmart": 4.00,
+        "costplus": 4.20
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "omeprazole-40",
+      "name": "Omeprazole 40mg",
+      "genericName": "Omeprazole",
+      "category": "Stomach/GI",
+      "quantity": 30,
+      "unit": "capsules (40mg)",
+      "prices": {
+        "cash": 65.00,
+        "withInsurance": 15.00,
+        "goodrx": 10.00,
+        "costco": 8.00,
+        "walmart": 10.00,
+        "costplus": 5.00
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "pantoprazole-40",
+      "name": "Pantoprazole",
+      "genericName": "Pantoprazole Sodium",
+      "category": "Stomach/GI",
+      "quantity": 30,
+      "unit": "tablets (40mg)",
+      "prices": {
+        "cash": 70.00,
+        "withInsurance": 15.00,
+        "goodrx": 9.00,
+        "costco": 7.00,
+        "walmart": 10.00,
+        "costplus": 4.80
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "famotidine-20",
+      "name": "Famotidine",
+      "genericName": "Famotidine",
+      "category": "Stomach/GI",
+      "quantity": 60,
+      "unit": "tablets (20mg)",
+      "prices": {
+        "cash": 25.00,
+        "withInsurance": 5.00,
+        "goodrx": 4.00,
+        "costco": 4.00,
+        "walmart": 4.00,
+        "costplus": 3.50
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "sertraline-50",
+      "name": "Sertraline",
+      "genericName": "Sertraline HCL",
+      "category": "Mental Health",
+      "quantity": 30,
+      "unit": "tablets (50mg)",
+      "prices": {
+        "cash": 42.00,
+        "withInsurance": 10.00,
+        "goodrx": 7.50,
+        "costco": 4.00,
+        "walmart": 4.00,
+        "costplus": 3.90
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "sertraline-100",
+      "name": "Sertraline 100mg",
+      "genericName": "Sertraline HCL",
+      "category": "Mental Health",
+      "quantity": 30,
+      "unit": "tablets (100mg)",
+      "prices": {
+        "cash": 48.00,
+        "withInsurance": 12.00,
+        "goodrx": 8.00,
+        "costco": 5.00,
+        "walmart": 4.00,
+        "costplus": 4.20
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "fluoxetine-20",
+      "name": "Fluoxetine",
+      "genericName": "Fluoxetine HCL",
+      "category": "Mental Health",
+      "quantity": 30,
+      "unit": "capsules (20mg)",
+      "prices": {
+        "cash": 35.00,
+        "withInsurance": 8.00,
+        "goodrx": 4.00,
+        "costco": 4.00,
+        "walmart": 4.00,
+        "costplus": 3.60
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "escitalopram-10",
+      "name": "Escitalopram",
+      "genericName": "Escitalopram Oxalate",
+      "category": "Mental Health",
+      "quantity": 30,
+      "unit": "tablets (10mg)",
+      "prices": {
+        "cash": 55.00,
+        "withInsurance": 12.00,
+        "goodrx": 8.00,
+        "costco": 6.00,
+        "walmart": 10.00,
+        "costplus": 4.50
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "citalopram-20",
+      "name": "Citalopram",
+      "genericName": "Citalopram HBR",
+      "category": "Mental Health",
+      "quantity": 30,
+      "unit": "tablets (20mg)",
+      "prices": {
+        "cash": 38.00,
+        "withInsurance": 8.00,
+        "goodrx": 4.00,
+        "costco": 4.00,
+        "walmart": 4.00,
+        "costplus": 3.70
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "bupropion-150",
+      "name": "Bupropion XL",
+      "genericName": "Bupropion HCL XL",
+      "category": "Mental Health",
+      "quantity": 30,
+      "unit": "tablets (150mg)",
+      "prices": {
+        "cash": 85.00,
+        "withInsurance": 15.00,
+        "goodrx": 15.00,
+        "costco": 12.00,
+        "walmart": 15.00,
+        "costplus": 6.80
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "trazodone-50",
+      "name": "Trazodone",
+      "genericName": "Trazodone HCL",
+      "category": "Mental Health",
+      "quantity": 30,
+      "unit": "tablets (50mg)",
+      "prices": {
+        "cash": 28.00,
+        "withInsurance": 6.00,
+        "goodrx": 4.00,
+        "costco": 4.00,
+        "walmart": 4.00,
+        "costplus": 3.40
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "buspirone-10",
+      "name": "Buspirone",
+      "genericName": "Buspirone HCL",
+      "category": "Mental Health",
+      "quantity": 60,
+      "unit": "tablets (10mg)",
+      "prices": {
+        "cash": 45.00,
+        "withInsurance": 10.00,
+        "goodrx": 8.00,
+        "costco": 6.00,
+        "walmart": 4.00,
+        "costplus": 4.20
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "gabapentin-300",
+      "name": "Gabapentin",
+      "genericName": "Gabapentin",
+      "category": "Pain/Nerve",
+      "quantity": 90,
+      "unit": "capsules (300mg)",
+      "prices": {
+        "cash": 65.00,
+        "withInsurance": 15.00,
+        "goodrx": 12.00,
+        "costco": 10.00,
+        "walmart": 10.00,
+        "costplus": 5.40
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "gabapentin-600",
+      "name": "Gabapentin 600mg",
+      "genericName": "Gabapentin",
+      "category": "Pain/Nerve",
+      "quantity": 90,
+      "unit": "tablets (600mg)",
+      "prices": {
+        "cash": 85.00,
+        "withInsurance": 18.00,
+        "goodrx": 15.00,
+        "costco": 12.00,
+        "walmart": 15.00,
+        "costplus": 6.20
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "pregabalin-75",
+      "name": "Pregabalin",
+      "genericName": "Pregabalin",
+      "category": "Pain/Nerve",
+      "quantity": 60,
+      "unit": "capsules (75mg)",
+      "prices": {
+        "cash": 180.00,
+        "withInsurance": 35.00,
+        "goodrx": 25.00,
+        "costco": 20.00,
+        "walmart": 30.00,
+        "costplus": 8.50
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "cyclobenzaprine-10",
+      "name": "Cyclobenzaprine",
+      "genericName": "Cyclobenzaprine HCL",
+      "category": "Pain/Nerve",
+      "quantity": 30,
+      "unit": "tablets (10mg)",
+      "prices": {
+        "cash": 32.00,
+        "withInsurance": 8.00,
+        "goodrx": 6.00,
+        "costco": 5.00,
+        "walmart": 4.00,
+        "costplus": 3.80
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "meloxicam-15",
+      "name": "Meloxicam",
+      "genericName": "Meloxicam",
+      "category": "Pain/Nerve",
+      "quantity": 30,
+      "unit": "tablets (15mg)",
+      "prices": {
+        "cash": 35.00,
+        "withInsurance": 8.00,
+        "goodrx": 6.00,
+        "costco": 4.00,
+        "walmart": 4.00,
+        "costplus": 3.50
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "naproxen-500",
+      "name": "Naproxen",
+      "genericName": "Naproxen",
+      "category": "Pain/Nerve",
+      "quantity": 60,
+      "unit": "tablets (500mg)",
+      "prices": {
+        "cash": 28.00,
+        "withInsurance": 6.00,
+        "goodrx": 4.00,
+        "costco": 4.00,
+        "walmart": 4.00,
+        "costplus": 3.40
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "levothyroxine-50",
+      "name": "Levothyroxine",
+      "genericName": "Levothyroxine Sodium",
+      "category": "Thyroid",
+      "quantity": 30,
+      "unit": "tablets (50mcg)",
+      "prices": {
+        "cash": 38.00,
+        "withInsurance": 10.00,
+        "goodrx": 9.00,
+        "costco": 5.00,
+        "walmart": 4.00,
+        "costplus": 4.20
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "levothyroxine-100",
+      "name": "Levothyroxine 100mcg",
+      "genericName": "Levothyroxine Sodium",
+      "category": "Thyroid",
+      "quantity": 30,
+      "unit": "tablets (100mcg)",
+      "prices": {
+        "cash": 42.00,
+        "withInsurance": 10.00,
+        "goodrx": 10.00,
+        "costco": 6.00,
+        "walmart": 4.00,
+        "costplus": 4.50
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "albuterol-inhaler",
+      "name": "Albuterol Inhaler",
+      "genericName": "Albuterol Sulfate HFA",
+      "category": "Respiratory",
+      "quantity": 1,
+      "unit": "inhaler (200 doses)",
+      "prices": {
+        "cash": 75.00,
+        "withInsurance": 25.00,
+        "goodrx": 28.00,
+        "costco": 22.00,
+        "walmart": 30.00,
+        "costplus": 14.50
+      },
+      "assistancePrograms": [
+        {
+          "name": "GSK Patient Assistance",
+          "url": "https://www.gskforyou.com/",
+          "description": "Free medications for qualifying uninsured patients"
+        }
+      ]
+    },
+    {
+      "id": "montelukast-10",
+      "name": "Montelukast",
+      "genericName": "Montelukast Sodium",
+      "category": "Respiratory",
+      "quantity": 30,
+      "unit": "tablets (10mg)",
+      "prices": {
+        "cash": 95.00,
+        "withInsurance": 15.00,
+        "goodrx": 12.00,
+        "costco": 10.00,
+        "walmart": 15.00,
+        "costplus": 5.80
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "fluticasone-nasal",
+      "name": "Fluticasone Nasal Spray",
+      "genericName": "Fluticasone Propionate",
+      "category": "Respiratory",
+      "quantity": 1,
+      "unit": "bottle (120 sprays)",
+      "prices": {
+        "cash": 45.00,
+        "withInsurance": 12.00,
+        "goodrx": 12.00,
+        "costco": 10.00,
+        "walmart": 15.00,
+        "costplus": 6.20
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "amoxicillin-500",
+      "name": "Amoxicillin",
+      "genericName": "Amoxicillin",
+      "category": "Antibiotics",
+      "quantity": 21,
+      "unit": "capsules (500mg)",
+      "prices": {
+        "cash": 25.00,
+        "withInsurance": 5.00,
+        "goodrx": 6.00,
+        "costco": 4.00,
+        "walmart": 4.00,
+        "costplus": 3.80
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "azithromycin-250",
+      "name": "Azithromycin Z-Pack",
+      "genericName": "Azithromycin",
+      "category": "Antibiotics",
+      "quantity": 6,
+      "unit": "tablets (250mg)",
+      "prices": {
+        "cash": 35.00,
+        "withInsurance": 8.00,
+        "goodrx": 10.00,
+        "costco": 8.00,
+        "walmart": 10.00,
+        "costplus": 5.20
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "ciprofloxacin-500",
+      "name": "Ciprofloxacin",
+      "genericName": "Ciprofloxacin HCL",
+      "category": "Antibiotics",
+      "quantity": 14,
+      "unit": "tablets (500mg)",
+      "prices": {
+        "cash": 45.00,
+        "withInsurance": 10.00,
+        "goodrx": 8.00,
+        "costco": 6.00,
+        "walmart": 10.00,
+        "costplus": 4.50
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "doxycycline-100",
+      "name": "Doxycycline",
+      "genericName": "Doxycycline Hyclate",
+      "category": "Antibiotics",
+      "quantity": 20,
+      "unit": "capsules (100mg)",
+      "prices": {
+        "cash": 55.00,
+        "withInsurance": 12.00,
+        "goodrx": 15.00,
+        "costco": 12.00,
+        "walmart": 15.00,
+        "costplus": 6.80
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "cephalexin-500",
+      "name": "Cephalexin",
+      "genericName": "Cephalexin",
+      "category": "Antibiotics",
+      "quantity": 28,
+      "unit": "capsules (500mg)",
+      "prices": {
+        "cash": 35.00,
+        "withInsurance": 8.00,
+        "goodrx": 8.00,
+        "costco": 6.00,
+        "walmart": 10.00,
+        "costplus": 4.20
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "prednisone-10",
+      "name": "Prednisone",
+      "genericName": "Prednisone",
+      "category": "Anti-inflammatory",
+      "quantity": 21,
+      "unit": "tablets (10mg)",
+      "prices": {
+        "cash": 18.00,
+        "withInsurance": 5.00,
+        "goodrx": 5.00,
+        "costco": 3.00,
+        "walmart": 4.00,
+        "costplus": 3.20
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "prednisone-20",
+      "name": "Prednisone 20mg",
+      "genericName": "Prednisone",
+      "category": "Anti-inflammatory",
+      "quantity": 21,
+      "unit": "tablets (20mg)",
+      "prices": {
+        "cash": 22.00,
+        "withInsurance": 6.00,
+        "goodrx": 6.00,
+        "costco": 4.00,
+        "walmart": 4.00,
+        "costplus": 3.50
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "tramadol-50",
+      "name": "Tramadol",
+      "genericName": "Tramadol HCL",
+      "category": "Pain",
+      "quantity": 30,
+      "unit": "tablets (50mg)",
+      "prices": {
+        "cash": 32.00,
+        "withInsurance": 8.00,
+        "goodrx": 8.00,
+        "costco": 6.00,
+        "walmart": 4.00,
+        "costplus": 4.20
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "finasteride-1",
+      "name": "Finasteride",
+      "genericName": "Finasteride",
+      "category": "Men's Health",
+      "quantity": 30,
+      "unit": "tablets (1mg)",
+      "prices": {
+        "cash": 45.00,
+        "withInsurance": 15.00,
+        "goodrx": 10.00,
+        "costco": 8.00,
+        "walmart": 15.00,
+        "costplus": 4.50
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "tamsulosin-0.4",
+      "name": "Tamsulosin",
+      "genericName": "Tamsulosin HCL",
+      "category": "Men's Health",
+      "quantity": 30,
+      "unit": "capsules (0.4mg)",
+      "prices": {
+        "cash": 55.00,
+        "withInsurance": 12.00,
+        "goodrx": 10.00,
+        "costco": 8.00,
+        "walmart": 15.00,
+        "costplus": 5.20
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "sildenafil-50",
+      "name": "Sildenafil",
+      "genericName": "Sildenafil Citrate",
+      "category": "Men's Health",
+      "quantity": 6,
+      "unit": "tablets (50mg)",
+      "prices": {
+        "cash": 180.00,
+        "withInsurance": 50.00,
+        "goodrx": 25.00,
+        "costco": 20.00,
+        "walmart": 30.00,
+        "costplus": 6.50
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "spironolactone-25",
+      "name": "Spironolactone",
+      "genericName": "Spironolactone",
+      "category": "Blood Pressure",
+      "quantity": 30,
+      "unit": "tablets (25mg)",
+      "prices": {
+        "cash": 35.00,
+        "withInsurance": 8.00,
+        "goodrx": 6.00,
+        "costco": 5.00,
+        "walmart": 4.00,
+        "costplus": 3.80
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "furosemide-40",
+      "name": "Furosemide",
+      "genericName": "Furosemide",
+      "category": "Blood Pressure",
+      "quantity": 30,
+      "unit": "tablets (40mg)",
+      "prices": {
+        "cash": 22.00,
+        "withInsurance": 5.00,
+        "goodrx": 4.00,
+        "costco": 4.00,
+        "walmart": 4.00,
+        "costplus": 3.40
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "clonazepam-0.5",
+      "name": "Clonazepam",
+      "genericName": "Clonazepam",
+      "category": "Mental Health",
+      "quantity": 30,
+      "unit": "tablets (0.5mg)",
+      "prices": {
+        "cash": 35.00,
+        "withInsurance": 8.00,
+        "goodrx": 8.00,
+        "costco": 6.00,
+        "walmart": 4.00,
+        "costplus": 4.20
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "alprazolam-0.5",
+      "name": "Alprazolam",
+      "genericName": "Alprazolam",
+      "category": "Mental Health",
+      "quantity": 30,
+      "unit": "tablets (0.5mg)",
+      "prices": {
+        "cash": 32.00,
+        "withInsurance": 8.00,
+        "goodrx": 7.00,
+        "costco": 5.00,
+        "walmart": 4.00,
+        "costplus": 3.90
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "hydroxyzine-25",
+      "name": "Hydroxyzine",
+      "genericName": "Hydroxyzine HCL",
+      "category": "Allergy/Anxiety",
+      "quantity": 30,
+      "unit": "tablets (25mg)",
+      "prices": {
+        "cash": 25.00,
+        "withInsurance": 5.00,
+        "goodrx": 4.00,
+        "costco": 4.00,
+        "walmart": 4.00,
+        "costplus": 3.50
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "cetirizine-10",
+      "name": "Cetirizine",
+      "genericName": "Cetirizine HCL",
+      "category": "Allergy",
+      "quantity": 30,
+      "unit": "tablets (10mg)",
+      "prices": {
+        "cash": 18.00,
+        "withInsurance": 5.00,
+        "goodrx": 4.00,
+        "costco": 3.00,
+        "walmart": 4.00,
+        "costplus": 3.20
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "loratadine-10",
+      "name": "Loratadine",
+      "genericName": "Loratadine",
+      "category": "Allergy",
+      "quantity": 30,
+      "unit": "tablets (10mg)",
+      "prices": {
+        "cash": 15.00,
+        "withInsurance": 5.00,
+        "goodrx": 4.00,
+        "costco": 3.00,
+        "walmart": 4.00,
+        "costplus": 3.00
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "birth-control-generic",
+      "name": "Norethindrone/Ethinyl Estradiol",
+      "genericName": "Generic Birth Control",
+      "category": "Women's Health",
+      "quantity": 28,
+      "unit": "tablets",
+      "prices": {
+        "cash": 45.00,
+        "withInsurance": 0.00,
+        "goodrx": 15.00,
+        "costco": 12.00,
+        "walmart": 9.00,
+        "costplus": 5.80
+      },
+      "assistancePrograms": [
+        {
+          "name": "Planned Parenthood",
+          "url": "https://www.plannedparenthood.org/",
+          "description": "Low-cost or free birth control based on income"
+        }
+      ]
+    },
+    {
+      "id": "ondansetron-4",
+      "name": "Ondansetron",
+      "genericName": "Ondansetron ODT",
+      "category": "Nausea",
+      "quantity": 12,
+      "unit": "tablets (4mg)",
+      "prices": {
+        "cash": 65.00,
+        "withInsurance": 15.00,
+        "goodrx": 10.00,
+        "costco": 8.00,
+        "walmart": 12.00,
+        "costplus": 4.80
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "zolpidem-10",
+      "name": "Zolpidem",
+      "genericName": "Zolpidem Tartrate",
+      "category": "Sleep",
+      "quantity": 30,
+      "unit": "tablets (10mg)",
+      "prices": {
+        "cash": 55.00,
+        "withInsurance": 12.00,
+        "goodrx": 8.00,
+        "costco": 6.00,
+        "walmart": 10.00,
+        "costplus": 4.50
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "warfarin-5",
+      "name": "Warfarin",
+      "genericName": "Warfarin Sodium",
+      "category": "Blood Thinner",
+      "quantity": 30,
+      "unit": "tablets (5mg)",
+      "prices": {
+        "cash": 25.00,
+        "withInsurance": 5.00,
+        "goodrx": 4.00,
+        "costco": 4.00,
+        "walmart": 4.00,
+        "costplus": 3.50
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "clopidogrel-75",
+      "name": "Clopidogrel",
+      "genericName": "Clopidogrel Bisulfate",
+      "category": "Blood Thinner",
+      "quantity": 30,
+      "unit": "tablets (75mg)",
+      "prices": {
+        "cash": 65.00,
+        "withInsurance": 12.00,
+        "goodrx": 10.00,
+        "costco": 8.00,
+        "walmart": 10.00,
+        "costplus": 4.80
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "eliquis-5",
+      "name": "Eliquis",
+      "genericName": "Apixaban",
+      "category": "Blood Thinner",
+      "quantity": 60,
+      "unit": "tablets (5mg)",
+      "prices": {
+        "cash": 620.00,
+        "withInsurance": 45.00,
+        "goodrx": 520.00,
+        "costco": 500.00,
+        "walmart": null,
+        "costplus": null
+      },
+      "assistancePrograms": [
+        {
+          "name": "Bristol-Myers Squibb Patient Assistance",
+          "url": "https://www.bms.com/patient-and-caregivers/get-help-paying-for-your-medicines.html",
+          "description": "Free Eliquis for eligible patients"
+        }
+      ]
     }
   ],
-  "lastUpdated": "2024-12-01",
-  "disclaimer": "Prices are estimates and may vary by location. Always verify with your pharmacy."
+  "categories": [
+    "Diabetes",
+    "Blood Pressure",
+    "Cholesterol",
+    "Stomach/GI",
+    "Mental Health",
+    "Pain/Nerve",
+    "Thyroid",
+    "Respiratory",
+    "Antibiotics",
+    "Anti-inflammatory",
+    "Men's Health",
+    "Women's Health",
+    "Allergy",
+    "Sleep",
+    "Blood Thinner",
+    "Nausea"
+  ],
+  "lastUpdated": "2024-12-25",
+  "disclaimer": "Prices are estimates based on publicly available data. Actual prices may vary by location, pharmacy, and current market conditions. Always verify prices with your pharmacy before purchasing.",
+  "sources": [
+    "GoodRx",
+    "Costco Pharmacy",
+    "Walmart $4 Program",
+    "Cost Plus Drugs",
+    "Medicare.gov"
+  ]
 }
