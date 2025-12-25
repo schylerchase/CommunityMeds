@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "CommunityMeds",
+    "tagline": "Encuentre Medicamentos Accesibles Cerca de Usted"
+  },
+  "nav": {
+    "home": "Inicio",
+    "search": "Buscar Medicamentos",
+    "pharmacies": "Encontrar Farmacias",
+    "about": "Acerca de"
+  },
+  "home": {
+    "title": "Encuentre Medicamentos Accesibles",
+    "subtitle": "Compare precios, encuentre farmacias cercanas y ahorre en sus recetas",
+    "searchPlaceholder": "Ingrese el nombre del medicamento...",
+    "searchButton": "Buscar",
+    "popularSearches": "Búsquedas Populares",
+    "recentSearches": "Búsquedas Recientes"
+  },
+  "search": {
+    "results": "Resultados de Búsqueda",
+    "resultsFor": "Resultados para",
+    "noResults": "No se encontraron medicamentos",
+    "tryDifferent": "Intente con otro término de búsqueda",
+    "loading": "Buscando medicamentos...",
+    "filters": "Filtros",
+    "sortBy": "Ordenar por",
+    "priceLowest": "Precio: Menor a Mayor",
+    "priceHighest": "Precio: Mayor a Menor",
+    "nameAZ": "Nombre: A a Z"
+  },
+  "drug": {
+    "genericName": "Nombre Genérico",
+    "brandName": "Nombre de Marca",
+    "manufacturer": "Fabricante",
+    "description": "Descripción",
+    "commonUses": "Usos Comunes",
+    "sideEffects": "Efectos Secundarios",
+    "prices": "Precios",
+    "cashPrice": "Precio en Efectivo",
+    "withInsurance": "Con Seguro",
+    "withCoupon": "Con Cupón",
+    "genericAlternative": "Alternativa Genérica Disponible",
+    "savings": "Podría ahorrar",
+    "assistancePrograms": "Programas de Asistencia al Paciente",
+    "findPharmacy": "Encontrar Farmacia"
+  },
+  "pharmacy": {
+    "title": "Encontrar Farmacias Cercanas",
+    "subtitle": "Localice farmacias cerca de usted con los mejores precios",
+    "useLocation": "Usar Mi Ubicación",
+    "enterZip": "O ingrese código postal",
+    "search": "Buscar",
+    "filters": {
+      "all": "Todas",
+      "open24": "Abiertas 24 Horas",
+      "delivery": "Entrega Disponible",
+      "driveThru": "Auto-Servicio"
+    },
+    "distance": "millas de distancia",
+    "hours": "Horario",
+    "phone": "Teléfono",
+    "getDirections": "Obtener Direcciones",
+    "viewPrices": "Ver Precios"
+  },
+  "prices": {
+    "title": "Comparación de Precios",
+    "noInsurance": "Sin Seguro",
+    "withInsurance": "Con Seguro",
+    "discountPrograms": "Programas de Descuento",
+    "perMonth": "por mes",
+    "perPill": "por pastilla",
+    "quantity": "Cantidad",
+    "priceVaries": "Los precios pueden variar según la ubicación",
+    "lastUpdated": "Última actualización"
+  },
+  "accessibility": {
+    "settings": "Configuración de Accesibilidad",
+    "largeText": "Texto Grande",
+    "highContrast": "Alto Contraste",
+    "screenReader": "Optimizado para Lector de Pantalla",
+    "skipToMain": "Saltar al contenido principal"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Ocurrió un error",
+    "tryAgain": "Intentar de Nuevo",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "close": "Cerrar",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "learnMore": "Más Información",
+    "viewAll": "Ver Todo",
+    "noData": "No hay datos disponibles"
+  },
+  "footer": {
+    "about": "Acerca de CommunityMeds",
+    "aboutText": "Una herramienta comunitaria gratuita para ayudarle a encontrar medicamentos accesibles.",
+    "disclaimer": "Los precios mostrados son estimados. Siempre verifique con su farmacia.",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Uso",
+    "contact": "Contáctenos",
+    "language": "Idioma"
+  }
+}

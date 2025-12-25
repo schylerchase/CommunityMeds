@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "CommunityMeds",
+    "tagline": "Maghanap ng Abot-kayang Gamot Malapit sa Iyo"
+  },
+  "nav": {
+    "home": "Home",
+    "search": "Maghanap ng Gamot",
+    "pharmacies": "Maghanap ng Botika",
+    "about": "Tungkol sa"
+  },
+  "home": {
+    "title": "Maghanap ng Abot-kayang Gamot",
+    "subtitle": "Ihambing ang mga presyo, maghanap ng mga botika malapit sa iyo, at makatipid sa iyong reseta",
+    "searchPlaceholder": "Ilagay ang pangalan ng gamot...",
+    "searchButton": "Maghanap",
+    "popularSearches": "Mga Sikat na Paghahanap",
+    "recentSearches": "Mga Kamakailang Paghahanap"
+  },
+  "search": {
+    "results": "Mga Resulta ng Paghahanap",
+    "resultsFor": "Mga resulta para sa",
+    "noResults": "Walang nahanap na gamot",
+    "tryDifferent": "Subukan ang ibang salita sa paghahanap",
+    "loading": "Naghahanap ng mga gamot...",
+    "filters": "Mga Filter",
+    "sortBy": "Ayusin ayon sa",
+    "priceLowest": "Presyo: Mababa hanggang Mataas",
+    "priceHighest": "Presyo: Mataas hanggang Mababa",
+    "nameAZ": "Pangalan: A hanggang Z"
+  },
+  "drug": {
+    "genericName": "Generic na Pangalan",
+    "brandName": "Pangalan ng Brand",
+    "manufacturer": "Manufacturer",
+    "description": "Paglalarawan",
+    "commonUses": "Karaniwang Gamit",
+    "sideEffects": "Mga Side Effect",
+    "prices": "Mga Presyo",
+    "cashPrice": "Cash na Presyo",
+    "withInsurance": "May Insurance",
+    "withCoupon": "May Kupon",
+    "genericAlternative": "May Generic na Alternatibo",
+    "savings": "Makakatipid ka ng",
+    "assistancePrograms": "Mga Programa ng Tulong sa Pasyente",
+    "findPharmacy": "Maghanap ng Botika"
+  },
+  "pharmacy": {
+    "title": "Maghanap ng Mga Botika Malapit",
+    "subtitle": "Hanapin ang mga botika malapit sa iyo na may pinakamabuting presyo",
+    "useLocation": "Gamitin ang Aking Lokasyon",
+    "enterZip": "O ilagay ang ZIP code",
+    "search": "Maghanap",
+    "filters": {
+      "all": "Lahat",
+      "open24": "Bukas 24 Oras",
+      "delivery": "May Delivery",
+      "driveThru": "May Drive-Thru"
+    },
+    "distance": "milya ang layo",
+    "hours": "Oras",
+    "phone": "Telepono",
+    "getDirections": "Kumuha ng Direksyon",
+    "viewPrices": "Tingnan ang mga Presyo"
+  },
+  "prices": {
+    "title": "Paghahambing ng Presyo",
+    "noInsurance": "Walang Insurance",
+    "withInsurance": "May Insurance",
+    "discountPrograms": "Mga Discount Program",
+    "perMonth": "bawat buwan",
+    "perPill": "bawat tableta",
+    "quantity": "Dami",
+    "priceVaries": "Maaaring mag-iba ang mga presyo depende sa lokasyon",
+    "lastUpdated": "Huling na-update"
+  },
+  "accessibility": {
+    "settings": "Mga Setting ng Accessibility",
+    "largeText": "Malaking Teksto",
+    "highContrast": "Mataas na Contrast",
+    "screenReader": "Optimized para sa Screen Reader",
+    "skipToMain": "Lumaktaw sa pangunahing nilalaman"
+  },
+  "common": {
+    "loading": "Naglo-load...",
+    "error": "May naganap na error",
+    "tryAgain": "Subukan Muli",
+    "back": "Bumalik",
+    "next": "Susunod",
+    "close": "Isara",
+    "save": "I-save",
+    "cancel": "Kanselahin",
+    "learnMore": "Matuto Pa",
+    "viewAll": "Tingnan Lahat",
+    "noData": "Walang available na data"
+  },
+  "footer": {
+    "about": "Tungkol sa CommunityMeds",
+    "aboutText": "Isang libreng tool ng komunidad upang matulungan kang makahanap ng abot-kayang gamot.",
+    "disclaimer": "Ang mga presyong ipinapakita ay tantya lamang. Palaging i-verify sa iyong botika.",
+    "privacy": "Patakaran sa Privacy",
+    "terms": "Mga Tuntunin ng Paggamit",
+    "contact": "Makipag-ugnayan sa Amin",
+    "language": "Wika"
+  }
+}

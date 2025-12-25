@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "CommunityMeds",
+    "tagline": "Find Affordable Medications Near You"
+  },
+  "nav": {
+    "home": "Home",
+    "search": "Search Medications",
+    "pharmacies": "Find Pharmacies",
+    "about": "About"
+  },
+  "home": {
+    "title": "Find Affordable Medications",
+    "subtitle": "Compare prices, find nearby pharmacies, and save on your prescriptions",
+    "searchPlaceholder": "Enter medication name...",
+    "searchButton": "Search",
+    "popularSearches": "Popular Searches",
+    "recentSearches": "Recent Searches"
+  },
+  "search": {
+    "results": "Search Results",
+    "resultsFor": "Results for",
+    "noResults": "No medications found",
+    "tryDifferent": "Try a different search term",
+    "loading": "Searching medications...",
+    "filters": "Filters",
+    "sortBy": "Sort by",
+    "priceLowest": "Price: Low to High",
+    "priceHighest": "Price: High to Low",
+    "nameAZ": "Name: A to Z"
+  },
+  "drug": {
+    "genericName": "Generic Name",
+    "brandName": "Brand Name",
+    "manufacturer": "Manufacturer",
+    "description": "Description",
+    "commonUses": "Common Uses",
+    "sideEffects": "Side Effects",
+    "prices": "Prices",
+    "cashPrice": "Cash Price",
+    "withInsurance": "With Insurance",
+    "withCoupon": "With Coupon",
+    "genericAlternative": "Generic Alternative Available",
+    "savings": "You could save",
+    "assistancePrograms": "Patient Assistance Programs",
+    "findPharmacy": "Find Pharmacy"
+  },
+  "pharmacy": {
+    "title": "Find Nearby Pharmacies",
+    "subtitle": "Locate pharmacies near you with the best prices",
+    "useLocation": "Use My Location",
+    "enterZip": "Or enter ZIP code",
+    "search": "Search",
+    "filters": {
+      "all": "All",
+      "open24": "Open 24 Hours",
+      "delivery": "Delivery Available",
+      "driveThru": "Drive-Thru"
+    },
+    "distance": "miles away",
+    "hours": "Hours",
+    "phone": "Phone",
+    "getDirections": "Get Directions",
+    "viewPrices": "View Prices"
+  },
+  "prices": {
+    "title": "Price Comparison",
+    "noInsurance": "Without Insurance",
+    "withInsurance": "With Insurance",
+    "discountPrograms": "Discount Programs",
+    "perMonth": "per month",
+    "perPill": "per pill",
+    "quantity": "Quantity",
+    "priceVaries": "Prices may vary by location",
+    "lastUpdated": "Last updated"
+  },
+  "accessibility": {
+    "settings": "Accessibility Settings",
+    "largeText": "Large Text",
+    "highContrast": "High Contrast",
+    "screenReader": "Screen Reader Optimized",
+    "skipToMain": "Skip to main content"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "tryAgain": "Try Again",
+    "back": "Back",
+    "next": "Next",
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel",
+    "learnMore": "Learn More",
+    "viewAll": "View All",
+    "noData": "No data available"
+  },
+  "footer": {
+    "about": "About CommunityMeds",
+    "aboutText": "A free community tool to help you find affordable medications.",
+    "disclaimer": "Prices shown are estimates. Always verify with your pharmacy.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "contact": "Contact Us",
+    "language": "Language"
+  }
+}

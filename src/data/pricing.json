@@ -1,0 +1,284 @@
+{
+  "drugs": [
+    {
+      "id": "metformin-500",
+      "name": "Metformin",
+      "genericName": "Metformin HCL",
+      "quantity": 60,
+      "unit": "tablets",
+      "prices": {
+        "cash": 45.00,
+        "withInsurance": 10.00,
+        "goodrx": 8.50,
+        "costco": 4.00,
+        "walmart": 4.00
+      },
+      "assistancePrograms": [
+        {
+          "name": "Walmart $4 Prescriptions",
+          "url": "https://www.walmart.com/cp/4-dollar-prescriptions/1078664",
+          "description": "30-day supply for $4, 90-day for $10"
+        }
+      ]
+    },
+    {
+      "id": "lisinopril-10",
+      "name": "Lisinopril",
+      "genericName": "Lisinopril",
+      "quantity": 30,
+      "unit": "tablets",
+      "prices": {
+        "cash": 35.00,
+        "withInsurance": 8.00,
+        "goodrx": 7.00,
+        "costco": 4.00,
+        "walmart": 4.00
+      },
+      "assistancePrograms": [
+        {
+          "name": "Walmart $4 Prescriptions",
+          "url": "https://www.walmart.com/cp/4-dollar-prescriptions/1078664",
+          "description": "30-day supply for $4, 90-day for $10"
+        }
+      ]
+    },
+    {
+      "id": "atorvastatin-20",
+      "name": "Atorvastatin",
+      "genericName": "Atorvastatin Calcium",
+      "quantity": 30,
+      "unit": "tablets",
+      "prices": {
+        "cash": 85.00,
+        "withInsurance": 15.00,
+        "goodrx": 9.00,
+        "costco": 7.50,
+        "walmart": 10.00
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "omeprazole-20",
+      "name": "Omeprazole",
+      "genericName": "Omeprazole",
+      "quantity": 30,
+      "unit": "capsules",
+      "prices": {
+        "cash": 55.00,
+        "withInsurance": 12.00,
+        "goodrx": 8.00,
+        "costco": 6.00,
+        "walmart": 4.00
+      },
+      "assistancePrograms": [
+        {
+          "name": "Walmart $4 Prescriptions",
+          "url": "https://www.walmart.com/cp/4-dollar-prescriptions/1078664",
+          "description": "30-day supply for $4, 90-day for $10"
+        }
+      ]
+    },
+    {
+      "id": "amlodipine-5",
+      "name": "Amlodipine",
+      "genericName": "Amlodipine Besylate",
+      "quantity": 30,
+      "unit": "tablets",
+      "prices": {
+        "cash": 40.00,
+        "withInsurance": 10.00,
+        "goodrx": 6.50,
+        "costco": 4.00,
+        "walmart": 4.00
+      },
+      "assistancePrograms": [
+        {
+          "name": "Walmart $4 Prescriptions",
+          "url": "https://www.walmart.com/cp/4-dollar-prescriptions/1078664",
+          "description": "30-day supply for $4, 90-day for $10"
+        }
+      ]
+    },
+    {
+      "id": "levothyroxine-50",
+      "name": "Levothyroxine",
+      "genericName": "Levothyroxine Sodium",
+      "quantity": 30,
+      "unit": "tablets",
+      "prices": {
+        "cash": 38.00,
+        "withInsurance": 10.00,
+        "goodrx": 9.00,
+        "costco": 5.00,
+        "walmart": 4.00
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "gabapentin-300",
+      "name": "Gabapentin",
+      "genericName": "Gabapentin",
+      "quantity": 90,
+      "unit": "capsules",
+      "prices": {
+        "cash": 65.00,
+        "withInsurance": 15.00,
+        "goodrx": 12.00,
+        "costco": 10.00,
+        "walmart": 10.00
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "losartan-50",
+      "name": "Losartan",
+      "genericName": "Losartan Potassium",
+      "quantity": 30,
+      "unit": "tablets",
+      "prices": {
+        "cash": 48.00,
+        "withInsurance": 12.00,
+        "goodrx": 8.00,
+        "costco": 5.00,
+        "walmart": 10.00
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "sertraline-50",
+      "name": "Sertraline",
+      "genericName": "Sertraline HCL",
+      "quantity": 30,
+      "unit": "tablets",
+      "prices": {
+        "cash": 42.00,
+        "withInsurance": 10.00,
+        "goodrx": 7.50,
+        "costco": 4.00,
+        "walmart": 4.00
+      },
+      "assistancePrograms": [
+        {
+          "name": "Walmart $4 Prescriptions",
+          "url": "https://www.walmart.com/cp/4-dollar-prescriptions/1078664",
+          "description": "30-day supply for $4, 90-day for $10"
+        }
+      ]
+    },
+    {
+      "id": "albuterol-inhaler",
+      "name": "Albuterol Inhaler",
+      "genericName": "Albuterol Sulfate",
+      "quantity": 1,
+      "unit": "inhaler",
+      "prices": {
+        "cash": 75.00,
+        "withInsurance": 25.00,
+        "goodrx": 28.00,
+        "costco": 22.00,
+        "walmart": 30.00
+      },
+      "assistancePrograms": [
+        {
+          "name": "GSK Patient Assistance",
+          "url": "https://www.gskforyou.com/",
+          "description": "Free medications for qualifying patients"
+        }
+      ]
+    },
+    {
+      "id": "insulin-lantus",
+      "name": "Lantus",
+      "genericName": "Insulin Glargine",
+      "quantity": 1,
+      "unit": "vial (10ml)",
+      "prices": {
+        "cash": 350.00,
+        "withInsurance": 75.00,
+        "goodrx": 180.00,
+        "costco": 165.00,
+        "walmart": 73.00
+      },
+      "assistancePrograms": [
+        {
+          "name": "Sanofi Patient Connection",
+          "url": "https://www.sanofipatientsupport.com/",
+          "description": "Free Lantus for eligible patients"
+        },
+        {
+          "name": "Walmart ReliOn",
+          "url": "https://www.walmart.com/cp/relion/1231270",
+          "description": "Affordable insulin options starting at $25/vial"
+        }
+      ]
+    },
+    {
+      "id": "amoxicillin-500",
+      "name": "Amoxicillin",
+      "genericName": "Amoxicillin",
+      "quantity": 21,
+      "unit": "capsules",
+      "prices": {
+        "cash": 25.00,
+        "withInsurance": 5.00,
+        "goodrx": 6.00,
+        "costco": 4.00,
+        "walmart": 4.00
+      },
+      "assistancePrograms": [
+        {
+          "name": "Walmart $4 Prescriptions",
+          "url": "https://www.walmart.com/cp/4-dollar-prescriptions/1078664",
+          "description": "30-day supply for $4"
+        }
+      ]
+    },
+    {
+      "id": "prednisone-10",
+      "name": "Prednisone",
+      "genericName": "Prednisone",
+      "quantity": 21,
+      "unit": "tablets",
+      "prices": {
+        "cash": 18.00,
+        "withInsurance": 5.00,
+        "goodrx": 5.00,
+        "costco": 3.00,
+        "walmart": 4.00
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "fluoxetine-20",
+      "name": "Fluoxetine",
+      "genericName": "Fluoxetine HCL",
+      "quantity": 30,
+      "unit": "capsules",
+      "prices": {
+        "cash": 35.00,
+        "withInsurance": 8.00,
+        "goodrx": 6.00,
+        "costco": 4.00,
+        "walmart": 4.00
+      },
+      "assistancePrograms": []
+    },
+    {
+      "id": "hydrochlorothiazide-25",
+      "name": "Hydrochlorothiazide",
+      "genericName": "Hydrochlorothiazide",
+      "quantity": 30,
+      "unit": "tablets",
+      "prices": {
+        "cash": 20.00,
+        "withInsurance": 5.00,
+        "goodrx": 4.00,
+        "costco": 3.00,
+        "walmart": 4.00
+      },
+      "assistancePrograms": []
+    }
+  ],
+  "lastUpdated": "2024-12-01",
+  "disclaimer": "Prices are estimates and may vary by location. Always verify with your pharmacy."
+}

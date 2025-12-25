@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "CommunityMeds",
+    "tagline": "在您附近找到实惠的药物"
+  },
+  "nav": {
+    "home": "首页",
+    "search": "搜索药物",
+    "pharmacies": "查找药房",
+    "about": "关于"
+  },
+  "home": {
+    "title": "查找实惠的药物",
+    "subtitle": "比较价格，找到附近的药房，节省处方药费用",
+    "searchPlaceholder": "输入药物名称...",
+    "searchButton": "搜索",
+    "popularSearches": "热门搜索",
+    "recentSearches": "最近搜索"
+  },
+  "search": {
+    "results": "搜索结果",
+    "resultsFor": "搜索结果",
+    "noResults": "未找到药物",
+    "tryDifferent": "请尝试其他搜索词",
+    "loading": "正在搜索药物...",
+    "filters": "筛选",
+    "sortBy": "排序方式",
+    "priceLowest": "价格：从低到高",
+    "priceHighest": "价格：从高到低",
+    "nameAZ": "名称：A到Z"
+  },
+  "drug": {
+    "genericName": "通用名称",
+    "brandName": "品牌名称",
+    "manufacturer": "制造商",
+    "description": "描述",
+    "commonUses": "常见用途",
+    "sideEffects": "副作用",
+    "prices": "价格",
+    "cashPrice": "现金价格",
+    "withInsurance": "有保险",
+    "withCoupon": "使用优惠券",
+    "genericAlternative": "有通用替代品",
+    "savings": "您可以节省",
+    "assistancePrograms": "患者援助计划",
+    "findPharmacy": "查找药房"
+  },
+  "pharmacy": {
+    "title": "查找附近药房",
+    "subtitle": "找到附近价格最优惠的药房",
+    "useLocation": "使用我的位置",
+    "enterZip": "或输入邮编",
+    "search": "搜索",
+    "filters": {
+      "all": "全部",
+      "open24": "24小时营业",
+      "delivery": "可配送",
+      "driveThru": "免下车服务"
+    },
+    "distance": "英里",
+    "hours": "营业时间",
+    "phone": "电话",
+    "getDirections": "获取路线",
+    "viewPrices": "查看价格"
+  },
+  "prices": {
+    "title": "价格比较",
+    "noInsurance": "无保险",
+    "withInsurance": "有保险",
+    "discountPrograms": "折扣计划",
+    "perMonth": "每月",
+    "perPill": "每片",
+    "quantity": "数量",
+    "priceVaries": "价格可能因地点而异",
+    "lastUpdated": "最后更新"
+  },
+  "accessibility": {
+    "settings": "辅助功能设置",
+    "largeText": "大字体",
+    "highContrast": "高对比度",
+    "screenReader": "屏幕阅读器优化",
+    "skipToMain": "跳至主要内容"
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "发生错误",
+    "tryAgain": "重试",
+    "back": "返回",
+    "next": "下一步",
+    "close": "关闭",
+    "save": "保存",
+    "cancel": "取消",
+    "learnMore": "了解更多",
+    "viewAll": "查看全部",
+    "noData": "暂无数据"
+  },
+  "footer": {
+    "about": "关于CommunityMeds",
+    "aboutText": "一个免费的社区工具，帮助您找到实惠的药物。",
+    "disclaimer": "显示的价格为估计值。请务必与药房核实。",
+    "privacy": "隐私政策",
+    "terms": "使用条款",
+    "contact": "联系我们",
+    "language": "语言"
+  }
+}

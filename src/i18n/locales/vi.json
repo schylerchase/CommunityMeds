@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "CommunityMeds",
+    "tagline": "Tìm Thuốc Giá Rẻ Gần Bạn"
+  },
+  "nav": {
+    "home": "Trang Chủ",
+    "search": "Tìm Thuốc",
+    "pharmacies": "Tìm Nhà Thuốc",
+    "about": "Giới Thiệu"
+  },
+  "home": {
+    "title": "Tìm Thuốc Giá Rẻ",
+    "subtitle": "So sánh giá, tìm nhà thuốc gần bạn và tiết kiệm chi phí đơn thuốc",
+    "searchPlaceholder": "Nhập tên thuốc...",
+    "searchButton": "Tìm Kiếm",
+    "popularSearches": "Tìm Kiếm Phổ Biến",
+    "recentSearches": "Tìm Kiếm Gần Đây"
+  },
+  "search": {
+    "results": "Kết Quả Tìm Kiếm",
+    "resultsFor": "Kết quả cho",
+    "noResults": "Không tìm thấy thuốc",
+    "tryDifferent": "Thử từ khóa tìm kiếm khác",
+    "loading": "Đang tìm kiếm thuốc...",
+    "filters": "Bộ Lọc",
+    "sortBy": "Sắp xếp theo",
+    "priceLowest": "Giá: Thấp đến Cao",
+    "priceHighest": "Giá: Cao đến Thấp",
+    "nameAZ": "Tên: A đến Z"
+  },
+  "drug": {
+    "genericName": "Tên Gốc",
+    "brandName": "Tên Thương Hiệu",
+    "manufacturer": "Nhà Sản Xuất",
+    "description": "Mô Tả",
+    "commonUses": "Công Dụng Phổ Biến",
+    "sideEffects": "Tác Dụng Phụ",
+    "prices": "Giá",
+    "cashPrice": "Giá Tiền Mặt",
+    "withInsurance": "Có Bảo Hiểm",
+    "withCoupon": "Có Phiếu Giảm Giá",
+    "genericAlternative": "Có Thuốc Gốc Thay Thế",
+    "savings": "Bạn có thể tiết kiệm",
+    "assistancePrograms": "Chương Trình Hỗ Trợ Bệnh Nhân",
+    "findPharmacy": "Tìm Nhà Thuốc"
+  },
+  "pharmacy": {
+    "title": "Tìm Nhà Thuốc Gần Đây",
+    "subtitle": "Tìm nhà thuốc gần bạn với giá tốt nhất",
+    "useLocation": "Sử Dụng Vị Trí Của Tôi",
+    "enterZip": "Hoặc nhập mã ZIP",
+    "search": "Tìm",
+    "filters": {
+      "all": "Tất Cả",
+      "open24": "Mở 24 Giờ",
+      "delivery": "Có Giao Hàng",
+      "driveThru": "Có Drive-Thru"
+    },
+    "distance": "dặm",
+    "hours": "Giờ Mở Cửa",
+    "phone": "Điện Thoại",
+    "getDirections": "Chỉ Đường",
+    "viewPrices": "Xem Giá"
+  },
+  "prices": {
+    "title": "So Sánh Giá",
+    "noInsurance": "Không Bảo Hiểm",
+    "withInsurance": "Có Bảo Hiểm",
+    "discountPrograms": "Chương Trình Giảm Giá",
+    "perMonth": "mỗi tháng",
+    "perPill": "mỗi viên",
+    "quantity": "Số Lượng",
+    "priceVaries": "Giá có thể thay đổi theo địa điểm",
+    "lastUpdated": "Cập nhật lần cuối"
+  },
+  "accessibility": {
+    "settings": "Cài Đặt Trợ Năng",
+    "largeText": "Chữ Lớn",
+    "highContrast": "Độ Tương Phản Cao",
+    "screenReader": "Tối Ưu Cho Trình Đọc Màn Hình",
+    "skipToMain": "Bỏ qua đến nội dung chính"
+  },
+  "common": {
+    "loading": "Đang tải...",
+    "error": "Đã xảy ra lỗi",
+    "tryAgain": "Thử Lại",
+    "back": "Quay Lại",
+    "next": "Tiếp Theo",
+    "close": "Đóng",
+    "save": "Lưu",
+    "cancel": "Hủy",
+    "learnMore": "Tìm Hiểu Thêm",
+    "viewAll": "Xem Tất Cả",
+    "noData": "Không có dữ liệu"
+  },
+  "footer": {
+    "about": "Về CommunityMeds",
+    "aboutText": "Công cụ cộng đồng miễn phí giúp bạn tìm thuốc giá rẻ.",
+    "disclaimer": "Giá hiển thị chỉ là ước tính. Luôn xác nhận với nhà thuốc của bạn.",
+    "privacy": "Chính Sách Bảo Mật",
+    "terms": "Điều Khoản Sử Dụng",
+    "contact": "Liên Hệ",
+    "language": "Ngôn Ngữ"
+  }
+}

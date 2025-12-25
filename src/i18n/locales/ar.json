@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "CommunityMeds",
+    "tagline": "ابحث عن أدوية بأسعار معقولة بالقرب منك"
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "search": "البحث عن الأدوية",
+    "pharmacies": "البحث عن الصيدليات",
+    "about": "حول"
+  },
+  "home": {
+    "title": "ابحث عن أدوية بأسعار معقولة",
+    "subtitle": "قارن الأسعار، وابحث عن الصيدليات القريبة، ووفر في وصفاتك الطبية",
+    "searchPlaceholder": "أدخل اسم الدواء...",
+    "searchButton": "بحث",
+    "popularSearches": "عمليات البحث الشائعة",
+    "recentSearches": "عمليات البحث الأخيرة"
+  },
+  "search": {
+    "results": "نتائج البحث",
+    "resultsFor": "نتائج البحث عن",
+    "noResults": "لم يتم العثور على أدوية",
+    "tryDifferent": "جرب مصطلح بحث مختلف",
+    "loading": "جاري البحث عن الأدوية...",
+    "filters": "الفلاتر",
+    "sortBy": "ترتيب حسب",
+    "priceLowest": "السعر: من الأدنى إلى الأعلى",
+    "priceHighest": "السعر: من الأعلى إلى الأدنى",
+    "nameAZ": "الاسم: أ إلى ي"
+  },
+  "drug": {
+    "genericName": "الاسم العام",
+    "brandName": "اسم العلامة التجارية",
+    "manufacturer": "الشركة المصنعة",
+    "description": "الوصف",
+    "commonUses": "الاستخدامات الشائعة",
+    "sideEffects": "الآثار الجانبية",
+    "prices": "الأسعار",
+    "cashPrice": "السعر النقدي",
+    "withInsurance": "مع التأمين",
+    "withCoupon": "مع القسيمة",
+    "genericAlternative": "بديل عام متاح",
+    "savings": "يمكنك توفير",
+    "assistancePrograms": "برامج مساعدة المرضى",
+    "findPharmacy": "البحث عن صيدلية"
+  },
+  "pharmacy": {
+    "title": "البحث عن الصيدليات القريبة",
+    "subtitle": "ابحث عن الصيدليات القريبة منك بأفضل الأسعار",
+    "useLocation": "استخدام موقعي",
+    "enterZip": "أو أدخل الرمز البريدي",
+    "search": "بحث",
+    "filters": {
+      "all": "الكل",
+      "open24": "مفتوح 24 ساعة",
+      "delivery": "التوصيل متاح",
+      "driveThru": "خدمة السيارات"
+    },
+    "distance": "أميال",
+    "hours": "ساعات العمل",
+    "phone": "الهاتف",
+    "getDirections": "الحصول على الاتجاهات",
+    "viewPrices": "عرض الأسعار"
+  },
+  "prices": {
+    "title": "مقارنة الأسعار",
+    "noInsurance": "بدون تأمين",
+    "withInsurance": "مع التأمين",
+    "discountPrograms": "برامج الخصم",
+    "perMonth": "شهرياً",
+    "perPill": "لكل حبة",
+    "quantity": "الكمية",
+    "priceVaries": "قد تختلف الأسعار حسب الموقع",
+    "lastUpdated": "آخر تحديث"
+  },
+  "accessibility": {
+    "settings": "إعدادات إمكانية الوصول",
+    "largeText": "نص كبير",
+    "highContrast": "تباين عالي",
+    "screenReader": "محسّن لقارئ الشاشة",
+    "skipToMain": "التخطي إلى المحتوى الرئيسي"
+  },
+  "common": {
+    "loading": "جاري التحميل...",
+    "error": "حدث خطأ",
+    "tryAgain": "حاول مرة أخرى",
+    "back": "رجوع",
+    "next": "التالي",
+    "close": "إغلاق",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "learnMore": "اعرف المزيد",
+    "viewAll": "عرض الكل",
+    "noData": "لا توجد بيانات متاحة"
+  },
+  "footer": {
+    "about": "حول CommunityMeds",
+    "aboutText": "أداة مجتمعية مجانية لمساعدتك في العثور على أدوية بأسعار معقولة.",
+    "disclaimer": "الأسعار المعروضة تقديرية. تحقق دائماً مع صيدليتك.",
+    "privacy": "سياسة الخصوصية",
+    "terms": "شروط الاستخدام",
+    "contact": "اتصل بنا",
+    "language": "اللغة"
+  }
+}
