@@ -23,13 +23,13 @@ export function Button({
 
   const variants = {
     primary:
-      'bg-gradient-to-r from-primary-500 to-primary-600 text-white hover:from-primary-600 hover:to-primary-700 focus-visible:ring-primary-500',
+      'bg-gradient-to-r from-orange-500 to-orange-600 text-white hover:from-orange-600 hover:to-orange-700 focus-visible:ring-orange-500',
     secondary:
-      'bg-secondary-500 text-white hover:bg-secondary-600 focus-visible:ring-secondary-500',
+      'bg-teal-500 text-white hover:bg-teal-600 focus-visible:ring-teal-500',
     outline:
-      'border-2 border-primary-500 text-primary-600 hover:bg-primary-50 focus-visible:ring-primary-500 shadow-none',
+      'border-2 border-orange-500 text-orange-600 hover:bg-orange-50 focus-visible:ring-orange-500 shadow-none',
     ghost:
-      'text-warm-700 hover:bg-warm-100 focus-visible:ring-warm-500 shadow-none',
+      'text-stone-700 hover:bg-stone-100 focus-visible:ring-stone-500 shadow-none',
   };
 
   const sizes = {

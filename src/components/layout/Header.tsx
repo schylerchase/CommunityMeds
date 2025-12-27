@@ -15,7 +15,7 @@ export function Header() {
   ];
 
   return (
-    <header className="bg-white/95 backdrop-blur-sm border-b border-warm-200 sticky top-0 z-50">
+    <header className="bg-white/95 backdrop-blur-sm border-b border-stone-200 sticky top-0 z-50">
       <a
         href="#main-content"
         className="skip-link"
@@ -28,9 +28,9 @@ export function Header() {
           {/* Logo */}
           <Link
             to="/"
-            className="flex items-center gap-2 text-xl font-bold text-primary-600 hover:text-primary-700 transition-colors"
+            className="flex items-center gap-2 text-xl font-bold text-orange-600 hover:text-orange-700 transition-colors"
           >
-            <div className="w-9 h-9 bg-gradient-to-br from-primary-400 to-primary-600 rounded-xl flex items-center justify-center shadow-warm">
+            <div className="w-9 h-9 bg-gradient-to-br from-orange-400 to-orange-600 rounded-xl flex items-center justify-center shadow-md">
               <svg
                 className="w-5 h-5 text-white"
                 viewBox="0 0 24 24"
@@ -40,7 +40,7 @@ export function Header() {
                 <path d="M19 8h-1V5c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v3H5c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM8 5h8v3H8V5zm3 14h-1v-3H7v-1h3v-3h1v3h3v1h-3v3z" />
               </svg>
             </div>
-            <span className="hidden sm:inline bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
+            <span className="hidden sm:inline bg-gradient-to-r from-orange-600 to-teal-600 bg-clip-text text-transparent">
               {t('app.name')}
             </span>
           </Link>
@@ -53,8 +53,8 @@ export function Header() {
                 to={link.path}
                 className={`px-4 py-2 rounded-xl text-base font-medium transition-all duration-200 ${
                   location.pathname === link.path
-                    ? 'text-primary-700 bg-primary-50 shadow-sm'
-                    : 'text-warm-700 hover:text-primary-600 hover:bg-warm-100'
+                    ? 'text-orange-700 bg-orange-50 shadow-sm'
+                    : 'text-stone-700 hover:text-orange-600 hover:bg-stone-100'
                 }`}
                 aria-current={location.pathname === link.path ? 'page' : undefined}
               >
@@ -70,7 +70,7 @@ export function Header() {
             {/* Mobile menu button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden p-2 rounded-xl text-warm-700 hover:bg-warm-100 transition-colors touch-target"
+              className="md:hidden p-2 rounded-xl text-stone-700 hover:bg-stone-100 transition-colors touch-target"
               aria-expanded={isMenuOpen}
               aria-controls="mobile-menu"
               aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
@@ -106,7 +106,7 @@ export function Header() {
         {isMenuOpen && (
           <nav
             id="mobile-menu"
-            className="md:hidden py-4 border-t border-warm-200"
+            className="md:hidden py-4 border-t border-stone-200"
             role="navigation"
             aria-label="Mobile navigation"
           >
@@ -118,8 +118,8 @@ export function Header() {
                   onClick={() => setIsMenuOpen(false)}
                   className={`px-4 py-3 rounded-xl text-base font-medium transition-colors touch-target ${
                     location.pathname === link.path
-                      ? 'text-primary-700 bg-primary-50'
-                      : 'text-warm-700 hover:text-primary-600 hover:bg-warm-100'
+                      ? 'text-orange-700 bg-orange-50'
+                      : 'text-stone-700 hover:text-orange-600 hover:bg-stone-100'
                   }`}
                   aria-current={location.pathname === link.path ? 'page' : undefined}
                 >
