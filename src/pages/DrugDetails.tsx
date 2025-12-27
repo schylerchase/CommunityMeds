@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { getDrugById } from '../services/openfda';
-import type { DrugSearchResult } from '../services/openfda';
+import { getFullDrugDetails } from '../services/drugSearch';
+import type { DrugFullDetails } from '../services/drugSearch';
 import { getPriceForDrug } from '../services/pricing';
 import type { DrugPrice } from '../services/pricing';
 import { PriceTable } from '../components/search/PriceTable';
@@ -13,7 +13,7 @@ import { Card } from '../components/ui/Card';
 export function DrugDetails() {
   const { t } = useTranslation();
   const { id } = useParams<{ id: string }>();
-  const [drug, setDrug] = useState<DrugSearchResult | null>(null);
+  const [drug, setDrug] = useState<DrugFullDetails | null>(null);
   const [priceInfo, setPriceInfo] = useState<DrugPrice | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -25,11 +25,14 @@ export function DrugDetails() {
       setLoading(true);
       setError(null);
       try {
-        const drugData = await getDrugById(id);
+        const drugData = await getFullDrugDetails(id);
         if (drugData) {
           setDrug(drugData);
-          // Try to get pricing info
-          const pricing = getPriceForDrug(drugData.brandName) || getPriceForDrug(drugData.genericName);
+          // Try to get pricing info from Supabase
+          let pricing = await getPriceForDrug(drugData.brandName);
+          if (!pricing) {
+            pricing = await getPriceForDrug(drugData.genericName);
+          }
           setPriceInfo(pricing);
         } else {
           setError('Drug not found');
@@ -121,12 +124,31 @@ export function DrugDetails() {
               </p>
             )}
 
-            {drug.manufacturer && (
-              <p className="text-sm text-gray-500 mb-6">
-                {t('drug.manufacturer')}: {drug.manufacturer}
+            {drug.drugClass && (
+              <p className="text-sm text-gray-500 mb-4">
+                Drug Class: {drug.drugClass}
               </p>
             )}
 
+            {/* Badges */}
+            <div className="flex flex-wrap gap-2 mb-6">
+              {drug.availability && (
+                <span className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium ${
+                  drug.availability === 'OTC'
+                    ? 'bg-green-100 text-green-800'
+                    : 'bg-blue-100 text-blue-800'
+                }`}>
+                  {drug.availability}
+                </span>
+              )}
+              {drug.controlledSubstance && (
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-100 text-red-800">
+                  {drug.controlledSubstance}
+                </span>
+              )}
+            </div>
+
+            {/* Description */}
             <div className="border-t border-gray-200 pt-6">
               <h2 className="text-lg font-semibold text-gray-900 mb-3">
                 {t('drug.description')}
@@ -135,6 +157,109 @@ export function DrugDetails() {
                 {drug.purpose}
               </p>
             </div>
+
+            {/* Uses */}
+            {drug.uses && drug.uses.length > 0 && (
+              <div className="border-t border-gray-200 pt-6 mt-6">
+                <h2 className="text-lg font-semibold text-gray-900 mb-3">
+                  Uses
+                </h2>
+                <ul className="list-disc list-inside space-y-2 text-gray-700">
+                  {drug.uses.map((use, index) => (
+                    <li key={index}>{use}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {/* Warnings */}
+            {drug.warnings && drug.warnings.length > 0 && (
+              <div className="border-t border-gray-200 pt-6 mt-6">
+                <h2 className="text-lg font-semibold text-red-700 mb-3 flex items-center">
+                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+                  </svg>
+                  Warnings
+                </h2>
+                <div className="bg-red-50 border border-red-200 rounded-lg p-4">
+                  <ul className="list-disc list-inside space-y-2 text-red-800">
+                    {drug.warnings.map((warning, index) => (
+                      <li key={index}>{warning}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            )}
+
+            {/* Side Effects */}
+            {(drug.sideEffects.emergency.length > 0 || drug.sideEffects.common.length > 0) && (
+              <div className="border-t border-gray-200 pt-6 mt-6">
+                <h2 className="text-lg font-semibold text-gray-900 mb-3">
+                  Side Effects
+                </h2>
+
+                {drug.sideEffects.emergency.length > 0 && (
+                  <div className="mb-4">
+                    <h3 className="font-medium text-red-700 mb-2">Seek immediate medical attention:</h3>
+                    <ul className="list-disc list-inside space-y-1 text-red-700 bg-red-50 p-3 rounded-lg">
+                      {drug.sideEffects.emergency.map((effect, index) => (
+                        <li key={index}>{effect}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                {drug.sideEffects.common.length > 0 && (
+                  <div>
+                    <h3 className="font-medium text-gray-700 mb-2">Common side effects:</h3>
+                    <ul className="list-disc list-inside space-y-1 text-gray-600">
+                      {drug.sideEffects.common.slice(0, 10).map((effect, index) => (
+                        <li key={index}>{effect}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            )}
+
+            {/* Before Taking */}
+            {drug.beforeTaking && drug.beforeTaking.length > 0 && (
+              <div className="border-t border-gray-200 pt-6 mt-6">
+                <h2 className="text-lg font-semibold text-gray-900 mb-3">
+                  Before Taking This Medication
+                </h2>
+                <ul className="list-disc list-inside space-y-2 text-gray-700">
+                  {drug.beforeTaking.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {/* Dosage Notes */}
+            {drug.dosageNotes && (
+              <div className="border-t border-gray-200 pt-6 mt-6">
+                <h2 className="text-lg font-semibold text-gray-900 mb-3">
+                  Dosage Information
+                </h2>
+                <p className="text-gray-700">{drug.dosageNotes}</p>
+              </div>
+            )}
+
+            {/* Drug Interactions */}
+            {drug.interactionsNote && (
+              <div className="border-t border-gray-200 pt-6 mt-6">
+                <h2 className="text-lg font-semibold text-orange-700 mb-3 flex items-center">
+                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                  </svg>
+                  Drug Interactions
+                </h2>
+                <div className="bg-orange-50 border border-orange-200 rounded-lg p-4">
+                  <p className="text-orange-800">{drug.interactionsNote}</p>
+                </div>
+              </div>
+            )}
 
             {/* Assistance Programs */}
             {priceInfo?.assistancePrograms && priceInfo.assistancePrograms.length > 0 && (

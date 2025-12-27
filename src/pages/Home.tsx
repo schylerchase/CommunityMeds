@@ -146,7 +146,7 @@ export function Home() {
                 <Link
                   key={drug}
                   to={`/search?q=${encodeURIComponent(drug)}`}
-                  className="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm text-white hover:bg-white/20 transition-colors border border-white/20"
+                  className="px-4 py-2 bg-white/25 backdrop-blur-sm rounded-full text-sm text-white font-medium hover:bg-white/40 transition-colors border border-white/30 shadow-sm"
                 >
                   {drug}
                 </Link>

@@ -1,0 +1,58 @@
+name: Update Drug Prices
+
+on:
+  schedule:
+    # Runs every Sunday at 2am UTC
+    - cron: '0 2 * * 0'
+  workflow_dispatch:  # Allows manual trigger from GitHub UI
+
+jobs:
+  update-prices:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run price enrichment script
+        run: node scripts/enrich_drugs.js
+        env:
+          SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        continue-on-error: true
+
+      - name: Update last_verified_at timestamp
+        run: |
+          node -e "
+          const { createClient } = require('@supabase/supabase-js');
+          const supabase = createClient(
+            process.env.SUPABASE_URL,
+            process.env.SUPABASE_SERVICE_ROLE_KEY
+          );
+
+          async function updateTimestamp() {
+            const { error } = await supabase
+              .from('prices')
+              .update({ last_verified_at: new Date().toISOString() })
+              .eq('is_current', true);
+
+            if (error) {
+              console.error('Error updating timestamps:', error.message);
+              process.exit(1);
+            }
+            console.log('Successfully updated price timestamps');
+          }
+
+          updateTimestamp();
+          "
+        env:
+          SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}

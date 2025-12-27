@@ -22,3 +22,15 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# venv
+.venv/
+
+# environment variables
+.env
+.env.local
+.env.*.local
+
+# scraping artifacts
+drugs_data.json
+scrape_progress.json

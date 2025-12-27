@@ -4,8 +4,8 @@ import { useTranslation } from 'react-i18next';
 import { SearchBar } from '../components/search/SearchBar';
 import { DrugCard } from '../components/search/DrugCard';
 import { LoadingSpinner } from '../components/ui/LoadingSpinner';
-import { searchDrugs } from '../services/openfda';
-import type { DrugSearchResult } from '../services/openfda';
+import { searchDrugs } from '../services/drugSearch';
+import type { DrugSearchResult } from '../services/drugSearch';
 
 export function SearchResults() {
   const { t } = useTranslation();

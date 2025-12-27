@@ -1,53 +1,47 @@
 import { useTranslation } from 'react-i18next';
-import { formatPrice, calculateSavings } from '../../services/pricing';
+import { formatPrice, calculateSavings, formatLastUpdated } from '../../services/pricing';
 import type { DrugPrice } from '../../services/pricing';
 
 interface PriceTableProps {
   priceInfo: DrugPrice;
 }
 
+// Display names for pharmacy keys
+const pharmacyLabels: Record<string, string> = {
+  cash: 'Cash Price',
+  insurance: 'With Insurance',
+  goodrx: 'GoodRx Coupon',
+  costco: 'Costco',
+  walmart: 'Walmart',
+  costplus: 'Cost Plus Drugs',
+};
+
 export function PriceTable({ priceInfo }: PriceTableProps) {
   const { t } = useTranslation();
 
-  const priceRows = [
-    {
-      label: t('drug.cashPrice'),
-      price: priceInfo.prices.cash,
-      highlight: false,
-    },
-    {
-      label: t('drug.withInsurance'),
-      price: priceInfo.prices.withInsurance,
-      highlight: false,
-    },
-    ...(priceInfo.prices.goodrx
-      ? [{
-          label: 'GoodRx Coupon',
-          price: priceInfo.prices.goodrx,
-          highlight: true,
-          savings: calculateSavings(priceInfo.prices.cash, priceInfo.prices.goodrx),
-        }]
-      : []),
-    ...(priceInfo.prices.costco
-      ? [{
-          label: 'Costco',
-          price: priceInfo.prices.costco,
-          highlight: true,
-          savings: calculateSavings(priceInfo.prices.cash, priceInfo.prices.costco),
-        }]
-      : []),
-    ...(priceInfo.prices.walmart
-      ? [{
-          label: 'Walmart',
-          price: priceInfo.prices.walmart,
-          highlight: true,
-          savings: calculateSavings(priceInfo.prices.cash, priceInfo.prices.walmart),
-        }]
-      : []),
-  ];
+  // Build price rows from available prices
+  const priceRows = Object.entries(priceInfo.prices)
+    .filter(([, price]) => price !== undefined && price !== null)
+    .map(([key, price]) => ({
+      label: pharmacyLabels[key] || key,
+      price: price as number,
+      key,
+      highlight: !['cash', 'insurance'].includes(key),
+      savings: key !== 'cash' && priceInfo.prices.cash
+        ? calculateSavings(priceInfo.prices.cash, price as number)
+        : undefined,
+    }));
 
-  // Sort by price
+  // Sort by price (lowest first)
   priceRows.sort((a, b) => a.price - b.price);
+
+  if (priceRows.length === 0) {
+    return (
+      <div className="bg-white rounded-xl border border-gray-200 p-6 text-center">
+        <p className="text-gray-500">{t('common.noData')}</p>
+      </div>
+    );
+  }
 
   return (
     <div className="bg-white rounded-xl border border-gray-200 overflow-hidden">
@@ -61,7 +55,7 @@ export function PriceTable({ priceInfo }: PriceTableProps) {
       <div className="divide-y divide-gray-100">
         {priceRows.map((row, index) => (
           <div
-            key={row.label}
+            key={row.key}
             className={`px-4 py-4 flex items-center justify-between ${
               index === 0 ? 'bg-green-50' : ''
             }`}
@@ -80,7 +74,7 @@ export function PriceTable({ priceInfo }: PriceTableProps) {
               <span className={`text-lg font-bold ${index === 0 ? 'text-green-600' : 'text-gray-900'}`}>
                 {formatPrice(row.price)}
               </span>
-              {'savings' in row && row.savings && (
+              {row.savings && row.savings.percentage > 0 && (
                 <p className="text-sm text-green-600">
                   {t('drug.savings')} {row.savings.percentage}%
                 </p>
@@ -92,6 +86,14 @@ export function PriceTable({ priceInfo }: PriceTableProps) {
 
       <div className="px-4 py-3 bg-gray-50 border-t border-gray-200">
         <p className="text-xs text-gray-500">{t('prices.priceVaries')}</p>
+        {priceInfo.lastUpdated && (
+          <p className="text-xs text-gray-400 mt-1 flex items-center gap-1">
+            <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            Updated {formatLastUpdated(priceInfo.lastUpdated)}
+          </p>
+        )}
       </div>
     </div>
   );

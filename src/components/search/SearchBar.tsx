@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
-import { searchDrugs } from '../../services/openfda';
-import type { DrugSearchResult } from '../../services/openfda';
+import { searchDrugs } from '../../services/drugSearch';
+import type { DrugSearchResult } from '../../services/drugSearch';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
 
 interface SearchBarProps {
@@ -120,7 +120,7 @@ export function SearchBar({ initialQuery = '', onSearch, autoFocus = false }: Se
           onKeyDown={handleKeyDown}
           placeholder={t('home.searchPlaceholder')}
           autoFocus={autoFocus}
-          className="w-full h-14 sm:h-16 pl-5 pr-14 text-lg rounded-xl border-2 border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all"
+          className="w-full h-14 sm:h-16 pl-5 pr-14 text-lg text-gray-900 bg-white rounded-xl border-2 border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all placeholder:text-gray-400"
           aria-label={t('home.searchPlaceholder')}
           aria-autocomplete="list"
           aria-controls="search-suggestions"
@@ -212,7 +212,7 @@ export function SearchBar({ initialQuery = '', onSearch, autoFocus = false }: Se
                         d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-                    <span>{search}</span>
+                    <span className="text-gray-900">{search}</span>
                   </button>
                 </li>
               ))}

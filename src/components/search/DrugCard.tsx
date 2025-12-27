@@ -1,8 +1,10 @@
+import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Card } from '../ui/Card';
-import type { DrugSearchResult } from '../../services/openfda';
+import type { DrugSearchResult } from '../../services/drugSearch';
 import { getPriceForDrug, formatPrice } from '../../services/pricing';
+import type { DrugPrice } from '../../services/pricing';
 
 interface DrugCardProps {
   drug: DrugSearchResult;
@@ -10,7 +12,18 @@ interface DrugCardProps {
 
 export function DrugCard({ drug }: DrugCardProps) {
   const { t } = useTranslation();
-  const priceInfo = getPriceForDrug(drug.brandName) || getPriceForDrug(drug.genericName);
+  const [priceInfo, setPriceInfo] = useState<DrugPrice | null>(null);
+
+  useEffect(() => {
+    const fetchPrice = async () => {
+      let pricing = await getPriceForDrug(drug.brandName);
+      if (!pricing) {
+        pricing = await getPriceForDrug(drug.genericName);
+      }
+      setPriceInfo(pricing);
+    };
+    fetchPrice();
+  }, [drug.brandName, drug.genericName]);
 
   return (
     <Card hover className="h-full">
@@ -33,7 +46,7 @@ export function DrugCard({ drug }: DrugCardProps) {
             </p>
           </div>
 
-          {priceInfo && (
+          {priceInfo && priceInfo.prices.cash !== undefined && (
             <div className="mt-4 pt-4 border-t border-gray-100">
               <div className="flex items-center justify-between">
                 <div>
@@ -42,7 +55,7 @@ export function DrugCard({ drug }: DrugCardProps) {
                     {formatPrice(priceInfo.prices.cash)}
                   </p>
                 </div>
-                {priceInfo.prices.goodrx && (
+                {priceInfo.prices.goodrx !== undefined && (
                   <div className="text-right">
                     <p className="text-xs text-green-600">{t('drug.withCoupon')}</p>
                     <p className="text-lg font-bold text-green-600">
