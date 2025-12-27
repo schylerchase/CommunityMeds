@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "מצא תרופות במחיר סביר ליד ך"
+  },
+  "nav": {
+    "home": "בית",
+    "search": "חיפוש תרופות",
+    "pharmacies": "מצא בתי מרקחת",
+    "about": "אודות"
+  },
+  "home": {
+    "title": "מצא תרופות במחיר סביר",
+    "subtitle": "השווה מחירים, מצא בתי מרקחת קרובים וחסוך במרשמים שלך",
+    "searchPlaceholder": "הכנס שם תרופה...",
+    "searchButton": "חפש",
+    "popularSearches": "חיפושים פופולריים",
+    "recentSearches": "חיפושים אחרונים"
+  },
+  "search": {
+    "results": "תוצאות חיפוש",
+    "resultsFor": "תוצאות עבור",
+    "noResults": "לא נמצאו תרופות",
+    "tryDifferent": "נסה מונח חיפוש אחר",
+    "loading": "מחפש תרופות...",
+    "filters": "מסננים",
+    "sortBy": "מיין לפי",
+    "priceLowest": "מחיר: מהנמוך לגבוה",
+    "priceHighest": "מחיר: מהגבוה לנמוך",
+    "nameAZ": "שם: א עד ת"
+  },
+  "drug": {
+    "genericName": "שם גנרי",
+    "brandName": "שם מותג",
+    "manufacturer": "יצרן",
+    "description": "תיאור",
+    "commonUses": "שימושים נפוצים",
+    "sideEffects": "תופעות לוואי",
+    "prices": "מחירים",
+    "cashPrice": "מחיר במזומן",
+    "withInsurance": "עם ביטוח",
+    "withCoupon": "עם קופון",
+    "genericAlternative": "קיימת חלופה גנרית",
+    "savings": "תוכל לחסוך",
+    "assistancePrograms": "תוכניות סיוע למטופלים",
+    "findPharmacy": "מצא בית מרקחת"
+  },
+  "pharmacy": {
+    "title": "מצא בתי מרקחת קרובים",
+    "subtitle": "אתר בתי מרקחת עם המחירים הטובים ביותר בקרבתך",
+    "useLocation": "השתמש במיקום שלי",
+    "enterZip": "או הכנס מיקוד",
+    "search": "חפש",
+    "filters": {
+      "all": "הכל",
+      "open24": "פתוח 24 שעות",
+      "delivery": "משלוח זמין",
+      "driveThru": "דרייב-ת'רו"
+    },
+    "distance": "מיילים",
+    "hours": "שעות",
+    "phone": "טלפון",
+    "getDirections": "קבל הוראות הגעה",
+    "viewPrices": "צפה במחירים"
+  },
+  "prices": {
+    "title": "השוואת מחירים",
+    "noInsurance": "ללא ביטוח",
+    "withInsurance": "עם ביטוח",
+    "discountPrograms": "תוכניות הנחה",
+    "perMonth": "לחודש",
+    "perPill": "לכדור",
+    "quantity": "כמות",
+    "priceVaries": "המחירים עשויים להשתנות לפי מיקום",
+    "lastUpdated": "עודכן לאחרונה"
+  },
+  "accessibility": {
+    "settings": "הגדרות נגישות",
+    "largeText": "טקסט גדול",
+    "highContrast": "ניגודיות גבוהה",
+    "screenReader": "מותאם לקורא מסך",
+    "skipToMain": "דלג לתוכן הראשי"
+  },
+  "common": {
+    "loading": "טוען...",
+    "error": "אירעה שגיאה",
+    "tryAgain": "נסה שוב",
+    "back": "חזרה",
+    "next": "הבא",
+    "close": "סגור",
+    "save": "שמור",
+    "cancel": "ביטול",
+    "learnMore": "למד עוד",
+    "viewAll": "צפה בהכל",
+    "noData": "אין נתונים זמינים"
+  },
+  "footer": {
+    "about": "אודות PublicRx",
+    "aboutText": "משאב ציבורי חינמי לעזור לך למצוא תרופות במחיר סביר.",
+    "disclaimer": "המחירים המוצגים הם הערכות. תמיד אמת עם בית המרקחת שלך.",
+    "privacy": "מדיניות פרטיות",
+    "terms": "תנאי שימוש",
+    "contact": "צור קשר",
+    "language": "שפה"
+  }
+}

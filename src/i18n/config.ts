@@ -14,6 +14,13 @@ import fr from './locales/fr.json';
 import hi from './locales/hi.json';
 import pt from './locales/pt.json';
 import ht from './locales/ht.json';
+import ne from './locales/ne.json';
+import sw from './locales/sw.json';
+import so from './locales/so.json';
+import bo from './locales/bo.json';
+import kar from './locales/kar.json';
+import ymm from './locales/ymm.json';
+import he from './locales/he.json';
 
 export const languages = [
   { code: 'en', name: 'English', dir: 'ltr' },
@@ -28,10 +35,17 @@ export const languages = [
   { code: 'hi', name: 'हिन्दी', dir: 'ltr' },
   { code: 'pt', name: 'Português', dir: 'ltr' },
   { code: 'ht', name: 'Kreyòl Ayisyen', dir: 'ltr' },
+  { code: 'ne', name: 'नेपाली', dir: 'ltr' },
+  { code: 'sw', name: 'Kiswahili', dir: 'ltr' },
+  { code: 'so', name: 'Soomaali', dir: 'ltr' },
+  { code: 'bo', name: 'བོད་སྐད', dir: 'ltr' },
+  { code: 'kar', name: 'ကညီ', dir: 'ltr' },
+  { code: 'ymm', name: 'Maay Maay', dir: 'ltr' },
+  { code: 'he', name: 'עברית', dir: 'rtl' },
 ] as const;
 
 // Supported language codes for matching
-const supportedLngs = ['en', 'es', 'zh', 'tl', 'vi', 'ar', 'ko', 'ru', 'fr', 'hi', 'pt', 'ht'];
+const supportedLngs = ['en', 'es', 'zh', 'tl', 'vi', 'ar', 'ko', 'ru', 'fr', 'hi', 'pt', 'ht', 'ne', 'sw', 'so', 'bo', 'kar', 'ymm', 'he'];
 
 i18n
   .use(LanguageDetector)
@@ -50,6 +64,13 @@ i18n
       hi: { translation: hi },
       pt: { translation: pt },
       ht: { translation: ht },
+      ne: { translation: ne },
+      sw: { translation: sw },
+      so: { translation: so },
+      bo: { translation: bo },
+      kar: { translation: kar },
+      ymm: { translation: ymm },
+      he: { translation: he },
     },
     supportedLngs,
     fallbackLng: 'en',

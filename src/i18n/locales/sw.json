@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Pata Dawa za Bei Nafuu Karibu Nawe"
+  },
+  "nav": {
+    "home": "Nyumbani",
+    "search": "Tafuta Dawa",
+    "pharmacies": "Tafuta Maduka ya Dawa",
+    "about": "Kuhusu"
+  },
+  "home": {
+    "title": "Pata Dawa za Bei Nafuu",
+    "subtitle": "Linganisha bei, pata maduka ya dawa karibu nawe, na okoa pesa kwenye dawa zako",
+    "searchPlaceholder": "Ingiza jina la dawa...",
+    "searchButton": "Tafuta",
+    "popularSearches": "Utafutaji Maarufu",
+    "recentSearches": "Utafutaji wa Hivi Karibuni"
+  },
+  "search": {
+    "results": "Matokeo ya Utafutaji",
+    "resultsFor": "Matokeo kwa",
+    "noResults": "Hakuna dawa zilizopatikana",
+    "tryDifferent": "Jaribu neno lingine la utafutaji",
+    "loading": "Inatafuta dawa...",
+    "filters": "Vichujio",
+    "sortBy": "Panga kwa",
+    "priceLowest": "Bei: Chini hadi Juu",
+    "priceHighest": "Bei: Juu hadi Chini",
+    "nameAZ": "Jina: A hadi Z"
+  },
+  "drug": {
+    "genericName": "Jina la Kawaida",
+    "brandName": "Jina la Chapa",
+    "manufacturer": "Mtengenezaji",
+    "description": "Maelezo",
+    "commonUses": "Matumizi ya Kawaida",
+    "sideEffects": "Madhara",
+    "prices": "Bei",
+    "cashPrice": "Bei ya Taslimu",
+    "withInsurance": "Na Bima",
+    "withCoupon": "Na Kuponi",
+    "genericAlternative": "Mbadala wa Kawaida Inapatikana",
+    "savings": "Unaweza kuokoa",
+    "assistancePrograms": "Programu za Msaada wa Wagonjwa",
+    "findPharmacy": "Tafuta Duka la Dawa"
+  },
+  "pharmacy": {
+    "title": "Tafuta Maduka ya Dawa Karibu",
+    "subtitle": "Pata maduka ya dawa yenye bei bora karibu nawe",
+    "useLocation": "Tumia Eneo Langu",
+    "enterZip": "Au ingiza nambari ya posta",
+    "search": "Tafuta",
+    "filters": {
+      "all": "Zote",
+      "open24": "Wazi Masaa 24",
+      "delivery": "Uwasilishaji Unapatikana",
+      "driveThru": "Huduma ya Gari"
+    },
+    "distance": "maili",
+    "hours": "Masaa",
+    "phone": "Simu",
+    "getDirections": "Pata Maelekezo",
+    "viewPrices": "Tazama Bei"
+  },
+  "prices": {
+    "title": "Ulinganisho wa Bei",
+    "noInsurance": "Bila Bima",
+    "withInsurance": "Na Bima",
+    "discountPrograms": "Programu za Punguzo",
+    "perMonth": "kwa mwezi",
+    "perPill": "kwa kidonge",
+    "quantity": "Kiasi",
+    "priceVaries": "Bei inaweza kutofautiana kwa eneo",
+    "lastUpdated": "Imesasishwa mwisho"
+  },
+  "accessibility": {
+    "settings": "Mipangilio ya Upatikanaji",
+    "largeText": "Maandishi Makubwa",
+    "highContrast": "Utofautishaji wa Juu",
+    "screenReader": "Imeboreshwa kwa Kisomaji cha Skrini",
+    "skipToMain": "Ruka hadi maudhui kuu"
+  },
+  "common": {
+    "loading": "Inapakia...",
+    "error": "Hitilafu imetokea",
+    "tryAgain": "Jaribu Tena",
+    "back": "Rudi",
+    "next": "Ifuatayo",
+    "close": "Funga",
+    "save": "Hifadhi",
+    "cancel": "Ghairi",
+    "learnMore": "Jifunze Zaidi",
+    "viewAll": "Tazama Zote",
+    "noData": "Hakuna data inayopatikana"
+  },
+  "footer": {
+    "about": "Kuhusu PublicRx",
+    "aboutText": "Rasilimali ya umma ya bure kukusaidia kupata dawa za bei nafuu.",
+    "disclaimer": "Bei zilizoonyeshwa ni makadirio. Daima thibitisha na duka lako la dawa.",
+    "privacy": "Sera ya Faragha",
+    "terms": "Masharti ya Matumizi",
+    "contact": "Wasiliana Nasi",
+    "language": "Lugha"
+  }
+}

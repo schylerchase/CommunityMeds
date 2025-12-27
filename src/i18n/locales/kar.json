@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "ဃုထံၣ်န့ၢ်ကသံၣ်လၢအပှ့ၤဘၣ်လၢနကပိာ်ကွံာ်"
+  },
+  "nav": {
+    "home": "ဟံၣ်",
+    "search": "ဃုကသံၣ်",
+    "pharmacies": "ဃုကသံၣ်ကျး",
+    "about": "ဘၣ်ဃး"
+  },
+  "home": {
+    "title": "ဃုထံၣ်န့ၢ်ကသံၣ်လၢအပှ့ၤဘၣ်",
+    "subtitle": "ထိၣ်သတြီၤပှ့ၤ, ဃုကသံၣ်ကျးလၢနကပိာ်ကွံာ်, ဒီးပာ်ကီၤစ့နကသံၣ်တဖၣ်",
+    "searchPlaceholder": "ကွဲးကသံၣ်အမံၤ...",
+    "searchButton": "ဃုထံၣ်",
+    "popularSearches": "တၢ်ဃုလၢအဘၣ်သး",
+    "recentSearches": "တၢ်ဃုခဲအံၤ"
+  },
+  "search": {
+    "results": "တၢ်ဃုအဆၢ",
+    "resultsFor": "အဆၢလၢ",
+    "noResults": "တထံၣ်ကသံၣ်ဘၣ်",
+    "tryDifferent": "ဂုာ်ကျဲးစၢးကွဲးတၢ်ဃုအဂၤ",
+    "loading": "ဃုကသံၣ်အိၣ်...",
+    "filters": "တၢ်ထုးထီၣ်",
+    "sortBy": "ပာ်ဖှိၣ်လၢ",
+    "priceLowest": "ပှ့ၤ: စှၤကဲၣ်ဆိး",
+    "priceHighest": "ပှ့ၤ: အါကဲၣ်ဆိး",
+    "nameAZ": "မံၤ: အ ကဲၣ် ခ"
+  },
+  "drug": {
+    "genericName": "ညီနုၢ်မံၤ",
+    "brandName": "တၢ်ပနီၣ်မံၤ",
+    "manufacturer": "ပှၤတ့",
+    "description": "တၢ်ကွဲးဖျါထီၣ်",
+    "commonUses": "တၢ်သူအီၤညီနုၢ်",
+    "sideEffects": "တၢ်မၤအသးတဂၢၢ်",
+    "prices": "ပှ့ၤ",
+    "cashPrice": "စ့ပှ့ၤ",
+    "withInsurance": "ဒီးတၢ်အုၣ်ကီၤ",
+    "withCoupon": "ဒီးကူပိၣ်",
+    "genericAlternative": "ညီနုၢ်တၢ်ဃုထၢအိၣ်",
+    "savings": "နပာ်ကီၤန့ၢ်",
+    "assistancePrograms": "ပှၤဆူးပှၤဆါတၢ်မၤစၢၤ",
+    "findPharmacy": "ဃုကသံၣ်ကျး"
+  },
+  "pharmacy": {
+    "title": "ဃုကသံၣ်ကျးလၢနကပိာ်ကွံာ်",
+    "subtitle": "ဃုထံၣ်ကသံၣ်ကျးလၢအပှ့ၤဂ့ၤကတၢၢ်",
+    "useLocation": "သူၣ်အလီၢ်",
+    "enterZip": "မ့တမ့ၢ်ကွဲး ZIP",
+    "search": "ဃုထံၣ်",
+    "filters": {
+      "all": "ခဲလၢာ်",
+      "open24": "အိးထီၣ် ၂၄ နၣ်ရံၣ်",
+      "delivery": "တၢ်ဆှၢအိၣ်",
+      "driveThru": "ဒရဲကၢၢ်ထရူ"
+    },
+    "distance": "မဲ",
+    "hours": "နၣ်ရံၣ်",
+    "phone": "လီတဲစိ",
+    "getDirections": "န့ၢ်ကျဲ",
+    "viewPrices": "ကွၢ်ပှ့ၤ"
+  },
+  "prices": {
+    "title": "ထိၣ်သတြီၤပှ့ၤ",
+    "noInsurance": "တၢ်အုၣ်ကီၤတအိၣ်",
+    "withInsurance": "ဒီးတၢ်အုၣ်ကီၤ",
+    "discountPrograms": "တၢ်စှၤပှ့ၤ",
+    "perMonth": "လါတလါ",
+    "perPill": "ဖီတဖီ",
+    "quantity": "တၢ်အါ",
+    "priceVaries": "ပှ့ၤလီၤဆီလၢအလီၢ်",
+    "lastUpdated": "တၢ်မၤသီထီၣ်ခံကတၢၢ်"
+  },
+  "accessibility": {
+    "settings": "တၢ်ပာ်ဖျါ",
+    "largeText": "လံာ်ဖျၢၣ်ဒိၣ်",
+    "highContrast": "ထီၣ်ကၢာ်စ်",
+    "screenReader": "ပှၤဖးလံာ်ခီဖျိ",
+    "skipToMain": "လဲၤဆူတၢ်ဂ့ၢ်ခိၣ်"
+  },
+  "common": {
+    "loading": "ထၢနုာ်လီၤ...",
+    "error": "တၢ်ကမၣ်ဟဲအိၣ်",
+    "tryAgain": "ဂုာ်ကျဲးစၢးက့ၤ",
+    "back": "က့ၤကဒါ",
+    "next": "ခံတခါ",
+    "close": "ကးတံာ်",
+    "save": "ပာ်ကီၤ",
+    "cancel": "ပတုာ်ကွံာ်",
+    "learnMore": "မၤလိအါထီၣ်",
+    "viewAll": "ကွၢ်ခဲလၢာ်",
+    "noData": "ဒ့ထၢတအိၣ်"
+  },
+  "footer": {
+    "about": "ဘၣ်ဃး PublicRx",
+    "aboutText": "ပှၤကမျၢၢ်တၢ်မၤစၢၤလၢအကူၣ်ဘၣ်ကူၣ်သ့လၢတၢ်ဃုထံၣ်ကသံၣ်ပှ့ၤဘၣ်",
+    "disclaimer": "ပှ့ၤလၢအဖျါမ့ၢ်တၢ်ဆိကမိၣ်. တၢ်သ့ၣ်ညါဒီးနကသံၣ်ကျးထီဘိ.",
+    "privacy": "တၢ်ခူသူၣ်အတၢ်သိၣ်တၢ်သီ",
+    "terms": "တၢ်သူအတၢ်ဘျၢ",
+    "contact": "ဆဲးကျိးပှၤ",
+    "language": "ကျိာ်"
+  }
+}

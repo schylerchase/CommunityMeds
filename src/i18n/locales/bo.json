@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "ཁྱེད་རང་གི་ཉེ་འགྲམ་དུ་གོང་ཚད་དམའ་བའི་སྨན་རྙེད་པ"
+  },
+  "nav": {
+    "home": "གཙོ་ངོས",
+    "search": "སྨན་འཚོལ",
+    "pharmacies": "སྨན་ཁང་འཚོལ",
+    "about": "སྐོར"
+  },
+  "home": {
+    "title": "གོང་ཚད་དམའ་བའི་སྨན་རྙེད་པ",
+    "subtitle": "གོང་ཚད་བསྡུར་བ། ཉེ་འགྲམ་གྱི་སྨན་ཁང་འཚོལ། སྨན་ཐམས་ལ་དངུལ་འགྲོ་སྟོན",
+    "searchPlaceholder": "སྨན་གྱི་མིང་བཀོད...",
+    "searchButton": "འཚོལ",
+    "popularSearches": "འཚོལ་བ་དར་ཁྱབ",
+    "recentSearches": "ཉེ་ལམ་གྱི་འཚོལ་བ"
+  },
+  "search": {
+    "results": "འཚོལ་འབྲས",
+    "resultsFor": "འབྲས་བུ་",
+    "noResults": "སྨན་མ་རྙེད",
+    "tryDifferent": "འཚོལ་ཚིག་གཞན་བེད་སྤྱོད་གནང",
+    "loading": "སྨན་འཚོལ་བཞིན...",
+    "filters": "ཚགས་མ",
+    "sortBy": "གོ་རིམ",
+    "priceLowest": "གོང་ཚད: དམའ་ནས་མཐོ",
+    "priceHighest": "གོང་ཚད: མཐོ་ནས་དམའ",
+    "nameAZ": "མིང: ཀ་ནས་ཨ"
+  },
+  "drug": {
+    "genericName": "སྤྱིར་བཏང་མིང",
+    "brandName": "ཚོང་རྟགས་མིང",
+    "manufacturer": "བཟོ་གྲྭ",
+    "description": "འགྲེལ་བཤད",
+    "commonUses": "སྤྱིར་བཏང་བཀོལ་སྤྱོད",
+    "sideEffects": "ཟུར་ཤུགས",
+    "prices": "གོང་ཚད",
+    "cashPrice": "དངུལ་གོང",
+    "withInsurance": "འགན་སྲུང་དང་བཅས",
+    "withCoupon": "ཆག་ཡངས་ལག་ཁྱེར་དང་བཅས",
+    "genericAlternative": "སྤྱིར་བཏང་གདམ་གསེས་ཡོད",
+    "savings": "ཁྱེད་ཀྱིས་སྤྲོད་ཆོག",
+    "assistancePrograms": "ནད་པ་རོགས་རམ་ལས་གཞི",
+    "findPharmacy": "སྨན་ཁང་འཚོལ"
+  },
+  "pharmacy": {
+    "title": "ཉེ་འགྲམ་གྱི་སྨན་ཁང་འཚོལ",
+    "subtitle": "གོང་ཚད་ཡག་ཤོས་ཀྱི་སྨན་ཁང་རྙེད",
+    "useLocation": "ངའི་ས་གནས་བེད་སྤྱོད",
+    "enterZip": "ཡང་ན་ཁ་བྱང་ཨང་བཀོད",
+    "search": "འཚོལ",
+    "filters": {
+      "all": "ཚང་མ",
+      "open24": "ཆུ་ཚོད་ ༢༤ ཁ་ཕྱེ",
+      "delivery": "སྐྱེལ་འདྲེན་ཡོད",
+      "driveThru": "མོ་ཊ་སྣེ་ལེན"
+    },
+    "distance": "རྒྱང་ཐག",
+    "hours": "ཆུ་ཚོད",
+    "phone": "ཁ་པར",
+    "getDirections": "ལམ་སྟོན",
+    "viewPrices": "གོང་ཚད་ལྟ"
+  },
+  "prices": {
+    "title": "གོང་ཚད་བསྡུར་བ",
+    "noInsurance": "འགན་སྲུང་མེད",
+    "withInsurance": "འགན་སྲུང་དང་བཅས",
+    "discountPrograms": "ཆག་ཡངས་ལས་གཞི",
+    "perMonth": "ཟླ་རེ",
+    "perPill": "རིལ་བུ་རེ",
+    "quantity": "གྲངས་ཚད",
+    "priceVaries": "གོང་ཚད་ས་གནས་ལ་བརྟེན་ནས་འགྱུར",
+    "lastUpdated": "གསར་བཅོས་མཇུག"
+  },
+  "accessibility": {
+    "settings": "འཕྲོད་སྤྱོད་སྒྲིག་འགོད",
+    "largeText": "ཡིག་འབྲུ་ཆེན་པོ",
+    "highContrast": "མཐོང་ཆེན",
+    "screenReader": "བརྙན་ཤེལ་ཀློག་འཕྲུལ་ལ་བཟོས",
+    "skipToMain": "གཙོ་གནད་དོན་ལ་མཆོང"
+  },
+  "common": {
+    "loading": "སྣོན་བཞིན...",
+    "error": "ནོར་འཁྲུལ་བྱུང",
+    "tryAgain": "ཡང་བསྐྱར་ཚོད་ལྟ",
+    "back": "ཕྱིར",
+    "next": "རྗེས་མ",
+    "close": "སྒོ་རྒྱག",
+    "save": "ཉར",
+    "cancel": "ཕྱིར་འཐེན",
+    "learnMore": "ཁ་གསལ་ཤེས",
+    "viewAll": "ཚང་མ་ལྟ",
+    "noData": "གཞི་གྲངས་མེད"
+  },
+  "footer": {
+    "about": "PublicRx སྐོར",
+    "aboutText": "གོང་ཚད་དམའ་བའི་སྨན་འཚོལ་རོགས་བྱེད་པའི་རིན་མེད་མི་མང་ཐོན་ཁུངས།",
+    "disclaimer": "བསྟན་པའི་གོང་ཚད་ནི་ཚོད་དཔག་རེད། སྨན་ཁང་ལ་ངེས་གཏན་གནང།",
+    "privacy": "གསང་དོན་སྲིད་བྱུས",
+    "terms": "བཀོལ་སྤྱོད་ཆ་རྐྱེན",
+    "contact": "འབྲེལ་གཏུག",
+    "language": "སྐད་ཡིག"
+  }
+}

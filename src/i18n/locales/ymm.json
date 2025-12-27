@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Hel Daawada Jaban ee Kuu Dhow"
+  },
+  "nav": {
+    "home": "Guriga",
+    "search": "Raadi Daawo",
+    "pharmacies": "Raadi Farmashiyaha",
+    "about": "Ku Saabsan"
+  },
+  "home": {
+    "title": "Hel Daawada Jaban",
+    "subtitle": "Is bar bar dhig qiimaha, hel farmashiyaha kuu dhow, oo kaydi lacagta dawadaada",
+    "searchPlaceholder": "Ku qor magaca dawada...",
+    "searchButton": "Raadi",
+    "popularSearches": "Raadinta Caanka ah",
+    "recentSearches": "Raadintii Dhowaa"
+  },
+  "search": {
+    "results": "Natiijooyinka Raadinta",
+    "resultsFor": "Natiijooyinka",
+    "noResults": "Daawo lama helin",
+    "tryDifferent": "Isku day erey kale",
+    "loading": "Waa la raadiyaa...",
+    "filters": "Shaandhaynta",
+    "sortBy": "U kala sooc",
+    "priceLowest": "Qiimaha: Hoose ilaa Sare",
+    "priceHighest": "Qiimaha: Sare ilaa Hoose",
+    "nameAZ": "Magaca: A ilaa Z"
+  },
+  "drug": {
+    "genericName": "Magaca Guud",
+    "brandName": "Magaca Brand-ka",
+    "manufacturer": "Soo saaraha",
+    "description": "Sharaxaad",
+    "commonUses": "Isticmaalka Caadiga",
+    "sideEffects": "Waxyeelada",
+    "prices": "Qiimaha",
+    "cashPrice": "Qiimaha Lacagta",
+    "withInsurance": "Caymis la socda",
+    "withCoupon": "Kuuban la socda",
+    "genericAlternative": "Bedel Guud ayaa jira",
+    "savings": "Waad kaydin kartaa",
+    "assistancePrograms": "Barnaamijka Caawinta Bukaanka",
+    "findPharmacy": "Raadi Farmashiye"
+  },
+  "pharmacy": {
+    "title": "Raadi Farmashiyaha Kuu Dhow",
+    "subtitle": "Hel farmashiyaha qiimaha fiican",
+    "useLocation": "Isticmaal Goobta Aan Joogo",
+    "enterZip": "Ama geli koodhka boostada",
+    "search": "Raadi",
+    "filters": {
+      "all": "Dhamaan",
+      "open24": "Furan 24 Saac",
+      "delivery": "Gaadiid",
+      "driveThru": "Drive-Thru"
+    },
+    "distance": "mayl",
+    "hours": "Saacadaha",
+    "phone": "Telefoon",
+    "getDirections": "Hel Jiho",
+    "viewPrices": "Arag Qiimaha"
+  },
+  "prices": {
+    "title": "Is Bar Bar Dhigga Qiimaha",
+    "noInsurance": "Caymis la'aan",
+    "withInsurance": "Caymis la socda",
+    "discountPrograms": "Barnaamijka Dhimista",
+    "perMonth": "bil kasta",
+    "perPill": "kiniini kasta",
+    "quantity": "Tirada",
+    "priceVaries": "Qiimaha wuu kala duwan yahay",
+    "lastUpdated": "Cusbooneysiintii ugu dambaysay"
+  },
+  "accessibility": {
+    "settings": "Dejinta",
+    "largeText": "Qoraal Weyn",
+    "highContrast": "Midab Dhexdhexaad",
+    "screenReader": "Screen Reader",
+    "skipToMain": "U bood qoraalka"
+  },
+  "common": {
+    "loading": "Waa la soo raraa...",
+    "error": "Khalad ayaa dhacay",
+    "tryAgain": "Isku Day Mar Kale",
+    "back": "Dib u noqo",
+    "next": "Xiga",
+    "close": "Xir",
+    "save": "Kaydi",
+    "cancel": "Jooji",
+    "learnMore": "Baro Wax Badan",
+    "viewAll": "Arag Dhamaan",
+    "noData": "Xog ma jirto"
+  },
+  "footer": {
+    "about": "Ku Saabsan PublicRx",
+    "aboutText": "Ilo bilaash ah oo kaa caawisa inaad hesho daawo jaban.",
+    "disclaimer": "Qiimaha la muujiyay waa qiyaas. Xaqiiji farmashiyahaaga.",
+    "privacy": "Siyaasadda Sirta",
+    "terms": "Shuruudaha",
+    "contact": "Nala Soo Xiriir",
+    "language": "Luuqadda"
+  }
+}
