@@ -30,6 +30,9 @@ export const languages = [
   { code: 'ht', name: 'Kreyòl Ayisyen', dir: 'ltr' },
 ] as const;
 
+// Supported language codes for matching
+const supportedLngs = ['en', 'es', 'zh', 'tl', 'vi', 'ar', 'ko', 'ru', 'fr', 'hi', 'pt', 'ht'];
+
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
@@ -48,13 +51,19 @@ i18n
       pt: { translation: pt },
       ht: { translation: ht },
     },
+    supportedLngs,
     fallbackLng: 'en',
+    // Handle language codes like 'en-US' -> 'en', 'zh-CN' -> 'zh'
+    load: 'languageOnly',
     interpolation: {
       escapeValue: false,
     },
     detection: {
-      order: ['localStorage', 'navigator'],
+      // Order of detection: saved preference first, then browser language
+      order: ['localStorage', 'navigator', 'htmlTag'],
       caches: ['localStorage'],
+      // Look for language in these navigator properties
+      lookupLocalStorage: 'i18nextLng',
     },
   });
 
