@@ -6,7 +6,7 @@ import type { DrugFullDetails } from '../services/drugSearch';
 import { getPriceForDrug } from '../services/pricing';
 import type { DrugPrice } from '../services/pricing';
 import { getPharmacySearchLinks, getTrustedDrugInfoLinks } from '../utils/pharmacyLinks';
-import { getDrugLabel, getDailyMedSearchUrl, type DrugLabelInfo } from '../services/drugImages';
+import { getDrugLabel, type DrugLabelInfo } from '../services/drugImages';
 import { PillImages } from '../components/drug/PillImages';
 import { PriceTable } from '../components/search/PriceTable';
 import { Button } from '../components/ui/Button';

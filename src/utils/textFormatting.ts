@@ -206,3 +206,56 @@ export function cleanText(str: string): string {
     // Remove leading/trailing whitespace
     .trim();
 }
+
+/**
+ * Clean FDA label text from OpenFDA API
+ * Removes common artifacts like numbered references, section markers, etc.
+ */
+export function cleanFDAText(str: string): string {
+  if (!str) return '';
+
+  let result = str
+    // Remove numbered list markers like "1 )", "7 )]", "1)]", "( 5", etc.
+    .replace(/\d+\s*\)\]?/g, '')
+    .replace(/\(\s*\d+\s*\)?/g, '')
+    // Remove section references like "[see Warnings and Precautions (5.1)]"
+    .replace(/\[see\s+[^\]]*\]/gi, '')
+    .replace(/\(see\s+[^)]*\)/gi, '')
+    // Remove section headers like "6 ADVERSE REACTIONS"
+    .replace(/^\d+\.?\d*\s+[A-Z][A-Z\s]+(?=[A-Z][a-z])/gm, '')
+    // Remove standalone section numbers
+    .replace(/\(\s*\d+\.\d+\s*\)/g, '')
+    // Remove bullet markers
+    .replace(/^[•·▪▸►]\s*/gm, '')
+    // Remove "greater than" symbols used as bullets
+    .replace(/^>\s*/gm, '')
+    // Clean up multiple spaces
+    .replace(/\s+/g, ' ')
+    // Clean up orphaned brackets and parentheses
+    .replace(/\[\s*\]/g, '')
+    .replace(/\(\s*\)/g, '')
+    // Remove leading/trailing punctuation artifacts
+    .replace(/^[,;:\s]+/, '')
+    .replace(/[,;:\s]+$/, '')
+    .trim();
+
+  // Capitalize first letter if needed
+  if (result && /^[a-z]/.test(result)) {
+    result = result.charAt(0).toUpperCase() + result.slice(1);
+  }
+
+  return result;
+}
+
+/**
+ * Clean and format a list of FDA text items
+ */
+export function cleanFDAList(items: string[]): string[] {
+  if (!items || !Array.isArray(items)) return [];
+
+  return items
+    .map(item => cleanFDAText(item))
+    .filter(item => item.length > 10) // Filter out very short/empty items
+    .filter(item => !/^[\d\s.()[\]]+$/.test(item)) // Filter items that are just numbers/punctuation
+    .slice(0, 10); // Limit to reasonable number
+}

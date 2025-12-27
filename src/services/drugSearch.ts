@@ -1,5 +1,5 @@
 import { supabase, type DrugDetail } from '../lib/supabase';
-import { formatDrugName, formatSentence, toTitleCase } from '../utils/textFormatting';
+import { formatDrugName, formatSentence, toTitleCase, cleanFDAText, cleanFDAList } from '../utils/textFormatting';
 
 const OPENFDA_BASE_URL = 'https://api.fda.gov/drug';
 
@@ -167,8 +167,7 @@ async function searchSupabase(query: string, limit = 20): Promise<DrugSearchResu
 
 // Helper to parse OpenFDA results
 function parseOpenFDAResults(results: Record<string, unknown>[]): DrugSearchResult[] {
-  return results
-    .map((result: Record<string, unknown>) => {
+  const parsed = results.map((result: Record<string, unknown>) => {
       const openfda = result.openfda as Record<string, string[]> | undefined;
       const brandNameRaw = openfda?.brand_name?.[0] ||
                 (result.brand_name as string[])?.[0] ||
@@ -187,17 +186,21 @@ function parseOpenFDAResults(results: Record<string, unknown>[]): DrugSearchResu
       const drugId = openfda?.spl_id?.[0] || (result.set_id as string);
       if (!drugId) return null;
 
+      // Clean the purpose text from FDA formatting artifacts
+      const cleanPurpose = cleanFDAText(purposeRaw);
+
       return {
         id: drugId,
         brandName: formatDrugName(brandNameRaw),
         genericName: formatDrugName(genericNameRaw),
         manufacturer: toTitleCase(manufacturerRaw),
-        purpose: purposeRaw ? formatSentence(purposeRaw) : `Generic: ${formatDrugName(genericNameRaw)}`,
+        purpose: cleanPurpose || `Generic: ${formatDrugName(genericNameRaw)}`,
         ndcCodes: openfda?.product_ndc || [],
         source: 'openfda' as const,
       };
-    })
-    .filter((r): r is DrugSearchResult => r !== null);
+    });
+
+  return parsed.filter((r): r is NonNullable<typeof r> => r !== null) as DrugSearchResult[];
 }
 
 // Search OpenFDA with multiple strategies
@@ -414,43 +417,63 @@ export async function getFullDrugDetails(id: string): Promise<DrugFullDetails | 
           const result = responseData.results[0];
           const openfda = result.openfda || {};
 
-          // Extract warnings from various fields
-          const warnings: string[] = [];
-          if (result.boxed_warning) warnings.push(...(Array.isArray(result.boxed_warning) ? result.boxed_warning : [result.boxed_warning]));
-          if (result.warnings) warnings.push(...(Array.isArray(result.warnings) ? result.warnings : [result.warnings]));
+          // Helper to safely get array
+          const toArray = (val: unknown): string[] => {
+            if (!val) return [];
+            if (Array.isArray(val)) return val;
+            return [String(val)];
+          };
 
-          // Extract uses/indications
-          const uses: string[] = [];
-          if (result.indications_and_usage) uses.push(...(Array.isArray(result.indications_and_usage) ? result.indications_and_usage : [result.indications_and_usage]));
-          if (result.purpose) uses.push(...(Array.isArray(result.purpose) ? result.purpose : [result.purpose]));
+          // Extract and clean warnings from various fields
+          const rawWarnings = [
+            ...toArray(result.boxed_warning),
+            ...toArray(result.warnings),
+          ];
+          const warnings = cleanFDAList(rawWarnings);
 
-          // Extract side effects
-          const sideEffectsRaw = result.adverse_reactions || result.warnings_and_cautions || [];
-          const sideEffectsArr = Array.isArray(sideEffectsRaw) ? sideEffectsRaw : [sideEffectsRaw];
+          // Extract and clean uses/indications
+          const rawUses = [
+            ...toArray(result.indications_and_usage),
+            ...toArray(result.purpose),
+          ];
+          const uses = cleanFDAList(rawUses);
 
-          // Extract before taking info
-          const beforeTaking: string[] = [];
-          if (result.contraindications) beforeTaking.push(...(Array.isArray(result.contraindications) ? result.contraindications : [result.contraindications]));
-          if (result.do_not_use) beforeTaking.push(...(Array.isArray(result.do_not_use) ? result.do_not_use : [result.do_not_use]));
+          // Extract and clean side effects
+          const rawSideEffects = [
+            ...toArray(result.adverse_reactions),
+            ...toArray(result.warnings_and_cautions),
+          ];
+          const sideEffects = cleanFDAList(rawSideEffects);
+
+          // Extract and clean before taking info
+          const rawBeforeTaking = [
+            ...toArray(result.contraindications),
+            ...toArray(result.do_not_use),
+          ];
+          const beforeTaking = cleanFDAList(rawBeforeTaking);
+
+          // Clean purpose/description
+          const purposeRaw = result.purpose?.[0] || result.indications_and_usage?.[0] || '';
+          const purpose = cleanFDAText(purposeRaw.substring(0, 500));
 
           return {
             id: openfda.spl_id?.[0] || id,
             brandName: formatDrugName(openfda.brand_name?.[0] || result.brand_name?.[0] || 'Unknown'),
             genericName: formatDrugName(openfda.generic_name?.[0] || result.generic_name?.[0] || 'Unknown'),
             manufacturer: toTitleCase(openfda.manufacturer_name?.[0] || ''),
-            purpose: result.purpose?.[0] || result.indications_and_usage?.[0]?.substring(0, 300) || '',
+            purpose,
             ndcCodes: openfda.product_ndc || [],
             source: 'openfda',
-            drugClass: openfda.pharm_class_epc?.[0] || null,
+            drugClass: cleanFDAText(openfda.pharm_class_epc?.[0] || ''),
             uses: uses.slice(0, 5),
             warnings: warnings.slice(0, 5),
             beforeTaking: beforeTaking.slice(0, 5),
             sideEffects: {
               emergency: [],
-              common: sideEffectsArr.slice(0, 3),
+              common: sideEffects.slice(0, 5),
             },
-            dosageNotes: result.dosage_and_administration?.[0] || null,
-            interactionsNote: result.drug_interactions?.[0] || null,
+            dosageNotes: cleanFDAText(result.dosage_and_administration?.[0] || ''),
+            interactionsNote: cleanFDAText(result.drug_interactions?.[0] || ''),
             availability: openfda.product_type?.[0] === 'OTC' ? 'OTC' : 'Prescription',
             controlledSubstance: null,
           };
@@ -480,26 +503,27 @@ export async function getFullDrugDetails(id: string): Promise<DrugFullDetails | 
 
   const drug = data as DrugDetail & { medications?: { name: string; generic_name: string; quantity: number; unit: string } };
   const genericName = drug.generic_name || drug.medications?.generic_name || drug.drug_name;
-  const description = drug.description || drug.uses?.[0];
+  const descriptionRaw = drug.description || drug.uses?.[0];
 
+  // Clean all FDA text artifacts from Supabase data
   return {
     id: drug.id,
-    brandName: drug.drug_name,
-    genericName,
-    manufacturer: drug.drug_class || '',
-    purpose: description || `Generic: ${genericName}`,
+    brandName: formatDrugName(drug.drug_name),
+    genericName: formatDrugName(genericName),
+    manufacturer: drug.drug_class ? toTitleCase(drug.drug_class) : '',
+    purpose: descriptionRaw ? cleanFDAText(descriptionRaw) : `Generic: ${formatDrugName(genericName)}`,
     ndcCodes: [],
     source: 'supabase',
-    drugClass: drug.drug_class,
-    uses: drug.uses || [],
-    warnings: drug.warnings || [],
-    beforeTaking: drug.before_taking || [],
+    drugClass: drug.drug_class ? cleanFDAText(drug.drug_class) : null,
+    uses: cleanFDAList(drug.uses || []),
+    warnings: cleanFDAList(drug.warnings || []),
+    beforeTaking: cleanFDAList(drug.before_taking || []),
     sideEffects: {
-      emergency: drug.side_effects_emergency || [],
-      common: drug.side_effects_common || [],
+      emergency: cleanFDAList(drug.side_effects_emergency || []),
+      common: cleanFDAList(drug.side_effects_common || []),
     },
-    dosageNotes: drug.dosage_notes,
-    interactionsNote: drug.interactions_note,
+    dosageNotes: drug.dosage_notes ? cleanFDAText(drug.dosage_notes) : null,
+    interactionsNote: drug.interactions_note ? cleanFDAText(drug.interactions_note) : null,
     availability: drug.availability,
     controlledSubstance: drug.controlled_substance,
   };
