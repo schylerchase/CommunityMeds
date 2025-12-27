@@ -21,6 +21,12 @@ import bo from './locales/bo.json';
 import kar from './locales/kar.json';
 import ymm from './locales/ymm.json';
 import he from './locales/he.json';
+import prs from './locales/prs.json';
+import my from './locales/my.json';
+import uk from './locales/uk.json';
+import ln from './locales/ln.json';
+import ptBR from './locales/pt-BR.json';
+import sm from './locales/sm.json';
 
 export const languages = [
   { code: 'en', name: 'English', dir: 'ltr' },
@@ -42,10 +48,16 @@ export const languages = [
   { code: 'kar', name: 'ကညီ', dir: 'ltr' },
   { code: 'ymm', name: 'Maay Maay', dir: 'ltr' },
   { code: 'he', name: 'עברית', dir: 'rtl' },
+  { code: 'prs', name: 'دری', dir: 'rtl' },
+  { code: 'my', name: 'မြန်မာ', dir: 'ltr' },
+  { code: 'uk', name: 'Українська', dir: 'ltr' },
+  { code: 'ln', name: 'Lingala', dir: 'ltr' },
+  { code: 'pt-BR', name: 'Português (Brasil)', dir: 'ltr' },
+  { code: 'sm', name: 'Gagana Samoa', dir: 'ltr' },
 ] as const;
 
 // Supported language codes for matching
-const supportedLngs = ['en', 'es', 'zh', 'tl', 'vi', 'ar', 'ko', 'ru', 'fr', 'hi', 'pt', 'ht', 'ne', 'sw', 'so', 'bo', 'kar', 'ymm', 'he'];
+const supportedLngs = ['en', 'es', 'zh', 'tl', 'vi', 'ar', 'ko', 'ru', 'fr', 'hi', 'pt', 'ht', 'ne', 'sw', 'so', 'bo', 'kar', 'ymm', 'he', 'prs', 'my', 'uk', 'ln', 'pt-BR', 'sm'];
 
 i18n
   .use(LanguageDetector)
@@ -71,6 +83,12 @@ i18n
       kar: { translation: kar },
       ymm: { translation: ymm },
       he: { translation: he },
+      prs: { translation: prs },
+      my: { translation: my },
+      uk: { translation: uk },
+      ln: { translation: ln },
+      'pt-BR': { translation: ptBR },
+      sm: { translation: sm },
     },
     supportedLngs,
     fallbackLng: 'en',

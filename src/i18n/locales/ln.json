@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Zwa nkisi ya ntalo moke pene na yo"
+  },
+  "nav": {
+    "home": "Ndako",
+    "search": "Luka Nkisi",
+    "pharmacies": "Luka Farmasi",
+    "about": "Mpo na"
+  },
+  "home": {
+    "title": "Zwa Nkisi ya Ntalo Moke",
+    "subtitle": "Bokeseni ntalo, zwa farmasi pene na yo, mpe bomba mbongo na mankisi na yo",
+    "searchPlaceholder": "Koma nkombo ya nkisi...",
+    "searchButton": "Luka",
+    "popularSearches": "Boluki oyo bato balingaka",
+    "recentSearches": "Boluki ya sika"
+  },
+  "search": {
+    "results": "Mbano ya Boluki",
+    "resultsFor": "Mbano mpo na",
+    "noResults": "Nkisi ezwami te",
+    "tryDifferent": "Meka liloba mosusu",
+    "loading": "Koluka mankisi...",
+    "filters": "Filtre",
+    "sortBy": "Bongisa na",
+    "priceLowest": "Ntalo: Moke tii Mingi",
+    "priceHighest": "Ntalo: Mingi tii Moke",
+    "nameAZ": "Nkombo: A tii Z"
+  },
+  "drug": {
+    "genericName": "Nkombo ya Kawaida",
+    "brandName": "Nkombo ya Marki",
+    "manufacturer": "Mosali",
+    "description": "Ndimbola",
+    "commonUses": "Bosaleli ya Kawaida",
+    "sideEffects": "Makambo mabe",
+    "prices": "Ntalo",
+    "cashPrice": "Ntalo ya Mbongo",
+    "withInsurance": "Na Asiransi",
+    "withCoupon": "Na Kuponi",
+    "genericAlternative": "Ebongiseli ya Kawaida ezali",
+    "savings": "Okoki kobomba",
+    "assistancePrograms": "Programu ya Lisungi ya Bakoni",
+    "findPharmacy": "Luka Farmasi"
+  },
+  "pharmacy": {
+    "title": "Zwa Farmasi Pene",
+    "subtitle": "Zwa farmasi na ntalo malamu pene na yo",
+    "useLocation": "Salela Esika na Ngai",
+    "enterZip": "To koma kodi ya posta",
+    "search": "Luka",
+    "filters": {
+      "all": "Nyonso",
+      "open24": "Efungwami Ngonga 24",
+      "delivery": "Bokabi Ezali",
+      "driveThru": "Drive-Thru"
+    },
+    "distance": "kilomɛtrɛ",
+    "hours": "Ngonga",
+    "phone": "Telefone",
+    "getDirections": "Zwa Nzela",
+    "viewPrices": "Tala Ntalo"
+  },
+  "prices": {
+    "title": "Bokeseni ya Ntalo",
+    "noInsurance": "Asiransi Te",
+    "withInsurance": "Na Asiransi",
+    "discountPrograms": "Programu ya Kitoko",
+    "perMonth": "na sanza",
+    "perPill": "na pilili",
+    "quantity": "Motango",
+    "priceVaries": "Ntalo ekoki kobongwana na esika",
+    "lastUpdated": "Mbongwana ya suka"
+  },
+  "accessibility": {
+    "settings": "Mibeko ya Bozwi",
+    "largeText": "Makomi Manene",
+    "highContrast": "Bokeseni Makasi",
+    "screenReader": "Ebongisami mpo na Screen Reader",
+    "skipToMain": "Kende na makambo ya ntina"
+  },
+  "common": {
+    "loading": "Ezali kotia...",
+    "error": "Libunga esalemi",
+    "tryAgain": "Meka Lisusu",
+    "back": "Zonga",
+    "next": "Elandi",
+    "close": "Kanga",
+    "save": "Bomba",
+    "cancel": "Longola",
+    "learnMore": "Yekola Mingi",
+    "viewAll": "Tala Nyonso",
+    "noData": "Makambo ezali te"
+  },
+  "footer": {
+    "about": "Mpo na PublicRx",
+    "aboutText": "Esaleli ya bato nyonso ya ofele mpo na kosalisa yo kozwa nkisi ya ntalo moke.",
+    "disclaimer": "Ntalo oyo emonisami ezali makanisi. Tango nyonso talisa na farmasi na yo.",
+    "privacy": "Politiki ya Bosekre",
+    "terms": "Mibeko ya Kosalela",
+    "contact": "Benga Biso",
+    "language": "Monoko"
+  }
+}

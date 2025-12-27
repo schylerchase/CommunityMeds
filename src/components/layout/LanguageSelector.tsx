@@ -75,7 +75,7 @@ export function LanguageSelector() {
         <ul
           role="listbox"
           aria-label="Select language"
-          className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-1 z-50"
+          className="absolute right-0 mt-2 w-40 sm:w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-1 z-50 max-h-64 overflow-y-auto"
         >
           {languages.map((lang) => (
             <li key={lang.code}>
@@ -83,7 +83,7 @@ export function LanguageSelector() {
                 role="option"
                 aria-selected={lang.code === i18n.language}
                 onClick={() => handleLanguageChange(lang.code)}
-                className={`w-full text-left px-4 py-3 text-sm transition-colors touch-target ${
+                className={`w-full text-left px-3 py-2 text-sm transition-colors ${
                   lang.code === i18n.language
                     ? 'bg-blue-50 text-blue-600 font-medium'
                     : 'text-gray-700 hover:bg-gray-50'

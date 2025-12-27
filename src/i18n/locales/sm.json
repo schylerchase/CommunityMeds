@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Su'e Vailaʻau Taugofie i Ou Autafa"
+  },
+  "nav": {
+    "home": "Amataga",
+    "search": "Suʻe Vailaʻau",
+    "pharmacies": "Suʻe Faleʻoloa Vailaʻau",
+    "about": "Faʻamatalaga"
+  },
+  "home": {
+    "title": "Suʻe Vailaʻau Taugofie",
+    "subtitle": "Faʻatusatusa tau, suʻe faleʻoloa vailaʻau i ou autafa, ma sefe tupe i au vailaʻau",
+    "searchPlaceholder": "Tusi le igoa o le vailaʻau...",
+    "searchButton": "Suʻe",
+    "popularSearches": "Suʻega Taʻutaʻua",
+    "recentSearches": "Suʻega Talu Ai Nei"
+  },
+  "search": {
+    "results": "Iʻuga o le Suʻega",
+    "resultsFor": "Iʻuga mo",
+    "noResults": "E leai ni vailaʻau na maua",
+    "tryDifferent": "Taumata se upu suʻe ese",
+    "loading": "O loʻo suʻeina vailaʻau...",
+    "filters": "Faʻamama",
+    "sortBy": "Faʻavasega e",
+    "priceLowest": "Tau: Maualalo i Maualuga",
+    "priceHighest": "Tau: Maualuga i Maualalo",
+    "nameAZ": "Igoa: A i Z"
+  },
+  "drug": {
+    "genericName": "Igoa Masani",
+    "brandName": "Igoa o le Ituaiga",
+    "manufacturer": "Gaosiga",
+    "description": "Faʻamatalaga",
+    "commonUses": "Faʻaaogaina Masani",
+    "sideEffects": "Aafiaga",
+    "prices": "Tau",
+    "cashPrice": "Tau Tupe",
+    "withInsurance": "Ma le Inisiua",
+    "withCoupon": "Ma le Kuponi",
+    "genericAlternative": "E Maua le Filifiliga Masani",
+    "savings": "E mafai ona e sefe",
+    "assistancePrograms": "Polokalame Fesoasoani mo Tagata Mamaʻi",
+    "findPharmacy": "Suʻe Faleʻoloa Vailaʻau"
+  },
+  "pharmacy": {
+    "title": "Suʻe Faleʻoloa Vailaʻau i Autafa",
+    "subtitle": "Suʻe faleʻoloa vailaʻau e sili ona lelei tau i ou autafa",
+    "useLocation": "Faʻaaoga Loʻu Nofoaga",
+    "enterZip": "Poʻo tusi le numera o le pusa meli",
+    "search": "Suʻe",
+    "filters": {
+      "all": "Uma",
+      "open24": "Tatala 24 Itula",
+      "delivery": "E Maua le Tuʻuina atu",
+      "driveThru": "Drive-Thru"
+    },
+    "distance": "maila",
+    "hours": "Itula",
+    "phone": "Telefoni",
+    "getDirections": "Maua Faʻatonuga",
+    "viewPrices": "Vaʻai Tau"
+  },
+  "prices": {
+    "title": "Faʻatusatusaga o Tau",
+    "noInsurance": "E Leai se Inisiua",
+    "withInsurance": "Ma le Inisiua",
+    "discountPrograms": "Polokalame Faʻaitiitiga",
+    "perMonth": "i le masina",
+    "perPill": "i le fualaʻau",
+    "quantity": "Aofaʻi",
+    "priceVaries": "E eseese tau e faʻatatau i le nofoaga",
+    "lastUpdated": "Faʻafouga mulimuli"
+  },
+  "accessibility": {
+    "settings": "Seti o le Avanoa",
+    "largeText": "Tusitusiga Tele",
+    "highContrast": "Eseesega Maualuga",
+    "screenReader": "Faʻaleleia mo le Faitau Lau",
+    "skipToMain": "Oso i le anotusi autu"
+  },
+  "common": {
+    "loading": "O loʻo utaina...",
+    "error": "Na tupu se mea sese",
+    "tryAgain": "Toe Taumata",
+    "back": "Toe Foʻi",
+    "next": "Sosoo",
+    "close": "Tapuni",
+    "save": "Sefe",
+    "cancel": "Faʻaleaoga",
+    "learnMore": "Aʻoaʻo Atili",
+    "viewAll": "Vaʻai Uma",
+    "noData": "E leai ni faʻamaumauga"
+  },
+  "footer": {
+    "about": "Faʻamatalaga o le PublicRx",
+    "aboutText": "O se punaoa fua mo tagata lautele e fesoasoani ia te oe e suʻe vailaʻau taugofie.",
+    "disclaimer": "O tau o loʻo faʻaalia o ni faʻatatauina. Faʻamaonia pea i lau faleʻoloa vailaʻau.",
+    "privacy": "Tulafono o le Faʻalilolilo",
+    "terms": "Tulaga o le Faʻaaogaina",
+    "contact": "Faʻafesoʻotaʻi Matou",
+    "language": "Gagana"
+  }
+}
