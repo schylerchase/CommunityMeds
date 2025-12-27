@@ -14,15 +14,17 @@ const PharmacyLocationsMap = lazy(() =>
   }))
 );
 
-// Brand filter options
-const BRAND_FILTERS = [
-  'All',
+// Brand filter options - dynamically populated based on results
+const MAJOR_BRANDS = [
   'CVS',
   'Walgreens',
   'Walmart',
   'Costco',
   'Rite Aid',
   'Kroger',
+  'Kinney Drugs',
+  'Hannaford',
+  'Shaws',
   'Independent',
 ];
 
@@ -235,9 +237,13 @@ export function PharmacyFinder() {
       {/* View Toggle & Filters - Show when we have results */}
       {searched && !loading && !geoLoading && locations.length > 0 && (
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
-          {/* Brand Filter */}
+          {/* Brand Filter - show only brands present in results */}
           <div className="flex flex-wrap gap-2">
-            {BRAND_FILTERS.map((brand) => (
+            {['All', ...MAJOR_BRANDS.filter(b =>
+              b === 'Independent'
+                ? locations.some(loc => loc.brand === 'Independent')
+                : locations.some(loc => loc.brand === b)
+            )].map((brand) => (
               <button
                 key={brand}
                 onClick={() => setBrandFilter(brand)}

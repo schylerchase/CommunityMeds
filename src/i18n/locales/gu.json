@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "તમારી નજીક સસ્તી દવાઓ શોધો"
+  },
+  "nav": {
+    "home": "ઘર",
+    "search": "દવાઓ શોધો",
+    "pharmacies": "ફાર્મસીઓ શોધો",
+    "about": "વિશે"
+  },
+  "home": {
+    "title": "સસ્તું દવાઓ શોધો",
+    "subtitle": "કિંમતોની સરખામણી કરો, નજીકની ફાર્મસીઓ શોધો અને તમારા પ્રિસ્ક્રિપ્શન પર બચત કરો",
+    "searchPlaceholder": "દવાનું નામ દાખલ કરો...",
+    "searchButton": "શોધો",
+    "popularSearches": "લોકપ્રિય શોધ",
+    "recentSearches": "તાજેતરની શોધો"
+  },
+  "search": {
+    "results": "શોધ પરિણામો",
+    "resultsFor": "માટે પરિણામો",
+    "noResults": "કોઈ દવાઓ મળી નથી",
+    "tryDifferent": "એક અલગ શોધ શબ્દનો પ્રયાસ કરો",
+    "loading": "દવાઓ શોધી રહ્યાં છીએ...",
+    "filters": "ફિલ્ટર્સ",
+    "sortBy": "દ્વારા સૉર્ટ કરો",
+    "priceLowest": "કિંમત: નીચા થી ઉચ્ચ",
+    "priceHighest": "કિંમત: ઉચ્ચ થી નીચી",
+    "nameAZ": "નામ: A થી Z"
+  },
+  "drug": {
+    "genericName": "સામાન્ય નામ",
+    "brandName": "બ્રાન્ડ નામ",
+    "manufacturer": "ઉત્પાદક",
+    "description": "વર્ણન",
+    "commonUses": "સામાન્ય ઉપયોગો",
+    "sideEffects": "આડ અસરો",
+    "prices": "કિંમતો",
+    "cashPrice": "રોકડ કિંમત",
+    "withInsurance": "વીમા સાથે",
+    "withCoupon": "કૂપન સાથે",
+    "genericAlternative": "સામાન્ય વૈકલ્પિક ઉપલબ્ધ",
+    "savings": "તમે બચાવી શક્યા",
+    "assistancePrograms": "દર્દી સહાયતા કાર્યક્રમો",
+    "findPharmacy": "ફાર્મસી શોધો"
+  },
+  "pharmacy": {
+    "title": "નજીકની ફાર્મસીઓ શોધો",
+    "subtitle": "શ્રેષ્ઠ કિંમતો સાથે તમારી નજીકની ફાર્મસીઓ શોધો",
+    "useLocation": "મારા સ્થાનનો ઉપયોગ કરો",
+    "enterZip": "અથવા પિન કોડ દાખલ કરો",
+    "search": "શોધો",
+    "filters": {
+      "all": "બધા",
+      "open24": "24 કલાક ખુલ્લું",
+      "delivery": "ડિલિવરી ઉપલબ્ધ છે",
+      "driveThru": "ડ્રાઇવ-થ્રુ"
+    },
+    "distance": "માઇલ દૂર",
+    "hours": "કલાક",
+    "phone": "ફોન",
+    "getDirections": "દિશાઓ મેળવો",
+    "viewPrices": "કિંમતો જુઓ"
+  },
+  "prices": {
+    "title": "કિંમત સરખામણી",
+    "noInsurance": "વીમા વિના",
+    "withInsurance": "વીમા સાથે",
+    "discountPrograms": "ડિસ્કાઉન્ટ કાર્યક્રમો",
+    "perMonth": "દર મહિને",
+    "perPill": "ગોળી દીઠ",
+    "quantity": "જથ્થો",
+    "priceVaries": "સ્થાન પ્રમાણે કિંમતો બદલાઈ શકે છે",
+    "lastUpdated": "છેલ્લે અપડેટ કર્યું"
+  },
+  "accessibility": {
+    "settings": "ઍક્સેસિબિલિટી સેટિંગ્સ",
+    "largeText": "મોટું લખાણ",
+    "highContrast": "ઉચ્ચ કોન્ટ્રાસ્ટ",
+    "screenReader": "સ્ક્રીન રીડર ઑપ્ટિમાઇઝ",
+    "skipToMain": "મુખ્ય સામગ્રી પર જાઓ"
+  },
+  "common": {
+    "loading": "લોડ કરી રહ્યું છે...",
+    "error": "એક ભૂલ આવી",
+    "tryAgain": "ફરી પ્રયાસ કરો",
+    "back": "પાછળ",
+    "next": "આગળ",
+    "close": "બંધ કરો",
+    "save": "સાચવો",
+    "cancel": "રદ કરો",
+    "learnMore": "વધુ જાણો",
+    "viewAll": "બધા જુઓ",
+    "noData": "કોઈ ડેટા ઉપલબ્ધ નથી"
+  },
+  "footer": {
+    "about": "PublicRx વિશે",
+    "aboutText": "તમને પોસાય તેવી દવાઓ શોધવામાં મદદ કરવા માટે મફત જાહેર સંસાધન.",
+    "disclaimer": "દર્શાવેલ કિંમતો અંદાજિત છે. હંમેશા તમારી ફાર્મસી સાથે ચકાસો.",
+    "privacy": "ગોપનીયતા નીતિ",
+    "terms": "ઉપયોગની શરતો",
+    "contact": "અમારો સંપર્ક કરો",
+    "language": "ભાષા"
+  }
+}

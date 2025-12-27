@@ -27,6 +27,20 @@ const PHARMACY_BRANDS = [
   { search: 'Kroger', brand: 'Kroger' },
   { search: 'Safeway', brand: 'Safeway' },
   { search: 'Publix', brand: 'Publix' },
+  { search: 'Kinney', brand: 'Kinney Drugs' },
+  { search: 'Hannaford', brand: 'Hannaford' },
+  { search: 'Shaws', brand: 'Shaws' },
+  { search: "Shaw's", brand: 'Shaws' },
+  { search: 'Market 32', brand: 'Price Chopper' },
+  { search: 'Price Chopper', brand: 'Price Chopper' },
+  { search: 'Target', brand: 'Target' },
+  { search: 'Wegmans', brand: 'Wegmans' },
+  { search: 'H-E-B', brand: 'H-E-B' },
+  { search: 'Albertsons', brand: 'Albertsons' },
+  { search: 'Winn-Dixie', brand: 'Winn-Dixie' },
+  { search: 'Giant', brand: 'Giant' },
+  { search: 'Stop & Shop', brand: 'Stop & Shop' },
+  { search: 'Meijer', brand: 'Meijer' },
 ];
 
 /**

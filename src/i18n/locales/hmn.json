@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Nrhiav cov tshuaj pheej yig nyob ze koj"
+  },
+  "nav": {
+    "home": "Tsev",
+    "search": "Nrhiav tshuaj",
+    "pharmacies": "Nrhiav cov khw muag tshuaj",
+    "about": "Txog"
+  },
+  "home": {
+    "title": "Nrhiav Cov Tshuaj Muaj Nqis",
+    "subtitle": "Sib piv cov nqi, nrhiav cov chaw muag tshuaj nyob ze, thiab txuag koj cov tshuaj",
+    "searchPlaceholder": "Sau npe tshuaj...",
+    "searchButton": "Nrhiav",
+    "popularSearches": "Nrov Nrhiav",
+    "recentSearches": "Nrhiav tsis ntev los no"
+  },
+  "search": {
+    "results": "Tshawb nrhiav",
+    "resultsFor": "Cov txiaj ntsig rau",
+    "noResults": "Tsis pom cov tshuaj",
+    "tryDifferent": "Sim lwm lo lus tshawb nrhiav",
+    "loading": "Nrhiav tshuaj...",
+    "filters": "Cov lim",
+    "sortBy": "Xaiv los ntawm",
+    "priceLowest": "Nqe: Tsawg rau Siab",
+    "priceHighest": "Nqe: Siab rau qis",
+    "nameAZ": "Lub npe: A rau Z"
+  },
+  "drug": {
+    "genericName": "Lub Npe",
+    "brandName": "Hom Lub Npe",
+    "manufacturer": "Chaw tsim tshuaj paus",
+    "description": "Kev piav qhia",
+    "commonUses": "Siv dav",
+    "sideEffects": "Cov teebmeem",
+    "prices": "Nqe",
+    "cashPrice": "Tus nqi nyiaj ntsuab",
+    "withInsurance": "Nrog Insurance",
+    "withCoupon": "Nrog Daim Coupon",
+    "genericAlternative": "Generic Alternative Muaj",
+    "savings": "Koj yuav txuag tau",
+    "assistancePrograms": "Cov Kev Pabcuam Neeg Mob",
+    "findPharmacy": "Nrhiav Pharmacy"
+  },
+  "pharmacy": {
+    "title": "Nrhiav cov chaw muag tshuaj nyob ze",
+    "subtitle": "Nrhiav cov khw muag tshuaj nyob ze koj nrog tus nqi zoo tshaj",
+    "useLocation": "Siv Kuv Qhov Chaw",
+    "enterZip": "Los yog sau ZIP code",
+    "search": "Nrhiav",
+    "filters": {
+      "all": "Tag nrho",
+      "open24": "Qhib 24 Teev",
+      "delivery": "Kev xa khoom muaj",
+      "driveThru": "Tsav-Thru"
+    },
+    "distance": "mais deb",
+    "hours": "Teev",
+    "phone": "Xov tooj",
+    "getDirections": "Tau txais cov lus qhia",
+    "viewPrices": "Saib Nqis"
+  },
+  "prices": {
+    "title": "Nqe sib piv",
+    "noInsurance": "Tsis Muaj Kev Pov Hwm",
+    "withInsurance": "Nrog Insurance",
+    "discountPrograms": "Cov kev pab cuam luv nqi",
+    "perMonth": "ib hlis",
+    "perPill": "rau ntsiav tshuaj",
+    "quantity": "Ntau",
+    "priceVaries": "Tus nqi yuav txawv ntawm qhov chaw",
+    "lastUpdated": "Hloov tshiab kawg"
+  },
+  "accessibility": {
+    "settings": "Accessibility Settings",
+    "largeText": "Cov ntawv loj",
+    "highContrast": "Siab zoo",
+    "screenReader": "Screen Reader Optimized",
+    "skipToMain": "Hla mus rau cov ntsiab lus tseem ceeb"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Ib qho yuam kev tshwm sim",
+    "tryAgain": "Sim dua",
+    "back": "Rov qab",
+    "next": "Tom ntej no",
+    "close": "Kaw",
+    "save": "Txuag",
+    "cancel": "Tso tseg",
+    "learnMore": "Kawm ntxiv",
+    "viewAll": "Saib tag nrho",
+    "noData": "Tsis muaj ntaub ntawv"
+  },
+  "footer": {
+    "about": "Txog PublicRx",
+    "aboutText": "Ib qho chaw pub dawb rau pej xeem los pab koj nrhiav cov tshuaj pheej yig.",
+    "disclaimer": "Cov nqi qhia yog kwv yees. Nco ntsoov xyuas nrog koj lub tsev muag tshuaj.",
+    "privacy": "Txoj Cai Tswjfwm Ntiag Tug",
+    "terms": "Cov ntsiab lus ntawm kev siv",
+    "contact": "Tiv tauj peb",
+    "language": "Lus"
+  }
+}

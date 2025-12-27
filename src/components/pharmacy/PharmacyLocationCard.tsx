@@ -14,6 +14,11 @@ export function PharmacyLocationCard({ location, onClick }: PharmacyLocationCard
     Costco: 'bg-red-100 text-red-800',
     'Rite Aid': 'bg-blue-100 text-blue-800',
     Kroger: 'bg-blue-100 text-blue-800',
+    'Kinney Drugs': 'bg-green-100 text-green-800',
+    Hannaford: 'bg-orange-100 text-orange-800',
+    Shaws: 'bg-purple-100 text-purple-800',
+    'Price Chopper': 'bg-green-100 text-green-800',
+    Target: 'bg-red-100 text-red-800',
     Independent: 'bg-gray-100 text-gray-800',
   };
 
@@ -43,33 +48,37 @@ export function PharmacyLocationCard({ location, onClick }: PharmacyLocationCard
         </div>
 
         {/* Address */}
-        {(location.address || location.city) && (
-          <div className="flex items-start gap-2 mb-2">
-            <svg
-              className="w-4 h-4 text-gray-400 mt-0.5 flex-shrink-0"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-              />
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-              />
-            </svg>
-            <div className="text-sm text-gray-600">
-              {location.address && <p>{location.address}</p>}
-              <p>{[location.city, location.state, location.zip].filter(Boolean).join(', ')}</p>
-            </div>
+        <div className="flex items-start gap-2 mb-2">
+          <svg
+            className="w-4 h-4 text-gray-400 mt-0.5 flex-shrink-0"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+            />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+            />
+          </svg>
+          <div className="text-sm text-gray-600">
+            {location.address || location.city ? (
+              <>
+                {location.address && <p>{location.address}</p>}
+                <p>{[location.city, location.state, location.zip].filter(Boolean).join(', ')}</p>
+              </>
+            ) : (
+              <p className="text-gray-400 italic">See map for location</p>
+            )}
           </div>
-        )}
+        </div>
 
         {/* Phone */}
         {location.phone && (
