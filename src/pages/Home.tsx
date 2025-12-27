@@ -116,7 +116,7 @@ const howItWorks = [
 const trustFeatures = [
   { icon: '100%', label: 'Free to Use', description: 'No fees, no hidden costs' },
   { icon: '65+', label: 'Medications', description: 'Common prescriptions covered' },
-  { icon: '6', label: 'Languages', description: 'Multilingual support' },
+  { icon: '12', label: 'Languages', description: 'Multilingual support' },
 ];
 
 const faqs = [
@@ -415,13 +415,13 @@ export function Home() {
       {/* Multilingual Support Banner */}
       <section className="py-12 bg-blue-600 text-white">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <h2 className="text-2xl font-bold mb-4">Available in 6 Languages</h2>
+          <h2 className="text-2xl font-bold mb-4">Available in 12 Languages</h2>
           <p className="text-blue-100 mb-6">
-            We support English, Spanish, Chinese, Tagalog, Vietnamese, and Arabic to serve our diverse communities.
+            We support 12 languages to serve our diverse communities and ensure everyone can access affordable medications.
           </p>
-          <div className="flex flex-wrap justify-center gap-3">
-            {['English', 'Espanol', '中文', 'Tagalog', 'Tieng Viet', 'العربية'].map((lang, index) => (
-              <span key={index} className="px-4 py-2 bg-white/10 rounded-full text-sm">
+          <div className="flex flex-wrap justify-center gap-2">
+            {['English', 'Español', '中文', 'Tagalog', 'Tiếng Việt', 'العربية', '한국어', 'Русский', 'Français', 'हिन्दी', 'Português', 'Kreyòl'].map((lang, index) => (
+              <span key={index} className="px-3 py-1.5 bg-white/10 rounded-full text-sm">
                 {lang}
               </span>
             ))}
