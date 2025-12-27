@@ -1,6 +1,6 @@
 {
   "app": {
-    "name": "CommunityMeds",
+    "name": "PublicRx",
     "tagline": "在您附近找到实惠的药物"
   },
   "nav": {
@@ -95,7 +95,7 @@
     "noData": "暂无数据"
   },
   "footer": {
-    "about": "关于CommunityMeds",
+    "about": "关于PublicRx",
     "aboutText": "一个免费的社区工具，帮助您找到实惠的药物。",
     "disclaimer": "显示的价格为估计值。请务必与药房核实。",
     "privacy": "隐私政策",

@@ -91,8 +91,8 @@ const trustFeatures = [
 
 const faqs = [
   {
-    question: 'Is CommunityMeds really free?',
-    answer: 'Yes! CommunityMeds is completely free to use. We do not charge any fees or require payment.',
+    question: 'Is PublicRx really free?',
+    answer: 'Yes! PublicRx is completely free to use. We do not charge any fees or require payment.',
   },
   {
     question: 'How accurate are the prices?',

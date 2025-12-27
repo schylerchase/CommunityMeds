@@ -1,6 +1,6 @@
 {
   "app": {
-    "name": "CommunityMeds",
+    "name": "PublicRx",
     "tagline": "Maghanap ng Abot-kayang Gamot Malapit sa Iyo"
   },
   "nav": {
@@ -95,7 +95,7 @@
     "noData": "Walang available na data"
   },
   "footer": {
-    "about": "Tungkol sa CommunityMeds",
+    "about": "Tungkol sa PublicRx",
     "aboutText": "Isang libreng tool ng komunidad upang matulungan kang makahanap ng abot-kayang gamot.",
     "disclaimer": "Ang mga presyong ipinapakita ay tantya lamang. Palaging i-verify sa iyong botika.",
     "privacy": "Patakaran sa Privacy",

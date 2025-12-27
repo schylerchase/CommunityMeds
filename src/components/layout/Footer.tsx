@@ -78,8 +78,8 @@ export function Footer() {
 
         <div className="mt-8 pt-6 border-t border-gray-200 text-center text-sm text-gray-500">
           <p>
-            &copy; {new Date().getFullYear()} CommunityMeds.
-            {' '}A free community resource.
+            &copy; {new Date().getFullYear()} PublicRx.
+            {' '}A free public resource.
           </p>
         </div>
       </div>

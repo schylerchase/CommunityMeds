@@ -1,6 +1,6 @@
 {
   "app": {
-    "name": "CommunityMeds",
+    "name": "PublicRx",
     "tagline": "Tìm Thuốc Giá Rẻ Gần Bạn"
   },
   "nav": {
@@ -95,7 +95,7 @@
     "noData": "Không có dữ liệu"
   },
   "footer": {
-    "about": "Về CommunityMeds",
+    "about": "Về PublicRx",
     "aboutText": "Công cụ cộng đồng miễn phí giúp bạn tìm thuốc giá rẻ.",
     "disclaimer": "Giá hiển thị chỉ là ước tính. Luôn xác nhận với nhà thuốc của bạn.",
     "privacy": "Chính Sách Bảo Mật",

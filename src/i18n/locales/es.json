@@ -1,6 +1,6 @@
 {
   "app": {
-    "name": "CommunityMeds",
+    "name": "PublicRx",
     "tagline": "Encuentre Medicamentos Accesibles Cerca de Usted"
   },
   "nav": {
@@ -95,7 +95,7 @@
     "noData": "No hay datos disponibles"
   },
   "footer": {
-    "about": "Acerca de CommunityMeds",
+    "about": "Acerca de PublicRx",
     "aboutText": "Una herramienta comunitaria gratuita para ayudarle a encontrar medicamentos accesibles.",
     "disclaimer": "Los precios mostrados son estimados. Siempre verifique con su farmacia.",
     "privacy": "Política de Privacidad",

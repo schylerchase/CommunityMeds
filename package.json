@@ -1,8 +1,8 @@
 {
-  "name": "communitymeds",
+  "name": "publicrx",
   "private": true,
   "version": "1.0.0",
-  "description": "A community-driven web app to help people find affordable medications",
+  "description": "A free public resource to help people find affordable medications",
   "type": "module",
   "scripts": {
     "dev": "vite",

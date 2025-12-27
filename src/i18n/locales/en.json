@@ -1,6 +1,6 @@
 {
   "app": {
-    "name": "CommunityMeds",
+    "name": "PublicRx",
     "tagline": "Find Affordable Medications Near You"
   },
   "nav": {
@@ -95,8 +95,8 @@
     "noData": "No data available"
   },
   "footer": {
-    "about": "About CommunityMeds",
-    "aboutText": "A free community tool to help you find affordable medications.",
+    "about": "About PublicRx",
+    "aboutText": "A free public resource to help you find affordable medications.",
     "disclaimer": "Prices shown are estimates. Always verify with your pharmacy.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Use",
