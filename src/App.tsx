@@ -6,9 +6,12 @@ import { SearchResults } from './pages/SearchResults';
 import { DrugDetails } from './pages/DrugDetails';
 import { PharmacyFinder } from './pages/PharmacyFinder';
 
+// Get base path for GitHub Pages
+const basename = import.meta.env.BASE_URL;
+
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <div className="min-h-screen flex flex-col bg-gray-50">
         <Header />
         <main id="main-content" className="flex-1">
