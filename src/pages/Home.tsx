@@ -138,6 +138,33 @@ const faqs = [
   },
 ];
 
+// Language phrases for background decoration
+const languagePhrases = [
+  'Affordable Medications', // English
+  'Medicamentos Asequibles', // Spanish
+  '可负担的药物', // Chinese
+  'Abot-kayang Gamot', // Tagalog
+  'Thuốc Giá Phải Chăng', // Vietnamese
+  'أدوية ميسورة التكلفة', // Arabic
+  '저렴한 약품', // Korean
+  'Доступные Лекарства', // Russian
+  'Médicaments Abordables', // French
+  'किफायती दवाइयाँ', // Hindi
+  'Medicamentos Acessíveis', // Portuguese
+  'Medikaman Abòdab', // Haitian Creole
+  'सस्तो औषधि', // Nepali
+  'Dawa za Bei Nafuu', // Swahili
+  'Daawooyin Qiimo Jaban', // Somali
+  'སྨན་གོང་ཆུང་།', // Tibetan
+  'ဆေးစျေးနှုန်းသင့်', // Karen
+  'Dawooyinka Qiimaha Jaban', // Maay
+  'תרופות במחירים סבירים', // Hebrew
+  'داروهای مقرون به صرفه', // Dari
+  'ဈေးနှုန်းသင့်ဆေးဝါး', // Burmese
+  'Доступні Ліки', // Ukrainian
+  'Nkisi ya Ntalo', // Lingala
+];
+
 export function Home() {
   const { t } = useTranslation();
   const [displayedDrugs, setDisplayedDrugs] = useState<string[]>(() =>
@@ -159,14 +186,31 @@ export function Home() {
   }, []);
 
   return (
-    <div className="flex flex-col bg-warm-50">
+    <div className="flex flex-col bg-stone-50">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary-500 via-primary-600 to-secondary-600 text-white overflow-hidden">
+      <section className="relative bg-gradient-to-br from-orange-500 via-orange-600 to-teal-600 text-white overflow-hidden">
+        {/* Language background decoration */}
+        <div className="absolute inset-0 overflow-hidden opacity-[0.08] select-none pointer-events-none" aria-hidden="true">
+          <div className="absolute inset-0 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 transform -rotate-12 scale-125">
+            {[...languagePhrases, ...languagePhrases, ...languagePhrases].map((phrase, index) => (
+              <span
+                key={index}
+                className="text-white text-lg sm:text-xl md:text-2xl font-bold whitespace-nowrap"
+                style={{
+                  animationDelay: `${index * 0.1}s`,
+                }}
+              >
+                {phrase}
+              </span>
+            ))}
+          </div>
+        </div>
+
         {/* Decorative blobs */}
         <div className="absolute top-0 left-0 w-96 h-96 bg-white/10 rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl"></div>
-        <div className="absolute bottom-0 right-0 w-80 h-80 bg-secondary-400/20 rounded-full translate-x-1/3 translate-y-1/3 blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-80 h-80 bg-teal-400/20 rounded-full translate-x-1/3 translate-y-1/3 blur-3xl"></div>
 
-        <div className="relative max-w-6xl mx-auto px-4 py-16 sm:py-24">
+        <div className="relative z-10 max-w-6xl mx-auto px-4 py-16 sm:py-24">
           <div className="text-center mb-10">
             <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-5 py-2.5 mb-6 shadow-lg">
               <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
@@ -174,7 +218,7 @@ export function Home() {
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight">
               Affordable Medications<br />
-              <span className="text-primary-200">for Everyone</span>
+              <span className="text-orange-200">for Everyone</span>
             </h1>
             <p className="text-xl sm:text-2xl text-white/90 max-w-3xl mx-auto mb-8">
               Compare prices from pharmacies, insurance plans, and discount programs.
@@ -184,7 +228,7 @@ export function Home() {
 
           {/* Search Bar */}
           <div className="max-w-2xl mx-auto mb-8">
-            <div className="bg-white rounded-2xl p-2 shadow-warm-lg">
+            <div className="bg-white rounded-2xl p-2 shadow-lg">
               <SearchBar autoFocus />
             </div>
           </div>
@@ -213,20 +257,20 @@ export function Home() {
         {/* Wave divider */}
         <div className="absolute bottom-0 left-0 right-0">
           <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-auto">
-            <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" className="fill-warm-50"/>
+            <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" className="fill-stone-50"/>
           </svg>
         </div>
       </section>
 
       {/* Trust Indicators */}
-      <section className="py-10 bg-warm-50">
+      <section className="py-10 bg-stone-50">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-3 gap-4 text-center">
             {trustFeatures.map((feature, index) => (
               <div key={index} className="p-4">
-                <div className="text-3xl sm:text-4xl font-bold text-primary-600 mb-1">{feature.icon}</div>
-                <div className="font-semibold text-warm-900">{feature.label}</div>
-                <div className="text-sm text-warm-600">{feature.description}</div>
+                <div className="text-3xl sm:text-4xl font-bold text-orange-600 mb-1">{feature.icon}</div>
+                <div className="font-semibold text-stone-900">{feature.label}</div>
+                <div className="text-sm text-stone-600">{feature.description}</div>
               </div>
             ))}
           </div>
@@ -237,10 +281,10 @@ export function Home() {
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-warm-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-stone-900 mb-4">
               How It Works
             </h2>
-            <p className="text-lg text-warm-600 max-w-2xl mx-auto">
+            <p className="text-lg text-stone-600 max-w-2xl mx-auto">
               Finding affordable medications shouldn't be complicated. We make it simple in three easy steps.
             </p>
           </div>
@@ -249,14 +293,14 @@ export function Home() {
             {howItWorks.map((item) => (
               <div key={item.step} className="relative">
                 <Card className="h-full p-8" hover>
-                  <div className="w-14 h-14 bg-gradient-to-br from-primary-100 to-secondary-100 rounded-2xl flex items-center justify-center text-primary-600 mb-6">
+                  <div className="w-14 h-14 bg-gradient-to-br from-orange-100 to-teal-100 rounded-2xl flex items-center justify-center text-orange-600 mb-6">
                     {item.icon}
                   </div>
-                  <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-br from-primary-500 to-primary-600 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-warm">
+                  <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-br from-orange-500 to-orange-600 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-md">
                     {item.step}
                   </div>
-                  <h3 className="text-xl font-semibold text-warm-900 mb-3">{item.title}</h3>
-                  <p className="text-warm-600">{item.description}</p>
+                  <h3 className="text-xl font-semibold text-stone-900 mb-3">{item.title}</h3>
+                  <p className="text-stone-600">{item.description}</p>
                 </Card>
               </div>
             ))}
@@ -265,13 +309,13 @@ export function Home() {
       </section>
 
       {/* Featured Savings */}
-      <section className="py-16 bg-warm-100">
+      <section className="py-16 bg-stone-100">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-warm-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-stone-900 mb-4">
               Real Savings on Popular Medications
             </h2>
-            <p className="text-lg text-warm-600 max-w-2xl mx-auto">
+            <p className="text-lg text-stone-600 max-w-2xl mx-auto">
               See how much you could save on commonly prescribed medications
             </p>
           </div>
@@ -286,26 +330,26 @@ export function Home() {
                 <Card className="h-full p-6" hover>
                   <div className="flex items-start justify-between mb-4">
                     <div>
-                      <span className="inline-block px-3 py-1 bg-gradient-to-r from-primary-100 to-secondary-100 text-primary-700 text-xs font-semibold rounded-full mb-2">
+                      <span className="inline-block px-3 py-1 bg-gradient-to-r from-orange-100 to-teal-100 text-orange-700 text-xs font-semibold rounded-full mb-2">
                         {drug.condition}
                       </span>
-                      <h3 className="font-bold text-warm-900 group-hover:text-primary-600 transition-colors">
+                      <h3 className="font-bold text-stone-900 group-hover:text-orange-600 transition-colors">
                         {drug.name}
                       </h3>
-                      <p className="text-sm text-warm-500">Generic for {drug.genericFor}</p>
+                      <p className="text-sm text-stone-500">Generic for {drug.genericFor}</p>
                     </div>
                   </div>
                   <div className="space-y-2">
                     <div className="flex justify-between items-center">
-                      <span className="text-sm text-warm-500">Retail price:</span>
-                      <span className="text-warm-400 line-through">${drug.retailPrice}</span>
+                      <span className="text-sm text-stone-500">Retail price:</span>
+                      <span className="text-stone-400 line-through">${drug.retailPrice}</span>
                     </div>
                     <div className="flex justify-between items-center">
-                      <span className="text-sm font-medium text-secondary-700">Best price:</span>
-                      <span className="text-2xl font-bold text-secondary-600">${drug.ourPrice}</span>
+                      <span className="text-sm font-medium text-teal-700">Best price:</span>
+                      <span className="text-2xl font-bold text-teal-600">${drug.ourPrice}</span>
                     </div>
-                    <div className="pt-2 mt-2 border-t border-warm-200">
-                      <div className="bg-gradient-to-r from-secondary-500 to-secondary-600 text-white text-center py-2 rounded-xl font-semibold shadow-sm">
+                    <div className="pt-2 mt-2 border-t border-stone-200">
+                      <div className="bg-gradient-to-r from-teal-500 to-teal-600 text-white text-center py-2 rounded-xl font-semibold shadow-sm">
                         Save {drug.savings}%
                       </div>
                     </div>
@@ -316,7 +360,7 @@ export function Home() {
           </div>
 
           <div className="text-center mt-10">
-            <Link to="/search?q=">
+            <Link to="/search">
               <Button size="lg" className="px-8">
                 Search All Medications
               </Button>
@@ -329,10 +373,10 @@ export function Home() {
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-warm-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-stone-900 mb-4">
               We Compare All Major Discount Programs
             </h2>
-            <p className="text-lg text-warm-600 max-w-2xl mx-auto">
+            <p className="text-lg text-stone-600 max-w-2xl mx-auto">
               Don't overpay! We show you prices from the biggest pharmacy discount programs
             </p>
           </div>
@@ -345,13 +389,13 @@ export function Home() {
               { name: 'GoodRx', description: 'Free discount coupons' },
             ].map((program, index) => (
               <Card key={index} className="text-center" hover>
-                <div className="w-12 h-12 bg-gradient-to-br from-primary-100 to-secondary-100 rounded-xl flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-12 h-12 bg-gradient-to-br from-orange-100 to-teal-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="font-semibold text-warm-900 mb-1">{program.name}</h3>
-                <p className="text-sm text-warm-500">{program.description}</p>
+                <h3 className="font-semibold text-stone-900 mb-1">{program.name}</h3>
+                <p className="text-sm text-stone-500">{program.description}</p>
               </Card>
             ))}
           </div>
@@ -359,9 +403,9 @@ export function Home() {
       </section>
 
       {/* Find Pharmacies CTA */}
-      <section className="py-16 bg-warm-100">
+      <section className="py-16 bg-stone-100">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="bg-gradient-to-r from-secondary-500 to-secondary-600 rounded-3xl p-8 md:p-12 text-white relative overflow-hidden shadow-warm-lg">
+          <div className="bg-gradient-to-r from-teal-500 to-teal-600 rounded-3xl p-8 md:p-12 text-white relative overflow-hidden shadow-lg">
             <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
             <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/10 rounded-full translate-y-1/2 -translate-x-1/2"></div>
 
@@ -370,14 +414,14 @@ export function Home() {
                 <h2 className="text-2xl sm:text-3xl font-bold mb-3">
                   Find Pharmacies Near You
                 </h2>
-                <p className="text-secondary-100 text-lg max-w-xl">
+                <p className="text-teal-100 text-lg max-w-xl">
                   Use our interactive map to locate nearby pharmacies, compare prices, and get directions.
                 </p>
               </div>
               <Link to="/pharmacies">
                 <Button
                   size="lg"
-                  className="bg-white text-secondary-700 hover:bg-secondary-50 px-8 shadow-lg whitespace-nowrap"
+                  className="bg-white text-teal-700 hover:bg-teal-50 px-8 shadow-lg whitespace-nowrap"
                 >
                   <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -395,7 +439,7 @@ export function Home() {
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-warm-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-stone-900 mb-4">
               Frequently Asked Questions
             </h2>
           </div>
@@ -403,13 +447,13 @@ export function Home() {
           <div className="space-y-4">
             {faqs.map((faq, index) => (
               <Card key={index} className="p-6">
-                <h3 className="font-semibold text-warm-900 mb-2 flex items-start gap-3">
-                  <span className="flex-shrink-0 w-6 h-6 bg-gradient-to-br from-primary-100 to-secondary-100 text-primary-600 rounded-full flex items-center justify-center text-sm font-bold">
+                <h3 className="font-semibold text-stone-900 mb-2 flex items-start gap-3">
+                  <span className="flex-shrink-0 w-6 h-6 bg-gradient-to-br from-orange-100 to-teal-100 text-orange-600 rounded-full flex items-center justify-center text-sm font-bold">
                     Q
                   </span>
                   {faq.question}
                 </h3>
-                <p className="text-warm-600 ml-9">{faq.answer}</p>
+                <p className="text-stone-600 ml-9">{faq.answer}</p>
               </Card>
             ))}
           </div>
@@ -417,7 +461,7 @@ export function Home() {
       </section>
 
       {/* Multilingual Support Banner */}
-      <section className="py-12 bg-gradient-to-r from-primary-500 to-secondary-500 text-white">
+      <section className="py-12 bg-gradient-to-r from-orange-500 to-teal-500 text-white">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold mb-4">Available in 25 Languages</h2>
           <p className="text-white/90 mb-6">
@@ -434,16 +478,16 @@ export function Home() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 bg-warm-50">
+      <section className="py-16 bg-stone-50">
         <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-warm-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-stone-900 mb-4">
             Start Saving on Your Medications Today
           </h2>
-          <p className="text-lg text-warm-600 mb-8">
+          <p className="text-lg text-stone-600 mb-8">
             No account needed. No fees. Just search and save.
           </p>
           <div className="max-w-xl mx-auto">
-            <div className="bg-white rounded-2xl p-4 shadow-soft">
+            <div className="bg-white rounded-2xl p-4 shadow-sm">
               <SearchBar />
             </div>
           </div>
