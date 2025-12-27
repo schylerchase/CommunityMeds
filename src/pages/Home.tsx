@@ -1,17 +1,47 @@
+import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { SearchBar } from '../components/search/SearchBar';
 import { Button } from '../components/ui/Button';
 import { Card } from '../components/ui/Card';
 
-const popularDrugs = [
+// Large pool of medications to rotate through
+const allPopularDrugs = [
   'Metformin',
   'Lisinopril',
   'Atorvastatin',
   'Omeprazole',
   'Amlodipine',
   'Levothyroxine',
+  'Sertraline',
+  'Gabapentin',
+  'Losartan',
+  'Pantoprazole',
+  'Montelukast',
+  'Escitalopram',
+  'Rosuvastatin',
+  'Albuterol',
+  'Fluoxetine',
+  'Prednisone',
+  'Tramadol',
+  'Trazodone',
+  'Metoprolol',
+  'Hydrochlorothiazide',
+  'Amoxicillin',
+  'Alprazolam',
+  'Cyclobenzaprine',
+  'Meloxicam',
 ];
+
+// Shuffle array helper
+function shuffleArray<T>(array: T[]): T[] {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
 
 // Featured medications with real savings examples
 const featuredSavings = [
@@ -110,6 +140,23 @@ const faqs = [
 
 export function Home() {
   const { t } = useTranslation();
+  const [displayedDrugs, setDisplayedDrugs] = useState<string[]>(() =>
+    shuffleArray(allPopularDrugs).slice(0, 6)
+  );
+  const [isTransitioning, setIsTransitioning] = useState(false);
+
+  // Rotate drugs every 8 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsTransitioning(true);
+      setTimeout(() => {
+        setDisplayedDrugs(shuffleArray(allPopularDrugs).slice(0, 6));
+        setIsTransitioning(false);
+      }, 300); // Wait for fade out before changing
+    }, 8000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="flex flex-col">
@@ -141,8 +188,12 @@ export function Home() {
           {/* Popular Searches */}
           <div className="text-center">
             <p className="text-blue-200 text-sm mb-3">{t('home.popularSearches')}:</p>
-            <div className="flex flex-wrap justify-center gap-2">
-              {popularDrugs.map((drug) => (
+            <div
+              className={`flex flex-wrap justify-center gap-2 transition-opacity duration-300 ${
+                isTransitioning ? 'opacity-0' : 'opacity-100'
+              }`}
+            >
+              {displayedDrugs.map((drug) => (
                 <Link
                   key={drug}
                   to={`/search?q=${encodeURIComponent(drug)}`}
