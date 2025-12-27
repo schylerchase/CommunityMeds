@@ -14,16 +14,11 @@ export function PharmacyChainCard({ chain, zipCode }: PharmacyChainCardProps) {
     ? chain.getStoreLocatorWithZip(zipCode)
     : chain.storeLocatorUrl;
 
-  const priceTypeColors = {
-    discount: 'bg-green-100 text-green-800',
-    retail: 'bg-blue-100 text-blue-800',
-    membership: 'bg-purple-100 text-purple-800',
-  };
-
-  const priceTypeLabels = {
-    discount: t('pharmacy.discountPricing', 'Discount Pricing'),
-    retail: t('pharmacy.retailPricing', 'Retail Pricing'),
-    membership: t('pharmacy.membershipPricing', 'Membership Pricing'),
+  const badgeColors = {
+    green: 'bg-green-100 text-green-800',
+    blue: 'bg-blue-100 text-blue-800',
+    purple: 'bg-purple-100 text-purple-800',
+    orange: 'bg-orange-100 text-orange-800',
   };
 
   return (
@@ -33,9 +28,9 @@ export function PharmacyChainCard({ chain, zipCode }: PharmacyChainCardProps) {
           <div className="flex items-start justify-between mb-2">
             <h3 className="text-lg font-semibold text-gray-900">{chain.name}</h3>
             <span
-              className={`text-xs px-2 py-1 rounded-full ${priceTypeColors[chain.priceType]}`}
+              className={`text-xs px-2 py-1 rounded-full whitespace-nowrap ${badgeColors[chain.badgeColor]}`}
             >
-              {priceTypeLabels[chain.priceType]}
+              {chain.badge}
             </span>
           </div>
 
