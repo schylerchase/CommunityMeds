@@ -165,19 +165,45 @@ async function searchSupabase(query: string, limit = 20): Promise<DrugSearchResu
   }
 }
 
+// Helper to extract drug name from spl_product_data_elements (fallback)
+function extractNameFromSplData(splData: string | undefined): string | null {
+  if (!splData) return null;
+  // The first part before any ingredient names is usually the brand name
+  const parts = splData.split(/\s+/);
+  // Take first 1-3 words as potential brand name
+  const potentialName = parts.slice(0, 3).join(' ');
+  // Filter out generic chemical names
+  if (potentialName.length > 3 && !/^[A-Z]+$/.test(potentialName)) {
+    return potentialName;
+  }
+  return null;
+}
+
 // Helper to parse OpenFDA results
 function parseOpenFDAResults(results: Record<string, unknown>[]): DrugSearchResult[] {
   const parsed = results.map((result: Record<string, unknown>) => {
       const openfda = result.openfda as Record<string, string[]> | undefined;
-      const brandNameRaw = openfda?.brand_name?.[0] ||
-                (result.brand_name as string[])?.[0] ||
-                'Unknown';
+
+      // Try multiple sources for brand name
+      let brandNameRaw = openfda?.brand_name?.[0] ||
+                (result.brand_name as string[])?.[0];
+
+      // Fallback: extract from spl_product_data_elements
+      if (!brandNameRaw || brandNameRaw === 'Unknown') {
+        const splData = (result.spl_product_data_elements as string[])?.[0];
+        brandNameRaw = extractNameFromSplData(splData) || 'Unknown';
+      }
+
       const genericNameRaw = openfda?.generic_name?.[0] ||
                 (result.generic_name as string[])?.[0] ||
-                'Unknown';
+                openfda?.substance_name?.[0] ||
+                brandNameRaw; // Use brand name as fallback
+
       const manufacturerRaw = openfda?.manufacturer_name?.[0] ||
                 (result.manufacturer_name as string[])?.[0] ||
+                openfda?.labeler_name?.[0] ||
                 '';
+
       const purposeRaw = (result.purpose as string[])?.[0] ||
               (result.indications_and_usage as string[])?.[0]?.substring(0, 200) ||
               '';
@@ -185,6 +211,9 @@ function parseOpenFDAResults(results: Record<string, unknown>[]): DrugSearchResu
       // Use spl_id or set_id as the unique identifier - skip results without valid IDs
       const drugId = openfda?.spl_id?.[0] || (result.set_id as string);
       if (!drugId) return null;
+
+      // Skip results where we couldn't extract a proper name
+      if (brandNameRaw === 'Unknown' && genericNameRaw === 'Unknown') return null;
 
       // Clean the purpose text from FDA formatting artifacts
       const cleanPurpose = cleanFDAText(purposeRaw);
@@ -208,17 +237,17 @@ async function searchOpenFDA(query: string, limit = 15): Promise<DrugSearchResul
   if (!query || query.length < 2) return [];
 
   const cleanQuery = query.toLowerCase().replace(/[^a-z0-9\s]/g, '').trim();
+  // Add wildcard for partial matching
+  const wildcardQuery = `${cleanQuery}*`;
 
   // Try multiple search strategies in order of reliability
   const searchStrategies = [
-    // Strategy 1: Search brand_name (most common)
-    `${OPENFDA_BASE_URL}/label.json?search=openfda.brand_name:${cleanQuery}&limit=${limit}`,
-    // Strategy 2: Search generic_name
-    `${OPENFDA_BASE_URL}/label.json?search=openfda.generic_name:${cleanQuery}&limit=${limit}`,
-    // Strategy 3: Search substance_name (active ingredient)
-    `${OPENFDA_BASE_URL}/label.json?search=openfda.substance_name:${cleanQuery}&limit=${limit}`,
-    // Strategy 4: General text search
-    `${OPENFDA_BASE_URL}/label.json?search=${cleanQuery}&limit=${limit}`,
+    // Strategy 1: Search brand_name with wildcard (most common)
+    `${OPENFDA_BASE_URL}/label.json?search=openfda.brand_name:${wildcardQuery}&limit=${limit}`,
+    // Strategy 2: Search generic_name with wildcard
+    `${OPENFDA_BASE_URL}/label.json?search=openfda.generic_name:${wildcardQuery}&limit=${limit}`,
+    // Strategy 3: Search substance_name with wildcard (active ingredient)
+    `${OPENFDA_BASE_URL}/label.json?search=openfda.substance_name:${wildcardQuery}&limit=${limit}`,
   ];
 
   for (const url of searchStrategies) {
