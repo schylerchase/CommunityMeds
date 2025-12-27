@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "ຊອກຫາຢາທີ່ລາຄາບໍ່ແພງຢູ່ໃກ້ທ່ານ"
+  },
+  "nav": {
+    "home": "ບ້ານ",
+    "search": "ຊອກຫາຢາ",
+    "pharmacies": "ຊອກຫາຮ້ານຂາຍຢາ",
+    "about": "ກ່ຽວກັບ"
+  },
+  "home": {
+    "title": "ຊອກຫາຢາທີ່ລາຄາບໍ່ແພງ",
+    "subtitle": "ປຽບທຽບລາຄາ, ຊອກຫາຮ້ານຂາຍຢາໃກ້ຄຽງ, ແລະປະຫຍັດໃບສັ່ງຢາຂອງທ່ານ",
+    "searchPlaceholder": "ໃສ່ຊື່ຢາ...",
+    "searchButton": "ຊອກຫາ",
+    "popularSearches": "ການຄົ້ນຫາທີ່ນິຍົມ",
+    "recentSearches": "ການຄົ້ນຫາທີ່ຜ່ານມາ"
+  },
+  "search": {
+    "results": "ຜົນການຄົ້ນຫາ",
+    "resultsFor": "ຜົນໄດ້ຮັບສໍາລັບ",
+    "noResults": "ບໍ່ພົບຢາ",
+    "tryDifferent": "ລອງໃຊ້ຄຳຊອກຫາອື່ນ",
+    "loading": "ກຳລັງຊອກຫາຢາ...",
+    "filters": "ການກັ່ນຕອງ",
+    "sortBy": "ຈັດຮຽງຕາມ",
+    "priceLowest": "ລາຄາ: ຕໍ່າຫາສູງ",
+    "priceHighest": "ລາຄາ: ສູງຫາຕໍ່າ",
+    "nameAZ": "ຊື່: A ຫາ Z"
+  },
+  "drug": {
+    "genericName": "ຊື່ທົ່ວໄປ",
+    "brandName": "ຊື່ຍີ່ຫໍ້",
+    "manufacturer": "ຜູ້ຜະລິດ",
+    "description": "ລາຍລະອຽດ",
+    "commonUses": "ການນໍາໃຊ້ທົ່ວໄປ",
+    "sideEffects": "ຜົນຂ້າງຄຽງ",
+    "prices": "ລາຄາ",
+    "cashPrice": "ລາຄາເງິນສົດ",
+    "withInsurance": "ມີປະກັນໄພ",
+    "withCoupon": "ດ້ວຍຄູປອງ",
+    "genericAlternative": "ທາງເລືອກທົ່ວໄປທີ່ມີຢູ່",
+    "savings": "ເຈົ້າສາມາດປະຫຍັດໄດ້",
+    "assistancePrograms": "ໂຄງການຊ່ວຍເຫຼືອຄົນເຈັບ",
+    "findPharmacy": "ຊອກຫາຮ້ານຂາຍຢາ"
+  },
+  "pharmacy": {
+    "title": "ຊອກຫາຮ້ານຂາຍຢາໃກ້ຄຽງ",
+    "subtitle": "ຊອກຫາຮ້ານຂາຍຢາຢູ່ໃກ້ທ່ານດ້ວຍລາຄາທີ່ດີທີ່ສຸດ",
+    "useLocation": "ໃຊ້ສະຖານທີ່ຂອງຂ້ອຍ",
+    "enterZip": "ຫຼືໃສ່ລະຫັດ ZIP",
+    "search": "ຊອກຫາ",
+    "filters": {
+      "all": "ທັງໝົດ",
+      "open24": "ເປີດ 24 ຊົ່ວໂມງ",
+      "delivery": "ມີການຈັດສົ່ງ",
+      "driveThru": "Drive-Thru"
+    },
+    "distance": "ໄມຫ່າງ",
+    "hours": "ຊົ່ວໂມງ",
+    "phone": "ໂທລະສັບ",
+    "getDirections": "ເອົາເສັ້ນທາງ",
+    "viewPrices": "ເບິ່ງລາຄາ"
+  },
+  "prices": {
+    "title": "ການປຽບທຽບລາຄາ",
+    "noInsurance": "ໂດຍບໍ່ມີການປະກັນໄພ",
+    "withInsurance": "ມີປະກັນໄພ",
+    "discountPrograms": "ໂຄງການຫຼຸດລາຄາ",
+    "perMonth": "ຕໍ່ເດືອນ",
+    "perPill": "ຕໍ່ເມັດ",
+    "quantity": "ປະລິມານ",
+    "priceVaries": "ລາຄາອາດຈະແຕກຕ່າງກັນໄປຕາມສະຖານທີ່",
+    "lastUpdated": "ອັບເດດຫຼ້າສຸດ"
+  },
+  "accessibility": {
+    "settings": "ການຕັ້ງຄ່າການຊ່ວຍເຂົ້າເຖິງ",
+    "largeText": "ຂໍ້ຄວາມຂະຫນາດໃຫຍ່",
+    "highContrast": "ຄວາມຄົມຊັດສູງ",
+    "screenReader": "ປັບຕົວອ່ານໜ້າຈໍໃຫ້ເໝາະສົມ",
+    "skipToMain": "ຂ້າມໄປຫາເນື້ອຫາຕົ້ນຕໍ"
+  },
+  "common": {
+    "loading": "ກຳລັງໂຫລດ...",
+    "error": "ເກີດຄວາມຜິດພາດຂຶ້ນ",
+    "tryAgain": "ລອງອີກຄັ້ງ",
+    "back": "ກັບຄືນໄປບ່ອນ",
+    "next": "ຕໍ່ໄປ",
+    "close": "ປິດ",
+    "save": "ບັນທຶກ",
+    "cancel": "ຍົກເລີກ",
+    "learnMore": "ສຶກສາເພີ່ມເຕີມ",
+    "viewAll": "ເບິ່ງທັງໝົດ",
+    "noData": "ບໍ່ມີຂໍ້ມູນ"
+  },
+  "footer": {
+    "about": "ກ່ຽວກັບ PublicRx",
+    "aboutText": "ຊັບພະຍາກອນສາທາລະນະທີ່ບໍ່ເສຍຄ່າເພື່ອຊ່ວຍໃຫ້ທ່ານຊອກຫາຢາທີ່ມີລາຄາບໍ່ແພງ.",
+    "disclaimer": "ລາຄາທີ່ສະແດງແມ່ນການຄາດຄະເນ. ກວດສອບກັບຮ້ານຂາຍຢາຂອງທ່ານສະເໝີ.",
+    "privacy": "ນະໂຍບາຍຄວາມເປັນສ່ວນຕົວ",
+    "terms": "ເງື່ອນໄຂການນໍາໃຊ້",
+    "contact": "ຕິດຕໍ່ພວກເຮົາ",
+    "language": "ພາສາ"
+  }
+}

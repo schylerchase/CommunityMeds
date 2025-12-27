@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Azee' T'aadoo Baa Dahane'ii Nihighan Kwe'e"
+  },
+  "nav": {
+    "home": "Hooghan",
+    "search": "Azee' Haniidzih",
+    "pharmacies": "Azee' Nayiisnii'igii Haniidzih",
+    "about": "Baa Hane'"
+  },
+  "home": {
+    "title": "Azee' T'aadoo Baa Dahane'ii Haniidzih",
+    "subtitle": "Bich'i'niilaah, azee' nayiisnii'igii nihighan kwe'e, doo t'aa ba'alaahji' bee adingo",
+    "searchPlaceholder": "Azee' bizhi' alneeh...",
+    "searchButton": "Haniidzih",
+    "popularSearches": "La' Haniidziihigii",
+    "recentSearches": "K'ad Haniidziihigii"
+  },
+  "search": {
+    "results": "Haniidziihgo Nihidiilaa",
+    "resultsFor": "Nihidiilaa ei",
+    "noResults": "Doo azee' haadiniidza da",
+    "tryDifferent": "T'aa la'i bizhi' haniidzih",
+    "loading": "Azee' haniidziih...",
+    "filters": "Bits'aadoo",
+    "sortBy": "Aheelthaago",
+    "priceLowest": "Bich'i'niilaah: Yazhi Nanisdzi",
+    "priceHighest": "Bich'i'niilaah: Nanisdzi Yazhi",
+    "nameAZ": "Bizhi': A Aaji Z"
+  },
+  "drug": {
+    "genericName": "T'aala'i Bizhi'",
+    "brandName": "Baa Dahane'igii Bizhi'",
+    "manufacturer": "Ayiilaa'igii",
+    "description": "Baa Hane'",
+    "commonUses": "Bee Adiilniiligii",
+    "sideEffects": "Doo Nizhonii Da'igii",
+    "prices": "Bich'i'niilaahgo",
+    "cashPrice": "Beeso Bich'i'niilaah",
+    "withInsurance": "Bee Ik'idilyeed",
+    "withCoupon": "Coupon Bee",
+    "genericAlternative": "T'aa La'i Hola",
+    "savings": "Doo bee adingo baa nahidoo'aal",
+    "assistancePrograms": "Nidajilkaadi Programs",
+    "findPharmacy": "Azee' Nayiisnii'igii Haniidzih"
+  },
+  "pharmacy": {
+    "title": "Azee' Nayiisnii'igii Nihighan Haniidzih",
+    "subtitle": "Azee' nayiisnii'igii nihighan kwe'e t'aadoo baa dahane'ii haniidzih",
+    "useLocation": "Shinaagoo Yisdza",
+    "enterZip": "Doodago ZIP code alneeh",
+    "search": "Haniidzih",
+    "filters": {
+      "all": "T'aadoo Hooga'",
+      "open24": "24 Da'ii'a Ats'i'is",
+      "delivery": "Nihaa Deeshaal",
+      "driveThru": "Chidi Bee"
+    },
+    "distance": "naa'ahigii",
+    "hours": "Da'ii'a",
+    "phone": "Beeeldooh Bee Hane'",
+    "getDirections": "Ahodiit'a'igii",
+    "viewPrices": "Bich'i'niilaah Yinilii"
+  },
+  "prices": {
+    "title": "Bich'i'niilaah Ahee'ilthaago",
+    "noInsurance": "Doo Bee Ik'idilyeed Da",
+    "withInsurance": "Bee Ik'idilyeed",
+    "discountPrograms": "T'aadoo Baa Dahane'ii Programs",
+    "perMonth": "naadiin jii",
+    "perPill": "la' azee'",
+    "quantity": "Nikeezgo",
+    "priceVaries": "Bich'i'niilaah aheelthaago kwe'e",
+    "lastUpdated": "K'ad baa naadaa'"
+  },
+  "accessibility": {
+    "settings": "Baa Dahwiit'iinii",
+    "largeText": "Nineez Naaltsoos",
+    "highContrast": "Diko'nitsaaz",
+    "screenReader": "Bee Yit'i' Reader",
+    "skipToMain": "T'aa sahi' hodiit'a"
+  },
+  "common": {
+    "loading": "Yilwol...",
+    "error": "Doo yaa da'ahoot'e da",
+    "tryAgain": "Naa Naadzih",
+    "back": "Tsi'naa",
+    "next": "Hodiit'a",
+    "close": "Atsooh",
+    "save": "Bee Haz'a",
+    "cancel": "Doo Da'",
+    "learnMore": "La' Bee Hohooniih",
+    "viewAll": "T'aadoo Hooga' Yinilii",
+    "noData": "Doo Nahast'ei Da"
+  },
+  "footer": {
+    "about": "PublicRx Baa Hane'",
+    "aboutText": "T'aadoo baa dahane'ii azee' nihaa nidoo'aal bee nihika'anaawo.",
+    "disclaimer": "Bich'i'niilaah haniidziihigii baa dahwiit'ii. Azee' nayiisnii'igii bich'i' yini'dzih.",
+    "privacy": "Doo Bee Yaa Da'ahoot'ii Da",
+    "terms": "Baa Dahane'igii",
+    "contact": "Nihich'i' Hane'",
+    "language": "Saad"
+  }
+}

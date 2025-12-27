@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Shakisha imiti ihendutse hafi yawe"
+  },
+  "nav": {
+    "home": "Murugo",
+    "search": "Shakisha Imiti",
+    "pharmacies": "Shakisha Farumasi",
+    "about": "Ibyerekeye"
+  },
+  "home": {
+    "title": "Shakisha imiti ihendutse",
+    "subtitle": "Gereranya ibiciro, shakisha farumasi hafi, hanyuma uzigame kubyo wanditse",
+    "searchPlaceholder": "Andika izina ry'imiti ...",
+    "searchButton": "Shakisha",
+    "popularSearches": "Gushakisha Byamamare",
+    "recentSearches": "Ubushakashatsi bwa vuba"
+  },
+  "search": {
+    "results": "Shakisha Ibisubizo",
+    "resultsFor": "Ibisubizo kuri",
+    "noResults": "Nta miti yabonetse",
+    "tryDifferent": "Gerageza ijambo ritandukanye",
+    "loading": "Gushakisha imiti ...",
+    "filters": "Muyunguruzi",
+    "sortBy": "Gutondekanya na",
+    "priceLowest": "Igiciro: Hasi kugeza Hejuru",
+    "priceHighest": "Igiciro: Hejuru kugeza Hasi",
+    "nameAZ": "Izina: A kugeza kuri Z."
+  },
+  "drug": {
+    "genericName": "Izina rusange",
+    "brandName": "Izina ry'ikirango",
+    "manufacturer": "Uruganda",
+    "description": "Ibisobanuro",
+    "commonUses": "Imikoreshereze rusange",
+    "sideEffects": "Ingaruka Zuruhande",
+    "prices": "Ibiciro",
+    "cashPrice": "Igiciro cy'amafaranga",
+    "withInsurance": "Hamwe n'Ubwishingizi",
+    "withCoupon": "Hamwe na Coupon",
+    "genericAlternative": "Ubundi buryo busanzwe buraboneka",
+    "savings": "Urashobora kuzigama",
+    "assistancePrograms": "Gahunda yo gufasha abarwayi",
+    "findPharmacy": "Shakisha Farumasi"
+  },
+  "pharmacy": {
+    "title": "Shakisha Farumasi Hafi",
+    "subtitle": "Shakisha farumasi hafi yawe hamwe nibiciro byiza",
+    "useLocation": "Koresha Aho uherereye",
+    "enterZip": "Cyangwa andika kode ya ZIP",
+    "search": "Shakisha",
+    "filters": {
+      "all": "Byose",
+      "open24": "Fungura amasaha 24",
+      "delivery": "Gutanga birahari",
+      "driveThru": "Drive-Thru"
+    },
+    "distance": "kilometero",
+    "hours": "Amasaha",
+    "phone": "Terefone",
+    "getDirections": "Shaka Icyerekezo",
+    "viewPrices": "Reba Ibiciro"
+  },
+  "prices": {
+    "title": "Kugereranya Ibiciro",
+    "noInsurance": "Nta bwishingizi",
+    "withInsurance": "Hamwe n'Ubwishingizi",
+    "discountPrograms": "Gahunda yo Kugabanuka",
+    "perMonth": "ku kwezi",
+    "perPill": "ibinini",
+    "quantity": "Umubare",
+    "priceVaries": "Ibiciro birashobora gutandukana ahantu",
+    "lastUpdated": "Ibiherutse kuvugururwa"
+  },
+  "accessibility": {
+    "settings": "Igenamiterere",
+    "largeText": "Inyandiko nini",
+    "highContrast": "Itandukaniro ryinshi",
+    "screenReader": "Mugusoma Mugaragaza neza",
+    "skipToMain": "Jya ku bintu nyamukuru"
+  },
+  "common": {
+    "loading": "Kuremera ...",
+    "error": "Habayeho ikosa",
+    "tryAgain": "Gerageza",
+    "back": "Inyuma",
+    "next": "Ibikurikira",
+    "close": "Funga",
+    "save": "Bika",
+    "cancel": "Kureka",
+    "learnMore": "Wige byinshi",
+    "viewAll": "Reba Byose",
+    "noData": "Nta makuru ahari"
+  },
+  "footer": {
+    "about": "Ibyerekeye PublicRx",
+    "aboutText": "Umutungo rusange wubusa kugirango ugufashe kubona imiti ihendutse.",
+    "disclaimer": "Ibiciro byerekanwe ni ibigereranyo. Buri gihe ugenzure hamwe na farumasi yawe.",
+    "privacy": "Politiki Yibanga",
+    "terms": "Amategeko yo gukoresha",
+    "contact": "Twandikire",
+    "language": "Ururimi"
+  }
+}

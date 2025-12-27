@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Nájdite dostupné lieky vo svojom okolí"
+  },
+  "nav": {
+    "home": "Domov",
+    "search": "Hľadať lieky",
+    "pharmacies": "Nájdite lekárne",
+    "about": "O"
+  },
+  "home": {
+    "title": "Nájdite dostupné lieky",
+    "subtitle": "Porovnajte ceny, vyhľadajte lekárne v okolí a ušetrite na receptoch",
+    "searchPlaceholder": "Zadajte názov lieku...",
+    "searchButton": "Hľadať",
+    "popularSearches": "Populárne vyhľadávania",
+    "recentSearches": "Nedávne vyhľadávania"
+  },
+  "search": {
+    "results": "Výsledky vyhľadávania",
+    "resultsFor": "Výsledky pre",
+    "noResults": "Nenašli sa žiadne lieky",
+    "tryDifferent": "Skúste iný hľadaný výraz",
+    "loading": "Hľadajú sa lieky...",
+    "filters": "Filtre",
+    "sortBy": "Zoradiť podľa",
+    "priceLowest": "Cena: nízka až vysoká",
+    "priceHighest": "Cena: vysoká až nízka",
+    "nameAZ": "Názov: A až Z"
+  },
+  "drug": {
+    "genericName": "Všeobecné meno",
+    "brandName": "Názov značky",
+    "manufacturer": "Výrobca",
+    "description": "Popis",
+    "commonUses": "Bežné použitia",
+    "sideEffects": "Vedľajšie účinky",
+    "prices": "Ceny",
+    "cashPrice": "Cena v hotovosti",
+    "withInsurance": "S Poistením",
+    "withCoupon": "S kupónom",
+    "genericAlternative": "Dostupná všeobecná alternatíva",
+    "savings": "Mohol si ušetriť",
+    "assistancePrograms": "Programy pomoci pacientom",
+    "findPharmacy": "Nájdite lekáreň"
+  },
+  "pharmacy": {
+    "title": "Nájdite lekárne v okolí",
+    "subtitle": "Nájdite lekárne vo vašom okolí s najlepšími cenami",
+    "useLocation": "Použiť funkciu Moja poloha",
+    "enterZip": "Alebo zadajte PSČ",
+    "search": "Hľadať",
+    "filters": {
+      "all": "Všetky",
+      "open24": "Otvorené 24 hodín",
+      "delivery": "Možnosť doručenia",
+      "driveThru": "Drive-Thru"
+    },
+    "distance": "míle ďaleko",
+    "hours": "Hodiny",
+    "phone": "Telefón",
+    "getDirections": "Získajte trasu",
+    "viewPrices": "Zobraziť ceny"
+  },
+  "prices": {
+    "title": "Porovnanie cien",
+    "noInsurance": "Bez poistenia",
+    "withInsurance": "S Poistením",
+    "discountPrograms": "Zľavové programy",
+    "perMonth": "za mesiac",
+    "perPill": "na pilulku",
+    "quantity": "Množstvo",
+    "priceVaries": "Ceny sa môžu líšiť podľa lokality",
+    "lastUpdated": "Posledná aktualizácia"
+  },
+  "accessibility": {
+    "settings": "Nastavenia dostupnosti",
+    "largeText": "Veľký text",
+    "highContrast": "Vysoký kontrast",
+    "screenReader": "Optimalizovaná čítačka obrazovky",
+    "skipToMain": "Preskočiť na hlavný obsah"
+  },
+  "common": {
+    "loading": "Načítava sa...",
+    "error": "Vyskytla sa chyba",
+    "tryAgain": "Skúste znova",
+    "back": "Späť",
+    "next": "Ďalej",
+    "close": "Zavrieť",
+    "save": "Uložiť",
+    "cancel": "Zrušiť",
+    "learnMore": "Zistite viac",
+    "viewAll": "Zobraziť všetko",
+    "noData": "Nie sú k dispozícii žiadne údaje"
+  },
+  "footer": {
+    "about": "O PublicRx",
+    "aboutText": "Bezplatný verejný zdroj, ktorý vám pomôže nájsť cenovo dostupné lieky.",
+    "disclaimer": "Uvedené ceny sú približné. Vždy si overte v lekárni.",
+    "privacy": "Zásady ochrany osobných údajov",
+    "terms": "Podmienky používania",
+    "contact": "Kontaktujte nás",
+    "language": "Jazyk"
+  }
+}

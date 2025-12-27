@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Temokake Obat Terjangkau Cedhak Sampeyan"
+  },
+  "nav": {
+    "home": "Ngarep",
+    "search": "Nggoleki Obat",
+    "pharmacies": "Golek Apotek",
+    "about": "Babagan"
+  },
+  "home": {
+    "title": "Golek Obat Terjangkau",
+    "subtitle": "Mbandhingake prices, golek apotek toko, lan nyimpen ing resep",
+    "searchPlaceholder": "Ketik jeneng obat...",
+    "searchButton": "Nggoleki",
+    "popularSearches": "Panelusuran Popular",
+    "recentSearches": "Panelusuran Anyar"
+  },
+  "search": {
+    "results": "Asil Panelusuran",
+    "resultsFor": "Asil kanggo",
+    "noResults": "Ora ana obat sing ditemokake",
+    "tryDifferent": "Coba istilah telusuran sing beda",
+    "loading": "Golek obat...",
+    "filters": "Filter-filter",
+    "sortBy": "Urut miturut",
+    "priceLowest": "Price: Low kanggo Dhuwur",
+    "priceHighest": "Price: Dhuwur nganti Low",
+    "nameAZ": "Nama : A to Z"
+  },
+  "drug": {
+    "genericName": "Jeneng Umum",
+    "brandName": "Jeneng merek",
+    "manufacturer": "Produsen",
+    "description": "Katrangan",
+    "commonUses": "Panggunaan umum",
+    "sideEffects": "Efek sisih",
+    "prices": "Rega",
+    "cashPrice": "Harga Kas",
+    "withInsurance": "Kanthi Asuransi",
+    "withCoupon": "Kanthi Kupon",
+    "genericAlternative": "Alternatif Generik Kasedhiya",
+    "savings": "Sampeyan bisa nyimpen",
+    "assistancePrograms": "Program Bantuan Pasien",
+    "findPharmacy": "Golek Apotek"
+  },
+  "pharmacy": {
+    "title": "Golek Apotek Nearby",
+    "subtitle": "Goleki apotek cedhak sampeyan kanthi rega paling apik",
+    "useLocation": "Gunakake Lokasiku",
+    "enterZip": "Utawa ketik kode ZIP",
+    "search": "Nggoleki",
+    "filters": {
+      "all": "Kabeh",
+      "open24": "Bukak 24 Jam",
+      "delivery": "Pangiriman kasedhiya",
+      "driveThru": "Drive-Thru"
+    },
+    "distance": "mil adoh",
+    "hours": "jam",
+    "phone": "Telpon",
+    "getDirections": "Njaluk Directions",
+    "viewPrices": "Ndeleng Prices"
+  },
+  "prices": {
+    "title": "Perbandingan rega",
+    "noInsurance": "Tanpa Asuransi",
+    "withInsurance": "Kanthi Asuransi",
+    "discountPrograms": "Program Diskon",
+    "perMonth": "saben sasi",
+    "perPill": "saben pil",
+    "quantity": "Jumlah",
+    "priceVaries": "Prices bisa beda-beda miturut lokasi",
+    "lastUpdated": "Dianyari pungkasan"
+  },
+  "accessibility": {
+    "settings": "Setelan Aksesibilitas",
+    "largeText": "Teks Gedhe",
+    "highContrast": "Kontras Dhuwur",
+    "screenReader": "Pembaca Layar Optimized",
+    "skipToMain": "Lumpat menyang isi utama"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Ana kesalahan",
+    "tryAgain": "Coba maneh",
+    "back": "Mbalik",
+    "next": "Sabanjure",
+    "close": "Nutup",
+    "save": "Simpen",
+    "cancel": "Batal",
+    "learnMore": "Sinau luwih lengkap",
+    "viewAll": "Ndeleng Kabeh",
+    "noData": "Ora ana data sing kasedhiya"
+  },
+  "footer": {
+    "about": "Babagan PublicRx",
+    "aboutText": "Sumber daya umum gratis kanggo mbantu sampeyan nemokake obat sing terjangkau.",
+    "disclaimer": "Rega sing ditampilake minangka perkiraan. Tansah verifikasi karo apotek sampeyan.",
+    "privacy": "Kebijakan Privasi",
+    "terms": "Katentuan Pangginaan supados langkung",
+    "contact": "Hubungi Kita",
+    "language": "Basa"
+  }
+}

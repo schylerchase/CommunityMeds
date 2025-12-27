@@ -1,12 +1,106 @@
 {
-  "app": { "name": "PublicRx", "tagline": "Գտեdelays delays delays մdelays delays delays delays մdelays delays delays delays մdelays delays delays delays" },
-  "nav": { "home": "Գdelays", "search": "Փdelays delays delays delays delays", "pharmacies": "Delays delays delays delays", "about": "Մdelays մdelays" },
-  "home": { "title": "Գdelays delays delays delays մdelays", "subtitle": "Համdelays delays delays, delays delays delays delays", "searchPlaceholder": "Մdelays delays մdelays...", "searchButton": "Փdelays", "popularSearches": "Delays delays delays", "recentSearches": "Delays delays delays delays" },
-  "search": { "results": "Delays delays delays", "resultsFor": "Delays delays", "noResults": "Delays delays delays delays", "tryDifferent": "Delays delays delays delays", "loading": "Delays delays delays...", "filters": "Delays", "sortBy": "Delays delays", "priceLowest": "Delays: Delays delays Delays", "priceHighest": "Delays: Delays delays Delays", "nameAZ": "Delays: Delays delays Delays" },
-  "drug": { "genericName": "Delays delays", "brandName": "Delays delays", "manufacturer": "Delays delays", "description": "Delays delays", "commonUses": "Delays delays delays", "sideEffects": "Delays delays delays", "prices": "Delays", "cashPrice": "Delays delays", "withInsurance": "Delays delays", "withCoupon": "Delays delays", "genericAlternative": "Delays delays delays delays", "savings": "Delays delays delays", "assistancePrograms": "Delays delays delays", "findPharmacy": "Delays delays delays" },
-  "pharmacy": { "title": "Delays delays delays delays", "subtitle": "Delays delays delays delays delays", "useLocation": "Delays delays delays", "enterZip": "Delays delays delays", "search": "Delays", "filters": { "all": "Delays", "open24": "24 Delays", "delivery": "Delays delays", "driveThru": "Drive-Thru" }, "distance": "Delays", "hours": "Delays", "phone": "Delays", "getDirections": "Delays delays", "viewPrices": "Delays delays" },
-  "prices": { "title": "Delays delays delays", "noInsurance": "Delays delays", "withInsurance": "Delays delays", "discountPrograms": "Delays delays", "perMonth": "Delays delays", "perPill": "Delays delays", "quantity": "Delays", "priceVaries": "Delays delays delays delays", "lastUpdated": "Delays delays" },
-  "accessibility": { "settings": "Delays delays delays", "largeText": "Delays delays", "highContrast": "Delays delays", "screenReader": "Delays delays delays", "skipToMain": "Delays delays delays" },
-  "common": { "loading": "Delays delays...", "error": "Delays delays delays", "tryAgain": "Delays delays", "back": "Delays", "next": "Delays", "close": "Delays", "save": "Delays", "cancel": "Delays", "learnMore": "Delays delays", "viewAll": "Delays delays", "noData": "Delays delays delays" },
-  "footer": { "about": "Delays PublicRx", "aboutText": "Delays delays delays delays delays delays.", "disclaimer": "Delays delays delays delays delays.", "privacy": "Delays delays", "terms": "Delays delays", "contact": "Delays delays", "language": "Delays" }
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Գտեք մատչելի դեղորայք ձեր կողքին"
+  },
+  "nav": {
+    "home": "Տուն",
+    "search": "Դեղորայքի որոնում",
+    "pharmacies": "Գտեք Դեղատներ",
+    "about": "Մոտ"
+  },
+  "home": {
+    "title": "Գտեք մատչելի դեղամիջոցներ",
+    "subtitle": "Համեմատեք գները, գտեք մոտակա դեղատները և խնայեք ձեր դեղատոմսերը",
+    "searchPlaceholder": "Մուտքագրեք դեղամիջոցի անունը...",
+    "searchButton": "Որոնում",
+    "popularSearches": "Հանրաճանաչ որոնումներ",
+    "recentSearches": "Վերջին որոնումները"
+  },
+  "search": {
+    "results": "Որոնման արդյունքներ",
+    "resultsFor": "Արդյունքներ համար",
+    "noResults": "Դեղորայք չեն գտնվել",
+    "tryDifferent": "Փորձեք այլ որոնման տերմին",
+    "loading": "Դեղորայքի որոնում...",
+    "filters": "Զտիչներ",
+    "sortBy": "Դասավորել ըստ",
+    "priceLowest": "Գինը՝ ցածրից բարձր",
+    "priceHighest": "Գինը՝ բարձրից ցածր",
+    "nameAZ": "Անունը՝ Ա-ից Զ"
+  },
+  "drug": {
+    "genericName": "Ընդհանուր անուն",
+    "brandName": "Ապրանքանիշի անվանումը",
+    "manufacturer": "Արտադրող",
+    "description": "Նկարագրություն",
+    "commonUses": "Ընդհանուր կիրառումներ",
+    "sideEffects": "Կողմնակի ազդեցություններ",
+    "prices": "Գները",
+    "cashPrice": "Կանխիկ Գին",
+    "withInsurance": "Ապահովագրությամբ",
+    "withCoupon": "Կտրոնով",
+    "genericAlternative": "Հասանելի է ընդհանուր այլընտրանք",
+    "savings": "Դուք կարող եք փրկել",
+    "assistancePrograms": "Հիվանդների աջակցության ծրագրեր",
+    "findPharmacy": "Գտեք դեղատուն"
+  },
+  "pharmacy": {
+    "title": "Գտեք մոտակա դեղատներ",
+    "subtitle": "Գտեք ձեր մոտ գտնվող դեղատները լավագույն գներով",
+    "useLocation": "Օգտագործեք Իմ գտնվելու վայրը",
+    "enterZip": "Կամ մուտքագրեք փոստային կոդը",
+    "search": "Որոնում",
+    "filters": {
+      "all": "Բոլորը",
+      "open24": "Բաց 24 ժամ",
+      "delivery": "Գործում է առաքում",
+      "driveThru": "Drive-Thru"
+    },
+    "distance": "մղոն հեռավորության վրա",
+    "hours": "Ժամեր",
+    "phone": "Հեռախոս",
+    "getDirections": "Ստացեք ուղղություններ",
+    "viewPrices": "Դիտել գները"
+  },
+  "prices": {
+    "title": "Գների համեմատություն",
+    "noInsurance": "Առանց ապահովագրության",
+    "withInsurance": "Ապահովագրությամբ",
+    "discountPrograms": "Զեղչային ծրագրեր",
+    "perMonth": "ամսական",
+    "perPill": "մեկ հաբ",
+    "quantity": "Քանակ",
+    "priceVaries": "Գները կարող են տարբեր լինել՝ կախված գտնվելու վայրից",
+    "lastUpdated": "Վերջին թարմացումը"
+  },
+  "accessibility": {
+    "settings": "Մատչելիության կարգավորումներ",
+    "largeText": "Մեծ տեքստ",
+    "highContrast": "Բարձր հակադրություն",
+    "screenReader": "Էկրանի ընթերցիչը օպտիմիզացված է",
+    "skipToMain": "Անցեք հիմնական բովանդակությանը"
+  },
+  "common": {
+    "loading": "Բեռնվում է...",
+    "error": "Սխալ է տեղի ունեցել",
+    "tryAgain": "Կրկին փորձեք",
+    "back": "Ետ",
+    "next": "Հաջորդը",
+    "close": "Փակել",
+    "save": "Պահպանել",
+    "cancel": "Չեղարկել",
+    "learnMore": "Իմացեք ավելին",
+    "viewAll": "Դիտել բոլորը",
+    "noData": "Տվյալներ չկան"
+  },
+  "footer": {
+    "about": "PublicRx-ի մասին",
+    "aboutText": "Անվճար հանրային ռեսուրս, որը կօգնի ձեզ գտնել մատչելի դեղամիջոցներ:",
+    "disclaimer": "Ցուցադրված գները գնահատական ​​են: Միշտ ստուգեք ձեր դեղատնից:",
+    "privacy": "Գաղտնիության քաղաքականություն",
+    "terms": "Օգտագործման պայմաններ",
+    "contact": "Կապ մեզ հետ",
+    "language": "Լեզու"
+  }
 }

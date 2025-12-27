@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Na Hriphar Ah Man Tlawm Si Mi Damdawi Hawl"
+  },
+  "nav": {
+    "home": "Inn",
+    "search": "Damdawi Hawl",
+    "pharmacies": "Damdawi Dawr Hawl",
+    "about": "Kong"
+  },
+  "home": {
+    "title": "Man Tlawm Si Mi Damdawi Hawl",
+    "subtitle": "Man i zohchih, damdawi dawr na hriphar ah um mi i hawl, le na damdawi caah sum i khaan",
+    "searchPlaceholder": "Damdawi hmin i khen...",
+    "searchButton": "Hawl",
+    "popularSearches": "Hawl Thiammi",
+    "recentSearches": "A Thar Hawlmi"
+  },
+  "search": {
+    "results": "Hawl Hmuhmi",
+    "resultsFor": "Hmuhmi caah",
+    "noResults": "Damdawi hmuh lo",
+    "tryDifferent": "Hmin dangdang in i zuam bal",
+    "loading": "Damdawi hawl lai...",
+    "filters": "Thimnak",
+    "sortBy": "Chiahnak",
+    "priceLowest": "Man: Tlawm In Sang",
+    "priceHighest": "Man: Sang In Tlawm",
+    "nameAZ": "Hmin: A In Z"
+  },
+  "drug": {
+    "genericName": "Pakhatnak Hmin",
+    "brandName": "Brand Hmin",
+    "manufacturer": "A Tuahtu",
+    "description": "Chimhnak",
+    "commonUses": "Hmangmi",
+    "sideEffects": "A Dang Tumnak",
+    "prices": "Manmi",
+    "cashPrice": "Tangka Man",
+    "withInsurance": "Insurance In",
+    "withCoupon": "Coupon In",
+    "genericAlternative": "Pakhatnak A Um",
+    "savings": "Na khaan kho",
+    "assistancePrograms": "Bawmhnak Program",
+    "findPharmacy": "Damdawi Dawr Hawl"
+  },
+  "pharmacy": {
+    "title": "Na Hriphar Damdawi Dawr Hawl",
+    "subtitle": "Man a tlawm bik mi damdawi dawr na hriphar ah i hawl",
+    "useLocation": "Ka Umnak Hmang",
+    "enterZip": "Sihmanhsehlaw ZIP code khen",
+    "search": "Hawl",
+    "filters": {
+      "all": "Vialte",
+      "open24": "Suimilam 24 On",
+      "delivery": "Tthannak A Um",
+      "driveThru": "Drive-Thru"
+    },
+    "distance": "mile hla",
+    "hours": "Suimilam",
+    "phone": "Phone",
+    "getDirections": "Lamzin Hmuh",
+    "viewPrices": "Man Hmuh"
+  },
+  "prices": {
+    "title": "Man Zohchihnak",
+    "noInsurance": "Insurance Um Lo",
+    "withInsurance": "Insurance In",
+    "discountPrograms": "Man Tlaknak Program",
+    "perMonth": "thla khat",
+    "perPill": "pill khat",
+    "quantity": "Zat",
+    "priceVaries": "Man cu hmun in a danglam kho",
+    "lastUpdated": "A thar bik"
+  },
+  "accessibility": {
+    "settings": "Hmangtheinak Chenak",
+    "largeText": "Ca Ngan",
+    "highContrast": "Kiangkim Sang",
+    "screenReader": "Screen Reader Tthannak",
+    "skipToMain": "A biapi lam i kal"
+  },
+  "common": {
+    "loading": "Tuah lai...",
+    "error": "A tthatlo a chuak",
+    "tryAgain": "Zuam Tthan",
+    "back": "Kir",
+    "next": "A Tanglei",
+    "close": "Khah",
+    "save": "Khum",
+    "cancel": "Thiah",
+    "learnMore": "A Tam Deuh Fiang",
+    "viewAll": "Vialte Hmuh",
+    "noData": "Data a um lo"
+  },
+  "footer": {
+    "about": "PublicRx Kong",
+    "aboutText": "Man tlawm si damdawi na hmuh hna nak caah thawngthannak a si.",
+    "disclaimer": "Man langhter mi cu ruahnak a si. Na damdawi dawr ah zeitik hmanh fehter.",
+    "privacy": "Thupkhuh Cawnnak",
+    "terms": "Hmangnak Caah",
+    "contact": "Kan Kawh",
+    "language": "Holh"
+  }
+}

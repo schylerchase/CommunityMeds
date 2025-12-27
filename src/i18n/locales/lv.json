@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Atrodiet sev tuvumā pieejamus medikamentus"
+  },
+  "nav": {
+    "home": "Sākums",
+    "search": "Meklēt zāles",
+    "pharmacies": "Atrodiet Aptiekas",
+    "about": "Par"
+  },
+  "home": {
+    "title": "Atrodiet izdevīgas zāles",
+    "subtitle": "Salīdziniet cenas, atrodiet tuvumā esošās aptiekas un ietaupiet uz savām receptēm",
+    "searchPlaceholder": "Ievadiet zāļu nosaukumu...",
+    "searchButton": "Meklēt",
+    "popularSearches": "Populāri meklējumi",
+    "recentSearches": "Jaunākie meklējumi"
+  },
+  "search": {
+    "results": "Meklēšanas rezultāti",
+    "resultsFor": "Rezultāti vaicājumam",
+    "noResults": "Nav atrastas zāles",
+    "tryDifferent": "Izmēģiniet citu meklēšanas vienumu",
+    "loading": "Medikamentu meklēšana...",
+    "filters": "Filtri",
+    "sortBy": "Kārtot pēc",
+    "priceLowest": "Cena: zema līdz augsta",
+    "priceHighest": "Cena: no augstas līdz zemai",
+    "nameAZ": "Vārds: A līdz Z"
+  },
+  "drug": {
+    "genericName": "Vispārējs nosaukums",
+    "brandName": "Zīmola nosaukums",
+    "manufacturer": "Ražotājs",
+    "description": "Apraksts",
+    "commonUses": "Kopējie lietojumi",
+    "sideEffects": "Blakusparādības",
+    "prices": "Cenas",
+    "cashPrice": "Cena skaidrā naudā",
+    "withInsurance": "Ar Apdrošināšanu",
+    "withCoupon": "Ar kuponu",
+    "genericAlternative": "Pieejama vispārīga alternatīva",
+    "savings": "Jūs varētu ietaupīt",
+    "assistancePrograms": "Pacientu palīdzības programmas",
+    "findPharmacy": "Atrodiet aptieku"
+  },
+  "pharmacy": {
+    "title": "Atrodiet tuvumā esošās aptiekas",
+    "subtitle": "Atrodiet tuvākās aptiekas ar vislabākajām cenām",
+    "useLocation": "Izmantojiet Mana atrašanās vieta",
+    "enterZip": "Vai arī ievadiet pasta indeksu",
+    "search": "Meklēt",
+    "filters": {
+      "all": "Visi",
+      "open24": "Atvērts 24 stundas diennaktī",
+      "delivery": "Pieejama piegāde",
+      "driveThru": "Brauciens cauri"
+    },
+    "distance": "jūdžu attālumā",
+    "hours": "Stundas",
+    "phone": "Tālrunis",
+    "getDirections": "Saņemiet norādes",
+    "viewPrices": "Skatīt cenas"
+  },
+  "prices": {
+    "title": "Cenu salīdzinājums",
+    "noInsurance": "Bez Apdrošināšanas",
+    "withInsurance": "Ar Apdrošināšanu",
+    "discountPrograms": "Atlaižu programmas",
+    "perMonth": "mēnesī",
+    "perPill": "par tableti",
+    "quantity": "Daudzums",
+    "priceVaries": "Cenas var atšķirties atkarībā no atrašanās vietas",
+    "lastUpdated": "Pēdējo reizi atjaunināts"
+  },
+  "accessibility": {
+    "settings": "Pieejamības iestatījumi",
+    "largeText": "Liels teksts",
+    "highContrast": "Augsts kontrasts",
+    "screenReader": "Optimizēts ekrāna lasītājs",
+    "skipToMain": "Pāriet uz galveno saturu"
+  },
+  "common": {
+    "loading": "Notiek ielāde...",
+    "error": "Radās kļūda",
+    "tryAgain": "Mēģiniet vēlreiz",
+    "back": "Atpakaļ",
+    "next": "Tālāk",
+    "close": "Aizvērt",
+    "save": "Saglabāt",
+    "cancel": "Atcelt",
+    "learnMore": "Uzziniet vairāk",
+    "viewAll": "Skatīt visu",
+    "noData": "Nav pieejami dati"
+  },
+  "footer": {
+    "about": "Par PublicRx",
+    "aboutText": "Bezmaksas publisks resurss, kas palīdzēs atrast medikamentus par pieņemamām cenām.",
+    "disclaimer": "Norādītās cenas ir aptuvenas. Vienmēr pārbaudiet to savā aptiekā.",
+    "privacy": "Privātuma politika",
+    "terms": "Lietošanas noteikumi",
+    "contact": "Sazinieties ar mums",
+    "language": "Valoda"
+  }
+}

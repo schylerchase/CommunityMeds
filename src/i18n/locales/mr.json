@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "तुमच्या जवळील परवडणारी औषधे शोधा"
+  },
+  "nav": {
+    "home": "घर",
+    "search": "औषधे शोधा",
+    "pharmacies": "फार्मसी शोधा",
+    "about": "बद्दल"
+  },
+  "home": {
+    "title": "परवडणारी औषधे शोधा",
+    "subtitle": "किमतींची तुलना करा, जवळपासची फार्मसी शोधा आणि तुमच्या प्रिस्क्रिप्शनवर बचत करा",
+    "searchPlaceholder": "औषधाचे नाव एंटर करा...",
+    "searchButton": "शोधा",
+    "popularSearches": "लोकप्रिय शोध",
+    "recentSearches": "अलीकडील शोध"
+  },
+  "search": {
+    "results": "शोध परिणाम",
+    "resultsFor": "साठी परिणाम",
+    "noResults": "औषधे सापडली नाहीत",
+    "tryDifferent": "भिन्न शोध संज्ञा वापरून पहा",
+    "loading": "औषधे शोधत आहे...",
+    "filters": "फिल्टर",
+    "sortBy": "यानुसार क्रमवारी लावा",
+    "priceLowest": "किंमत: कमी ते उच्च",
+    "priceHighest": "किंमत: उच्च ते कमी",
+    "nameAZ": "नाव: A ते Z"
+  },
+  "drug": {
+    "genericName": "जेनेरिक नाव",
+    "brandName": "ब्रँड नाव",
+    "manufacturer": "उत्पादक",
+    "description": "वर्णन",
+    "commonUses": "सामान्य उपयोग",
+    "sideEffects": "साइड इफेक्ट्स",
+    "prices": "किमती",
+    "cashPrice": "रोख किंमत",
+    "withInsurance": "विमा सह",
+    "withCoupon": "कूपन सह",
+    "genericAlternative": "जेनेरिक पर्यायी उपलब्ध",
+    "savings": "आपण वाचवू शकता",
+    "assistancePrograms": "रुग्ण सहाय्य कार्यक्रम",
+    "findPharmacy": "फार्मसी शोधा"
+  },
+  "pharmacy": {
+    "title": "जवळील फार्मसी शोधा",
+    "subtitle": "सर्वोत्तम किमतींसह तुमच्या जवळील फार्मसी शोधा",
+    "useLocation": "माझे स्थान वापरा",
+    "enterZip": "किंवा पिन कोड प्रविष्ट करा",
+    "search": "शोधा",
+    "filters": {
+      "all": "सर्व",
+      "open24": "24 तास उघडा",
+      "delivery": "वितरण उपलब्ध",
+      "driveThru": "ड्राइव्ह-थ्रू"
+    },
+    "distance": "मैल दूर",
+    "hours": "तास",
+    "phone": "फोन",
+    "getDirections": "दिशानिर्देश मिळवा",
+    "viewPrices": "किंमती पहा"
+  },
+  "prices": {
+    "title": "किंमत तुलना",
+    "noInsurance": "विमाशिवाय",
+    "withInsurance": "विमा सह",
+    "discountPrograms": "सवलत कार्यक्रम",
+    "perMonth": "दरमहा",
+    "perPill": "प्रति गोळी",
+    "quantity": "प्रमाण",
+    "priceVaries": "स्थानानुसार किंमती बदलू शकतात",
+    "lastUpdated": "शेवटचे अपडेट केले"
+  },
+  "accessibility": {
+    "settings": "प्रवेशयोग्यता सेटिंग्ज",
+    "largeText": "मोठा मजकूर",
+    "highContrast": "उच्च कॉन्ट्रास्ट",
+    "screenReader": "स्क्रीन रीडर ऑप्टिमाइझ केले",
+    "skipToMain": "मुख्य सामग्रीवर जा"
+  },
+  "common": {
+    "loading": "लोड करत आहे...",
+    "error": "एक त्रुटी आली",
+    "tryAgain": "पुन्हा प्रयत्न करा",
+    "back": "मागे",
+    "next": "पुढे",
+    "close": "बंद करा",
+    "save": "जतन करा",
+    "cancel": "रद्द करा",
+    "learnMore": "अधिक जाणून घ्या",
+    "viewAll": "सर्व पहा",
+    "noData": "कोणताही डेटा उपलब्ध नाही"
+  },
+  "footer": {
+    "about": "PublicRx बद्दल",
+    "aboutText": "तुम्हाला परवडणारी औषधे शोधण्यात मदत करण्यासाठी एक विनामूल्य सार्वजनिक संसाधन.",
+    "disclaimer": "दर्शविलेल्या किमती अंदाजे आहेत. तुमच्या फार्मसीमध्ये नेहमी पडताळणी करा.",
+    "privacy": "गोपनीयता धोरण",
+    "terms": "वापराच्या अटी",
+    "contact": "आमच्याशी संपर्क साधा",
+    "language": "भाषा"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Yakınınızdaki Uygun Fiyatlı İlaçları Bulun"
+  },
+  "nav": {
+    "home": "Ev",
+    "search": "İlaç Ara",
+    "pharmacies": "Eczane Bul",
+    "about": "Hakkında"
+  },
+  "home": {
+    "title": "Uygun Fiyatlı İlaçlar Bulun",
+    "subtitle": "Fiyatları karşılaştırın, yakındaki eczaneleri bulun ve reçetelerinizden tasarruf edin",
+    "searchPlaceholder": "İlaç adını girin...",
+    "searchButton": "Aramak",
+    "popularSearches": "Popüler Aramalar",
+    "recentSearches": "Son Aramalar"
+  },
+  "search": {
+    "results": "Arama Sonuçları",
+    "resultsFor": "Şunun için sonuçlar:",
+    "noResults": "İlaç bulunamadı",
+    "tryDifferent": "Farklı bir arama terimi deneyin",
+    "loading": "İlaç aranıyor...",
+    "filters": "Filtreler",
+    "sortBy": "Göre sırala",
+    "priceLowest": "Fiyat: Düşükten Yükseğe",
+    "priceHighest": "Fiyat: Yüksekten Düşüğe",
+    "nameAZ": "İsim: A'dan Z'ye"
+  },
+  "drug": {
+    "genericName": "Genel Ad",
+    "brandName": "Marka Adı",
+    "manufacturer": "Üretici",
+    "description": "Tanım",
+    "commonUses": "Ortak Kullanımlar",
+    "sideEffects": "Yan Etkiler",
+    "prices": "Fiyatlar",
+    "cashPrice": "Peşin Fiyat",
+    "withInsurance": "Sigortalı",
+    "withCoupon": "Kuponlu",
+    "genericAlternative": "Genel Alternatif Mevcut",
+    "savings": "Kurtarabilirsin",
+    "assistancePrograms": "Hasta Yardım Programları",
+    "findPharmacy": "Eczane Bul"
+  },
+  "pharmacy": {
+    "title": "Yakındaki Eczaneleri Bul",
+    "subtitle": "En uygun fiyatlarla yakınınızdaki eczaneleri bulun",
+    "useLocation": "Konumumu Kullan",
+    "enterZip": "Veya posta kodunu girin",
+    "search": "Aramak",
+    "filters": {
+      "all": "Tüm",
+      "open24": "24 Saat Açık",
+      "delivery": "Teslimat Mevcuttur",
+      "driveThru": "Arabaya servis"
+    },
+    "distance": "kilometrelerce uzakta",
+    "hours": "Saat",
+    "phone": "Telefon",
+    "getDirections": "Yol Tarifi Al",
+    "viewPrices": "Fiyatları Görüntüle"
+  },
+  "prices": {
+    "title": "Fiyat Karşılaştırması",
+    "noInsurance": "Sigortasız",
+    "withInsurance": "Sigortalı",
+    "discountPrograms": "İndirim Programları",
+    "perMonth": "aylık",
+    "perPill": "hap başına",
+    "quantity": "Miktar",
+    "priceVaries": "Fiyatlar konuma göre değişiklik gösterebilir",
+    "lastUpdated": "Son güncelleme"
+  },
+  "accessibility": {
+    "settings": "Erişilebilirlik Ayarları",
+    "largeText": "Büyük Metin",
+    "highContrast": "Yüksek Kontrast",
+    "screenReader": "Ekran Okuyucu Optimize Edildi",
+    "skipToMain": "Ana içeriğe atla"
+  },
+  "common": {
+    "loading": "Yükleniyor...",
+    "error": "Bir hata oluştu",
+    "tryAgain": "Tekrar deneyin",
+    "back": "Geri",
+    "next": "Sonraki",
+    "close": "Kapalı",
+    "save": "Kaydetmek",
+    "cancel": "İptal etmek",
+    "learnMore": "Daha fazla bilgi edin",
+    "viewAll": "Tümünü Görüntüle",
+    "noData": "Veri yok"
+  },
+  "footer": {
+    "about": "PublicRx Hakkında",
+    "aboutText": "Uygun fiyatlı ilaçlar bulmanıza yardımcı olacak ücretsiz bir kamu kaynağı.",
+    "disclaimer": "Gösterilen fiyatlar tahminidir. Her zaman eczanenizden teyit alın.",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Kullanım Koşulları",
+    "contact": "Bize Ulaşın",
+    "language": "Dil"
+  }
+}

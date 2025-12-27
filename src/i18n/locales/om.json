@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Qorichoota gatii madaalawaa qaban naannoo keessan barbaadi ."
+  },
+  "nav": {
+    "home": "Mana",
+    "search": "Qorichoota barbaadi .",
+    "pharmacies": "Faarmaasii barbaadi .",
+    "about": "Waa'ee"
+  },
+  "home": {
+    "title": "Qorichoota gatii madaalawaa qaban barbaadi .",
+    "subtitle": "Gatii wal bira qabaa, mana qorichaa naannoo keessan jiru argadhaa, ajaja keessan qusadhaa",
+    "searchPlaceholder": "Maqaa qoricha...",
+    "searchButton": "Barbaaduu",
+    "popularSearches": "Barbaacha beekamaa .",
+    "recentSearches": "Barbaacha dhiheenya kanaa ."
+  },
+  "search": {
+    "results": "Bu'aa barbaacha .",
+    "resultsFor": "Bu'aa .",
+    "noResults": "Qorichootni hin argamne .",
+    "tryDifferent": "Jecha barbaacha adda ta'e yaali .",
+    "loading": "Qoricha barbaaduu...",
+    "filters": "Filteroota .",
+    "sortBy": "Saagi by .",
+    "priceLowest": "Gatiin: gadi aanaa hanga ol aanaa .",
+    "priceHighest": "Gatiin: Ol'aanaa hanga gadi aanaa .",
+    "nameAZ": "Maqaa: A hanga Z ."
+  },
+  "drug": {
+    "genericName": "Maqaa waliigalaa .",
+    "brandName": "Maqaa Biraandii .",
+    "manufacturer": "Oomishaa .",
+    "description": "Ibsa",
+    "commonUses": "Fayyadama waliigalaa .",
+    "sideEffects": "Miidhaa cinaa .",
+    "prices": "Gatii .",
+    "cashPrice": "Gatiin maallaqaa .",
+    "withInsurance": "Inshuraansii waliin .",
+    "withCoupon": "Kuuppoonii wajjin .",
+    "genericAlternative": "Filannoo waliigalaa kan argamu .",
+    "savings": "Save gochuu dandeessan .",
+    "assistancePrograms": "Sagantaa Gargaarsa Dhukkubsataa .",
+    "findPharmacy": "Faarmaasii barbaadi ."
+  },
+  "pharmacy": {
+    "title": "Faarmaasiiwwan naannoo sana jiran barbaadi .",
+    "subtitle": "Gatii gaarii ta'een mana qorichaa naannoo keessan jiru barbaadaa .",
+    "useLocation": "Bakkan jiru fayyadamaa .",
+    "enterZip": "Yookiin ziip koodii galchi .",
+    "search": "Barbaaduu",
+    "filters": {
+      "all": "Hunda",
+      "open24": "Sa'aatii 24 banaa .",
+      "delivery": "Geejjibni ni argama .",
+      "driveThru": "Drive-Thru ."
+    },
+    "distance": "Maayilii fagaattee .",
+    "hours": "Sa'aatiiwwan",
+    "phone": "Bilbila",
+    "getDirections": "Kallattii argachuu .",
+    "viewPrices": "Gatii ilaali"
+  },
+  "prices": {
+    "title": "Walbira Qabsiisuu Gatii .",
+    "noInsurance": "Inshuraansii malee .",
+    "withInsurance": "Inshuraansii waliin .",
+    "discountPrograms": "Sagantaa hir'ina gatii .",
+    "perMonth": "Ji'atti .",
+    "perPill": "kiniinii tokkoof .",
+    "quantity": "Baay'ina",
+    "priceVaries": "Gatiin bakka bakkatti garaagarummaa qabaachuu danda'a .",
+    "lastUpdated": "Yeroo dhumaaf kan haaromfame"
+  },
+  "accessibility": {
+    "settings": "Sajoo dhaqqabummaa .",
+    "largeText": "Barreeffama guddaa .",
+    "highContrast": "Faallaa olaanaa .",
+    "screenReader": "Dubbisaa iskiriinii fooyya'e .",
+    "skipToMain": "Gara qabiyyee ijootti darbuu ."
+  },
+  "common": {
+    "loading": "Fe'aa...",
+    "error": "Dogoggorri uumame .",
+    "tryAgain": "Ammas yaali .",
+    "back": "Dugda",
+    "next": "Kan itti aanu",
+    "close": "Cufuu",
+    "save": "Qusachuu",
+    "cancel": "Haquu",
+    "learnMore": "Caalaatti baradhaa",
+    "viewAll": "Hundaa ilaali",
+    "noData": "Daataan hin jiru ."
+  },
+  "footer": {
+    "about": "Waa'ee Publicx",
+    "aboutText": "Qabeenya ummataa bilisaa qoricha gatii madaalawaa ta’e argachuuf si gargaaru.",
+    "disclaimer": "Gatiin agarsiifame tilmaama. Yeroo hunda mana qorichaa keessaniin mirkaneessaa.",
+    "privacy": "Imaammata Dhuunfaa .",
+    "terms": "Haala itti fayyadama .",
+    "contact": "Nu qunnamaa",
+    "language": "Afaan"
+  }
+}

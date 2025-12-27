@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Hitta prisvärda mediciner nära dig"
+  },
+  "nav": {
+    "home": "Hem",
+    "search": "Sök mediciner",
+    "pharmacies": "Hitta apotek",
+    "about": "Om"
+  },
+  "home": {
+    "title": "Hitta prisvärda mediciner",
+    "subtitle": "Jämför priser, hitta närliggande apotek och spara på dina recept",
+    "searchPlaceholder": "Ange medicinnamn...",
+    "searchButton": "Söka",
+    "popularSearches": "Populära sökningar",
+    "recentSearches": "Senaste sökningar"
+  },
+  "search": {
+    "results": "Sökresultat",
+    "resultsFor": "Resultat för",
+    "noResults": "Inga mediciner hittades",
+    "tryDifferent": "Prova en annan sökterm",
+    "loading": "Söker efter mediciner...",
+    "filters": "Filter",
+    "sortBy": "Sortera efter",
+    "priceLowest": "Pris: Lågt till Högt",
+    "priceHighest": "Pris: Högt till Lågt",
+    "nameAZ": "Namn: A till Ö"
+  },
+  "drug": {
+    "genericName": "Generiskt namn",
+    "brandName": "Varumärke",
+    "manufacturer": "Tillverkare",
+    "description": "Beskrivning",
+    "commonUses": "Vanliga användningsområden",
+    "sideEffects": "Biverkningar",
+    "prices": "Priser",
+    "cashPrice": "Kontantpris",
+    "withInsurance": "Med försäkring",
+    "withCoupon": "Med kupong",
+    "genericAlternative": "Generiskt alternativ tillgängligt",
+    "savings": "Du kan spara",
+    "assistancePrograms": "Patienthjälpprogram",
+    "findPharmacy": "Hitta apotek"
+  },
+  "pharmacy": {
+    "title": "Hitta närliggande apotek",
+    "subtitle": "Hitta apotek nära dig med de bästa priserna",
+    "useLocation": "Använd Min plats",
+    "enterZip": "Eller ange postnummer",
+    "search": "Söka",
+    "filters": {
+      "all": "Alla",
+      "open24": "Öppet 24 timmar",
+      "delivery": "Leverans tillgänglig",
+      "driveThru": "Drive-Thru"
+    },
+    "distance": "mil bort",
+    "hours": "Timmar",
+    "phone": "Telefon",
+    "getDirections": "Få vägbeskrivningar",
+    "viewPrices": "Se priser"
+  },
+  "prices": {
+    "title": "Prisjämförelse",
+    "noInsurance": "Utan försäkring",
+    "withInsurance": "Med försäkring",
+    "discountPrograms": "Rabattprogram",
+    "perMonth": "per månad",
+    "perPill": "per piller",
+    "quantity": "Kvantitet",
+    "priceVaries": "Priserna kan variera beroende på plats",
+    "lastUpdated": "Senast uppdaterad"
+  },
+  "accessibility": {
+    "settings": "Tillgänglighetsinställningar",
+    "largeText": "Stor text",
+    "highContrast": "Hög kontrast",
+    "screenReader": "Skärmläsare optimerad",
+    "skipToMain": "Hoppa till huvudinnehållet"
+  },
+  "common": {
+    "loading": "Belastning...",
+    "error": "Ett fel uppstod",
+    "tryAgain": "Försök igen",
+    "back": "Tillbaka",
+    "next": "Nästa",
+    "close": "Nära",
+    "save": "Spara",
+    "cancel": "Avboka",
+    "learnMore": "Läs mer",
+    "viewAll": "Visa alla",
+    "noData": "Inga data tillgängliga"
+  },
+  "footer": {
+    "about": "Om PublicRx",
+    "aboutText": "En kostnadsfri offentlig resurs som hjälper dig att hitta prisvärda mediciner.",
+    "disclaimer": "Priserna som visas är uppskattningar. Kontrollera alltid med ditt apotek.",
+    "privacy": "Sekretesspolicy",
+    "terms": "Användarvillkor",
+    "contact": "Kontakta oss",
+    "language": "Språk"
+  }
+}

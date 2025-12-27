@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Poiščite ugodna zdravila v vaši bližini"
+  },
+  "nav": {
+    "home": "domov",
+    "search": "Iskanje zdravil",
+    "pharmacies": "Poiščite lekarne",
+    "about": "O tem"
+  },
+  "home": {
+    "title": "Poiščite cenovno ugodna zdravila",
+    "subtitle": "Primerjajte cene, poiščite bližnje lekarne in prihranite pri svojih receptih",
+    "searchPlaceholder": "Vnesite ime zdravila ...",
+    "searchButton": "Iskanje",
+    "popularSearches": "Priljubljena iskanja",
+    "recentSearches": "Nedavna iskanja"
+  },
+  "search": {
+    "results": "Rezultati iskanja",
+    "resultsFor": "Rezultati za",
+    "noResults": "Ni najdenih zdravil",
+    "tryDifferent": "Poskusite z drugim iskalnim izrazom",
+    "loading": "Iskanje zdravil...",
+    "filters": "Filtri",
+    "sortBy": "Razvrsti po",
+    "priceLowest": "Cena: od nizke do visoke",
+    "priceHighest": "Cena: visoka do nizka",
+    "nameAZ": "Ime: od A do Ž"
+  },
+  "drug": {
+    "genericName": "Generično ime",
+    "brandName": "Blagovna znamka",
+    "manufacturer": "Proizvajalec",
+    "description": "Opis",
+    "commonUses": "Pogoste uporabe",
+    "sideEffects": "Stranski učinki",
+    "prices": "Cene",
+    "cashPrice": "Cena za gotovino",
+    "withInsurance": "Z zavarovanjem",
+    "withCoupon": "S kuponom",
+    "genericAlternative": "Na voljo generična alternativa",
+    "savings": "Lahko bi prihranili",
+    "assistancePrograms": "Programi pomoči pacientom",
+    "findPharmacy": "Poiščite lekarno"
+  },
+  "pharmacy": {
+    "title": "Poiščite bližnje lekarne",
+    "subtitle": "Poiščite lekarne v svoji bližini z najboljšimi cenami",
+    "useLocation": "Uporabi Mojo lokacijo",
+    "enterZip": "Ali vnesite poštno številko",
+    "search": "Iskanje",
+    "filters": {
+      "all": "Vse",
+      "open24": "Odprto 24 ur",
+      "delivery": "Dostava na voljo",
+      "driveThru": "Drive-Thru"
+    },
+    "distance": "milj stran",
+    "hours": "ure",
+    "phone": "Telefon",
+    "getDirections": "Pridobite navodila",
+    "viewPrices": "Poglej cene"
+  },
+  "prices": {
+    "title": "Primerjava cen",
+    "noInsurance": "Brez zavarovanja",
+    "withInsurance": "Z zavarovanjem",
+    "discountPrograms": "Programi popustov",
+    "perMonth": "na mesec",
+    "perPill": "na tableto",
+    "quantity": "Količina",
+    "priceVaries": "Cene se lahko razlikujejo glede na lokacijo",
+    "lastUpdated": "Nazadnje posodobljeno"
+  },
+  "accessibility": {
+    "settings": "Nastavitve dostopnosti",
+    "largeText": "Veliko besedilo",
+    "highContrast": "Visok kontrast",
+    "screenReader": "Optimiziran bralnik zaslona",
+    "skipToMain": "Preskoči na glavno vsebino"
+  },
+  "common": {
+    "loading": "Nalaganje...",
+    "error": "Prišlo je do napake",
+    "tryAgain": "Poskusite znova",
+    "back": "Nazaj",
+    "next": "Naprej",
+    "close": "Zapri",
+    "save": "Shrani",
+    "cancel": "Prekliči",
+    "learnMore": "Več o tem",
+    "viewAll": "Prikaži vse",
+    "noData": "Ni podatkov"
+  },
+  "footer": {
+    "about": "O PublicRx",
+    "aboutText": "Brezplačen javni vir za pomoč pri iskanju cenovno ugodnih zdravil.",
+    "disclaimer": "Prikazane cene so ocene. Vedno preverite pri svoji lekarni.",
+    "privacy": "Politika zasebnosti",
+    "terms": "Pogoji uporabe",
+    "contact": "Kontaktirajte nas",
+    "language": "Jezik"
+  }
+}

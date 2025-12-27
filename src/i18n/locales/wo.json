@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Wuttal Garab yi Yomb Njeg ci Sa Wet"
+  },
+  "nav": {
+    "home": "Kër",
+    "search": "Wuttal Garab",
+    "pharmacies": "Wuttal Farmasiy",
+    "about": "Ci"
+  },
+  "home": {
+    "title": "Wuttal Garab yi Yomb Njeg",
+    "subtitle": "Comparel njeg yi, wuttal farmasiy yi ci sa wet, te denc ci sa ordonnance",
+    "searchPlaceholder": "Bindal tuuru garab bi...",
+    "searchButton": "Wuttal",
+    "popularSearches": "Wuttal yu Bare",
+    "recentSearches": "Wuttal yu Mujj"
+  },
+  "search": {
+    "results": "Njalbéen Wuttal",
+    "resultsFor": "Njalbéen ngir",
+    "noResults": "Amul garab bu am ko",
+    "tryDifferent": "Jéemaal beneen tur",
+    "loading": "Wuttal garab...",
+    "filters": "Tànnef",
+    "sortBy": "Tànnaal ci",
+    "priceLowest": "Njeg: Tuuti ba rëy",
+    "priceHighest": "Njeg: Rëy ba tuuti",
+    "nameAZ": "Tur: A ba Z"
+  },
+  "drug": {
+    "genericName": "Tur Générique",
+    "brandName": "Tur Marque",
+    "manufacturer": "Ligéeykat",
+    "description": "Ndigël",
+    "commonUses": "Jëfandikoo yu Dëgëru",
+    "sideEffects": "Ay Li Xew",
+    "prices": "Njeg yi",
+    "cashPrice": "Njeg Cash",
+    "withInsurance": "Ak Assurance",
+    "withCoupon": "Ak Coupon",
+    "genericAlternative": "Am na Générique",
+    "savings": "Mën ngaa denc",
+    "assistancePrograms": "Programm Ndimbal",
+    "findPharmacy": "Wuttal Farmasiy"
+  },
+  "pharmacy": {
+    "title": "Wuttal Farmasiy yi ci Sa Wet",
+    "subtitle": "Wuttal farmasiy yi ci sa wet yu am njeg yu baax",
+    "useLocation": "Jëfandikool Sa Position",
+    "enterZip": "Walla bindal ZIP code",
+    "search": "Wuttal",
+    "filters": {
+      "all": "Lépp",
+      "open24": "Ubbu 24 Waxtu",
+      "delivery": "Yónne Am na",
+      "driveThru": "Drive-Thru"
+    },
+    "distance": "mile sori",
+    "hours": "Waxtu",
+    "phone": "Telefon",
+    "getDirections": "Jële Yoon",
+    "viewPrices": "Xool Njeg yi"
+  },
+  "prices": {
+    "title": "Comparer Njeg",
+    "noInsurance": "Bu Amul Assurance",
+    "withInsurance": "Ak Assurance",
+    "discountPrograms": "Programm Wañi",
+    "perMonth": "ci weer",
+    "perPill": "ci pill",
+    "quantity": "Limu",
+    "priceVaries": "Njeg yi mën nañu soppi ci position",
+    "lastUpdated": "Yeesal gu mujj"
+  },
+  "accessibility": {
+    "settings": "Paramètre Jëfandikoo",
+    "largeText": "Mbind bu Rey",
+    "highContrast": "Contraste bu Kawe",
+    "screenReader": "Screen Reader Yomb",
+    "skipToMain": "Dem ci contenu bu am solo"
+  },
+  "common": {
+    "loading": "Yegsi...",
+    "error": "Njuumte am na",
+    "tryAgain": "Jéemaat",
+    "back": "Dellu",
+    "next": "Bayyi",
+    "close": "Tëj",
+    "save": "Denc",
+    "cancel": "Neenal",
+    "learnMore": "Xam Lu Ëpp",
+    "viewAll": "Xool Lépp",
+    "noData": "Amul données"
+  },
+  "footer": {
+    "about": "Ci PublicRx",
+    "aboutText": "Ressource publique bu yor ngir ndimbal la wuttal garab yi yomb.",
+    "disclaimer": "Njeg yi ñu won dina yem. Laaj sa farmasiy.",
+    "privacy": "Politique Confidentialité",
+    "terms": "Conditions Jëfandikoo",
+    "contact": "Jokkoo ak Ñun",
+    "language": "Làkk"
+  }
+}

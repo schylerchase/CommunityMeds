@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "تاسو ته نږدې ارزانه درمل ومومئ"
+  },
+  "nav": {
+    "home": "کور",
+    "search": "د درملو لټون",
+    "pharmacies": "درملتون ومومئ",
+    "about": "په اړه"
+  },
+  "home": {
+    "title": "ارزانه درمل ومومئ",
+    "subtitle": "نرخونه پرتله کړئ ، نږدې درملتون ومومئ او خپل نسخې خوندي کړئ",
+    "searchPlaceholder": "د درملو نوم دننه کړئ ...",
+    "searchButton": "لټون",
+    "popularSearches": "مشهور لټونونه",
+    "recentSearches": "وروستي لټونونه"
+  },
+  "search": {
+    "results": "د لټون پایلې",
+    "resultsFor": "لپاره پایلې",
+    "noResults": "هیڅ درمل ونه موندل شو",
+    "tryDifferent": "د مختلف لټون اصطلاح هڅه وکړئ",
+    "loading": "د درملو لټون ...",
+    "filters": "فلټرونه",
+    "sortBy": "په ترتیب سره",
+    "priceLowest": "بیه: له ټیټ څخه لوړ",
+    "priceHighest": "بیه: له لوړ څخه ټیټ",
+    "nameAZ": "نوم: له الف څخه تر Z"
+  },
+  "drug": {
+    "genericName": "عمومي نوم",
+    "brandName": "د برانډ نوم",
+    "manufacturer": "جوړونکی",
+    "description": "تفصیل",
+    "commonUses": "عام استعمالونه",
+    "sideEffects": "جانبي عوارض",
+    "prices": "نرخونه",
+    "cashPrice": "د نغدو قیمت",
+    "withInsurance": "د بیمې سره",
+    "withCoupon": "د کوپن سره",
+    "genericAlternative": "عام بدیل شتون لري",
+    "savings": "تاسو کولی شئ خوندي کړئ",
+    "assistancePrograms": "د ناروغانو سره د مرستې پروګرامونه",
+    "findPharmacy": "درملتون ومومئ"
+  },
+  "pharmacy": {
+    "title": "نږدې درملتونونه ومومئ",
+    "subtitle": "تاسو ته نږدې درملتونونه د غوره نرخونو سره ومومئ",
+    "useLocation": "زما ځای وکاروئ",
+    "enterZip": "یا زپ کوډ داخل کړئ",
+    "search": "لټون",
+    "filters": {
+      "all": "ټول",
+      "open24": "24 ساعته خلاص",
+      "delivery": "تحویلي شتون لري",
+      "driveThru": "ډرایو - له لارې"
+    },
+    "distance": "میلونه لرې",
+    "hours": "ساعتونه",
+    "phone": "تلیفون",
+    "getDirections": "لارښوونې ترلاسه کړئ",
+    "viewPrices": "نرخونه وګورئ"
+  },
+  "prices": {
+    "title": "د نرخ پرتله کول",
+    "noInsurance": "د بیمې پرته",
+    "withInsurance": "د بیمې سره",
+    "discountPrograms": "د تخفیف پروګرامونه",
+    "perMonth": "هره میاشت",
+    "perPill": "هره ګولۍ",
+    "quantity": "مقدار",
+    "priceVaries": "قیمتونه ممکن د موقعیت له مخې توپیر ولري",
+    "lastUpdated": "وروستی تازه شوی"
+  },
+  "accessibility": {
+    "settings": "د لاسرسي ترتیبات",
+    "largeText": "لوی متن",
+    "highContrast": "لوړ برعکس",
+    "screenReader": "د سکرین ریډر اصلاح شوی",
+    "skipToMain": "اصلي منځپانګې ته لاړ شئ"
+  },
+  "common": {
+    "loading": "بار کول...",
+    "error": "یوه تېروتنه رامنځته شوه",
+    "tryAgain": "بیا هڅه وکړئ",
+    "back": "شاته",
+    "next": "بل",
+    "close": "تړل",
+    "save": "خوندي کړئ",
+    "cancel": "لغوه کړئ",
+    "learnMore": "نور زده کړئ",
+    "viewAll": "ټول وګورئ",
+    "noData": "هیڅ معلومات شتون نلري"
+  },
+  "footer": {
+    "about": "د PublicRx په اړه",
+    "aboutText": "وړیا عامه سرچینه چې تاسو سره د ارزانه درملو موندلو کې مرسته کوي.",
+    "disclaimer": "ښودل شوي نرخونه اټکل شوي دي. تل د خپل درملتون سره تایید کړئ.",
+    "privacy": "د محرمیت پالیسي",
+    "terms": "د کارولو شرایط",
+    "contact": "موږ سره اړیکه ونیسئ",
+    "language": "ژبه"
+  }
+}

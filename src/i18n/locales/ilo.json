@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Birukem dagiti Nalaka a Agas iti Asidegmo"
+  },
+  "nav": {
+    "home": "Pagtaengan",
+    "search": "Agbirok iti Agas",
+    "pharmacies": "Agbirok iti Botika",
+    "about": "Maipapan"
+  },
+  "home": {
+    "title": "Birukem dagiti Nalaka a Agas",
+    "subtitle": "Ikompara dagiti presio, birukem dagiti botika iti asidegmo, ken agurnong iti dagiti resetam",
+    "searchPlaceholder": "Isurat ti nagan ti agas...",
+    "searchButton": "Agbirok",
+    "popularSearches": "Nalatak a Panagsapul",
+    "recentSearches": "Nabiit Pay a Panagsapul"
+  },
+  "search": {
+    "results": "Resulta ti Panagsapul",
+    "resultsFor": "Resulta para iti",
+    "noResults": "Awan ti nasarakan nga agas",
+    "tryDifferent": "Padasem ti sabali a termino",
+    "loading": "Agsapsapul iti agas...",
+    "filters": "Dagiti Filter",
+    "sortBy": "Urnusen babaen ti",
+    "priceLowest": "Presio: Nababa agingga Nangato",
+    "priceHighest": "Presio: Nangato agingga Nababa",
+    "nameAZ": "Nagan: A agingga Z"
+  },
+  "drug": {
+    "genericName": "Heneral a Nagan",
+    "brandName": "Nagan ti Brand",
+    "manufacturer": "Nagaramid",
+    "description": "Deskripsion",
+    "commonUses": "Kadawyan a Panagusar",
+    "sideEffects": "Dagiti Side Effect",
+    "prices": "Dagiti Presio",
+    "cashPrice": "Presio ti Cash",
+    "withInsurance": "Adda Insurance",
+    "withCoupon": "Adda Coupon",
+    "genericAlternative": "Adda Generic nga Alternatibo",
+    "savings": "Mabalinmo nga agurnong iti",
+    "assistancePrograms": "Dagiti Programa a Tumulong iti Pasyente",
+    "findPharmacy": "Birukem ti Botika"
+  },
+  "pharmacy": {
+    "title": "Birukem dagiti Botika iti Asideg",
+    "subtitle": "Birukem dagiti botika iti asidegmo nga addaan iti kasayaatan a presio",
+    "useLocation": "Usaren ti Lokasyonko",
+    "enterZip": "Wenno isurat ti ZIP code",
+    "search": "Agbirok",
+    "filters": {
+      "all": "Amin",
+      "open24": "Akalukat 24 nga Oras",
+      "delivery": "Adda Delivery",
+      "driveThru": "Drive-Thru"
+    },
+    "distance": "milya ti kaadayo",
+    "hours": "Oras",
+    "phone": "Telepono",
+    "getDirections": "Alaen dagiti Direksion",
+    "viewPrices": "Kitaen dagiti Presio"
+  },
+  "prices": {
+    "title": "Panagikomparar ti Presio",
+    "noInsurance": "Awan Insurance",
+    "withInsurance": "Adda Insurance",
+    "discountPrograms": "Dagiti Discount Program",
+    "perMonth": "tunggal bulan",
+    "perPill": "tunggal tableta",
+    "quantity": "Bilang",
+    "priceVaries": "Dagiti presio mabalin nga agbaliw depende iti lokasion",
+    "lastUpdated": "Naudi a na-update"
+  },
+  "accessibility": {
+    "settings": "Dagiti Setting ti Accessibility",
+    "largeText": "Dakkel a Teksto",
+    "highContrast": "Nangato a Contrast",
+    "screenReader": "Na-optimize ti Screen Reader",
+    "skipToMain": "Lumaktaw iti kangrunaan a linaon"
+  },
+  "common": {
+    "loading": "Agkarkarga...",
+    "error": "Adda napasamak a biddut",
+    "tryAgain": "Padasem Manen",
+    "back": "Agsubli",
+    "next": "Sumaruno",
+    "close": "Irikep",
+    "save": "I-save",
+    "cancel": "Ikansela",
+    "learnMore": "Ammuem ti Ad-adu Pay",
+    "viewAll": "Kitaen Amin",
+    "noData": "Awan data a magun-od"
+  },
+  "footer": {
+    "about": "Maipapan iti PublicRx",
+    "aboutText": "Maysa a libre a pampubliko a rekurso tapno matulonganaka a mangbirok iti nalaka nga agas.",
+    "disclaimer": "Dagiti presio a naipakita ket tantia laeng. Kanayon a i-verify iti botikaem.",
+    "privacy": "Pagannurotan ti Privacy",
+    "terms": "Dagiti Termino ti Panagusar",
+    "contact": "Kontakannakami",
+    "language": "Pagsasao"
+  }
+}

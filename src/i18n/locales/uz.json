@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Sizga yaqin bo'lgan arzon dori-darmonlarni toping"
+  },
+  "nav": {
+    "home": "Uy",
+    "search": "Dori-darmonlarni qidirish",
+    "pharmacies": "Dorixonalarni toping",
+    "about": "Haqida"
+  },
+  "home": {
+    "title": "Qulay dori-darmonlarni toping",
+    "subtitle": "Narxlarni solishtiring, yaqin atrofdagi dorixonalarni toping va retseptlaringizni tejang",
+    "searchPlaceholder": "Dori nomini kiriting...",
+    "searchButton": "Qidiruv",
+    "popularSearches": "Ommabop qidiruvlar",
+    "recentSearches": "Oxirgi qidiruvlar"
+  },
+  "search": {
+    "results": "Qidiruv natijalari",
+    "resultsFor": "uchun natijalar",
+    "noResults": "Hech qanday dori topilmadi",
+    "tryDifferent": "Boshqa qidiruv soʻzini sinab koʻring",
+    "loading": "Dori-darmonlar qidirilmoqda...",
+    "filters": "Filtrlar",
+    "sortBy": "Saralash turi",
+    "priceLowest": "Narxi: pastdan yuqoriga",
+    "priceHighest": "Narxi: yuqoridan pastgacha",
+    "nameAZ": "Nomi: A dan Z gacha"
+  },
+  "drug": {
+    "genericName": "Umumiy ism",
+    "brandName": "Brend nomi",
+    "manufacturer": "Ishlab chiqaruvchi",
+    "description": "Tavsif",
+    "commonUses": "Umumiy foydalanish",
+    "sideEffects": "Yon ta'siri",
+    "prices": "Narxlar",
+    "cashPrice": "Naqd pul narxi",
+    "withInsurance": "Sug'urta bilan",
+    "withCoupon": "Kupon bilan",
+    "genericAlternative": "Umumiy muqobil mavjud",
+    "savings": "Siz tejashingiz mumkin edi",
+    "assistancePrograms": "Bemorlarga yordam dasturlari",
+    "findPharmacy": "Dorixonani toping"
+  },
+  "pharmacy": {
+    "title": "Yaqin atrofdagi dorixonalarni toping",
+    "subtitle": "Eng yaxshi narxlarda sizga yaqin dorixonalarni toping",
+    "useLocation": "Mening joylashuvimdan foydalaning",
+    "enterZip": "Yoki pochta indeksini kiriting",
+    "search": "Qidiruv",
+    "filters": {
+      "all": "Hammasi",
+      "open24": "24 soat ochiq",
+      "delivery": "Yetkazib berish mavjud",
+      "driveThru": "Drive-Thru"
+    },
+    "distance": "kilometr uzoqlikda",
+    "hours": "Soat",
+    "phone": "Telefon",
+    "getDirections": "Yoʻnalishlarni oling",
+    "viewPrices": "Narxlarni ko'rish"
+  },
+  "prices": {
+    "title": "Narxlarni taqqoslash",
+    "noInsurance": "Sug'urtasiz",
+    "withInsurance": "Sug'urta bilan",
+    "discountPrograms": "Chegirma dasturlari",
+    "perMonth": "oyiga",
+    "perPill": "har bir tabletka",
+    "quantity": "Miqdori",
+    "priceVaries": "Narxlar joylashuvga qarab farq qilishi mumkin",
+    "lastUpdated": "Oxirgi yangilangan"
+  },
+  "accessibility": {
+    "settings": "Maxsus imkoniyatlar sozlamalari",
+    "largeText": "Katta matn",
+    "highContrast": "Yuqori kontrast",
+    "screenReader": "Ekranni o'qish moslamasi optimallashtirilgan",
+    "skipToMain": "Asosiy tarkibga o'tish"
+  },
+  "common": {
+    "loading": "Yuklanmoqda...",
+    "error": "Xatolik yuz berdi",
+    "tryAgain": "Qayta urinib ko'ring",
+    "back": "Orqaga",
+    "next": "Keyingisi",
+    "close": "Yopish",
+    "save": "Saqlash",
+    "cancel": "Bekor qilish",
+    "learnMore": "Batafsil ma'lumot",
+    "viewAll": "Hammasini ko‘rish",
+    "noData": "Maʼlumotlar mavjud emas"
+  },
+  "footer": {
+    "about": "PublicRx haqida",
+    "aboutText": "Sizga arzon dori-darmonlarni topishga yordam beradigan bepul davlat resursi.",
+    "disclaimer": "Ko'rsatilgan narxlar taxminiydir. Har doim dorixonangiz bilan tekshiring.",
+    "privacy": "Maxfiylik siyosati",
+    "terms": "Foydalanish shartlari",
+    "contact": "Biz bilan bog'lanish",
+    "language": "Til"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "ค้นหายาราคาไม่แพงใกล้ตัวคุณ"
+  },
+  "nav": {
+    "home": "บ้าน",
+    "search": "ค้นหายา",
+    "pharmacies": "ค้นหาร้านขายยา",
+    "about": "เกี่ยวกับ"
+  },
+  "home": {
+    "title": "ค้นหายาราคาย่อมเยา",
+    "subtitle": "เปรียบเทียบราคา ค้นหาร้านขายยาใกล้เคียง และประหยัดค่าใบสั่งยาของคุณ",
+    "searchPlaceholder": "ใส่ชื่อยา...",
+    "searchButton": "ค้นหา",
+    "popularSearches": "การค้นหายอดนิยม",
+    "recentSearches": "การค้นหาล่าสุด"
+  },
+  "search": {
+    "results": "ผลการค้นหา",
+    "resultsFor": "ผลลัพธ์สำหรับ",
+    "noResults": "ไม่พบยา",
+    "tryDifferent": "ลองใช้คำค้นหาอื่น",
+    "loading": "กำลังค้นหายา...",
+    "filters": "ตัวกรอง",
+    "sortBy": "เรียงตาม",
+    "priceLowest": "ราคา: จากต่ำไปสูง",
+    "priceHighest": "ราคา: สูงไปต่ำ",
+    "nameAZ": "ชื่อ: A ถึง Z"
+  },
+  "drug": {
+    "genericName": "ชื่อสามัญ",
+    "brandName": "ชื่อแบรนด์",
+    "manufacturer": "ผู้ผลิต",
+    "description": "คำอธิบาย",
+    "commonUses": "การใช้งานทั่วไป",
+    "sideEffects": "ผลข้างเคียง",
+    "prices": "ราคา",
+    "cashPrice": "ราคาเงินสด",
+    "withInsurance": "พร้อมประกันภัย",
+    "withCoupon": "พร้อมคูปอง",
+    "genericAlternative": "ทางเลือกทั่วไปที่มีอยู่",
+    "savings": "คุณสามารถบันทึกได้",
+    "assistancePrograms": "โปรแกรมช่วยเหลือผู้ป่วย",
+    "findPharmacy": "ค้นหาร้านขายยา"
+  },
+  "pharmacy": {
+    "title": "ค้นหาร้านขายยาใกล้เคียง",
+    "subtitle": "ค้นหาร้านขายยาใกล้บ้านคุณด้วยราคาที่ดีที่สุด",
+    "useLocation": "ใช้ตำแหน่งของฉัน",
+    "enterZip": "หรือกรอกรหัสไปรษณีย์",
+    "search": "ค้นหา",
+    "filters": {
+      "all": "ทั้งหมด",
+      "open24": "เปิด 24 ชม",
+      "delivery": "มีบริการจัดส่ง",
+      "driveThru": "ไดรฟ์ทรู"
+    },
+    "distance": "ห่างออกไปหลายไมล์",
+    "hours": "ชั่วโมง",
+    "phone": "โทรศัพท์",
+    "getDirections": "รับเส้นทาง",
+    "viewPrices": "ดูราคา"
+  },
+  "prices": {
+    "title": "การเปรียบเทียบราคา",
+    "noInsurance": "โดยไม่ต้องมีประกันภัย",
+    "withInsurance": "พร้อมประกันภัย",
+    "discountPrograms": "โปรแกรมส่วนลด",
+    "perMonth": "ต่อเดือน",
+    "perPill": "ต่อเม็ด",
+    "quantity": "ปริมาณ",
+    "priceVaries": "ราคาอาจแตกต่างกันไปตามสถานที่",
+    "lastUpdated": "อัปเดตล่าสุด"
+  },
+  "accessibility": {
+    "settings": "การตั้งค่าการเข้าถึง",
+    "largeText": "ข้อความขนาดใหญ่",
+    "highContrast": "คอนทราสต์สูง",
+    "screenReader": "โปรแกรมอ่านหน้าจอปรับให้เหมาะสม",
+    "skipToMain": "ข้ามไปที่เนื้อหาหลัก"
+  },
+  "common": {
+    "loading": "กำลังโหลด...",
+    "error": "เกิดข้อผิดพลาด",
+    "tryAgain": "ลองอีกครั้ง",
+    "back": "กลับ",
+    "next": "ต่อไป",
+    "close": "ปิด",
+    "save": "บันทึก",
+    "cancel": "ยกเลิก",
+    "learnMore": "เรียนรู้เพิ่มเติม",
+    "viewAll": "ดูทั้งหมด",
+    "noData": "ไม่มีข้อมูล"
+  },
+  "footer": {
+    "about": "เกี่ยวกับ PublicRx",
+    "aboutText": "แหล่งข้อมูลสาธารณะฟรีเพื่อช่วยคุณค้นหายาราคาไม่แพง",
+    "disclaimer": "ราคาที่แสดงเป็นเพียงราคาโดยประมาณ ตรวจสอบกับร้านขายยาของคุณเสมอ",
+    "privacy": "นโยบายความเป็นส่วนตัว",
+    "terms": "เงื่อนไขการใช้งาน",
+    "contact": "ติดต่อเรา",
+    "language": "ภาษา"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Cari Ubat Mampu Milik Berdekatan Anda"
+  },
+  "nav": {
+    "home": "Rumah",
+    "search": "Cari Ubat",
+    "pharmacies": "Cari Farmasi",
+    "about": "Tentang"
+  },
+  "home": {
+    "title": "Cari Ubat Mampu Milik",
+    "subtitle": "Bandingkan harga, cari farmasi berdekatan dan jimatkan pada preskripsi anda",
+    "searchPlaceholder": "Masukkan nama ubat...",
+    "searchButton": "Cari",
+    "popularSearches": "Carian Popular",
+    "recentSearches": "Carian Terkini"
+  },
+  "search": {
+    "results": "Hasil Carian",
+    "resultsFor": "Keputusan untuk",
+    "noResults": "Tiada ubat ditemui",
+    "tryDifferent": "Cuba istilah carian yang berbeza",
+    "loading": "Mencari ubat...",
+    "filters": "Penapis",
+    "sortBy": "Isih mengikut",
+    "priceLowest": "Harga: Rendah ke Tinggi",
+    "priceHighest": "Harga: Tinggi ke Rendah",
+    "nameAZ": "Nama: A hingga Z"
+  },
+  "drug": {
+    "genericName": "Nama Generik",
+    "brandName": "Nama Jenama",
+    "manufacturer": "Pengeluar",
+    "description": "Penerangan",
+    "commonUses": "Kegunaan Biasa",
+    "sideEffects": "Kesan Sampingan",
+    "prices": "harga",
+    "cashPrice": "Harga Tunai",
+    "withInsurance": "Dengan Insurans",
+    "withCoupon": "Dengan Kupon",
+    "genericAlternative": "Alternatif Generik Tersedia",
+    "savings": "Anda boleh berjimat",
+    "assistancePrograms": "Program Bantuan Pesakit",
+    "findPharmacy": "Cari Farmasi"
+  },
+  "pharmacy": {
+    "title": "Cari Farmasi Berdekatan",
+    "subtitle": "Cari farmasi berhampiran anda dengan harga terbaik",
+    "useLocation": "Gunakan Lokasi Saya",
+    "enterZip": "Atau masukkan kod ZIP",
+    "search": "Cari",
+    "filters": {
+      "all": "Semua",
+      "open24": "Buka 24 Jam",
+      "delivery": "Penghantaran Disediakan",
+      "driveThru": "Pandu Lalu"
+    },
+    "distance": "batu jauhnya",
+    "hours": "jam",
+    "phone": "telefon",
+    "getDirections": "Dapatkan Arah",
+    "viewPrices": "Lihat Harga"
+  },
+  "prices": {
+    "title": "Perbandingan Harga",
+    "noInsurance": "Tanpa Insurans",
+    "withInsurance": "Dengan Insurans",
+    "discountPrograms": "Program Diskaun",
+    "perMonth": "setiap bulan",
+    "perPill": "setiap pil",
+    "quantity": "Kuantiti",
+    "priceVaries": "Harga mungkin berbeza mengikut lokasi",
+    "lastUpdated": "Kemas kini terakhir"
+  },
+  "accessibility": {
+    "settings": "Tetapan Kebolehcapaian",
+    "largeText": "Teks Besar",
+    "highContrast": "Kontras Tinggi",
+    "screenReader": "Pembaca Skrin Dioptimumkan",
+    "skipToMain": "Langkau ke kandungan utama"
+  },
+  "common": {
+    "loading": "Memuatkan...",
+    "error": "Ralat berlaku",
+    "tryAgain": "Cuba Lagi",
+    "back": "belakang",
+    "next": "Seterusnya",
+    "close": "tutup",
+    "save": "Jimat",
+    "cancel": "Batal",
+    "learnMore": "Ketahui Lebih Lanjut",
+    "viewAll": "Lihat Semua",
+    "noData": "Tiada data tersedia"
+  },
+  "footer": {
+    "about": "Mengenai PublicRx",
+    "aboutText": "Sumber awam percuma untuk membantu anda mencari ubat mampu milik.",
+    "disclaimer": "Harga yang ditunjukkan adalah anggaran. Sentiasa sahkan dengan farmasi anda.",
+    "privacy": "Dasar Privasi",
+    "terms": "Syarat Penggunaan",
+    "contact": "Hubungi Kami",
+    "language": "Bahasa"
+  }
+}

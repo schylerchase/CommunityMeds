@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Wa Awọn oogun ti o ni ifarada nitosi rẹ"
+  },
+  "nav": {
+    "home": "Ile",
+    "search": "Wa Awọn oogun",
+    "pharmacies": "Wa Awọn ile elegbogi",
+    "about": "Nipa"
+  },
+  "home": {
+    "title": "Wa Awọn oogun ti o ni ifarada",
+    "subtitle": "Ṣe afiwe awọn idiyele, wa awọn ile elegbogi nitosi, ki o fipamọ sori awọn ilana oogun rẹ",
+    "searchPlaceholder": "Tẹ orukọ oogun sii...",
+    "searchButton": "Wa",
+    "popularSearches": "Awọn wiwa olokiki",
+    "recentSearches": "Awọn iwadii aipẹ"
+  },
+  "search": {
+    "results": "Awọn abajade wiwa",
+    "resultsFor": "Awọn abajade fun",
+    "noResults": "Ko si oogun ti a ri",
+    "tryDifferent": "Gbiyanju ọrọ wiwa ti o yatọ",
+    "loading": "Ṣiṣawari awọn oogun...",
+    "filters": "Ajọ",
+    "sortBy": "Sa pelu",
+    "priceLowest": "Iye: Low to High",
+    "priceHighest": "Iye: Ga si Low",
+    "nameAZ": "Orukọ: A si Z"
+  },
+  "drug": {
+    "genericName": "Orukọ Agbo",
+    "brandName": "Orukọ Brand",
+    "manufacturer": "Olupese",
+    "description": "Apejuwe",
+    "commonUses": "Awọn lilo ti o wọpọ",
+    "sideEffects": "Awọn ipa ẹgbẹ",
+    "prices": "Awọn idiyele",
+    "cashPrice": "Owo Owo Owo",
+    "withInsurance": "Pẹlu Insurance",
+    "withCoupon": "Pẹlu Kupọọnu",
+    "genericAlternative": "Generic Yiyan Wa",
+    "savings": "O le fipamọ",
+    "assistancePrograms": "Awọn Eto Iranlọwọ Alaisan",
+    "findPharmacy": "Wa Ile elegbogi"
+  },
+  "pharmacy": {
+    "title": "Wa Awọn ile elegbogi nitosi",
+    "subtitle": "Wa awọn ile elegbogi nitosi rẹ pẹlu awọn idiyele to dara julọ",
+    "useLocation": "Lo Ipo Mi",
+    "enterZip": "Tabi tẹ koodu ZIP sii",
+    "search": "Wa",
+    "filters": {
+      "all": "Gbogbo",
+      "open24": "Ṣii awọn wakati 24",
+      "delivery": "Ifijiṣẹ Wa",
+      "driveThru": "Wakọ-Nipasẹ"
+    },
+    "distance": "km kuro",
+    "hours": "Awọn wakati",
+    "phone": "Foonu",
+    "getDirections": "Gba Awọn itọnisọna",
+    "viewPrices": "Wo Awọn idiyele"
+  },
+  "prices": {
+    "title": "Ifiwera Iye",
+    "noInsurance": "Laisi iṣeduro",
+    "withInsurance": "Pẹlu Insurance",
+    "discountPrograms": "Awọn eto ẹdinwo",
+    "perMonth": "fun osu",
+    "perPill": "fun egbogi",
+    "quantity": "Opoiye",
+    "priceVaries": "Awọn idiyele le yatọ nipasẹ ipo",
+    "lastUpdated": "Imudojuiwọn to kẹhin"
+  },
+  "accessibility": {
+    "settings": "Eto Wiwọle",
+    "largeText": "Ọrọ ti o tobi",
+    "highContrast": "Iyatọ giga",
+    "screenReader": "Iboju Reader Iṣapeye",
+    "skipToMain": "Rekọja si akoonu akọkọ"
+  },
+  "common": {
+    "loading": "Nkojọpọ...",
+    "error": "Aṣiṣe kan ṣẹlẹ",
+    "tryAgain": "Gbiyanju Lẹẹkansi",
+    "back": "Pada",
+    "next": "Itele",
+    "close": "Sunmọ",
+    "save": "Fipamọ",
+    "cancel": "Fagilee",
+    "learnMore": "Kọ ẹkọ diẹ si",
+    "viewAll": "Wo Gbogbo",
+    "noData": "Ko si data wa"
+  },
+  "footer": {
+    "about": "Nipa PublicRx",
+    "aboutText": "Orisun gbogbo eniyan ọfẹ lati ṣe iranlọwọ fun ọ lati wa awọn oogun ti ifarada.",
+    "disclaimer": "Awọn idiyele ti o han jẹ awọn iṣiro. Ṣayẹwo nigbagbogbo pẹlu ile elegbogi rẹ.",
+    "privacy": "Asiri Afihan",
+    "terms": "Awọn ofin lilo",
+    "contact": "Pe wa",
+    "language": "Ede"
+  }
+}

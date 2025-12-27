@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Raskite įperkamų vaistų netoliese"
+  },
+  "nav": {
+    "home": "Pradžia",
+    "search": "Ieškoti vaistų",
+    "pharmacies": "Raskite vaistines",
+    "about": "Apie"
+  },
+  "home": {
+    "title": "Raskite įperkamų vaistų",
+    "subtitle": "Palyginkite kainas, raskite netoliese esančias vaistines ir sutaupykite išrašydami receptus",
+    "searchPlaceholder": "Įveskite vaisto pavadinimą...",
+    "searchButton": "Ieškoti",
+    "popularSearches": "Populiarios paieškos",
+    "recentSearches": "Naujausios paieškos"
+  },
+  "search": {
+    "results": "Paieškos rezultatai",
+    "resultsFor": "Rezultatai pagal",
+    "noResults": "Vaistų nerasta",
+    "tryDifferent": "Išbandykite kitą paieškos terminą",
+    "loading": "Ieškoma vaistų...",
+    "filters": "Filtrai",
+    "sortBy": "Rūšiuoti pagal",
+    "priceLowest": "Kaina: nuo mažos iki aukštos",
+    "priceHighest": "Kaina: nuo didelės iki mažos",
+    "nameAZ": "Vardas: A iki Z"
+  },
+  "drug": {
+    "genericName": "Bendrasis pavadinimas",
+    "brandName": "Prekės ženklo pavadinimas",
+    "manufacturer": "Gamintojas",
+    "description": "Aprašymas",
+    "commonUses": "Bendras naudojimas",
+    "sideEffects": "Šalutinis poveikis",
+    "prices": "Kainos",
+    "cashPrice": "Kaina grynaisiais",
+    "withInsurance": "Su Draudimu",
+    "withCoupon": "Su kuponu",
+    "genericAlternative": "Yra bendra alternatyva",
+    "savings": "Galėjai sutaupyti",
+    "assistancePrograms": "Pagalbos pacientams programos",
+    "findPharmacy": "Raskite vaistinę"
+  },
+  "pharmacy": {
+    "title": "Raskite netoliese esančias vaistines",
+    "subtitle": "Raskite artimiausias vaistines su geriausiomis kainomis",
+    "useLocation": "Naudokite Mano vietą",
+    "enterZip": "Arba įveskite pašto kodą",
+    "search": "Ieškoti",
+    "filters": {
+      "all": "Visi",
+      "open24": "Dirba 24 valandas per parą",
+      "delivery": "Galimas pristatymas",
+      "driveThru": "Važiuoti-Tru"
+    },
+    "distance": "mylių atstumu",
+    "hours": "Valandos",
+    "phone": "Telefonas",
+    "getDirections": "Gaukite nuorodas",
+    "viewPrices": "Žiūrėti kainas"
+  },
+  "prices": {
+    "title": "Kainų palyginimas",
+    "noInsurance": "Be Draudimo",
+    "withInsurance": "Su Draudimu",
+    "discountPrograms": "Nuolaidų programos",
+    "perMonth": "per mėnesį",
+    "perPill": "vienai piliulei",
+    "quantity": "Kiekis",
+    "priceVaries": "Kainos gali skirtis priklausomai nuo vietos",
+    "lastUpdated": "Paskutinį kartą atnaujinta"
+  },
+  "accessibility": {
+    "settings": "Pritaikymo neįgaliesiems nustatymai",
+    "largeText": "Didelis tekstas",
+    "highContrast": "Didelis kontrastas",
+    "screenReader": "Optimizuotas ekrano skaitytuvas",
+    "skipToMain": "Pereiti prie pagrindinio turinio"
+  },
+  "common": {
+    "loading": "Įkeliama...",
+    "error": "Įvyko klaida",
+    "tryAgain": "Bandyk dar kartą",
+    "back": "Atgal",
+    "next": "Kitas",
+    "close": "Uždaryti",
+    "save": "Išsaugoti",
+    "cancel": "Atšaukti",
+    "learnMore": "Sužinokite daugiau",
+    "viewAll": "Žiūrėti viską",
+    "noData": "Nėra duomenų"
+  },
+  "footer": {
+    "about": "Apie PublicRx",
+    "aboutText": "Nemokamas viešasis šaltinis, padėsiantis rasti įperkamų vaistų.",
+    "disclaimer": "Rodomos kainos yra apytikslės. Visada patikrinkite savo vaistinėje.",
+    "privacy": "Privatumo politika",
+    "terms": "Naudojimo sąlygos",
+    "contact": "Susisiekite su mumis",
+    "language": "Kalba"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "ኣብ ጥቓኻ ብተመጣጣኒ ዋጋ ዝሽየጡ መድሃኒታት ርኸቡ"
+  },
+  "nav": {
+    "home": "ገዛ",
+    "search": "መድሃኒታት ምድላይ",
+    "pharmacies": "ፋርማሲታት ርኸብ",
+    "about": "ብዝዕባ"
+  },
+  "home": {
+    "title": "ብተመጣጣኒ ዋጋ ዝሽየጡ መድሃኒታት ርኸብ",
+    "subtitle": "ዋጋታት ኣነጻጽሩ፣ ኣብ ቀረባ ዝርከቡ ፋርማሲታት ረኸቡ፣ ኣብ ትእዛዝኩም ድማ ኣቐምጥዎ",
+    "searchPlaceholder": "ስም መድሃኒት ኣእቱ...",
+    "searchButton": "ምድላይ",
+    "popularSearches": "ህቡብ ፍተሻታት",
+    "recentSearches": "ኣብ ቀረባ እዋን ዝተገብረ ፍተሻታት"
+  },
+  "search": {
+    "results": "ውጽኢት ምድላይ",
+    "resultsFor": "ውጽኢት ን",
+    "noResults": "መድሃኒት ኣይተረኽበን .",
+    "tryDifferent": "ዝተፈላለየ ናይ ምድላይ ቃል ፈትኑ",
+    "loading": "ምድላይ መድሃኒታት...",
+    "filters": "ፍልትራት .",
+    "sortBy": "ምድብ ብ",
+    "priceLowest": "ዋጋ: ካብ ትሑት ክሳብ ልዑል",
+    "priceHighest": "ዋጋ: ካብ ልዑል ክሳብ ትሑት",
+    "nameAZ": "ስም: ካብ A ክሳብ Z"
+  },
+  "drug": {
+    "genericName": "ሓፈሻዊ ስም",
+    "brandName": "ሽም ምልክት ንግዲ (brand name)",
+    "manufacturer": "ኣፍራዪ",
+    "description": "መግለፂ",
+    "commonUses": "ልሙድ ኣጠቓቕማ .",
+    "sideEffects": "ጎናዊ ሳዕቤናት .",
+    "prices": "ዋጋታት",
+    "cashPrice": "ዋጋ ጥረ ገንዘብ",
+    "withInsurance": "ምስ መድሕን",
+    "withCoupon": "ምስ ኩፖን",
+    "genericAlternative": "ጀነሪክ ኣማራጺ ኣሎ",
+    "savings": "ከተድሕኖ ትኽእል ኢኻ .",
+    "assistancePrograms": "መደባት ሓገዝ ሕሙማት",
+    "findPharmacy": "ፋርማሲ ርኸብ"
+  },
+  "pharmacy": {
+    "title": "ኣብ ቀረባ ዝርከቡ ፋርማሲታት ርኸቡ",
+    "subtitle": "ኣብ ጥቓኻ ፋርማሲታት ብዝበለፀ ዋጋ ርኸብ",
+    "useLocation": "ናተይ ቦታ ተጠቐመሉ",
+    "enterZip": "ወይ ዚፕ ኮድ ኣእትዉ",
+    "search": "ምድላይ",
+    "filters": {
+      "all": "ኩሎም",
+      "open24": "24 ሰዓታት ክፉት",
+      "delivery": "ሕርሲ ኣሎ",
+      "driveThru": "ድራይቭ-ትሩ"
+    },
+    "distance": "ማይልስ ርሒቑ",
+    "hours": "ሰዓታት",
+    "phone": "ስልኪ",
+    "getDirections": "ኣንፈት ረኸብ",
+    "viewPrices": "ዋጋታት ርአ"
+  },
+  "prices": {
+    "title": "ምውድዳር ዋጋ",
+    "noInsurance": "ብዘይ መድሕን",
+    "withInsurance": "ምስ መድሕን",
+    "discountPrograms": "ናይ ቅናሽ መደባት",
+    "perMonth": "ኣብ ወርሒ",
+    "perPill": "ንሓደ ከኒና .",
+    "quantity": "መጠን",
+    "priceVaries": "ዋጋታት ብኣቀማምጣ ክፈላለ ይኽእል እዩ .",
+    "lastUpdated": "ናይ መወዳእታ ዝተመሓየሸ"
+  },
+  "accessibility": {
+    "settings": "ናይ ተበፃሕነት ቅጥዕታት",
+    "largeText": "ዓቢ ጽሑፍ",
+    "highContrast": "ልዑል ንጽጽር",
+    "screenReader": "ስክሪን ሪደር ኣብ optimized",
+    "skipToMain": "ናብ ቀንዲ ትሕዝቶ ምዝላል"
+  },
+  "common": {
+    "loading": "ይጽዕን ኣሎ...",
+    "error": "ጌጋ ኣጋጢሙ .",
+    "tryAgain": "እንደገና ፈትኑ",
+    "back": "ዝባን",
+    "next": "ቀፃሊ",
+    "close": "ዕፁው",
+    "save": "ምቑጣብ",
+    "cancel": "ሰርዝ",
+    "learnMore": "ተወሳኺ ክትፈልጡ",
+    "viewAll": "ንኹሉ ርአ",
+    "noData": "ዳታ የለን"
+  },
+  "footer": {
+    "about": "ብዛዕባ publicrx",
+    "aboutText": "ብተመጣጣኒ ዋጋ ዝሽየጡ መድሃኒታት ንምርካብ ዝሕግዝ ነጻ ህዝባዊ ሃብቲ።",
+    "disclaimer": "ዝተርኣዩ ዋጋታት ግምታት እዮም። ኩሉ ግዜ ምስ ፋርማሲኻ ኣረጋግጽ።",
+    "privacy": "ፖሊሲ ውልቃዊ ሓበሬታ",
+    "terms": "ውዕል ኣጠቓቕማ",
+    "contact": "ርኸቡና",
+    "language": "ቋንቋ"
+  }
+}

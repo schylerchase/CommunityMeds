@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Pangitaon ang Barato nga Bulong Malapit sa Imo"
+  },
+  "nav": {
+    "home": "Balay",
+    "search": "Pangita sang Bulong",
+    "pharmacies": "Pangita sang Botika",
+    "about": "Parte"
+  },
+  "home": {
+    "title": "Pangitaon ang Barato nga Bulong",
+    "subtitle": "Ikomparar ang mga presyo, pangitaon ang mga botika malapit sa imo, kag makatipon sa imo mga reseta",
+    "searchPlaceholder": "Isulat ang ngalan sang bulong...",
+    "searchButton": "Pangita",
+    "popularSearches": "Bantog nga mga Pagpangita",
+    "recentSearches": "Bag-o Lang nga mga Pagpangita"
+  },
+  "search": {
+    "results": "Resulta sang Pagpangita",
+    "resultsFor": "Mga resulta para sa",
+    "noResults": "Wala sing nakita nga bulong",
+    "tryDifferent": "Tilawi ang lain nga termino",
+    "loading": "Nagapangita sang bulong...",
+    "filters": "Mga Filter",
+    "sortBy": "Iayos suno sa",
+    "priceLowest": "Presyo: Manubo pakadto Mataas",
+    "priceHighest": "Presyo: Mataas pakadto Manubo",
+    "nameAZ": "Ngalan: A pakadto Z"
+  },
+  "drug": {
+    "genericName": "Heneral nga Ngalan",
+    "brandName": "Ngalan sang Brand",
+    "manufacturer": "Nagahimo",
+    "description": "Deskripsyon",
+    "commonUses": "Kinaandan nga Paggamit",
+    "sideEffects": "Mga Side Effect",
+    "prices": "Mga Presyo",
+    "cashPrice": "Presyo sang Cash",
+    "withInsurance": "May Insurance",
+    "withCoupon": "May Coupon",
+    "genericAlternative": "May Generic nga Alternatibo",
+    "savings": "Makatipon ka sang",
+    "assistancePrograms": "Mga Programa sa Pagbulig sa Pasyente",
+    "findPharmacy": "Pangitaon ang Botika"
+  },
+  "pharmacy": {
+    "title": "Pangitaon ang mga Botika Malapit",
+    "subtitle": "Pangitaon ang mga botika malapit sa imo nga may pinakamaayo nga presyo",
+    "useLocation": "Gamiton ang Akon Lokasyon",
+    "enterZip": "Ukon isulat ang ZIP code",
+    "search": "Pangita",
+    "filters": {
+      "all": "Tanan",
+      "open24": "Bukas 24 ka Oras",
+      "delivery": "May Delivery",
+      "driveThru": "Drive-Thru"
+    },
+    "distance": "milya ang kalayuon",
+    "hours": "Oras",
+    "phone": "Telepono",
+    "getDirections": "Kuhaon ang mga Direksyon",
+    "viewPrices": "Tan-awon ang mga Presyo"
+  },
+  "prices": {
+    "title": "Pagkomparar sang Presyo",
+    "noInsurance": "Wala sang Insurance",
+    "withInsurance": "May Insurance",
+    "discountPrograms": "Mga Discount Program",
+    "perMonth": "kada bulan",
+    "perPill": "kada tableta",
+    "quantity": "Kadamuon",
+    "priceVaries": "Ang mga presyo mahimo mag-iba depende sa lokasyon",
+    "lastUpdated": "Pinakaulihi nga update"
+  },
+  "accessibility": {
+    "settings": "Mga Setting sang Accessibility",
+    "largeText": "Dako nga Teksto",
+    "highContrast": "Mataas nga Contrast",
+    "screenReader": "Na-optimize ang Screen Reader",
+    "skipToMain": "Laktawan pakadto sa pangunahon nga sulod"
+  },
+  "common": {
+    "loading": "Nagakarga...",
+    "error": "May nagtabo nga sayop",
+    "tryAgain": "Tilawi Liwat",
+    "back": "Balik",
+    "next": "Sunod",
+    "close": "Sirado",
+    "save": "I-save",
+    "cancel": "Kanselaon",
+    "learnMore": "Magtuon sang Dugang",
+    "viewAll": "Tan-awon Tanan",
+    "noData": "Wala sang data nga available"
+  },
+  "footer": {
+    "about": "Parte sa PublicRx",
+    "aboutText": "Isa ka libre nga pangpubliko nga rekurso agod mabuligan ka makapangita sang barato nga bulong.",
+    "disclaimer": "Ang mga presyo nga ginapakita mga tantiya lang. Pirme i-verify sa imo botika.",
+    "privacy": "Patakaran sa Privacy",
+    "terms": "Mga Termino sang Paggamit",
+    "contact": "Kontaka Kami",
+    "language": "Lenggwahe"
+  }
+}

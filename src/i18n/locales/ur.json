@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "اپنے قریب سستی دوائیں تلاش کریں"
+  },
+  "nav": {
+    "home": "گھر",
+    "search": "دوائیں تلاش کریں",
+    "pharmacies": "فارمیسی تلاش کریں",
+    "about": "کے بارے میں"
+  },
+  "home": {
+    "title": "سستی دوائیں تلاش کریں",
+    "subtitle": "قیمتوں کا موازنہ کریں ، قریبی فارمیسیوں کو تلاش کریں ، اور اپنے نسخوں کو محفوظ کریں",
+    "searchPlaceholder": "دوائیوں کا نام درج کریں ...",
+    "searchButton": "تلاش",
+    "popularSearches": "مقبول تلاشیں",
+    "recentSearches": "حالیہ تلاشیں"
+  },
+  "search": {
+    "results": "تلاش کے نتائج",
+    "resultsFor": "کے نتائج",
+    "noResults": "کوئی دوا نہیں ملی",
+    "tryDifferent": "تلاش کی ایک مختلف اصطلاح آزمائیں",
+    "loading": "ادویات کی تلاش ...",
+    "filters": "فلٹرز",
+    "sortBy": "ترتیب دیں",
+    "priceLowest": "قیمت: کم سے اونچا",
+    "priceHighest": "قیمت: اعلی سے کم",
+    "nameAZ": "نام: A to z"
+  },
+  "drug": {
+    "genericName": "عام نام",
+    "brandName": "برانڈ نام",
+    "manufacturer": "مینوفیکچرر",
+    "description": "تفصیل",
+    "commonUses": "عام استعمال",
+    "sideEffects": "ضمنی اثرات",
+    "prices": "قیمتیں",
+    "cashPrice": "نقد قیمت",
+    "withInsurance": "انشورنس کے ساتھ",
+    "withCoupon": "کوپن کے ساتھ",
+    "genericAlternative": "عام متبادل دستیاب ہے",
+    "savings": "آپ بچا سکتے تھے",
+    "assistancePrograms": "مریضوں کے امداد کے پروگرام",
+    "findPharmacy": "فارمیسی تلاش کریں"
+  },
+  "pharmacy": {
+    "title": "قریبی فارمیسی تلاش کریں",
+    "subtitle": "بہترین قیمتوں کے ساتھ اپنے قریب فارمیسیوں کا پتہ لگائیں",
+    "useLocation": "میرا مقام استعمال کریں",
+    "enterZip": "یا زپ کوڈ درج کریں",
+    "search": "تلاش",
+    "filters": {
+      "all": "سب",
+      "open24": "24 گھنٹے کھولیں",
+      "delivery": "فراہمی دستیاب ہے",
+      "driveThru": "ڈرائیو تھرو"
+    },
+    "distance": "میل دور",
+    "hours": "گھنٹے",
+    "phone": "فون",
+    "getDirections": "ہدایات حاصل کریں",
+    "viewPrices": "قیمتیں دیکھیں"
+  },
+  "prices": {
+    "title": "قیمت کا موازنہ",
+    "noInsurance": "انشورنس کے بغیر",
+    "withInsurance": "انشورنس کے ساتھ",
+    "discountPrograms": "ڈسکاؤنٹ پروگرام",
+    "perMonth": "ہر مہینہ",
+    "perPill": "فی گولی",
+    "quantity": "مقدار",
+    "priceVaries": "قیمتیں مقام کے لحاظ سے مختلف ہوسکتی ہیں",
+    "lastUpdated": "آخری تازہ کاری"
+  },
+  "accessibility": {
+    "settings": "رسائ کی ترتیبات",
+    "largeText": "بڑا متن",
+    "highContrast": "اعلی برعکس",
+    "screenReader": "اسکرین ریڈر کو بہتر بنایا گیا",
+    "skipToMain": "اہم مواد پر جائیں"
+  },
+  "common": {
+    "loading": "لوڈنگ ...",
+    "error": "ایک غلطی ہوئی",
+    "tryAgain": "دوبارہ کوشش کریں",
+    "back": "واپس",
+    "next": "اگلا",
+    "close": "بند کریں",
+    "save": "بچت کریں",
+    "cancel": "منسوخ کریں",
+    "learnMore": "مزید معلومات حاصل کریں",
+    "viewAll": "سب دیکھیں",
+    "noData": "کوئی ڈیٹا دستیاب نہیں ہے"
+  },
+  "footer": {
+    "about": "پبلک آرکس کے بارے میں",
+    "aboutText": "سستی دوائیں تلاش کرنے میں آپ کی مدد کے لئے ایک مفت عوامی وسائل۔",
+    "disclaimer": "دکھائے گئے قیمتوں کا تخمینہ ہے۔ ہمیشہ اپنی فارمیسی کے ساتھ تصدیق کریں۔",
+    "privacy": "رازداری کی پالیسی",
+    "terms": "استعمال کی شرائط",
+    "contact": "ہم سے رابطہ کریں",
+    "language": "زبان"
+  }
+}

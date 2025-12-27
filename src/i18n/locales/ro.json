@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Găsiți medicamente la prețuri accesibile în apropierea dvs"
+  },
+  "nav": {
+    "home": "Acasă",
+    "search": "Caută medicamente",
+    "pharmacies": "Găsiți farmacii",
+    "about": "Despre"
+  },
+  "home": {
+    "title": "Găsiți medicamente la prețuri accesibile",
+    "subtitle": "Comparați prețurile, găsiți farmacii din apropiere și economisiți pe rețete",
+    "searchPlaceholder": "Introduceți numele medicamentului...",
+    "searchButton": "Căutare",
+    "popularSearches": "Căutări populare",
+    "recentSearches": "Căutări recente"
+  },
+  "search": {
+    "results": "Rezultatele căutării",
+    "resultsFor": "Rezultate pentru",
+    "noResults": "Nu s-au găsit medicamente",
+    "tryDifferent": "Încercați un alt termen de căutare",
+    "loading": "Caut medicamente...",
+    "filters": "Filtre",
+    "sortBy": "Filtrează după",
+    "priceLowest": "Preț: mic spre mare",
+    "priceHighest": "Preț: de la mare la mic",
+    "nameAZ": "Nume: de la A la Z"
+  },
+  "drug": {
+    "genericName": "Nume generic",
+    "brandName": "Nume de marcă",
+    "manufacturer": "Producător",
+    "description": "Descriere",
+    "commonUses": "Utilizări comune",
+    "sideEffects": "Efecte secundare",
+    "prices": "Preturi",
+    "cashPrice": "Preț în numerar",
+    "withInsurance": "Cu Asigurare",
+    "withCoupon": "Cu cupon",
+    "genericAlternative": "Alternativă generică disponibilă",
+    "savings": "Ai putea salva",
+    "assistancePrograms": "Programe de asistență pentru pacienți",
+    "findPharmacy": "Găsiți farmacie"
+  },
+  "pharmacy": {
+    "title": "Găsiți farmacii din apropiere",
+    "subtitle": "Găsiți farmacii din apropierea dvs. cu cele mai bune prețuri",
+    "useLocation": "Utilizați Locația mea",
+    "enterZip": "Sau introduceți codul poștal",
+    "search": "Căutare",
+    "filters": {
+      "all": "Toate",
+      "open24": "Deschis 24 de ore",
+      "delivery": "Livrare disponibilă",
+      "driveThru": "Trece cu mașina"
+    },
+    "distance": "mile depărtare",
+    "hours": "Ore",
+    "phone": "Telefon",
+    "getDirections": "Obțineți indicații",
+    "viewPrices": "Vedeți prețurile"
+  },
+  "prices": {
+    "title": "Comparație de preț",
+    "noInsurance": "Fara Asigurare",
+    "withInsurance": "Cu Asigurare",
+    "discountPrograms": "Programe de reduceri",
+    "perMonth": "pe lună",
+    "perPill": "per pastila",
+    "quantity": "Cantitate",
+    "priceVaries": "Prețurile pot varia în funcție de locație",
+    "lastUpdated": "Ultima actualizare"
+  },
+  "accessibility": {
+    "settings": "Setări de accesibilitate",
+    "largeText": "Text mare",
+    "highContrast": "Contrast ridicat",
+    "screenReader": "Cititor de ecran optimizat",
+    "skipToMain": "Treci la conținutul principal"
+  },
+  "common": {
+    "loading": "Încărcare...",
+    "error": "A apărut o eroare",
+    "tryAgain": "Încearcă din nou",
+    "back": "Spate",
+    "next": "Următorul",
+    "close": "Aproape",
+    "save": "Salva",
+    "cancel": "Anula",
+    "learnMore": "Află mai multe",
+    "viewAll": "Vezi toate",
+    "noData": "Nu există date disponibile"
+  },
+  "footer": {
+    "about": "Despre PublicRx",
+    "aboutText": "O resursă publică gratuită pentru a vă ajuta să găsiți medicamente la prețuri accesibile.",
+    "disclaimer": "Prețurile afișate sunt estimative. Verificați întotdeauna la farmacie.",
+    "privacy": "Politica de confidențialitate",
+    "terms": "Termeni de utilizare",
+    "contact": "Contactaţi-ne",
+    "language": "Limbă"
+  }
+}

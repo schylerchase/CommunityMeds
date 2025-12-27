@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Lale Wunin Ko Rej Aikuj Ijo Emaron"
+  },
+  "nav": {
+    "home": "Mweo",
+    "search": "Pukot Wunin",
+    "pharmacies": "Lale Jimma Wunin",
+    "about": "Kin"
+  },
+  "home": {
+    "title": "Lale Wunin Ko Emaron",
+    "subtitle": "Kebalok wonen, lale jimma wunin iturin eok, im kebaak jaan ilo am wunin",
+    "searchPlaceholder": "Jilkinlok etan wunin...",
+    "searchButton": "Pukot",
+    "popularSearches": "Pukot Ko Relab",
+    "recentSearches": "Pukot Ko Rekij"
+  },
+  "search": {
+    "results": "Waween Pukot",
+    "resultsFor": "Waween nan",
+    "noResults": "Ejjelok wunin ear loe",
+    "tryDifferent": "Katopar juon bar eta",
+    "loading": "Ej pukot wunin...",
+    "filters": "Kokkure",
+    "sortBy": "Komaanlok jen",
+    "priceLowest": "Wonen: Driklok nan Elab",
+    "priceHighest": "Wonen: Elablok nan Drik",
+    "nameAZ": "Eta: A nan Z"
+  },
+  "drug": {
+    "genericName": "Eta Jikin",
+    "brandName": "Eta Brand",
+    "manufacturer": "Ri-koman",
+    "description": "Kein Karoke",
+    "commonUses": "Jeramman Ko",
+    "sideEffects": "Naan Ko Jet",
+    "prices": "Wonen Ko",
+    "cashPrice": "Wonen Jaan",
+    "withInsurance": "Ilo Insurance",
+    "withCoupon": "Ilo Coupon",
+    "genericAlternative": "Ewor Bar Juon",
+    "savings": "Kwomaron kebaak",
+    "assistancePrograms": "Program Ko Rej Jiban",
+    "findPharmacy": "Lale Jimma Wunin"
+  },
+  "pharmacy": {
+    "title": "Lale Jimma Wunin Iturin",
+    "subtitle": "Lale jimma wunin iturin eok ko rewor wonen ko redrik",
+    "useLocation": "Jerbal Jikin Eo Ao",
+    "enterZip": "Ak jilkinlok ZIP code",
+    "search": "Pukot",
+    "filters": {
+      "all": "Aolep",
+      "open24": "Pellok 24 Awa",
+      "delivery": "Ewor Delivery",
+      "driveThru": "Drive-Thru"
+    },
+    "distance": "mail iturin",
+    "hours": "Awa Ko",
+    "phone": "Telefon",
+    "getDirections": "Boke Ial Ko",
+    "viewPrices": "Lale Wonen Ko"
+  },
+  "prices": {
+    "title": "Kebalok Wonen",
+    "noInsurance": "Ejjelok Insurance",
+    "withInsurance": "Ilo Insurance",
+    "discountPrograms": "Program Driklok Wonen",
+    "perMonth": "juon allok",
+    "perPill": "juon pill",
+    "quantity": "Jonan",
+    "priceVaries": "Wonen ko remaronlok jokkutkut jen jikin",
+    "lastUpdated": "Kar kejaake mokta"
+  },
+  "accessibility": {
+    "settings": "Kokkure Nan Aolep",
+    "largeText": "Jiik Elap",
+    "highContrast": "Kontrast Elap",
+    "screenReader": "Screen Reader Emman",
+    "skipToMain": "Etal nan meja eo elab"
+  },
+  "common": {
+    "loading": "Ej load...",
+    "error": "Ewor juon jorren",
+    "tryAgain": "Katopar Bar",
+    "back": "Tok",
+    "next": "Moko",
+    "close": "Kilok",
+    "save": "Kebaak",
+    "cancel": "Jab",
+    "learnMore": "Katak Elaplok",
+    "viewAll": "Lale Aolep",
+    "noData": "Ejjelok data ewor"
+  },
+  "footer": {
+    "about": "Kin PublicRx",
+    "aboutText": "Juon ri-jiban ilo public nan jiban eok lale wunin ko emaron.",
+    "disclaimer": "Wonen ko rej kwalok rej estimate wot. Aikuj kottopar ilo jimma wunin eo am.",
+    "privacy": "Kien Privacy",
+    "terms": "Kien Jerbal",
+    "contact": "Kurlok Kem",
+    "language": "Kajin"
+  }
+}

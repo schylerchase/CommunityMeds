@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "ਆਪਣੇ ਨੇੜੇ ਕਿਫਾਇਤੀ ਦਵਾਈਆਂ ਲੱਭੋ"
+  },
+  "nav": {
+    "home": "ਘਰ",
+    "search": "ਦਵਾਈਆਂ ਦੀ ਖੋਜ ਕਰੋ",
+    "pharmacies": "ਫਾਰਮੇਸੀਆਂ ਲੱਭੋ",
+    "about": "ਬਾਰੇ"
+  },
+  "home": {
+    "title": "ਕਿਫਾਇਤੀ ਦਵਾਈਆਂ ਲੱਭੋ",
+    "subtitle": "ਕੀਮਤਾਂ ਦੀ ਤੁਲਨਾ ਕਰੋ, ਨੇੜਲੀਆਂ ਫਾਰਮੇਸੀਆਂ ਲੱਭੋ, ਅਤੇ ਆਪਣੇ ਨੁਸਖੇ ਨੂੰ ਬਚਾਓ",
+    "searchPlaceholder": "ਦਵਾਈ ਦਾ ਨਾਮ ਦਰਜ ਕਰੋ...",
+    "searchButton": "ਖੋਜ",
+    "popularSearches": "ਪ੍ਰਸਿੱਧ ਖੋਜਾਂ",
+    "recentSearches": "ਹਾਲੀਆ ਖੋਜਾਂ"
+  },
+  "search": {
+    "results": "ਖੋਜ ਨਤੀਜੇ",
+    "resultsFor": "ਲਈ ਨਤੀਜੇ",
+    "noResults": "ਕੋਈ ਦਵਾਈ ਨਹੀਂ ਮਿਲੀ",
+    "tryDifferent": "ਇੱਕ ਵੱਖਰਾ ਖੋਜ ਸ਼ਬਦ ਅਜ਼ਮਾਓ",
+    "loading": "ਦਵਾਈਆਂ ਦੀ ਖੋਜ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ...",
+    "filters": "ਫਿਲਟਰ",
+    "sortBy": "ਦੇ ਨਾਲ ਕ੍ਰਮਬੱਧ",
+    "priceLowest": "ਕੀਮਤ: ਘੱਟ ਤੋਂ ਵੱਧ",
+    "priceHighest": "ਕੀਮਤ: ਉੱਚ ਤੋਂ ਘੱਟ",
+    "nameAZ": "ਨਾਮ: A ਤੋਂ Z"
+  },
+  "drug": {
+    "genericName": "ਆਮ ਨਾਮ",
+    "brandName": "ਬ੍ਰਾਂਡ ਦਾ ਨਾਮ",
+    "manufacturer": "ਨਿਰਮਾਤਾ",
+    "description": "ਵਰਣਨ",
+    "commonUses": "ਆਮ ਵਰਤੋਂ",
+    "sideEffects": "ਸਾਈਡ ਇਫੈਕਟਸ",
+    "prices": "ਕੀਮਤਾਂ",
+    "cashPrice": "ਨਕਦ ਕੀਮਤ",
+    "withInsurance": "ਬੀਮੇ ਦੇ ਨਾਲ",
+    "withCoupon": "ਕੂਪਨ ਦੇ ਨਾਲ",
+    "genericAlternative": "ਆਮ ਵਿਕਲਪ ਉਪਲਬਧ ਹੈ",
+    "savings": "ਤੁਸੀਂ ਬਚਾ ਸਕਦੇ ਹੋ",
+    "assistancePrograms": "ਮਰੀਜ਼ ਸਹਾਇਤਾ ਪ੍ਰੋਗਰਾਮ",
+    "findPharmacy": "ਫਾਰਮੇਸੀ ਲੱਭੋ"
+  },
+  "pharmacy": {
+    "title": "ਨੇੜਲੇ ਫਾਰਮੇਸੀਆਂ ਲੱਭੋ",
+    "subtitle": "ਸਭ ਤੋਂ ਵਧੀਆ ਕੀਮਤਾਂ ਦੇ ਨਾਲ ਆਪਣੇ ਨੇੜੇ ਦੀਆਂ ਫਾਰਮੇਸੀਆਂ ਲੱਭੋ",
+    "useLocation": "ਮੇਰਾ ਟਿਕਾਣਾ ਵਰਤੋ",
+    "enterZip": "ਜਾਂ ਜ਼ਿਪ ਕੋਡ ਦਾਖਲ ਕਰੋ",
+    "search": "ਖੋਜ",
+    "filters": {
+      "all": "ਸਾਰੇ",
+      "open24": "24 ਘੰਟੇ ਖੁੱਲ੍ਹਾ",
+      "delivery": "ਡਿਲਿਵਰੀ ਉਪਲਬਧ ਹੈ",
+      "driveThru": "ਡਰਾਈਵ-ਥਰੂ"
+    },
+    "distance": "ਮੀਲ ਦੂਰ",
+    "hours": "ਘੰਟੇ",
+    "phone": "ਫ਼ੋਨ",
+    "getDirections": "ਦਿਸ਼ਾ-ਨਿਰਦੇਸ਼ ਪ੍ਰਾਪਤ ਕਰੋ",
+    "viewPrices": "ਕੀਮਤਾਂ ਦੇਖੋ"
+  },
+  "prices": {
+    "title": "ਕੀਮਤ ਦੀ ਤੁਲਨਾ",
+    "noInsurance": "ਬੀਮੇ ਤੋਂ ਬਿਨਾਂ",
+    "withInsurance": "ਬੀਮੇ ਦੇ ਨਾਲ",
+    "discountPrograms": "ਛੂਟ ਪ੍ਰੋਗਰਾਮ",
+    "perMonth": "ਪ੍ਰਤੀ ਮਹੀਨਾ",
+    "perPill": "ਪ੍ਰਤੀ ਗੋਲੀ",
+    "quantity": "ਮਾਤਰਾ",
+    "priceVaries": "ਕੀਮਤਾਂ ਸਥਾਨ ਅਨੁਸਾਰ ਵੱਖ-ਵੱਖ ਹੋ ਸਕਦੀਆਂ ਹਨ",
+    "lastUpdated": "ਆਖਰੀ ਵਾਰ ਅੱਪਡੇਟ ਕੀਤਾ ਗਿਆ"
+  },
+  "accessibility": {
+    "settings": "ਪਹੁੰਚਯੋਗਤਾ ਸੈਟਿੰਗਾਂ",
+    "largeText": "ਵੱਡਾ ਟੈਕਸਟ",
+    "highContrast": "ਹਾਈ ਕੰਟ੍ਰਾਸਟ",
+    "screenReader": "ਸਕ੍ਰੀਨ ਰੀਡਰ ਅਨੁਕੂਲਿਤ",
+    "skipToMain": "ਮੁੱਖ ਸਮੱਗਰੀ 'ਤੇ ਜਾਓ"
+  },
+  "common": {
+    "loading": "ਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...",
+    "error": "ਇੱਕ ਤਰੁੱਟੀ ਉਤਪੰਨ ਹੋਈ",
+    "tryAgain": "ਫਿਰ ਕੋਸ਼ਿਸ਼ ਕਰੋ",
+    "back": "ਵਾਪਸ",
+    "next": "ਅਗਲਾ",
+    "close": "ਬੰਦ ਕਰੋ",
+    "save": "ਸੇਵ ਕਰੋ",
+    "cancel": "ਰੱਦ ਕਰੋ",
+    "learnMore": "ਜਿਆਦਾ ਜਾਣੋ",
+    "viewAll": "ਸਭ ਦੇਖੋ",
+    "noData": "ਕੋਈ ਡਾਟਾ ਉਪਲਬਧ ਨਹੀਂ ਹੈ"
+  },
+  "footer": {
+    "about": "PublicRx ਬਾਰੇ",
+    "aboutText": "ਕਿਫਾਇਤੀ ਦਵਾਈਆਂ ਲੱਭਣ ਵਿੱਚ ਤੁਹਾਡੀ ਮਦਦ ਕਰਨ ਲਈ ਇੱਕ ਮੁਫਤ ਜਨਤਕ ਸਰੋਤ।",
+    "disclaimer": "ਦਿਖਾਈਆਂ ਗਈਆਂ ਕੀਮਤਾਂ ਅੰਦਾਜ਼ਨ ਹਨ। ਹਮੇਸ਼ਾ ਆਪਣੀ ਫਾਰਮੇਸੀ ਤੋਂ ਪੁਸ਼ਟੀ ਕਰੋ।",
+    "privacy": "ਪਰਾਈਵੇਟ ਨੀਤੀ",
+    "terms": "ਵਰਤੋ ਦੀਆਂ ਸ਼ਰਤਾਂ",
+    "contact": "ਸਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰੋ",
+    "language": "ਭਾਸ਼ਾ"
+  }
+}
