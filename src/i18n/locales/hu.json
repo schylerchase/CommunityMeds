@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Megfizethető gyógyszerek a közelben"
+  },
+  "nav": {
+    "home": "Otthon",
+    "search": "Gyógyszerek keresése",
+    "pharmacies": "Keressen gyógyszertárakat",
+    "about": "Körülbelül"
+  },
+  "home": {
+    "title": "Keressen megfizethető gyógyszereket",
+    "subtitle": "Hasonlítsa össze az árakat, keresse meg a közeli gyógyszertárakat, és takarítson meg receptjeit",
+    "searchPlaceholder": "Adja meg a gyógyszer nevét...",
+    "searchButton": "Keresés",
+    "popularSearches": "Népszerű keresések",
+    "recentSearches": "Legutóbbi keresések"
+  },
+  "search": {
+    "results": "Keresési eredmények",
+    "resultsFor": "Találatok a következőre:",
+    "noResults": "Nem találtak gyógyszereket",
+    "tryDifferent": "Próbálkozzon másik keresési kifejezéssel",
+    "loading": "Gyógyszerek keresése...",
+    "filters": "Szűrők",
+    "sortBy": "Rendezés",
+    "priceLowest": "Ár: Alacsonytól magasig",
+    "priceHighest": "Ár: Magastól alacsonyig",
+    "nameAZ": "Név: A-tól Z-ig"
+  },
+  "drug": {
+    "genericName": "Általános név",
+    "brandName": "Márkanév",
+    "manufacturer": "Gyártó",
+    "description": "Leírás",
+    "commonUses": "Gyakori felhasználások",
+    "sideEffects": "Mellékhatások",
+    "prices": "Árak",
+    "cashPrice": "Készpénzes ár",
+    "withInsurance": "Biztosítással",
+    "withCoupon": "Kuponnal",
+    "genericAlternative": "Általános alternatíva elérhető",
+    "savings": "Megmenthetnéd",
+    "assistancePrograms": "Betegsegítő programok",
+    "findPharmacy": "Keresse meg a gyógyszertárat"
+  },
+  "pharmacy": {
+    "title": "Keresse meg a közeli gyógyszertárakat",
+    "subtitle": "Keresse meg a közeli gyógyszertárakat a legjobb áron",
+    "useLocation": "Használja a Saját pozíciót",
+    "enterZip": "Vagy írja be az irányítószámot",
+    "search": "Keresés",
+    "filters": {
+      "all": "Minden",
+      "open24": "24 órás nyitva tartás",
+      "delivery": "Szállítás elérhető",
+      "driveThru": "Drive-Thru"
+    },
+    "distance": "mérföldekre",
+    "hours": "Órák",
+    "phone": "Telefon",
+    "getDirections": "Útvonalterv",
+    "viewPrices": "Árak megtekintése"
+  },
+  "prices": {
+    "title": "Ár-összehasonlítás",
+    "noInsurance": "Biztosítás nélkül",
+    "withInsurance": "Biztosítással",
+    "discountPrograms": "Kedvezményes programok",
+    "perMonth": "havonta",
+    "perPill": "tablettánként",
+    "quantity": "Mennyiség",
+    "priceVaries": "Az árak helytől függően változhatnak",
+    "lastUpdated": "Utoljára frissítve"
+  },
+  "accessibility": {
+    "settings": "Kisegítő lehetőségek beállításai",
+    "largeText": "Nagy szöveg",
+    "highContrast": "Magas kontraszt",
+    "screenReader": "Képernyőolvasó optimalizálva",
+    "skipToMain": "Ugrás a fő tartalomhoz"
+  },
+  "common": {
+    "loading": "Terhelés...",
+    "error": "Hiba történt",
+    "tryAgain": "Próbáld újra",
+    "back": "Vissza",
+    "next": "Következő",
+    "close": "Közeli",
+    "save": "Megtakarítás",
+    "cancel": "Mégsem",
+    "learnMore": "További információ",
+    "viewAll": "Összes megtekintése",
+    "noData": "Nincs adat"
+  },
+  "footer": {
+    "about": "A PublicRx-ről",
+    "aboutText": "Ingyenes nyilvános forrás, amely segít megfizethető gyógyszerek megtalálásában.",
+    "disclaimer": "A feltüntetett árak becslések. Mindig ellenőrizze a gyógyszertárban.",
+    "privacy": "Adatvédelmi szabályzat",
+    "terms": "Felhasználási feltételek",
+    "contact": "Lépjen kapcsolatba velünk",
+    "language": "Nyelv"
+  }
+}

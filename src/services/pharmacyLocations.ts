@@ -15,7 +15,25 @@ export interface PharmacyLocation {
   lng: number;
   hours: string | null;
   website: string | null;
+  storeLocatorUrl: string | null;
 }
+
+// Store locator URLs for major chains
+const STORE_LOCATOR_URLS: Record<string, string> = {
+  'CVS': 'https://www.cvs.com/store-locator/landing',
+  'Walgreens': 'https://www.walgreens.com/storelocator/find.jsp',
+  'Walmart': 'https://www.walmart.com/store/finder',
+  'Costco': 'https://www.costco.com/warehouse-locations',
+  'Rite Aid': 'https://www.riteaid.com/locations',
+  'Kroger': 'https://www.kroger.com/stores/search',
+  'Kinney Drugs': 'https://www.kinneydrugs.com/pharmacy/store-locator/',
+  'Hannaford': 'https://www.hannaford.com/locations',
+  'Shaws': 'https://www.shaws.com/stores/search',
+  'Price Chopper': 'https://www.pricechopper.com/stores/',
+  'Target': 'https://www.target.com/store-locator/find-stores',
+  'Safeway': 'https://www.safeway.com/stores/search',
+  'Publix': 'https://www.publix.com/locations',
+};
 
 // Major pharmacy chain brands to search for
 const PHARMACY_BRANDS = [
@@ -88,6 +106,29 @@ export async function searchPharmacyLocations(
   }
 
   return searchPharmacyLocationsByCoords(coords.lat, coords.lng, radiusKm);
+}
+
+/**
+ * Reverse geocode coordinates to get address
+ */
+async function reverseGeocode(lat: number, lng: number): Promise<{ address: string; city: string; state: string; zip: string } | null> {
+  try {
+    const response = await fetch(
+      `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&format=json&addressdetails=1`,
+      { headers: { 'User-Agent': 'PublicRx/1.0' } }
+    );
+    if (!response.ok) return null;
+    const data = await response.json();
+    const addr = data.address || {};
+    return {
+      address: [addr.house_number, addr.road].filter(Boolean).join(' '),
+      city: addr.city || addr.town || addr.village || addr.hamlet || '',
+      state: addr.state || '',
+      zip: addr.postcode || '',
+    };
+  } catch {
+    return null;
+  }
 }
 
 /**
@@ -210,6 +251,7 @@ export async function searchPharmacyLocationsByCoords(
         lng: elLng,
         hours,
         website: tags.website || tags['contact:website'] || null,
+        storeLocatorUrl: STORE_LOCATOR_URLS[brand] || null,
       });
     }
 
@@ -219,6 +261,25 @@ export async function searchPharmacyLocationsByCoords(
       const distB = Math.sqrt(Math.pow(b.lat - lat, 2) + Math.pow(b.lng - lng, 2));
       return distA - distB;
     });
+
+    // Reverse geocode locations missing addresses (limit to first 15 to avoid rate limits)
+    const locationsToGeocode = locations.filter(loc => !loc.address && !loc.city).slice(0, 15);
+    if (locationsToGeocode.length > 0) {
+      console.log('Reverse geocoding', locationsToGeocode.length, 'locations');
+      await Promise.all(
+        locationsToGeocode.map(async (loc, index) => {
+          // Stagger requests to avoid rate limits
+          await new Promise(resolve => setTimeout(resolve, index * 100));
+          const geo = await reverseGeocode(loc.lat, loc.lng);
+          if (geo) {
+            loc.address = geo.address;
+            loc.city = geo.city;
+            loc.state = geo.state;
+            loc.zip = geo.zip;
+          }
+        })
+      );
+    }
 
     return locations.slice(0, 50); // Limit to 50 results
   } catch (error) {

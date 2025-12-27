@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Finndu lyf á viðráðanlegu verði nálægt þér"
+  },
+  "nav": {
+    "home": "Heim",
+    "search": "Leita að lyfjum",
+    "pharmacies": "Finndu apótek",
+    "about": "Um"
+  },
+  "home": {
+    "title": "Finndu lyf á viðráðanlegu verði",
+    "subtitle": "Berðu saman verð, finndu nálæg apótek og sparaðu lyfseðlana",
+    "searchPlaceholder": "Sláðu inn lyfjaheiti...",
+    "searchButton": "Leita",
+    "popularSearches": "Vinsælar leitir",
+    "recentSearches": "Nýlegar leitir"
+  },
+  "search": {
+    "results": "Leitarniðurstöður",
+    "resultsFor": "Niðurstöður fyrir",
+    "noResults": "Engin lyf fundust",
+    "tryDifferent": "Prófaðu annað leitarorð",
+    "loading": "Er að leita að lyfjum...",
+    "filters": "Síur",
+    "sortBy": "Raða eftir",
+    "priceLowest": "Verð: Lágt til hátt",
+    "priceHighest": "Verð: Hátt til lágt",
+    "nameAZ": "Nafn: A til Ö"
+  },
+  "drug": {
+    "genericName": "Almennt nafn",
+    "brandName": "Vörumerki",
+    "manufacturer": "Framleiðandi",
+    "description": "Lýsing",
+    "commonUses": "Algeng notkun",
+    "sideEffects": "Aukaverkanir",
+    "prices": "Verð",
+    "cashPrice": "Staðgreiðsluverð",
+    "withInsurance": "Með tryggingar",
+    "withCoupon": "Með afsláttarmiða",
+    "genericAlternative": "Almennur valkostur í boði",
+    "savings": "Þú gætir sparað",
+    "assistancePrograms": "Sjúklingahjálparáætlanir",
+    "findPharmacy": "Finndu Apótek"
+  },
+  "pharmacy": {
+    "title": "Finndu nálæg apótek",
+    "subtitle": "Finndu apótek nálægt þér með bestu verðin",
+    "useLocation": "Notaðu Staðsetningin mín",
+    "enterZip": "Eða sláðu inn póstnúmer",
+    "search": "Leita",
+    "filters": {
+      "all": "Allt",
+      "open24": "Opið allan sólarhringinn",
+      "delivery": "Afhending í boði",
+      "driveThru": "Drive-Thru"
+    },
+    "distance": "kílómetra í burtu",
+    "hours": "Klukkutímar",
+    "phone": "Sími",
+    "getDirections": "Fáðu leiðbeiningar",
+    "viewPrices": "Skoða verð"
+  },
+  "prices": {
+    "title": "Verðsamanburður",
+    "noInsurance": "Án tryggingar",
+    "withInsurance": "Með tryggingar",
+    "discountPrograms": "Afsláttarforrit",
+    "perMonth": "á mánuði",
+    "perPill": "á pillu",
+    "quantity": "Magn",
+    "priceVaries": "Verð geta verið mismunandi eftir staðsetningu",
+    "lastUpdated": "Síðast uppfært"
+  },
+  "accessibility": {
+    "settings": "Aðgengisstillingar",
+    "largeText": "Stór texti",
+    "highContrast": "Hár birtuskil",
+    "screenReader": "Skjálesari fínstilltur",
+    "skipToMain": "Fara í aðalefni"
+  },
+  "common": {
+    "loading": "Hleður...",
+    "error": "Villa kom upp",
+    "tryAgain": "Reyndu aftur",
+    "back": "Til baka",
+    "next": "Næst",
+    "close": "Loka",
+    "save": "Vista",
+    "cancel": "Hætta við",
+    "learnMore": "Lærðu meira",
+    "viewAll": "Skoða allt",
+    "noData": "Engin gögn tiltæk"
+  },
+  "footer": {
+    "about": "Um PublicRx",
+    "aboutText": "Ókeypis opinber úrræði til að hjálpa þér að finna lyf á viðráðanlegu verði.",
+    "disclaimer": "Verðin sem sýnd eru eru áætlanir. Staðfestu alltaf í apótekinu þínu.",
+    "privacy": "Persónuverndarstefna",
+    "terms": "Notkunarskilmálar",
+    "contact": "Hafðu samband",
+    "language": "Tungumál"
+  }
+}
