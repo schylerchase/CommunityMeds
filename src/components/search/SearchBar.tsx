@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { searchDrugs } from '../../services/drugSearch';
 import type { DrugSearchResult } from '../../services/drugSearch';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
+import { getPillThumbnail } from '../../services/drugImages';
 
 interface SearchBarProps {
   initialQuery?: string;
@@ -16,6 +17,7 @@ export function SearchBar({ initialQuery = '', onSearch, autoFocus = false }: Se
   const navigate = useNavigate();
   const [query, setQuery] = useState(initialQuery);
   const [suggestions, setSuggestions] = useState<DrugSearchResult[]>([]);
+  const [suggestionImages, setSuggestionImages] = useState<Record<string, string | null>>({});
   const [isLoading, setIsLoading] = useState(false);
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(-1);
@@ -34,6 +36,14 @@ export function SearchBar({ initialQuery = '', onSearch, autoFocus = false }: Se
     try {
       const results = await searchDrugs(searchQuery, 5);
       setSuggestions(results);
+
+      // Fetch images for each suggestion in parallel (non-blocking)
+      results.forEach(async (drug) => {
+        const imageUrl = await getPillThumbnail(drug.genericName || drug.brandName);
+        if (imageUrl) {
+          setSuggestionImages((prev) => ({ ...prev, [drug.id]: imageUrl }));
+        }
+      });
     } catch (error) {
       console.error('Error fetching suggestions:', error);
       setSuggestions([]);
@@ -230,10 +240,29 @@ export function SearchBar({ initialQuery = '', onSearch, autoFocus = false }: Se
                   selectedIndex === index ? 'bg-blue-50' : 'hover:bg-gray-50'
                 }`}
               >
-                <div className="font-medium text-gray-900">{drug.brandName}</div>
-                {drug.genericName && drug.genericName !== drug.brandName && (
-                  <div className="text-sm text-gray-500">{drug.genericName}</div>
-                )}
+                <div className="flex items-center gap-3">
+                  {/* Pill thumbnail */}
+                  <div className="w-10 h-10 flex-shrink-0 rounded-lg overflow-hidden bg-gray-100 flex items-center justify-center">
+                    {suggestionImages[drug.id] ? (
+                      <img
+                        src={suggestionImages[drug.id]!}
+                        alt=""
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                      />
+                    ) : (
+                      <svg className="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M17.707 9.293l-5-5a.999.999 0 00-1.414 0l-8 8a.999.999 0 000 1.414l5 5a.999.999 0 001.414 0l8-8a.999.999 0 000-1.414zm-9.586 6.879L4 12.05l6.293-6.293 4.121 4.122-6.293 6.293z" clipRule="evenodd" />
+                      </svg>
+                    )}
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <div className="font-medium text-gray-900 truncate">{drug.brandName}</div>
+                    {drug.genericName && drug.genericName !== drug.brandName && (
+                      <div className="text-sm text-gray-500 truncate">{drug.genericName}</div>
+                    )}
+                  </div>
+                </div>
               </button>
             </li>
           ))}

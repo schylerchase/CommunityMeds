@@ -120,3 +120,44 @@ export function getOpenFDALabelUrl(drugName: string): string {
 export function getDailyMedSearchUrl(drugName: string): string {
   return `https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=${encodeURIComponent(drugName)}`;
 }
+
+// Cache for pill thumbnails to avoid repeated API calls
+const thumbnailCache = new Map<string, string | null>();
+
+/**
+ * Fetch a single pill thumbnail image for search suggestions
+ * Uses smaller resolution for faster loading
+ */
+export async function getPillThumbnail(drugName: string): Promise<string | null> {
+  const cacheKey = drugName.toLowerCase();
+
+  if (thumbnailCache.has(cacheKey)) {
+    return thumbnailCache.get(cacheKey) || null;
+  }
+
+  try {
+    const response = await fetch(
+      `https://rximage.nlm.nih.gov/api/rximage/1/rxbase?name=${encodeURIComponent(drugName)}&resolution=300`,
+      { headers: { 'Accept': 'application/json' } }
+    );
+
+    if (!response.ok) {
+      thumbnailCache.set(cacheKey, null);
+      return null;
+    }
+
+    const data = await response.json();
+
+    if (data.nlmRxImages && data.nlmRxImages.length > 0) {
+      const imageUrl = data.nlmRxImages[0].imageUrl;
+      thumbnailCache.set(cacheKey, imageUrl);
+      return imageUrl;
+    }
+
+    thumbnailCache.set(cacheKey, null);
+    return null;
+  } catch {
+    thumbnailCache.set(cacheKey, null);
+    return null;
+  }
+}
