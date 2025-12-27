@@ -2,6 +2,8 @@
  * Service to find actual pharmacy locations using Overpass API (OpenStreetMap)
  */
 
+import { toTitleCase, formatPhoneNumber } from '../utils/textFormatting';
+
 export interface PharmacyLocation {
   id: string;
   name: string;
@@ -114,19 +116,29 @@ export async function searchPharmacyLocations(
 async function reverseGeocode(lat: number, lng: number): Promise<{ address: string; city: string; state: string; zip: string } | null> {
   try {
     const response = await fetch(
-      `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&format=json&addressdetails=1`,
-      { headers: { 'User-Agent': 'PublicRx/1.0' } }
+      `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&format=json&addressdetails=1&zoom=18`,
+      { headers: { 'User-Agent': 'PublicRx/1.0 (https://publicrx.org; affordable medication finder)' } }
     );
     if (!response.ok) return null;
     const data = await response.json();
     const addr = data.address || {};
-    return {
-      address: [addr.house_number, addr.road].filter(Boolean).join(' '),
-      city: addr.city || addr.town || addr.village || addr.hamlet || '',
-      state: addr.state || '',
-      zip: addr.postcode || '',
-    };
-  } catch {
+
+    // Build street address from available components
+    const streetParts = [addr.house_number, addr.road || addr.street].filter(Boolean);
+    const address = streetParts.join(' ') || addr.display_name?.split(',')[0] || '';
+
+    // Get city from various possible fields
+    const city = addr.city || addr.town || addr.village || addr.hamlet || addr.suburb || addr.municipality || '';
+
+    // Get state - handle abbreviations
+    const state = addr.state || addr.region || '';
+
+    // Get ZIP code
+    const zip = addr.postcode?.split('-')[0] || ''; // Take first part of ZIP+4
+
+    return { address, city, state, zip };
+  } catch (error) {
+    console.warn('Reverse geocoding failed:', error);
     return null;
   }
 }
@@ -157,6 +169,7 @@ export async function searchPharmacyLocationsByCoords(
   const endpoints = [
     'https://overpass-api.de/api/interpreter',
     'https://overpass.kumi.systems/api/interpreter',
+    'https://maps.mail.ru/osm/tools/overpass/api/interpreter',
   ];
 
   try {
@@ -238,15 +251,19 @@ export async function searchPharmacyLocationsByCoords(
           .replace(/Su/g, 'Sun');
       }
 
+      // Format phone number
+      const rawPhone = tags.phone || tags['contact:phone'] || null;
+      const formattedPhone = rawPhone ? formatPhoneNumber(rawPhone) : null;
+
       locations.push({
         id: `osm-${element.id}`,
-        name,
+        name: toTitleCase(name),
         brand,
-        address,
-        city,
-        state,
+        address: toTitleCase(address),
+        city: toTitleCase(city),
+        state: state.length === 2 ? state.toUpperCase() : toTitleCase(state),
         zip,
-        phone: tags.phone || tags['contact:phone'] || null,
+        phone: formattedPhone,
         lat: elLat,
         lng: elLng,
         hours,
@@ -272,9 +289,9 @@ export async function searchPharmacyLocationsByCoords(
           await new Promise(resolve => setTimeout(resolve, index * 100));
           const geo = await reverseGeocode(loc.lat, loc.lng);
           if (geo) {
-            loc.address = geo.address;
-            loc.city = geo.city;
-            loc.state = geo.state;
+            loc.address = toTitleCase(geo.address);
+            loc.city = toTitleCase(geo.city);
+            loc.state = geo.state.length === 2 ? geo.state.toUpperCase() : toTitleCase(geo.state);
             loc.zip = geo.zip;
           }
         })
