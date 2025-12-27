@@ -6,6 +6,8 @@ import type { DrugFullDetails } from '../services/drugSearch';
 import { getPriceForDrug } from '../services/pricing';
 import type { DrugPrice } from '../services/pricing';
 import { getPharmacySearchLinks, getTrustedDrugInfoLinks } from '../utils/pharmacyLinks';
+import { getDrugLabel, getDailyMedSearchUrl, type DrugLabelInfo } from '../services/drugImages';
+import { PillImages } from '../components/drug/PillImages';
 import { PriceTable } from '../components/search/PriceTable';
 import { Button } from '../components/ui/Button';
 import { LoadingSpinner } from '../components/ui/LoadingSpinner';
@@ -16,6 +18,7 @@ export function DrugDetails() {
   const { id } = useParams<{ id: string }>();
   const [drug, setDrug] = useState<DrugFullDetails | null>(null);
   const [priceInfo, setPriceInfo] = useState<DrugPrice | null>(null);
+  const [labelInfo, setLabelInfo] = useState<DrugLabelInfo | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -35,6 +38,16 @@ export function DrugDetails() {
             pricing = await getPriceForDrug(drugData.genericName);
           }
           setPriceInfo(pricing);
+
+          // Fetch drug label info from DailyMed (non-blocking)
+          getDrugLabel(drugData.brandName).then(label => {
+            if (label) {
+              setLabelInfo(label);
+            } else {
+              // Try with generic name
+              getDrugLabel(drugData.genericName).then(setLabelInfo);
+            }
+          });
         } else {
           setError('Drug not found');
         }
@@ -334,6 +347,50 @@ export function DrugDetails() {
                   </svg>
                   <p className="text-gray-600 text-sm">Compare prices at pharmacies below</p>
                 </div>
+              </Card>
+            )}
+
+            {/* Pill Images */}
+            <Card>
+              <h3 className="font-semibold text-gray-900 mb-3 flex items-center">
+                <svg className="w-5 h-5 mr-2 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                Pill Identification
+              </h3>
+              <PillImages drugName={drug.genericName || drug.brandName} ndcCodes={drug.ndcCodes} />
+            </Card>
+
+            {/* Drug Label from DailyMed */}
+            {labelInfo && (
+              <Card className="bg-amber-50 border-amber-200">
+                <h3 className="font-semibold text-amber-900 mb-3 flex items-center">
+                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clipRule="evenodd" />
+                  </svg>
+                  Official Drug Label
+                </h3>
+                <p className="text-xs text-amber-700 mb-3">
+                  From {labelInfo.labelerName}
+                </p>
+                {labelInfo.imageUrl && (
+                  <img
+                    src={labelInfo.imageUrl}
+                    alt={`${drug.brandName} label`}
+                    className="w-full rounded-lg mb-3 border border-amber-200"
+                  />
+                )}
+                <a
+                  href={labelInfo.labelUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center w-full px-4 py-2 bg-amber-600 text-white rounded-lg hover:bg-amber-700 transition-colors text-sm font-medium"
+                >
+                  View Full Drug Label
+                  <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
               </Card>
             )}
 
