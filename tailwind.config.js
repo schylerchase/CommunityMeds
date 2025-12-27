@@ -7,17 +7,44 @@ export default {
   theme: {
     extend: {
       colors: {
+        // Warm & Friendly palette
         primary: {
-          50: '#eff6ff',
-          100: '#dbeafe',
-          200: '#bfdbfe',
-          300: '#93c5fd',
-          400: '#60a5fa',
-          500: '#3b82f6',
-          600: '#2563eb',
-          700: '#1d4ed8',
-          800: '#1e40af',
-          900: '#1e3a8a',
+          50: '#fef7f0',
+          100: '#fdecd8',
+          200: '#fad6b0',
+          300: '#f6b87e',
+          400: '#f1924a',
+          500: '#ed7426',
+          600: '#de5a1c',
+          700: '#b84419',
+          800: '#93371c',
+          900: '#782f1a',
+        },
+        // Warm teal for secondary actions
+        secondary: {
+          50: '#f0fdfa',
+          100: '#ccfbf1',
+          200: '#99f6e4',
+          300: '#5eead4',
+          400: '#2dd4bf',
+          500: '#14b8a6',
+          600: '#0d9488',
+          700: '#0f766e',
+          800: '#115e59',
+          900: '#134e4a',
+        },
+        // Warm neutrals
+        warm: {
+          50: '#fdfbf7',
+          100: '#faf6f0',
+          200: '#f5ede0',
+          300: '#ebe0cc',
+          400: '#d9c9aa',
+          500: '#c4ae8a',
+          600: '#a8906a',
+          700: '#8a7455',
+          800: '#6e5c45',
+          900: '#4a3f30',
         },
         // High contrast colors for accessibility
         accessible: {
@@ -27,16 +54,26 @@ export default {
           link: '#0056b3',
         }
       },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+      },
       fontSize: {
-        // Larger font sizes for accessibility
         'base-lg': '1.125rem',
         'lg-lg': '1.375rem',
         'xl-lg': '1.625rem',
         '2xl-lg': '2rem',
       },
       spacing: {
-        // Minimum 48px touch targets
         'touch': '48px',
+      },
+      borderRadius: {
+        '2xl': '1rem',
+        '3xl': '1.5rem',
+      },
+      boxShadow: {
+        'warm': '0 4px 14px 0 rgba(237, 116, 38, 0.15)',
+        'warm-lg': '0 10px 40px -10px rgba(237, 116, 38, 0.2)',
+        'soft': '0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04)',
       }
     },
   },

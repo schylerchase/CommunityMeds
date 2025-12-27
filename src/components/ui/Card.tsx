@@ -17,8 +17,8 @@ export function Card({
 }: CardProps) {
   const paddingStyles = {
     none: '',
-    sm: 'p-3',
-    md: 'p-4 sm:p-6',
+    sm: 'p-4',
+    md: 'p-5 sm:p-6',
     lg: 'p-6 sm:p-8',
   };
 
@@ -27,9 +27,9 @@ export function Card({
   return (
     <Component
       className={`
-        bg-white rounded-xl shadow-sm border border-gray-200
+        bg-white rounded-2xl shadow-soft border border-warm-200
         ${paddingStyles[padding]}
-        ${hover ? 'hover:shadow-md hover:border-gray-300 transition-shadow' : ''}
+        ${hover ? 'hover:shadow-warm hover:border-primary-200 hover:-translate-y-0.5 transition-all duration-200' : ''}
         ${onClick ? 'cursor-pointer w-full text-left' : ''}
         ${className}
       `}
@@ -62,7 +62,7 @@ interface CardTitleProps {
 
 export function CardTitle({ children, className = '', as: Tag = 'h3' }: CardTitleProps) {
   return (
-    <Tag className={`text-lg font-semibold text-gray-900 ${className}`}>
+    <Tag className={`text-lg font-semibold text-warm-900 ${className}`}>
       {children}
     </Tag>
   );
@@ -84,7 +84,7 @@ interface CardFooterProps {
 
 export function CardFooter({ children, className = '' }: CardFooterProps) {
   return (
-    <div className={`mt-4 pt-4 border-t border-gray-200 ${className}`}>
+    <div className={`mt-4 pt-4 border-t border-warm-200 ${className}`}>
       {children}
     </div>
   );

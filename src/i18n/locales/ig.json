@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Chọta ọgwụ bara uru nso gị"
+  },
+  "nav": {
+    "home": "Ụlọ",
+    "search": "Chọọ ọgwụ",
+    "pharmacies": "Chọta ụlọ ahịa ọgwụ",
+    "about": "Ihe gbasara"
+  },
+  "home": {
+    "title": "Chọta ọgwụ bara uru",
+    "subtitle": "Tulee ọnụ ahịa, chọta ụlọ ahịa ọgwụ dị nso, wee chekwaa na ndenye ọgwụ gị",
+    "searchPlaceholder": "Tinye aha ọgwụ...",
+    "searchButton": "Chọọ",
+    "popularSearches": "Ọchụchọ ama ama",
+    "recentSearches": "Ọchụchọ na nso nso a"
+  },
+  "search": {
+    "results": "Chọọ Nsonaazụ",
+    "resultsFor": "Nsonaazụ maka",
+    "noResults": "Enweghị ọgwụ ahụrụ",
+    "tryDifferent": "Gbalịa okwu ọchụchọ dị iche",
+    "loading": "Na-achọ ọgwụ...",
+    "filters": "Ihe nzacha",
+    "sortBy": "Hazie site na",
+    "priceLowest": "Ahịa: Obere ruo elu",
+    "priceHighest": "Ahịa: Elu ruo ala",
+    "nameAZ": "Aha: A ruo Z"
+  },
+  "drug": {
+    "genericName": "Aha mkpokọta",
+    "brandName": "Aha ika",
+    "manufacturer": "Onye nrụpụta",
+    "description": "Nkọwa",
+    "commonUses": "Ejikarị",
+    "sideEffects": "Mmetụta dị n'akụkụ",
+    "prices": "Ọnụ ahịa",
+    "cashPrice": "Ọnụ ego ego",
+    "withInsurance": "Na Insurance",
+    "withCoupon": "Na coupon",
+    "genericAlternative": "Nhọrọ Ọdịnihu Dị",
+    "savings": "Ị nwere ike ịchekwa",
+    "assistancePrograms": "Mmemme Enyemaka ndị ọrịa",
+    "findPharmacy": "Chọta ụlọ ahịa ọgwụ"
+  },
+  "pharmacy": {
+    "title": "Chọta ụlọ ahịa ọgwụ dị nso",
+    "subtitle": "Chọta ụlọ ahịa ọgwụ dị gị nso nwere ọnụ ahịa kacha mma",
+    "useLocation": "Jiri Ebe M",
+    "enterZip": "Ma ọ bụ tinye koodu ZIP",
+    "search": "Chọọ",
+    "filters": {
+      "all": "Ha niile",
+      "open24": "Mepee awa 24",
+      "delivery": "Nnyefe dị",
+      "driveThru": "Ụgbọ ala-Site"
+    },
+    "distance": "kilomita site",
+    "hours": "Oge awa",
+    "phone": "Ekwentị",
+    "getDirections": "Nweta ntụzịaka",
+    "viewPrices": "Lelee ọnụ ahịa"
+  },
+  "prices": {
+    "title": "Ntụle ọnụahịa",
+    "noInsurance": "Enweghị mkpuchi",
+    "withInsurance": "Na Insurance",
+    "discountPrograms": "Mmemme ego",
+    "perMonth": "kwa ọnwa",
+    "perPill": "kwa pill",
+    "quantity": "Ọnụọgụ",
+    "priceVaries": "Ọnụ ahịa nwere ike ịdị iche site na ọnọdụ",
+    "lastUpdated": "Emelitere ikpeazụ"
+  },
+  "accessibility": {
+    "settings": "Ntọala nnweta",
+    "largeText": "Ederede buru ibu",
+    "highContrast": "Ọdịiche dị elu",
+    "screenReader": "Emebere ihe na-agụ ihuenyo",
+    "skipToMain": "Mafere na isi ọdịnaya"
+  },
+  "common": {
+    "loading": "Na-ebu...",
+    "error": "Enwere mperi",
+    "tryAgain": "Nwaa ọzọ",
+    "back": "Azu",
+    "next": "Osote",
+    "close": "Mechie",
+    "save": "Chekwa",
+    "cancel": "Kagbuo",
+    "learnMore": "Mụtakwuo",
+    "viewAll": "Lelee All",
+    "noData": "Enweghị data dị"
+  },
+  "footer": {
+    "about": "Banyere PublicRx",
+    "aboutText": "Ihe enyemaka ọha n'efu iji nyere gị aka ịchọta ọgwụ dị ọnụ ala.",
+    "disclaimer": "Ọnụ ahịa egosiri bụ atụmatụ. Jiri ụlọ ahịa ọgwụ gị nyochaa mgbe niile.",
+    "privacy": "amụma nzuzo",
+    "terms": "Usoro ojiji",
+    "contact": "Kpọtụrụ anyị",
+    "language": "Asụsụ"
+  }
+}

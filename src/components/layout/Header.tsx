@@ -15,7 +15,7 @@ export function Header() {
   ];
 
   return (
-    <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <header className="bg-white/95 backdrop-blur-sm border-b border-warm-200 sticky top-0 z-50">
       <a
         href="#main-content"
         className="skip-link"
@@ -28,29 +28,33 @@ export function Header() {
           {/* Logo */}
           <Link
             to="/"
-            className="flex items-center gap-2 text-xl font-bold text-blue-600 hover:text-blue-700 transition-colors"
+            className="flex items-center gap-2 text-xl font-bold text-primary-600 hover:text-primary-700 transition-colors"
           >
-            <svg
-              className="w-8 h-8"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z" />
-            </svg>
-            <span className="hidden sm:inline">{t('app.name')}</span>
+            <div className="w-9 h-9 bg-gradient-to-br from-primary-400 to-primary-600 rounded-xl flex items-center justify-center shadow-warm">
+              <svg
+                className="w-5 h-5 text-white"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path d="M19 8h-1V5c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v3H5c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM8 5h8v3H8V5zm3 14h-1v-3H7v-1h3v-3h1v3h3v1h-3v3z" />
+              </svg>
+            </div>
+            <span className="hidden sm:inline bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
+              {t('app.name')}
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-6" role="navigation" aria-label="Main navigation">
+          <nav className="hidden md:flex items-center gap-2" role="navigation" aria-label="Main navigation">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
-                className={`px-3 py-2 rounded-lg text-base font-medium transition-colors ${
+                className={`px-4 py-2 rounded-xl text-base font-medium transition-all duration-200 ${
                   location.pathname === link.path
-                    ? 'text-blue-600 bg-blue-50'
-                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                    ? 'text-primary-700 bg-primary-50 shadow-sm'
+                    : 'text-warm-700 hover:text-primary-600 hover:bg-warm-100'
                 }`}
                 aria-current={location.pathname === link.path ? 'page' : undefined}
               >
@@ -60,13 +64,13 @@ export function Header() {
           </nav>
 
           {/* Language Selector & Mobile Menu Button */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
             <LanguageSelector />
 
             {/* Mobile menu button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors touch-target"
+              className="md:hidden p-2 rounded-xl text-warm-700 hover:bg-warm-100 transition-colors touch-target"
               aria-expanded={isMenuOpen}
               aria-controls="mobile-menu"
               aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
@@ -102,7 +106,7 @@ export function Header() {
         {isMenuOpen && (
           <nav
             id="mobile-menu"
-            className="md:hidden py-4 border-t border-gray-200"
+            className="md:hidden py-4 border-t border-warm-200"
             role="navigation"
             aria-label="Mobile navigation"
           >
@@ -112,10 +116,10 @@ export function Header() {
                   key={link.path}
                   to={link.path}
                   onClick={() => setIsMenuOpen(false)}
-                  className={`px-4 py-3 rounded-lg text-base font-medium transition-colors touch-target ${
+                  className={`px-4 py-3 rounded-xl text-base font-medium transition-colors touch-target ${
                     location.pathname === link.path
-                      ? 'text-blue-600 bg-blue-50'
-                      : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                      ? 'text-primary-700 bg-primary-50'
+                      : 'text-warm-700 hover:text-primary-600 hover:bg-warm-100'
                   }`}
                   aria-current={location.pathname === link.path ? 'page' : undefined}
                 >

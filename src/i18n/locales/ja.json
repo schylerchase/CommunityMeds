@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "お近くの手頃な価格の医薬品を見つける"
+  },
+  "nav": {
+    "home": "家",
+    "search": "薬を検索する",
+    "pharmacies": "薬局を探す",
+    "about": "について"
+  },
+  "home": {
+    "title": "手頃な価格の医薬品を見つける",
+    "subtitle": "価格を比較し、近くの薬局を見つけて処方箋を節約しましょう",
+    "searchPlaceholder": "薬名を入力してください...",
+    "searchButton": "検索",
+    "popularSearches": "人気の検索",
+    "recentSearches": "最近の検索"
+  },
+  "search": {
+    "results": "検索結果",
+    "resultsFor": "の結果",
+    "noResults": "薬は見つかりませんでした",
+    "tryDifferent": "別の検索語を試してください",
+    "loading": "薬を検索しています...",
+    "filters": "フィルター",
+    "sortBy": "並べ替え",
+    "priceLowest": "価格: 低価格から高価格",
+    "priceHighest": "価格: 高から低まで",
+    "nameAZ": "名前: A to Z"
+  },
+  "drug": {
+    "genericName": "一般名",
+    "brandName": "ブランド名",
+    "manufacturer": "メーカー",
+    "description": "説明",
+    "commonUses": "一般的な用途",
+    "sideEffects": "副作用",
+    "prices": "価格",
+    "cashPrice": "現金価格",
+    "withInsurance": "保険あり",
+    "withCoupon": "クーポンあり",
+    "genericAlternative": "汎用の代替品が利用可能",
+    "savings": "節約できますよ",
+    "assistancePrograms": "患者支援プログラム",
+    "findPharmacy": "薬局を探す"
+  },
+  "pharmacy": {
+    "title": "近くの薬局を探す",
+    "subtitle": "最安値で近くの薬局を見つける",
+    "useLocation": "現在地を使用する",
+    "enterZip": "または郵便番号を入力してください",
+    "search": "検索",
+    "filters": {
+      "all": "全て",
+      "open24": "２４時間営業",
+      "delivery": "配送可能",
+      "driveThru": "ドライブスルー"
+    },
+    "distance": "数マイル離れたところ",
+    "hours": "営業時間",
+    "phone": "電話",
+    "getDirections": "道順を調べる",
+    "viewPrices": "料金を見る"
+  },
+  "prices": {
+    "title": "価格比較",
+    "noInsurance": "保険なし",
+    "withInsurance": "保険あり",
+    "discountPrograms": "割引プログラム",
+    "perMonth": "月あたり",
+    "perPill": "1錠あたり",
+    "quantity": "量",
+    "priceVaries": "価格は場所によって異なる場合があります",
+    "lastUpdated": "最終更新日"
+  },
+  "accessibility": {
+    "settings": "アクセシビリティ設定",
+    "largeText": "大きいテキスト",
+    "highContrast": "ハイコントラスト",
+    "screenReader": "スクリーンリーダーの最適化",
+    "skipToMain": "メインコンテンツにスキップ"
+  },
+  "common": {
+    "loading": "読み込み中...",
+    "error": "エラーが発生しました",
+    "tryAgain": "もう一度やり直してください",
+    "back": "戻る",
+    "next": "次",
+    "close": "近い",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "learnMore": "もっと詳しく知る",
+    "viewAll": "すべて見る",
+    "noData": "利用可能なデータがありません"
+  },
+  "footer": {
+    "about": "PublicRxについて",
+    "aboutText": "手頃な価格の医薬品を見つけるのに役立つ無料の公開リソース。",
+    "disclaimer": "表示価格は概算です。必ず薬局に確認してください。",
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約",
+    "contact": "お問い合わせ",
+    "language": "言語"
+  }
+}

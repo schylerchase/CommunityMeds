@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Temukan Pengobatan Terjangkau di Dekat Anda"
+  },
+  "nav": {
+    "home": "Rumah",
+    "search": "Cari Obat",
+    "pharmacies": "Temukan Apotek",
+    "about": "Tentang"
+  },
+  "home": {
+    "title": "Temukan Obat yang Terjangkau",
+    "subtitle": "Bandingkan harga, temukan apotek terdekat, dan hemat resep Anda",
+    "searchPlaceholder": "Masukkan nama obat...",
+    "searchButton": "Mencari",
+    "popularSearches": "Pencarian Populer",
+    "recentSearches": "Pencarian Terbaru"
+  },
+  "search": {
+    "results": "Hasil Pencarian",
+    "resultsFor": "Hasil untuk",
+    "noResults": "Tidak ada obat yang ditemukan",
+    "tryDifferent": "Coba istilah pencarian lain",
+    "loading": "Mencari obat...",
+    "filters": "Filter",
+    "sortBy": "Urutkan berdasarkan",
+    "priceLowest": "Harga: Rendah ke Tinggi",
+    "priceHighest": "Harga: Tinggi ke Rendah",
+    "nameAZ": "Nama: A sampai Z"
+  },
+  "drug": {
+    "genericName": "Nama Generik",
+    "brandName": "Nama Merek",
+    "manufacturer": "Pabrikan",
+    "description": "Keterangan",
+    "commonUses": "Kegunaan Umum",
+    "sideEffects": "Efek Samping",
+    "prices": "Harga",
+    "cashPrice": "Harga Tunai",
+    "withInsurance": "Dengan Asuransi",
+    "withCoupon": "Dengan Kupon",
+    "genericAlternative": "Alternatif Generik Tersedia",
+    "savings": "Anda bisa menghemat",
+    "assistancePrograms": "Program Bantuan Pasien",
+    "findPharmacy": "Temukan Apotek"
+  },
+  "pharmacy": {
+    "title": "Temukan Apotek Terdekat",
+    "subtitle": "Temukan apotek di dekat Anda dengan harga terbaik",
+    "useLocation": "Gunakan Lokasi Saya",
+    "enterZip": "Atau masukkan kode pos",
+    "search": "Mencari",
+    "filters": {
+      "all": "Semua",
+      "open24": "Buka 24 Jam",
+      "delivery": "Pengiriman Tersedia",
+      "driveThru": "Lantatur"
+    },
+    "distance": "mil jauhnya",
+    "hours": "Jam",
+    "phone": "Telepon",
+    "getDirections": "Dapatkan Petunjuk Arah",
+    "viewPrices": "Lihat Harga"
+  },
+  "prices": {
+    "title": "Perbandingan Harga",
+    "noInsurance": "Tanpa Asuransi",
+    "withInsurance": "Dengan Asuransi",
+    "discountPrograms": "Program Diskon",
+    "perMonth": "per bulan",
+    "perPill": "per pil",
+    "quantity": "Kuantitas",
+    "priceVaries": "Harga mungkin berbeda di setiap lokasi",
+    "lastUpdated": "Terakhir diperbarui"
+  },
+  "accessibility": {
+    "settings": "Pengaturan Aksesibilitas",
+    "largeText": "Teks Besar",
+    "highContrast": "Kontras Tinggi",
+    "screenReader": "Pembaca Layar Dioptimalkan",
+    "skipToMain": "Lompat ke konten utama"
+  },
+  "common": {
+    "loading": "Memuat...",
+    "error": "Terjadi kesalahan",
+    "tryAgain": "Coba Lagi",
+    "back": "Kembali",
+    "next": "Berikutnya",
+    "close": "Menutup",
+    "save": "Menyimpan",
+    "cancel": "Membatalkan",
+    "learnMore": "Pelajari Lebih Lanjut",
+    "viewAll": "Lihat Semua",
+    "noData": "Tidak ada data yang tersedia"
+  },
+  "footer": {
+    "about": "Tentang PublicRx",
+    "aboutText": "Sumber daya publik gratis untuk membantu Anda menemukan obat-obatan yang terjangkau.",
+    "disclaimer": "Harga yang tertera adalah perkiraan. Selalu verifikasi dengan apotek Anda.",
+    "privacy": "Kebijakan Privasi",
+    "terms": "Ketentuan Penggunaan",
+    "contact": "Hubungi kami",
+    "language": "Bahasa"
+  }
+}

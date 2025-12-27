@@ -28,18 +28,30 @@ export function PharmacyLocationsMap({ locations, center, onLocationClick }: Pha
   const markersRef = useRef<L.Marker[]>([]);
 
   useEffect(() => {
-    if (!mapRef.current || mapInstanceRef.current) return;
+    if (!mapRef.current) return;
+
+    // Clean up existing map if any
+    if (mapInstanceRef.current) {
+      mapInstanceRef.current.remove();
+      mapInstanceRef.current = null;
+    }
 
     const defaultCenter: [number, number] = center
       ? [center.lat, center.lng]
       : [39.8283, -98.5795]; // Center of US
 
-    mapInstanceRef.current = L.map(mapRef.current).setView(defaultCenter, center ? 12 : 4);
+    const map = L.map(mapRef.current).setView(defaultCenter, center ? 12 : 4);
+    mapInstanceRef.current = map;
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution:
         '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    }).addTo(mapInstanceRef.current);
+    }).addTo(map);
+
+    // Invalidate size after a short delay to ensure container is visible
+    setTimeout(() => {
+      map.invalidateSize();
+    }, 100);
 
     return () => {
       if (mapInstanceRef.current) {
@@ -47,7 +59,7 @@ export function PharmacyLocationsMap({ locations, center, onLocationClick }: Pha
         mapInstanceRef.current = null;
       }
     };
-  }, []);
+  }, [center?.lat, center?.lng]);
 
   useEffect(() => {
     if (!mapInstanceRef.current) return;
