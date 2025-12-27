@@ -1,8 +1,7 @@
-import { useState, useEffect, lazy, Suspense } from 'react';
+import { useState, lazy, Suspense } from 'react';
 import { useTranslation } from 'react-i18next';
 import { searchPharmaciesByZip } from '../services/npi';
 import type { Pharmacy } from '../services/npi';
-import { useGeolocation } from '../hooks/useGeolocation';
 import { PharmacyCard } from '../components/pharmacy/PharmacyCard';
 import { Button } from '../components/ui/Button';
 import { Input } from '../components/ui/Input';
@@ -17,46 +16,111 @@ const PharmacyMap = lazy(() =>
 
 export function PharmacyFinder() {
   const { t } = useTranslation();
-  const { latitude, longitude, loading: geoLoading, error: geoError, getLocation } = useGeolocation();
   const [zipCode, setZipCode] = useState('');
   const [pharmacies, setPharmacies] = useState<Pharmacy[]>([]);
   const [loading, setLoading] = useState(false);
+  const [geoLoading, setGeoLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [searched, setSearched] = useState(false);
+  const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
 
   // Search by ZIP code
-  const handleZipSearch = async (e?: React.FormEvent) => {
-    e?.preventDefault();
-    if (!zipCode || zipCode.length < 5) return;
+  const handleZipSearch = async (zip?: string) => {
+    const searchZip = zip || zipCode;
+    if (!searchZip || searchZip.length < 5) {
+      setError('Please enter a valid 5-digit ZIP code');
+      return;
+    }
 
     setLoading(true);
     setError(null);
     setSearched(true);
 
     try {
-      const results = await searchPharmaciesByZip(zipCode.substring(0, 5));
+      const results = await searchPharmaciesByZip(searchZip.substring(0, 5));
       setPharmacies(results);
+      if (results.length === 0) {
+        setError('No pharmacies found for this ZIP code. Try a nearby ZIP code.');
+      }
     } catch (err) {
-      setError(t('common.error'));
+      setError('Failed to search pharmacies. Please try again.');
       console.error('Pharmacy search error:', err);
     } finally {
       setLoading(false);
     }
   };
 
-  // Use geolocation to find nearby pharmacies
-  const handleUseLocation = () => {
-    getLocation();
+  const handleFormSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    handleZipSearch();
   };
 
-  // When we get location, do a reverse geocode and search (simplified for static site)
-  useEffect(() => {
-    if (latitude && longitude && !loading) {
-      // For a static site, we'd need to use a geocoding API
-      // For now, we'll just show a message
-      setError('Location detected! Please enter your ZIP code to find pharmacies.');
+  // Use geolocation to find nearby pharmacies
+  const handleUseLocation = async () => {
+    if (!navigator.geolocation) {
+      setError('Geolocation is not supported by your browser');
+      return;
     }
-  }, [latitude, longitude, loading]);
+
+    setGeoLoading(true);
+    setError(null);
+
+    try {
+      const position = await new Promise<GeolocationPosition>((resolve, reject) => {
+        navigator.geolocation.getCurrentPosition(resolve, reject, {
+          enableHighAccuracy: true,
+          timeout: 10000,
+          maximumAge: 300000,
+        });
+      });
+
+      const { latitude, longitude } = position.coords;
+      setUserLocation({ lat: latitude, lng: longitude });
+
+      // Reverse geocode to get ZIP
+      const geoResponse = await fetch(
+        `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`
+      );
+
+      if (!geoResponse.ok) {
+        throw new Error('Failed to determine location');
+      }
+
+      const geoData = await geoResponse.json();
+      const detectedZip = geoData.postcode;
+
+      if (detectedZip && /^\d{5}/.test(detectedZip)) {
+        const zip = detectedZip.substring(0, 5);
+        setZipCode(zip);
+        setGeoLoading(false);
+        // Search with detected ZIP
+        await handleZipSearch(zip);
+      } else {
+        setError('Could not determine ZIP code from your location. Please enter it manually.');
+        setGeoLoading(false);
+      }
+    } catch (err) {
+      console.error('Geolocation error:', err);
+      if (err instanceof GeolocationPositionError) {
+        switch (err.code) {
+          case err.PERMISSION_DENIED:
+            setError('Location permission denied. Please enter your ZIP code manually.');
+            break;
+          case err.POSITION_UNAVAILABLE:
+            setError('Location unavailable. Please enter your ZIP code manually.');
+            break;
+          case err.TIMEOUT:
+            setError('Location request timed out. Please enter your ZIP code manually.');
+            break;
+          default:
+            setError('Could not get your location. Please enter your ZIP code manually.');
+        }
+      } else {
+        setError('Could not determine your location. Please enter your ZIP code manually.');
+      }
+      setGeoLoading(false);
+    }
+  };
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
@@ -75,6 +139,7 @@ export function PharmacyFinder() {
             variant="secondary"
             onClick={handleUseLocation}
             loading={geoLoading}
+            disabled={geoLoading || loading}
             className="sm:w-auto"
           >
             <svg
@@ -100,7 +165,7 @@ export function PharmacyFinder() {
             {t('pharmacy.useLocation')}
           </Button>
 
-          <form onSubmit={handleZipSearch} className="flex-1 flex gap-2">
+          <form onSubmit={handleFormSubmit} className="flex-1 flex gap-2">
             <Input
               type="text"
               placeholder={t('pharmacy.enterZip')}
@@ -108,19 +173,32 @@ export function PharmacyFinder() {
               onChange={(e) => setZipCode(e.target.value.replace(/\D/g, '').slice(0, 5))}
               className="flex-1"
             />
-            <Button type="submit" loading={loading}>
+            <Button type="submit" loading={loading} disabled={loading || geoLoading}>
               {t('pharmacy.search')}
             </Button>
           </form>
         </div>
-
-        {geoError && (
-          <p className="text-sm text-red-600 mt-2">{geoError}</p>
-        )}
       </div>
 
+      {/* Error State */}
+      {error && !loading && !geoLoading && (
+        <div className="text-center py-4 mb-4">
+          <p className="text-red-600">{error}</p>
+        </div>
+      )}
+
+      {/* Loading State */}
+      {(loading || geoLoading) && (
+        <div className="flex flex-col items-center justify-center py-16">
+          <LoadingSpinner size="lg" />
+          <p className="mt-4 text-gray-600">
+            {geoLoading ? 'Getting your location...' : t('common.loading')}
+          </p>
+        </div>
+      )}
+
       {/* Map */}
-      {(searched || pharmacies.length > 0) && (
+      {!loading && !geoLoading && pharmacies.length > 0 && (
         <div className="mb-8">
           <Suspense
             fallback={
@@ -131,29 +209,14 @@ export function PharmacyFinder() {
           >
             <PharmacyMap
               pharmacies={pharmacies}
-              center={latitude && longitude ? { lat: latitude, lng: longitude } : undefined}
+              center={userLocation || undefined}
             />
           </Suspense>
         </div>
       )}
 
-      {/* Loading State */}
-      {loading && (
-        <div className="flex flex-col items-center justify-center py-16">
-          <LoadingSpinner size="lg" />
-          <p className="mt-4 text-gray-600">{t('common.loading')}</p>
-        </div>
-      )}
-
-      {/* Error State */}
-      {error && !loading && (
-        <div className="text-center py-8">
-          <p className="text-red-600">{error}</p>
-        </div>
-      )}
-
       {/* Results */}
-      {!loading && pharmacies.length > 0 && (
+      {!loading && !geoLoading && pharmacies.length > 0 && (
         <div>
           <h2 className="text-xl font-semibold text-gray-900 mb-4">
             {pharmacies.length} pharmacies found
@@ -166,8 +229,8 @@ export function PharmacyFinder() {
         </div>
       )}
 
-      {/* Empty State */}
-      {!loading && searched && pharmacies.length === 0 && !error && (
+      {/* Empty State - No Results */}
+      {!loading && !geoLoading && searched && pharmacies.length === 0 && !error && (
         <div className="text-center py-16">
           <div className="text-gray-400 mb-4">
             <svg
@@ -199,7 +262,7 @@ export function PharmacyFinder() {
       )}
 
       {/* Initial State */}
-      {!searched && !loading && (
+      {!searched && !loading && !geoLoading && (
         <div className="text-center py-16">
           <div className="text-gray-400 mb-4">
             <svg
