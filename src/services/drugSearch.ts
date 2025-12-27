@@ -1,5 +1,6 @@
 import { supabase, type DrugDetail } from '../lib/supabase';
 import { formatDrugName, formatSentence, toTitleCase, cleanFDAText, cleanFDAList } from '../utils/textFormatting';
+import { validateSearchResults } from './searchValidation';
 
 const OPENFDA_BASE_URL = 'https://api.fda.gov/drug';
 
@@ -312,7 +313,10 @@ export async function searchDrugs(query: string, limit = 20): Promise<DrugSearch
     }
   }
 
-  return combined.slice(0, limit);
+  // Validate all results before returning to ensure quality data
+  const validated = validateSearchResults(combined);
+
+  return validated.slice(0, limit);
 }
 
 // Get drug by ID (checks Supabase first, then OpenFDA)
