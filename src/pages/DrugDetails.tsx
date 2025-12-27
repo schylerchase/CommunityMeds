@@ -5,6 +5,7 @@ import { getFullDrugDetails } from '../services/drugSearch';
 import type { DrugFullDetails } from '../services/drugSearch';
 import { getPriceForDrug } from '../services/pricing';
 import type { DrugPrice } from '../services/pricing';
+import { getNADACPrice, formatNADACPrice, type DrugPriceInfo } from '../services/nadacPricing';
 import { getPharmacySearchLinks, getTrustedDrugInfoLinks } from '../utils/pharmacyLinks';
 import { getDrugLabel, type DrugLabelInfo } from '../services/drugImages';
 import { PillImages } from '../components/drug/PillImages';
@@ -18,6 +19,7 @@ export function DrugDetails() {
   const { id } = useParams<{ id: string }>();
   const [drug, setDrug] = useState<DrugFullDetails | null>(null);
   const [priceInfo, setPriceInfo] = useState<DrugPrice | null>(null);
+  const [nadacPrice, setNadacPrice] = useState<DrugPriceInfo | null>(null);
   const [labelInfo, setLabelInfo] = useState<DrugLabelInfo | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -38,6 +40,10 @@ export function DrugDetails() {
             pricing = await getPriceForDrug(drugData.genericName);
           }
           setPriceInfo(pricing);
+
+          // Get NADAC pricing (government data) as fallback/comparison
+          const nadac = getNADACPrice(drugData.genericName) || getNADACPrice(drugData.brandName);
+          setNadacPrice(nadac);
 
           // Fetch drug label info from DailyMed (non-blocking)
           getDrugLabel(drugData.brandName).then(label => {
@@ -328,6 +334,41 @@ export function DrugDetails() {
           <div className="sticky top-24 space-y-6">
             {priceInfo ? (
               <PriceTable priceInfo={priceInfo} />
+            ) : nadacPrice ? (
+              <Card className="bg-green-50 border-green-200">
+                <h3 className="font-semibold text-green-900 mb-3 flex items-center">
+                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-14a1 1 0 10-2 0v4a1 1 0 00.293.707l2.5 2.5a1 1 0 001.414-1.414L11 7.586V4z" clipRule="evenodd" />
+                  </svg>
+                  Estimated Prices
+                </h3>
+                <p className="text-xs text-green-700 mb-3">
+                  Based on NADAC (pharmacy acquisition cost) data from CMS
+                </p>
+                <div className="space-y-2">
+                  <div className="flex justify-between items-center p-2 bg-white rounded-lg">
+                    <span className="text-sm text-gray-600">Discount Pharmacy</span>
+                    <span className="font-semibold text-green-700">
+                      {formatNADACPrice(nadacPrice.estimated30DayWithDiscount)}
+                    </span>
+                  </div>
+                  <div className="flex justify-between items-center p-2 bg-white rounded-lg">
+                    <span className="text-sm text-gray-600">Typical Retail</span>
+                    <span className="font-medium text-gray-700">
+                      {formatNADACPrice(nadacPrice.estimated30DayLow)} - {formatNADACPrice(nadacPrice.estimated30DayHigh)}
+                    </span>
+                  </div>
+                  <div className="flex justify-between items-center p-2 bg-green-100 rounded-lg">
+                    <span className="text-sm text-green-800">Pharmacy Cost</span>
+                    <span className="text-sm text-green-700">
+                      {formatNADACPrice(nadacPrice.minPrice * 30)}/30 days
+                    </span>
+                  </div>
+                </div>
+                <p className="text-xs text-green-600 mt-3 text-center">
+                  {nadacPrice.entryCount.toLocaleString()} price entries from {nadacPrice.lowestOptions.length > 0 ? nadacPrice.lowestOptions[0].description.split(' ').slice(0, 3).join(' ') : nadacPrice.drugName}
+                </p>
+              </Card>
             ) : (
               <Card className="bg-gray-50">
                 <div className="text-center py-6">
