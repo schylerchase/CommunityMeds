@@ -5,6 +5,7 @@ import { getFullDrugDetails } from '../services/drugSearch';
 import type { DrugFullDetails } from '../services/drugSearch';
 import { getPriceForDrug } from '../services/pricing';
 import type { DrugPrice } from '../services/pricing';
+import { getPharmacySearchLinks, getTrustedDrugInfoLinks } from '../utils/pharmacyLinks';
 import { PriceTable } from '../components/search/PriceTable';
 import { Button } from '../components/ui/Button';
 import { LoadingSpinner } from '../components/ui/LoadingSpinner';
@@ -311,43 +312,101 @@ export function DrugDetails() {
 
         {/* Price Sidebar */}
         <div className="lg:col-span-1">
-          {priceInfo ? (
-            <div className="sticky top-24">
+          <div className="sticky top-24 space-y-6">
+            {priceInfo ? (
               <PriceTable priceInfo={priceInfo} />
+            ) : (
+              <Card className="bg-gray-50">
+                <div className="text-center py-6">
+                  <svg
+                    className="w-10 h-10 mx-auto text-gray-400 mb-3"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <p className="text-gray-600 text-sm">Compare prices at pharmacies below</p>
+                </div>
+              </Card>
+            )}
 
-              <div className="mt-6">
-                <Link to="/pharmacies">
-                  <Button fullWidth size="lg">
+            {/* Shop at Pharmacies - Direct Links */}
+            <Card>
+              <h3 className="font-semibold text-gray-900 mb-3">
+                Shop for {drug.brandName}
+              </h3>
+              <div className="space-y-2">
+                {getPharmacySearchLinks(drug.brandName).slice(0, 6).map((link) => (
+                  <a
+                    key={link.pharmacyName}
+                    href={link.searchUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between p-2 rounded-lg hover:bg-gray-50 transition-colors group"
+                  >
+                    <span className="text-sm text-gray-700 group-hover:text-gray-900">
+                      {link.pharmacyName}
+                    </span>
                     <svg
-                      className="w-5 h-5 mr-2"
+                      className="w-4 h-4 text-gray-400 group-hover:text-blue-600"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
-                      aria-hidden="true"
                     >
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={2}
-                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                      />
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
                       />
                     </svg>
-                    {t('drug.findPharmacy')}
-                  </Button>
-                </Link>
+                  </a>
+                ))}
               </div>
-            </div>
-          ) : (
-            <Card className="bg-gray-50">
-              <div className="text-center py-8">
+            </Card>
+
+            {/* Official Drug Info Links */}
+            <Card className="bg-blue-50 border-blue-200">
+              <h3 className="font-semibold text-blue-900 mb-3 flex items-center">
+                <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                Official Drug Info
+              </h3>
+              <p className="text-xs text-blue-700 mb-3">
+                Verified information from government sources
+              </p>
+              <div className="space-y-2">
+                {getTrustedDrugInfoLinks(drug.brandName).map((link) => (
+                  <a
+                    key={link.name}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block p-2 rounded-lg hover:bg-blue-100 transition-colors"
+                  >
+                    <span className="text-sm font-medium text-blue-800">
+                      {link.name}
+                    </span>
+                    <p className="text-xs text-blue-600 mt-0.5">
+                      {link.description}
+                    </p>
+                  </a>
+                ))}
+              </div>
+            </Card>
+
+            <Link to="/pharmacies">
+              <Button fullWidth size="lg">
                 <svg
-                  className="w-12 h-12 mx-auto text-gray-400 mb-4"
+                  className="w-5 h-5 mr-2"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -357,16 +416,19 @@ export function DrugDetails() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                   />
                 </svg>
-                <p className="text-gray-600">{t('common.noData')}</p>
-                <p className="text-sm text-gray-500 mt-2">
-                  Check GoodRx or your pharmacy for current prices.
-                </p>
-              </div>
-            </Card>
-          )}
+                {t('drug.findPharmacy')}
+              </Button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
