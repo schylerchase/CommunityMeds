@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { searchPharmaciesByZip } from '../services/npi';
 import type { Pharmacy } from '../services/npi';
 import { PharmacyCard } from '../components/pharmacy/PharmacyCard';
+import { PharmacyChainCard } from '../components/pharmacy/PharmacyChainCard';
+import { pharmacyChains } from '../data/pharmacyChains';
 import { Button } from '../components/ui/Button';
 import { Input } from '../components/ui/Input';
 import { LoadingSpinner } from '../components/ui/LoadingSpinner';
@@ -39,9 +41,7 @@ export function PharmacyFinder() {
     try {
       const results = await searchPharmaciesByZip(searchZip.substring(0, 5));
       setPharmacies(results);
-      if (results.length === 0) {
-        setError('No pharmacies found for this ZIP code. Try a nearby ZIP code.');
-      }
+      // Don't show error for no results since we always show pharmacy chains
     } catch (err) {
       setError('Failed to search pharmacies. Please try again.');
       console.error('Pharmacy search error:', err);
@@ -215,11 +215,32 @@ export function PharmacyFinder() {
         </div>
       )}
 
-      {/* Results */}
+      {/* Featured Pharmacy Chains - Always show when searched or has ZIP */}
+      {!loading && !geoLoading && (searched || zipCode.length === 5) && (
+        <div className="mb-8">
+          <h2 className="text-xl font-semibold text-gray-900 mb-2">
+            {t('pharmacy.pharmaciesWithPrices', 'Pharmacies with Price Data')}
+          </h2>
+          <p className="text-gray-600 text-sm mb-4">
+            {t('pharmacy.pharmaciesWithPricesDesc', 'We have pricing data from these pharmacies. Click to find locations near you.')}
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {pharmacyChains.map((chain) => (
+              <PharmacyChainCard
+                key={chain.id}
+                chain={chain}
+                zipCode={zipCode.length === 5 ? zipCode : undefined}
+              />
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Local Pharmacies from NPI */}
       {!loading && !geoLoading && pharmacies.length > 0 && (
         <div>
           <h2 className="text-xl font-semibold text-gray-900 mb-4">
-            {pharmacies.length} pharmacies found
+            {t('pharmacy.localPharmacies', 'Local Pharmacies')} ({pharmacies.length})
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {pharmacies.map((pharmacy) => (
@@ -229,40 +250,8 @@ export function PharmacyFinder() {
         </div>
       )}
 
-      {/* Empty State - No Results */}
-      {!loading && !geoLoading && searched && pharmacies.length === 0 && !error && (
-        <div className="text-center py-16">
-          <div className="text-gray-400 mb-4">
-            <svg
-              className="w-16 h-16 mx-auto"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-              />
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-              />
-            </svg>
-          </div>
-          <h2 className="text-xl font-semibold text-gray-900 mb-2">
-            No pharmacies found
-          </h2>
-          <p className="text-gray-600">Try a different ZIP code</p>
-        </div>
-      )}
-
       {/* Initial State */}
-      {!searched && !loading && !geoLoading && (
+      {!searched && !loading && !geoLoading && zipCode.length < 5 && (
         <div className="text-center py-16">
           <div className="text-gray-400 mb-4">
             <svg
@@ -287,9 +276,11 @@ export function PharmacyFinder() {
             </svg>
           </div>
           <h2 className="text-xl font-semibold text-gray-900 mb-2">
-            Find pharmacies near you
+            {t('pharmacy.findPharmacies', 'Find pharmacies near you')}
           </h2>
-          <p className="text-gray-600">Enter your ZIP code or use your location to get started</p>
+          <p className="text-gray-600">
+            {t('pharmacy.enterZipToStart', 'Enter your ZIP code or use your location to get started')}
+          </p>
         </div>
       )}
     </div>
