@@ -1,0 +1,12 @@
+{
+  "app": { "name": "PublicRx", "tagline": "በአቅራቢያዎ ተመጣጣኝ መድሃኒቶችን ያግኙ" },
+  "nav": { "home": "መነሻ", "search": "መድሃኒት ፈልግ", "pharmacies": "ፋርማሲ ፈልግ", "about": "ስለ እኛ" },
+  "home": { "title": "ተመጣጣኝ መድሃኒቶችን ያግኙ", "subtitle": "ዋጋዎችን ያወዳድሩ፣ በአቅራቢያዎ ፋርማሲዎችን ያግኙ፣ በማዘዣዎችዎ ላይ ይቆጥቡ", "searchPlaceholder": "የመድሃኒት ስም ያስገቡ...", "searchButton": "ፈልግ", "popularSearches": "ታዋቂ ፍለጋዎች", "recentSearches": "የቅርብ ጊዜ ፍለጋዎች" },
+  "search": { "results": "የፍለጋ ውጤቶች", "resultsFor": "ውጤቶች ለ", "noResults": "መድሃኒት አልተገኘም", "tryDifferent": "ሌላ የፍለጋ ቃል ይሞክሩ", "loading": "መድሃኒቶችን በመፈለግ ላይ...", "filters": "ማጣሪያዎች", "sortBy": "አስተካክል በ", "priceLowest": "ዋጋ: ዝቅተኛ ወደ ከፍተኛ", "priceHighest": "ዋጋ: ከፍተኛ ወደ ዝቅተኛ", "nameAZ": "ስም: ሀ እስከ ፐ" },
+  "drug": { "genericName": "አጠቃላይ ስም", "brandName": "የምርት ስም", "manufacturer": "አምራች", "description": "መግለጫ", "commonUses": "የተለመዱ አጠቃቀሞች", "sideEffects": "የጎንዮሽ ጉዳቶች", "prices": "ዋጋዎች", "cashPrice": "የጥሬ ገንዘብ ዋጋ", "withInsurance": "ከኢንሹራንስ ጋር", "withCoupon": "ከኩፖን ጋር", "genericAlternative": "አጠቃላይ አማራጭ አለ", "savings": "መቆጠብ ይችላሉ", "assistancePrograms": "የታካሚ እርዳታ ፕሮግራሞች", "findPharmacy": "ፋርማሲ ፈልግ" },
+  "pharmacy": { "title": "በአቅራቢያ ፋርማሲዎችን ፈልግ", "subtitle": "በአቅራቢያዎ ምርጥ ዋጋ ያላቸው ፋርማሲዎችን ያግኙ", "useLocation": "የእኔን ቦታ ተጠቀም", "enterZip": "ወይም ዚፕ ኮድ ያስገቡ", "search": "ፈልግ", "filters": { "all": "ሁሉም", "open24": "24 ሰዓት ክፍት", "delivery": "ማድረስ ይገኛል", "driveThru": "Drive-Thru" }, "distance": "ማይል", "hours": "ሰዓታት", "phone": "ስልክ", "getDirections": "አቅጣጫዎችን ያግኙ", "viewPrices": "ዋጋዎችን ይመልከቱ" },
+  "prices": { "title": "የዋጋ ንጽጽር", "noInsurance": "ያለ ኢንሹራንስ", "withInsurance": "ከኢንሹራንስ ጋር", "discountPrograms": "የቅናሽ ፕሮግራሞች", "perMonth": "በወር", "perPill": "በእያንዳንዱ ክኒን", "quantity": "መጠን", "priceVaries": "ዋጋዎች በቦታ ሊለያዩ ይችላሉ", "lastUpdated": "ለመጨረሻ ጊዜ የተዘመነ" },
+  "accessibility": { "settings": "የተደራሽነት ቅንብሮች", "largeText": "ትልቅ ጽሑፍ", "highContrast": "ከፍተኛ ንጽጽር", "screenReader": "ለስክሪን አንባቢ የተመቻቸ", "skipToMain": "ወደ ዋና ይዘት ዝለል" },
+  "common": { "loading": "በመጫን ላይ...", "error": "ስህተት ተከስቷል", "tryAgain": "እንደገና ሞክር", "back": "ተመለስ", "next": "ቀጣይ", "close": "ዝጋ", "save": "አስቀምጥ", "cancel": "ሰርዝ", "learnMore": "ተጨማሪ እወቅ", "viewAll": "ሁሉንም ይመልከቱ", "noData": "ምንም መረጃ የለም" },
+  "footer": { "about": "ስለ PublicRx", "aboutText": "ተመጣጣኝ መድሃኒቶችን እንዲያገኙ የሚረዳዎት ነጻ የህዝብ ምንጭ።", "disclaimer": "የሚታዩ ዋጋዎች ግምቶች ናቸው። ሁልጊዜ ከፋርማሲዎ ጋር ያረጋግጡ።", "privacy": "የግላዊነት ፖሊሲ", "terms": "የአጠቃቀም ውሎች", "contact": "ያግኙን", "language": "ቋንቋ" }
+}

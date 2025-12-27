@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Löydä edullisia lääkkeitä läheltäsi"
+  },
+  "nav": {
+    "home": "Kotiin",
+    "search": "Etsi lääkkeet",
+    "pharmacies": "Etsi apteekit",
+    "about": "Noin"
+  },
+  "home": {
+    "title": "Etsi edullisia lääkkeitä",
+    "subtitle": "Vertaile hintoja, etsi lähellä olevia apteekkeja ja säästä resepteissäsi",
+    "searchPlaceholder": "Anna lääkkeen nimi...",
+    "searchButton": "Haku",
+    "popularSearches": "Suositut haut",
+    "recentSearches": "Viimeaikaiset haut"
+  },
+  "search": {
+    "results": "Hakutulokset",
+    "resultsFor": "Tulokset haulle",
+    "noResults": "Lääkkeitä ei löytynyt",
+    "tryDifferent": "Kokeile toista hakutermiä",
+    "loading": "Lääkkeiden haku...",
+    "filters": "Suodattimet",
+    "sortBy": "Lajitteluperuste",
+    "priceLowest": "Hinta: matalasta korkeaan",
+    "priceHighest": "Hinta: Korkeasta alhaiseen",
+    "nameAZ": "Nimi: A-Z"
+  },
+  "drug": {
+    "genericName": "Yleinen nimi",
+    "brandName": "Tuotemerkki",
+    "manufacturer": "Valmistaja",
+    "description": "Kuvaus",
+    "commonUses": "Yleiset käyttötavat",
+    "sideEffects": "Sivuvaikutukset",
+    "prices": "hinnat",
+    "cashPrice": "Käteishinta",
+    "withInsurance": "Vakuutuksella",
+    "withCoupon": "Kupongin kanssa",
+    "genericAlternative": "Yleinen vaihtoehto saatavilla",
+    "savings": "Voisit säästää",
+    "assistancePrograms": "Potilasapuohjelmat",
+    "findPharmacy": "Etsi apteekki"
+  },
+  "pharmacy": {
+    "title": "Etsi läheiset apteekit",
+    "subtitle": "Etsi lähelläsi olevat apteekit parhailla hinnoilla",
+    "useLocation": "Käytä Oma sijaintia",
+    "enterZip": "Tai syötä postinumero",
+    "search": "Haku",
+    "filters": {
+      "all": "Kaikki",
+      "open24": "Avoinna 24 tuntia",
+      "delivery": "Toimitus saatavilla",
+      "driveThru": "Ajo-läpi"
+    },
+    "distance": "mailin päässä",
+    "hours": "Tuntia",
+    "phone": "Puhelin",
+    "getDirections": "Hanki reittiohjeet",
+    "viewPrices": "Katso hinnat"
+  },
+  "prices": {
+    "title": "Hintavertailu",
+    "noInsurance": "Ilman vakuutusta",
+    "withInsurance": "Vakuutuksella",
+    "discountPrograms": "Alennusohjelmat",
+    "perMonth": "kuukaudessa",
+    "perPill": "per pilleri",
+    "quantity": "Määrä",
+    "priceVaries": "Hinnat voivat vaihdella sijainnin mukaan",
+    "lastUpdated": "Viimeksi päivitetty"
+  },
+  "accessibility": {
+    "settings": "Esteettömyysasetukset",
+    "largeText": "Suuri teksti",
+    "highContrast": "Korkea kontrasti",
+    "screenReader": "Näytönlukija optimoitu",
+    "skipToMain": "Siirry pääsisältöön"
+  },
+  "common": {
+    "loading": "Ladataan...",
+    "error": "Tapahtui virhe",
+    "tryAgain": "Yritä uudelleen",
+    "back": "Takaisin",
+    "next": "Seuraavaksi",
+    "close": "Lähellä",
+    "save": "Tallentaa",
+    "cancel": "Peruuttaa",
+    "learnMore": "Lisätietoja",
+    "viewAll": "Näytä kaikki",
+    "noData": "Tietoja ei ole saatavilla"
+  },
+  "footer": {
+    "about": "Tietoja PublicRx:stä",
+    "aboutText": "Ilmainen julkinen resurssi, joka auttaa sinua löytämään edullisia lääkkeitä.",
+    "disclaimer": "Esitetyt hinnat ovat arvioita. Tarkista aina apteekistasi.",
+    "privacy": "Tietosuojakäytäntö",
+    "terms": "Käyttöehdot",
+    "contact": "Ota yhteyttä",
+    "language": "Kieli"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Otsige lähedalt soodsaid ravimeid"
+  },
+  "nav": {
+    "home": "Kodu",
+    "search": "Otsige ravimeid",
+    "pharmacies": "Otsige apteeke",
+    "about": "Umbes"
+  },
+  "home": {
+    "title": "Otsige taskukohaseid ravimeid",
+    "subtitle": "Võrrelge hindu, leidke lähedalasuvaid apteeke ja säästke oma retseptide arvelt",
+    "searchPlaceholder": "Sisesta ravimi nimi...",
+    "searchButton": "Otsi",
+    "popularSearches": "Populaarsed otsingud",
+    "recentSearches": "Viimased otsingud"
+  },
+  "search": {
+    "results": "Otsingutulemused",
+    "resultsFor": "Tulemused päringule",
+    "noResults": "Ravimeid ei leitud",
+    "tryDifferent": "Proovige teist otsinguterminit",
+    "loading": "Otsin ravimeid...",
+    "filters": "Filtrid",
+    "sortBy": "Sorteeri",
+    "priceLowest": "Hind: madalast kõrgeni",
+    "priceHighest": "Hind: kõrgest madalani",
+    "nameAZ": "Nimi: A kuni Z"
+  },
+  "drug": {
+    "genericName": "Üldnimetus",
+    "brandName": "Kaubamärgi nimi",
+    "manufacturer": "Tootja",
+    "description": "Kirjeldus",
+    "commonUses": "Ühised kasutusalad",
+    "sideEffects": "Kõrvaltoimed",
+    "prices": "Hinnad",
+    "cashPrice": "Sularaha hind",
+    "withInsurance": "Koos kindlustusega",
+    "withCoupon": "Kupongiga",
+    "genericAlternative": "Saadaval üldine alternatiiv",
+    "savings": "Võiksid säästa",
+    "assistancePrograms": "Patsiendiabi programmid",
+    "findPharmacy": "Otsige apteeki"
+  },
+  "pharmacy": {
+    "title": "Otsige lähedalasuvaid apteeke",
+    "subtitle": "Leidke parimate hindadega apteegid enda lähedal",
+    "useLocation": "Kasutage Minu asukohta",
+    "enterZip": "Või sisestage sihtnumber",
+    "search": "Otsi",
+    "filters": {
+      "all": "Kõik",
+      "open24": "Avatud 24 tundi",
+      "delivery": "Kohaletoimetamine saadaval",
+      "driveThru": "Läbisõit"
+    },
+    "distance": "miili kaugusel",
+    "hours": "Tundi",
+    "phone": "Telefon",
+    "getDirections": "Hankige juhised",
+    "viewPrices": "Vaata hindu"
+  },
+  "prices": {
+    "title": "Hindade võrdlus",
+    "noInsurance": "Ilma kindlustuseta",
+    "withInsurance": "Koos kindlustusega",
+    "discountPrograms": "Soodusprogrammid",
+    "perMonth": "kuus",
+    "perPill": "pilli kohta",
+    "quantity": "Kogus",
+    "priceVaries": "Hinnad võivad asukohati erineda",
+    "lastUpdated": "Viimati värskendatud"
+  },
+  "accessibility": {
+    "settings": "Juurdepääsetavusseaded",
+    "largeText": "Suur tekst",
+    "highContrast": "Kõrge kontrastsus",
+    "screenReader": "Ekraanilugeja optimeeritud",
+    "skipToMain": "Mine põhisisu juurde"
+  },
+  "common": {
+    "loading": "Laadimine...",
+    "error": "Ilmnes viga",
+    "tryAgain": "Proovige uuesti",
+    "back": "Tagasi",
+    "next": "Edasi",
+    "close": "Sule",
+    "save": "Salvesta",
+    "cancel": "Tühista",
+    "learnMore": "Lisateave",
+    "viewAll": "Kuva kõik",
+    "noData": "Andmed puuduvad"
+  },
+  "footer": {
+    "about": "PublicRxi kohta",
+    "aboutText": "Tasuta avalik ressurss, mis aitab teil leida taskukohaseid ravimeid.",
+    "disclaimer": "Näidatud hinnad on hinnangulised. Kontrollige alati oma apteegist.",
+    "privacy": "Privaatsuspoliitika",
+    "terms": "Kasutustingimused",
+    "contact": "Võtke meiega ühendust",
+    "language": "Keel"
+  }
+}

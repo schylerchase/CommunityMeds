@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Yaxınlığınızda sərfəli dərmanlar tapın"
+  },
+  "nav": {
+    "home": "Ev",
+    "search": "Dərmanları axtarın",
+    "pharmacies": "Aptekləri tapın",
+    "about": "Haqqında"
+  },
+  "home": {
+    "title": "Münasib qiymətə dərmanlar tapın",
+    "subtitle": "Qiymətləri müqayisə edin, yaxınlıqdakı aptekləri tapın və reseptlərinizə qənaət edin",
+    "searchPlaceholder": "Dərman adını daxil edin...",
+    "searchButton": "Axtar",
+    "popularSearches": "Populyar Axtarışlar",
+    "recentSearches": "Son Axtarışlar"
+  },
+  "search": {
+    "results": "Axtarış nəticələri",
+    "resultsFor": "üçün nəticələr",
+    "noResults": "Dərman tapılmadı",
+    "tryDifferent": "Fərqli axtarış termini sınayın",
+    "loading": "Dərman axtarılır...",
+    "filters": "Filtrlər",
+    "sortBy": "Sırala",
+    "priceLowest": "Qiymət: Aşağıdan Yüksəkə",
+    "priceHighest": "Qiymət: Yüksəkdən Aşağıya",
+    "nameAZ": "Adı: A-dan Z-yə"
+  },
+  "drug": {
+    "genericName": "Ümumi ad",
+    "brandName": "Brend adı",
+    "manufacturer": "İstehsalçı",
+    "description": "Təsvir",
+    "commonUses": "Ümumi İstifadələr",
+    "sideEffects": "Yan təsirlər",
+    "prices": "Qiymətlər",
+    "cashPrice": "Nağd Qiymət",
+    "withInsurance": "Sığorta ilə",
+    "withCoupon": "Kuponla",
+    "genericAlternative": "Ümumi Alternativ Mövcuddur",
+    "savings": "qənaət edə bilərdiniz",
+    "assistancePrograms": "Xəstəyə Yardım Proqramları",
+    "findPharmacy": "Aptek tapın"
+  },
+  "pharmacy": {
+    "title": "Yaxınlıqdakı aptekləri tapın",
+    "subtitle": "Ən yaxşı qiymətlərlə sizə yaxın aptekləri tapın",
+    "useLocation": "Məkanımdan istifadə edin",
+    "enterZip": "Və ya poçt kodu daxil edin",
+    "search": "Axtar",
+    "filters": {
+      "all": "Hamısı",
+      "open24": "24 saat açıqdır",
+      "delivery": "Çatdırılma Var",
+      "driveThru": "Sürücü-Thru"
+    },
+    "distance": "mil uzaqda",
+    "hours": "Saatlar",
+    "phone": "Telefon",
+    "getDirections": "İstiqamətləri əldə edin",
+    "viewPrices": "Qiymətlərə Baxın"
+  },
+  "prices": {
+    "title": "Qiymət müqayisəsi",
+    "noInsurance": "Sığortasız",
+    "withInsurance": "Sığorta ilə",
+    "discountPrograms": "Endirim proqramları",
+    "perMonth": "ayda",
+    "perPill": "həb başına",
+    "quantity": "Kəmiyyət",
+    "priceVaries": "Qiymətlər yerə görə dəyişə bilər",
+    "lastUpdated": "Son yeniləmə"
+  },
+  "accessibility": {
+    "settings": "Əlçatımlılıq Parametrləri",
+    "largeText": "Böyük Mətn",
+    "highContrast": "Yüksək Kontrast",
+    "screenReader": "Ekran oxuyucusu optimallaşdırılıb",
+    "skipToMain": "Əsas məzmuna keçin"
+  },
+  "common": {
+    "loading": "Yüklənir...",
+    "error": "Xəta baş verdi",
+    "tryAgain": "Yenidən cəhd edin",
+    "back": "Geri",
+    "next": "Sonrakı",
+    "close": "Bağlayın",
+    "save": "Saxla",
+    "cancel": "Ləğv et",
+    "learnMore": "Ətraflı məlumat əldə edin",
+    "viewAll": "Hamısına Baxın",
+    "noData": "Məlumat yoxdur"
+  },
+  "footer": {
+    "about": "PublicRx haqqında",
+    "aboutText": "Münasib qiymətə dərmanlar tapmağınıza kömək edəcək pulsuz ictimai resurs.",
+    "disclaimer": "Göstərilən qiymətlər təxminidir. Həmişə aptekinizlə yoxlayın.",
+    "privacy": "Məxfilik Siyasəti",
+    "terms": "İstifadə şərtləri",
+    "contact": "Bizimlə əlaqə saxlayın",
+    "language": "Dil"
+  }
+}

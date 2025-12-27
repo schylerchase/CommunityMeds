@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Find overkommelig medicin i nærheden af ​​dig"
+  },
+  "nav": {
+    "home": "Hjem",
+    "search": "Søg efter medicin",
+    "pharmacies": "Find apoteker",
+    "about": "Om"
+  },
+  "home": {
+    "title": "Find overkommelig medicin",
+    "subtitle": "Sammenlign priser, find nærliggende apoteker, og spar på dine recepter",
+    "searchPlaceholder": "Indtast medicinnavn...",
+    "searchButton": "Søge",
+    "popularSearches": "Populære søgninger",
+    "recentSearches": "Seneste søgninger"
+  },
+  "search": {
+    "results": "Søgeresultater",
+    "resultsFor": "Resultater for",
+    "noResults": "Ingen medicin fundet",
+    "tryDifferent": "Prøv en anden søgeterm",
+    "loading": "Søger efter medicin...",
+    "filters": "Filtre",
+    "sortBy": "Sorter efter",
+    "priceLowest": "Pris: Lav til høj",
+    "priceHighest": "Pris: Høj til lav",
+    "nameAZ": "Navn: A til Z"
+  },
+  "drug": {
+    "genericName": "Generisk navn",
+    "brandName": "Mærkenavn",
+    "manufacturer": "Fabrikant",
+    "description": "Beskrivelse",
+    "commonUses": "Almindelige anvendelser",
+    "sideEffects": "Bivirkninger",
+    "prices": "Priser",
+    "cashPrice": "Kontantpris",
+    "withInsurance": "Med forsikring",
+    "withCoupon": "Med kupon",
+    "genericAlternative": "Generisk alternativ tilgængelig",
+    "savings": "Du kunne spare",
+    "assistancePrograms": "Patienthjælpsprogrammer",
+    "findPharmacy": "Find apotek"
+  },
+  "pharmacy": {
+    "title": "Find apoteker i nærheden",
+    "subtitle": "Find apoteker i nærheden af ​​dig med de bedste priser",
+    "useLocation": "Brug Min placering",
+    "enterZip": "Eller indtast postnummer",
+    "search": "Søge",
+    "filters": {
+      "all": "Alle",
+      "open24": "Åben 24 timer",
+      "delivery": "Levering tilgængelig",
+      "driveThru": "Drive-Thru"
+    },
+    "distance": "miles væk",
+    "hours": "Timer",
+    "phone": "Telefon",
+    "getDirections": "Få rutevejledning",
+    "viewPrices": "Se priser"
+  },
+  "prices": {
+    "title": "Prissammenligning",
+    "noInsurance": "Uden forsikring",
+    "withInsurance": "Med forsikring",
+    "discountPrograms": "Rabatprogrammer",
+    "perMonth": "om måneden",
+    "perPill": "pr pille",
+    "quantity": "Mængde",
+    "priceVaries": "Priserne kan variere fra sted til sted",
+    "lastUpdated": "Sidst opdateret"
+  },
+  "accessibility": {
+    "settings": "Indstillinger for tilgængelighed",
+    "largeText": "Stor tekst",
+    "highContrast": "Høj kontrast",
+    "screenReader": "Skærmlæser optimeret",
+    "skipToMain": "Spring til hovedindhold"
+  },
+  "common": {
+    "loading": "Indlæser...",
+    "error": "Der opstod en fejl",
+    "tryAgain": "Prøv igen",
+    "back": "Tilbage",
+    "next": "Næste",
+    "close": "Tæt",
+    "save": "Spare",
+    "cancel": "Ophæve",
+    "learnMore": "Lær mere",
+    "viewAll": "Se alle",
+    "noData": "Ingen tilgængelige data"
+  },
+  "footer": {
+    "about": "Om PublicRx",
+    "aboutText": "En gratis offentlig ressource til at hjælpe dig med at finde medicin til overkommelige priser.",
+    "disclaimer": "De viste priser er overslag. Bekræft altid med dit apotek.",
+    "privacy": "Privatlivspolitik",
+    "terms": "Vilkår for brug",
+    "contact": "Kontakt os",
+    "language": "Sprog"
+  }
+}

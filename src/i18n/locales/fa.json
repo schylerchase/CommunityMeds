@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "داروهای مقرون به صرفه را در نزدیکی خود پیدا کنید"
+  },
+  "nav": {
+    "home": "صفحه اصلی",
+    "search": "جستجوی داروها",
+    "pharmacies": "داروخانه ها را پیدا کنید",
+    "about": "درباره"
+  },
+  "home": {
+    "title": "داروهای مقرون به صرفه را پیدا کنید",
+    "subtitle": "قیمت ها را مقایسه کنید، داروخانه های اطراف را پیدا کنید و در نسخه های خود صرفه جویی کنید",
+    "searchPlaceholder": "نام دارو را وارد کنید...",
+    "searchButton": "جستجو کنید",
+    "popularSearches": "جستجوهای محبوب",
+    "recentSearches": "جستجوهای اخیر"
+  },
+  "search": {
+    "results": "نتایج جستجو",
+    "resultsFor": "نتایج برای",
+    "noResults": "هیچ دارویی پیدا نشد",
+    "tryDifferent": "عبارت جستجوی دیگری را امتحان کنید",
+    "loading": "جستجوی داروها...",
+    "filters": "فیلترها",
+    "sortBy": "مرتب سازی بر اساس",
+    "priceLowest": "قیمت: کم به بالا",
+    "priceHighest": "قیمت: زیاد به پایین",
+    "nameAZ": "نام: A تا Z"
+  },
+  "drug": {
+    "genericName": "نام عمومی",
+    "brandName": "نام تجاری",
+    "manufacturer": "سازنده",
+    "description": "توضیحات",
+    "commonUses": "کاربردهای رایج",
+    "sideEffects": "عوارض جانبی",
+    "prices": "قیمت ها",
+    "cashPrice": "قیمت نقدی",
+    "withInsurance": "با بیمه",
+    "withCoupon": "با کوپن",
+    "genericAlternative": "جایگزین عمومی موجود است",
+    "savings": "شما می توانید ذخیره کنید",
+    "assistancePrograms": "برنامه های کمک به بیمار",
+    "findPharmacy": "داروسازی را پیدا کنید"
+  },
+  "pharmacy": {
+    "title": "داروخانه های نزدیک را پیدا کنید",
+    "subtitle": "داروخانه های نزدیک خود را با بهترین قیمت ها پیدا کنید",
+    "useLocation": "از موقعیت مکانی من استفاده کنید",
+    "enterZip": "یا کد پستی را وارد کنید",
+    "search": "جستجو کنید",
+    "filters": {
+      "all": "همه",
+      "open24": "24 ساعت باز است",
+      "delivery": "تحویل موجود است",
+      "driveThru": "Drive-Thru"
+    },
+    "distance": "مایل ها دورتر",
+    "hours": "ساعت",
+    "phone": "تلفن",
+    "getDirections": "دریافت مسیرها",
+    "viewPrices": "مشاهده قیمت ها"
+  },
+  "prices": {
+    "title": "مقایسه قیمت",
+    "noInsurance": "بدون بیمه",
+    "withInsurance": "با بیمه",
+    "discountPrograms": "برنامه های تخفیف",
+    "perMonth": "در هر ماه",
+    "perPill": "در هر قرص",
+    "quantity": "مقدار",
+    "priceVaries": "قیمت ها ممکن است بسته به مکان متفاوت باشد",
+    "lastUpdated": "آخرین به روز رسانی"
+  },
+  "accessibility": {
+    "settings": "تنظیمات دسترسی",
+    "largeText": "متن بزرگ",
+    "highContrast": "کنتراست بالا",
+    "screenReader": "صفحه خوان بهینه شده است",
+    "skipToMain": "به محتوای اصلی بروید"
+  },
+  "common": {
+    "loading": "در حال بارگیری...",
+    "error": "خطایی رخ داد",
+    "tryAgain": "دوباره امتحان کنید",
+    "back": "برگشت",
+    "next": "بعدی",
+    "close": "بستن",
+    "save": "ذخیره کنید",
+    "cancel": "لغو کنید",
+    "learnMore": "بیشتر بدانید",
+    "viewAll": "مشاهده همه",
+    "noData": "هیچ داده ای در دسترس نیست"
+  },
+  "footer": {
+    "about": "درباره PublicRx",
+    "aboutText": "یک منبع عمومی رایگان برای کمک به شما در یافتن داروهای مقرون به صرفه.",
+    "disclaimer": "قیمت های نشان داده شده تخمینی هستند. همیشه با داروخانه خود تأیید کنید.",
+    "privacy": "سیاست حفظ حریم خصوصی",
+    "terms": "شرایط استفاده",
+    "contact": "تماس با ما",
+    "language": "زبان"
+  }
+}

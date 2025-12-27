@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Vind betaalbare medicijnen bij u in de buurt"
+  },
+  "nav": {
+    "home": "Thuis",
+    "search": "Zoek medicijnen",
+    "pharmacies": "Vind apotheken",
+    "about": "Over"
+  },
+  "home": {
+    "title": "Vind betaalbare medicijnen",
+    "subtitle": "Vergelijk prijzen, vind apotheken in de buurt en bespaar op uw recepten",
+    "searchPlaceholder": "Medicijnnaam invoeren...",
+    "searchButton": "Zoekopdracht",
+    "popularSearches": "Populaire zoekopdrachten",
+    "recentSearches": "Recente zoekopdrachten"
+  },
+  "search": {
+    "results": "Zoekresultaten",
+    "resultsFor": "Resultaten voor",
+    "noResults": "Geen medicijnen gevonden",
+    "tryDifferent": "Probeer een andere zoekterm",
+    "loading": "Medicijnen zoeken...",
+    "filters": "Filters",
+    "sortBy": "Sorteer op",
+    "priceLowest": "Prijs: laag naar hoog",
+    "priceHighest": "Prijs: hoog naar laag",
+    "nameAZ": "Naam: A tot Z"
+  },
+  "drug": {
+    "genericName": "Generieke naam",
+    "brandName": "Merknaam",
+    "manufacturer": "Fabrikant",
+    "description": "Beschrijving",
+    "commonUses": "Gemeenschappelijk gebruik",
+    "sideEffects": "Bijwerkingen",
+    "prices": "Prijzen",
+    "cashPrice": "Contante prijs",
+    "withInsurance": "Met verzekering",
+    "withCoupon": "Met coupon",
+    "genericAlternative": "Generiek alternatief beschikbaar",
+    "savings": "Je zou kunnen besparen",
+    "assistancePrograms": "Programma's voor patiëntenbijstand",
+    "findPharmacy": "Zoek apotheek"
+  },
+  "pharmacy": {
+    "title": "Vind apotheken in de buurt",
+    "subtitle": "Vind apotheken bij u in de buurt met de beste prijzen",
+    "useLocation": "Gebruik Mijn locatie",
+    "enterZip": "Of voer postcode in",
+    "search": "Zoekopdracht",
+    "filters": {
+      "all": "Alle",
+      "open24": "24 uur geopend",
+      "delivery": "Levering beschikbaar",
+      "driveThru": "Drive-Thru"
+    },
+    "distance": "mijlen ver",
+    "hours": "Uur",
+    "phone": "Telefoon",
+    "getDirections": "Routebeschrijving opvragen",
+    "viewPrices": "Bekijk prijzen"
+  },
+  "prices": {
+    "title": "Prijsvergelijking",
+    "noInsurance": "Zonder verzekering",
+    "withInsurance": "Met verzekering",
+    "discountPrograms": "Kortingsprogramma's",
+    "perMonth": "per maand",
+    "perPill": "per pil",
+    "quantity": "Hoeveelheid",
+    "priceVaries": "Prijzen kunnen per locatie verschillen",
+    "lastUpdated": "Laatst bijgewerkt"
+  },
+  "accessibility": {
+    "settings": "Toegankelijkheidsinstellingen",
+    "largeText": "Grote tekst",
+    "highContrast": "Hoog contrast",
+    "screenReader": "Schermlezer geoptimaliseerd",
+    "skipToMain": "Ga naar de hoofdinhoud"
+  },
+  "common": {
+    "loading": "Laden...",
+    "error": "Er is een fout opgetreden",
+    "tryAgain": "Probeer het opnieuw",
+    "back": "Rug",
+    "next": "Volgende",
+    "close": "Dichtbij",
+    "save": "Redden",
+    "cancel": "Annuleren",
+    "learnMore": "Meer informatie",
+    "viewAll": "Bekijk alles",
+    "noData": "Geen gegevens beschikbaar"
+  },
+  "footer": {
+    "about": "Over PublicRx",
+    "aboutText": "Een gratis openbare hulpbron waarmee u betaalbare medicijnen kunt vinden.",
+    "disclaimer": "Getoonde prijzen zijn schattingen. Controleer dit altijd bij uw apotheek.",
+    "privacy": "Privacybeleid",
+    "terms": "Gebruiksvoorwaarden",
+    "contact": "Neem contact met ons op",
+    "language": "Taal"
+  }
+}

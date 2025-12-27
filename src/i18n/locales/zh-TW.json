@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "尋找您附近負擔得起的藥物"
+  },
+  "nav": {
+    "home": "家",
+    "search": "搜索藥物",
+    "pharmacies": "尋找藥房",
+    "about": "關於"
+  },
+  "home": {
+    "title": "尋找負擔得起的藥物",
+    "subtitle": "比較價格、查找附近的藥店並節省處方費用",
+    "searchPlaceholder": "輸入藥品名稱...",
+    "searchButton": "搜尋",
+    "popularSearches": "熱門搜索",
+    "recentSearches": "最近的搜索"
+  },
+  "search": {
+    "results": "搜索結果",
+    "resultsFor": "結果：",
+    "noResults": "沒有找到藥物",
+    "tryDifferent": "嘗試不同的搜索詞",
+    "loading": "正在尋找藥物...",
+    "filters": "過濾器",
+    "sortBy": "排序方式",
+    "priceLowest": "價格：從低到高",
+    "priceHighest": "價格：從高到低",
+    "nameAZ": "名稱：A到Z"
+  },
+  "drug": {
+    "genericName": "通用名",
+    "brandName": "品牌名稱",
+    "manufacturer": "製造商",
+    "description": "描述",
+    "commonUses": "常見用途",
+    "sideEffects": "副作用",
+    "prices": "價格",
+    "cashPrice": "現金價格",
+    "withInsurance": "有保險",
+    "withCoupon": "有優惠券",
+    "genericAlternative": "可用的通用替代方案",
+    "savings": "你可以保存",
+    "assistancePrograms": "患者援助計劃",
+    "findPharmacy": "尋找藥房"
+  },
+  "pharmacy": {
+    "title": "尋找附近的藥店",
+    "subtitle": "查找您附近價格最優惠的藥店",
+    "useLocation": "使用我的位置",
+    "enterZip": "或輸入郵政編碼",
+    "search": "搜尋",
+    "filters": {
+      "all": "全部",
+      "open24": "24 小時營業",
+      "delivery": "可送貨",
+      "driveThru": "得來速"
+    },
+    "distance": "幾英里之外",
+    "hours": "時間",
+    "phone": "電話",
+    "getDirections": "獲取路線",
+    "viewPrices": "查看價格"
+  },
+  "prices": {
+    "title": "價格比較",
+    "noInsurance": "沒有保險",
+    "withInsurance": "有保險",
+    "discountPrograms": "折扣計劃",
+    "perMonth": "每月",
+    "perPill": "每丸",
+    "quantity": "數量",
+    "priceVaries": "價格可能因地點而異",
+    "lastUpdated": "最後更新"
+  },
+  "accessibility": {
+    "settings": "輔助功能設置",
+    "largeText": "大文本",
+    "highContrast": "高對比度",
+    "screenReader": "屏幕閱讀器優化",
+    "skipToMain": "跳至主要內容"
+  },
+  "common": {
+    "loading": "載入中...",
+    "error": "發生錯誤",
+    "tryAgain": "再試一次",
+    "back": "後退",
+    "next": "下一個",
+    "close": "關閉",
+    "save": "節省",
+    "cancel": "取消",
+    "learnMore": "了解更多",
+    "viewAll": "查看全部",
+    "noData": "無可用數據"
+  },
+  "footer": {
+    "about": "關於PublicRx",
+    "aboutText": "免費的公共資源，可幫助您找到負擔得起的藥物。",
+    "disclaimer": "顯示的價格為估計價格。請務必與您的藥房核實。",
+    "privacy": "隱私政策",
+    "terms": "使用條款",
+    "contact": "聯繫我們",
+    "language": "語言"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Pronađite pristupačne lijekove u vašoj blizini"
+  },
+  "nav": {
+    "home": "Dom",
+    "search": "Traži lijekove",
+    "pharmacies": "Pronađite ljekarne",
+    "about": "Oko"
+  },
+  "home": {
+    "title": "Pronađite pristupačne lijekove",
+    "subtitle": "Usporedite cijene, pronađite ljekarne u blizini i uštedite na svojim receptima",
+    "searchPlaceholder": "Unesite naziv lijeka...",
+    "searchButton": "Pretraživanje",
+    "popularSearches": "Popularne pretrage",
+    "recentSearches": "Nedavna pretraživanja"
+  },
+  "search": {
+    "results": "Rezultati pretraživanja",
+    "resultsFor": "Rezultati za",
+    "noResults": "Nema pronađenih lijekova",
+    "tryDifferent": "Pokušajte s drugim pojmom za pretraživanje",
+    "loading": "Traženje lijekova...",
+    "filters": "Filteri",
+    "sortBy": "Poredaj po",
+    "priceLowest": "Cijena: od niske do visoke",
+    "priceHighest": "Cijena: visoka prema niskoj",
+    "nameAZ": "Ime: od A do Z"
+  },
+  "drug": {
+    "genericName": "Generički naziv",
+    "brandName": "Naziv marke",
+    "manufacturer": "Proizvođač",
+    "description": "Opis",
+    "commonUses": "Uobičajena upotreba",
+    "sideEffects": "Nuspojave",
+    "prices": "Cijene",
+    "cashPrice": "Cijena u gotovini",
+    "withInsurance": "S osiguranjem",
+    "withCoupon": "Uz kupon",
+    "genericAlternative": "Dostupna generička alternativa",
+    "savings": "Mogla bi uštedjeti",
+    "assistancePrograms": "Programi pomoći pacijentima",
+    "findPharmacy": "Pronađite ljekarnu"
+  },
+  "pharmacy": {
+    "title": "Pronađite ljekarne u blizini",
+    "subtitle": "Pronađite ljekarne u svojoj blizini s najpovoljnijim cijenama",
+    "useLocation": "Koristi Moju lokaciju",
+    "enterZip": "Ili unesite poštanski broj",
+    "search": "Pretraživanje",
+    "filters": {
+      "all": "Sve",
+      "open24": "Otvoreno 24 sata",
+      "delivery": "Dostava dostupna",
+      "driveThru": "Drive-Thru"
+    },
+    "distance": "miljama daleko",
+    "hours": "sati",
+    "phone": "Telefon",
+    "getDirections": "Preuzmite upute",
+    "viewPrices": "Pogledajte cijene"
+  },
+  "prices": {
+    "title": "Usporedba cijena",
+    "noInsurance": "Bez osiguranja",
+    "withInsurance": "S osiguranjem",
+    "discountPrograms": "Programi popusta",
+    "perMonth": "mjesečno",
+    "perPill": "po tableti",
+    "quantity": "Količina",
+    "priceVaries": "Cijene se mogu razlikovati ovisno o lokaciji",
+    "lastUpdated": "Zadnje ažuriranje"
+  },
+  "accessibility": {
+    "settings": "Postavke pristupačnosti",
+    "largeText": "Veliki tekst",
+    "highContrast": "Visoki kontrast",
+    "screenReader": "Optimiziran čitač zaslona",
+    "skipToMain": "Prijeđi na glavni sadržaj"
+  },
+  "common": {
+    "loading": "Učitavanje...",
+    "error": "Došlo je do pogreške",
+    "tryAgain": "Pokušajte ponovno",
+    "back": "Nazad",
+    "next": "Sljedeći",
+    "close": "Zatvoriti",
+    "save": "Uštedjeti",
+    "cancel": "Otkazati",
+    "learnMore": "Saznajte više",
+    "viewAll": "Pogledaj sve",
+    "noData": "Nema dostupnih podataka"
+  },
+  "footer": {
+    "about": "O PublicRx-u",
+    "aboutText": "Besplatan javni resurs koji će vam pomoći pronaći pristupačne lijekove.",
+    "disclaimer": "Prikazane cijene su procjene. Uvijek provjerite u svojoj ljekarni.",
+    "privacy": "Politika privatnosti",
+    "terms": "Uvjeti korištenja",
+    "contact": "Kontaktirajte nas",
+    "language": "Jezik"
+  }
+}

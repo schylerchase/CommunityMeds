@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Pangitag Barato nga Tambal nga Duol Kanimo"
+  },
+  "nav": {
+    "home": "Balay",
+    "search": "Pangitag Tambal",
+    "pharmacies": "Pangitag Botika",
+    "about": "Mahitungod sa"
+  },
+  "home": {
+    "title": "Pangitag Barato nga Tambal",
+    "subtitle": "Itandi ang mga presyo, pangitaa ang mga duol nga botika, ug pagtipig sa imong mga reseta",
+    "searchPlaceholder": "Ibutang ang ngalan sa tambal...",
+    "searchButton": "Pangitaa",
+    "popularSearches": "Popular nga mga Pagpangita",
+    "recentSearches": "Bag-ong mga Pagpangita"
+  },
+  "search": {
+    "results": "Resulta sa pagpangita",
+    "resultsFor": "Mga resulta para sa",
+    "noResults": "Walay tambal nga nakit-an",
+    "tryDifferent": "Sulayi ang lain nga termino sa pagpangita",
+    "loading": "Nangitag tambal...",
+    "filters": "Mga filter",
+    "sortBy": "Pagsunud sa",
+    "priceLowest": "Presyo: Ubos hangtod Taas",
+    "priceHighest": "Presyo: Taas hangtod Ubos",
+    "nameAZ": "Ngalan: A to Z"
+  },
+  "drug": {
+    "genericName": "Generic nga Ngalan",
+    "brandName": "Ngalan sa Brand",
+    "manufacturer": "Manufacturer",
+    "description": "Deskripsyon",
+    "commonUses": "Kasagarang Gamit",
+    "sideEffects": "Side Effects",
+    "prices": "Mga presyo",
+    "cashPrice": "Presyo sa kuwarta",
+    "withInsurance": "Uban sa Insurance",
+    "withCoupon": "Uban sa Kupon",
+    "genericAlternative": "Generic nga Alternatibo Anaa",
+    "savings": "Makadaginot ka",
+    "assistancePrograms": "Mga Programa sa Pagtabang sa Pasyente",
+    "findPharmacy": "Pangitag Botika"
+  },
+  "pharmacy": {
+    "title": "Pangitag Duol nga Botika",
+    "subtitle": "Pangitaa ang mga botika nga duol kanimo nga adunay labing kaayo nga presyo",
+    "useLocation": "Gamita ang Akong Lokasyon",
+    "enterZip": "O ibutang ang ZIP code",
+    "search": "Pangitaa",
+    "filters": {
+      "all": "Tanan",
+      "open24": "Bukas 24 Oras",
+      "delivery": "Delivery Anaa",
+      "driveThru": "Drive-Thru"
+    },
+    "distance": "milya ang gilay-on",
+    "hours": "Mga oras",
+    "phone": "Telepono",
+    "getDirections": "Pagkuha og mga Direksyon",
+    "viewPrices": "Tan-awa ang mga Presyo"
+  },
+  "prices": {
+    "title": "Pagtandi sa Presyo",
+    "noInsurance": "Walay Insurance",
+    "withInsurance": "Uban sa Insurance",
+    "discountPrograms": "Mga Programa sa Diskwento",
+    "perMonth": "kada bulan",
+    "perPill": "kada pildoras",
+    "quantity": "Kadaghanon",
+    "priceVaries": "Ang mga presyo mahimong magkalainlain sa lokasyon",
+    "lastUpdated": "Katapusan nga gi-update"
+  },
+  "accessibility": {
+    "settings": "Mga Setting sa Accessibility",
+    "largeText": "Dako nga Teksto",
+    "highContrast": "Taas nga Kontras",
+    "screenReader": "Gi-optimize ang Screen Reader",
+    "skipToMain": "Laktaw sa panguna nga sulud"
+  },
+  "common": {
+    "loading": "Nagkarga...",
+    "error": "Usa ka sayup ang nahitabo",
+    "tryAgain": "Sulayi Pag-usab",
+    "back": "Balik",
+    "next": "Sunod",
+    "close": "Duol",
+    "save": "Tipigi",
+    "cancel": "Pagkanselar",
+    "learnMore": "Pagkat-on pa",
+    "viewAll": "Tan-awa Tanan",
+    "noData": "Walay datos nga magamit"
+  },
+  "footer": {
+    "about": "Mahitungod sa PublicRx",
+    "aboutText": "Usa ka libre nga kapanguhaan sa publiko aron matabangan ka nga makapangita mga barato nga tambal.",
+    "disclaimer": "Ang mga presyo nga gipakita maoy mga banabana. Kanunay nga i-verify sa imong botika.",
+    "privacy": "Patakaran sa Pagkapribado",
+    "terms": "Mga Termino sa Paggamit",
+    "contact": "Kontaka Kami",
+    "language": "Pinulongan"
+  }
+}
