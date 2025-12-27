@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Trouvez des médicaments abordables près de chez vous"
+  },
+  "nav": {
+    "home": "Accueil",
+    "search": "Rechercher des médicaments",
+    "pharmacies": "Trouver des pharmacies",
+    "about": "À propos"
+  },
+  "home": {
+    "title": "Trouvez des médicaments abordables",
+    "subtitle": "Comparez les prix, trouvez des pharmacies à proximité et économisez sur vos ordonnances",
+    "searchPlaceholder": "Entrez le nom du médicament...",
+    "searchButton": "Rechercher",
+    "popularSearches": "Recherches populaires",
+    "recentSearches": "Recherches récentes"
+  },
+  "search": {
+    "results": "Résultats de recherche",
+    "resultsFor": "Résultats pour",
+    "noResults": "Aucun médicament trouvé",
+    "tryDifferent": "Essayez un autre terme de recherche",
+    "loading": "Recherche de médicaments...",
+    "filters": "Filtres",
+    "sortBy": "Trier par",
+    "priceLowest": "Prix: croissant",
+    "priceHighest": "Prix: décroissant",
+    "nameAZ": "Nom: A à Z"
+  },
+  "drug": {
+    "genericName": "Nom générique",
+    "brandName": "Nom de marque",
+    "manufacturer": "Fabricant",
+    "description": "Description",
+    "commonUses": "Utilisations courantes",
+    "sideEffects": "Effets secondaires",
+    "prices": "Prix",
+    "cashPrice": "Prix comptant",
+    "withInsurance": "Avec assurance",
+    "withCoupon": "Avec coupon",
+    "genericAlternative": "Alternative générique disponible",
+    "savings": "Vous pourriez économiser",
+    "assistancePrograms": "Programmes d'aide aux patients",
+    "findPharmacy": "Trouver une pharmacie"
+  },
+  "pharmacy": {
+    "title": "Trouver des pharmacies à proximité",
+    "subtitle": "Localisez les pharmacies avec les meilleurs prix près de chez vous",
+    "useLocation": "Utiliser ma position",
+    "enterZip": "Ou entrez le code postal",
+    "search": "Rechercher",
+    "filters": {
+      "all": "Toutes",
+      "open24": "Ouvert 24h/24",
+      "delivery": "Livraison disponible",
+      "driveThru": "Service au volant"
+    },
+    "distance": "km",
+    "hours": "Horaires",
+    "phone": "Téléphone",
+    "getDirections": "Itinéraire",
+    "viewPrices": "Voir les prix"
+  },
+  "prices": {
+    "title": "Comparaison des prix",
+    "noInsurance": "Sans assurance",
+    "withInsurance": "Avec assurance",
+    "discountPrograms": "Programmes de réduction",
+    "perMonth": "par mois",
+    "perPill": "par comprimé",
+    "quantity": "Quantité",
+    "priceVaries": "Les prix peuvent varier selon l'emplacement",
+    "lastUpdated": "Dernière mise à jour"
+  },
+  "accessibility": {
+    "settings": "Paramètres d'accessibilité",
+    "largeText": "Grand texte",
+    "highContrast": "Contraste élevé",
+    "screenReader": "Optimisé pour lecteur d'écran",
+    "skipToMain": "Passer au contenu principal"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite",
+    "tryAgain": "Réessayer",
+    "back": "Retour",
+    "next": "Suivant",
+    "close": "Fermer",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "learnMore": "En savoir plus",
+    "viewAll": "Voir tout",
+    "noData": "Aucune donnée disponible"
+  },
+  "footer": {
+    "about": "À propos de PublicRx",
+    "aboutText": "Une ressource publique gratuite pour vous aider à trouver des médicaments abordables.",
+    "disclaimer": "Les prix affichés sont des estimations. Vérifiez toujours auprès de votre pharmacie.",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "contact": "Nous contacter",
+    "language": "Langue"
+  }
+}

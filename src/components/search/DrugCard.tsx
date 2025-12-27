@@ -38,12 +38,16 @@ export function DrugCard({ drug }: DrugCardProps) {
                 {t('drug.genericName')}: {drug.genericName}
               </p>
             )}
-            <p className="text-sm text-gray-600 line-clamp-2 mb-3">
-              {drug.purpose}
-            </p>
-            <p className="text-xs text-gray-400">
-              {drug.manufacturer}
-            </p>
+            {drug.purpose && (
+              <p className="text-sm text-gray-600 line-clamp-2 mb-3">
+                {drug.purpose}
+              </p>
+            )}
+            {drug.manufacturer && (
+              <p className="text-xs text-gray-400">
+                {drug.manufacturer}
+              </p>
+            )}
           </div>
 
           {priceInfo && priceInfo.prices.cash !== undefined && (

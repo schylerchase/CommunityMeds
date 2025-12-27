@@ -27,28 +27,84 @@ export interface DrugFullDetails extends DrugSearchResult {
   controlledSubstance: string | null;
 }
 
-// Search Supabase drug_details table
+// Search Supabase - combines drug_details with medications table
 async function searchSupabase(query: string, limit = 20): Promise<DrugSearchResult[]> {
-  const { data, error } = await supabase
+  // First search drug_details with joined medication data
+  const { data: detailsData, error: detailsError } = await supabase
     .from('drug_details')
-    .select('*')
-    .or(`drug_name.ilike.%${query}%,generic_name.ilike.%${query}%,brand_names.cs.{${query}}`)
+    .select(`
+      *,
+      medications:medication_id (
+        name,
+        generic_name,
+        quantity,
+        unit
+      )
+    `)
+    .or(`drug_name.ilike.%${query}%,generic_name.ilike.%${query}%`)
     .limit(limit);
 
-  if (error) {
-    console.error('Supabase search error:', error.message);
-    return [];
+  if (detailsError) {
+    console.error('Supabase drug_details search error:', detailsError.message);
   }
 
-  return (data as DrugDetail[]).map((drug) => ({
-    id: drug.id,
-    brandName: drug.drug_name,
-    genericName: drug.generic_name || drug.drug_name,
-    manufacturer: drug.drug_class || 'Unknown',
-    purpose: drug.description || drug.uses?.[0] || 'No description available',
-    ndcCodes: [],
-    source: 'supabase' as const,
-  }));
+  // Also search medications table directly for better coverage
+  const { data: medsData, error: medsError } = await supabase
+    .from('medications')
+    .select('*')
+    .or(`name.ilike.%${query}%,generic_name.ilike.%${query}%`)
+    .limit(limit);
+
+  if (medsError) {
+    console.error('Supabase medications search error:', medsError.message);
+  }
+
+  const results: DrugSearchResult[] = [];
+  const seen = new Set<string>();
+
+  // Process drug_details results (with joined medication data)
+  if (detailsData) {
+    for (const drug of detailsData as (DrugDetail & { medications?: { name: string; generic_name: string; quantity: number; unit: string } })[]) {
+      const key = drug.drug_name.toLowerCase();
+      if (seen.has(key)) continue;
+      seen.add(key);
+
+      // Use medication data as fallback for missing fields
+      const genericName = drug.generic_name || drug.medications?.generic_name || drug.drug_name;
+      const description = drug.description || drug.uses?.[0];
+
+      results.push({
+        id: drug.id,
+        brandName: drug.drug_name,
+        genericName,
+        manufacturer: drug.drug_class || '',
+        purpose: description || `Generic: ${genericName}`,
+        ndcCodes: [],
+        source: 'supabase' as const,
+      });
+    }
+  }
+
+  // Add medications that weren't in drug_details
+  if (medsData) {
+    for (const med of medsData as { id: string; name: string; generic_name: string; quantity: number; unit: string }[]) {
+      const key = med.name.toLowerCase();
+      if (seen.has(key)) continue;
+      seen.add(key);
+
+      results.push({
+        id: med.id,
+        brandName: med.name,
+        genericName: med.generic_name || med.name,
+        manufacturer: '',
+        purpose: med.generic_name ? `Generic: ${med.generic_name}` : '',
+        ndcCodes: [],
+        source: 'supabase' as const,
+      });
+    }
+  }
+
+  return results.slice(0, limit);
 }
 
 // Search OpenFDA with improved query
@@ -148,21 +204,52 @@ export async function searchDrugs(query: string, limit = 20): Promise<DrugSearch
 
 // Get drug by ID (checks Supabase first, then OpenFDA)
 export async function getDrugById(id: string): Promise<DrugSearchResult | null> {
-  // Try Supabase first
+  // Try drug_details first with joined medication data
   const { data, error } = await supabase
     .from('drug_details')
-    .select('*')
+    .select(`
+      *,
+      medications:medication_id (
+        name,
+        generic_name,
+        quantity,
+        unit
+      )
+    `)
     .eq('id', id)
     .single();
 
   if (!error && data) {
-    const drug = data as DrugDetail;
+    const drug = data as DrugDetail & { medications?: { name: string; generic_name: string; quantity: number; unit: string } };
+    const genericName = drug.generic_name || drug.medications?.generic_name || drug.drug_name;
+    const description = drug.description || drug.uses?.[0];
+
     return {
       id: drug.id,
       brandName: drug.drug_name,
-      genericName: drug.generic_name || drug.drug_name,
-      manufacturer: drug.drug_class || 'Unknown',
-      purpose: drug.description || drug.uses?.[0] || 'No description available',
+      genericName,
+      manufacturer: drug.drug_class || '',
+      purpose: description || `Generic: ${genericName}`,
+      ndcCodes: [],
+      source: 'supabase',
+    };
+  }
+
+  // Try medications table directly
+  const { data: medData, error: medError } = await supabase
+    .from('medications')
+    .select('*')
+    .eq('id', id)
+    .single();
+
+  if (!medError && medData) {
+    const med = medData as { id: string; name: string; generic_name: string; quantity: number; unit: string };
+    return {
+      id: med.id,
+      brandName: med.name,
+      genericName: med.generic_name || med.name,
+      manufacturer: '',
+      purpose: med.generic_name ? `Generic: ${med.generic_name}` : '',
       ndcCodes: [],
       source: 'supabase',
     };
@@ -205,7 +292,15 @@ export async function getDrugByName(name: string): Promise<DrugSearchResult | nu
 export async function getFullDrugDetails(id: string): Promise<DrugFullDetails | null> {
   const { data, error } = await supabase
     .from('drug_details')
-    .select('*')
+    .select(`
+      *,
+      medications:medication_id (
+        name,
+        generic_name,
+        quantity,
+        unit
+      )
+    `)
     .eq('id', id)
     .single();
 
@@ -228,13 +323,16 @@ export async function getFullDrugDetails(id: string): Promise<DrugFullDetails | 
     };
   }
 
-  const drug = data as DrugDetail;
+  const drug = data as DrugDetail & { medications?: { name: string; generic_name: string; quantity: number; unit: string } };
+  const genericName = drug.generic_name || drug.medications?.generic_name || drug.drug_name;
+  const description = drug.description || drug.uses?.[0];
+
   return {
     id: drug.id,
     brandName: drug.drug_name,
-    genericName: drug.generic_name || drug.drug_name,
-    manufacturer: drug.drug_class || 'Unknown',
-    purpose: drug.description || drug.uses?.[0] || 'No description available',
+    genericName,
+    manufacturer: drug.drug_class || '',
+    purpose: description || `Generic: ${genericName}`,
     ndcCodes: [],
     source: 'supabase',
     drugClass: drug.drug_class,

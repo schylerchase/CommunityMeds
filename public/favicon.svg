@@ -1,6 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <rect width="100" height="100" rx="20" fill="#2563eb"/>
-  <path d="M50 20 C35 20 25 32 25 45 C25 65 50 80 50 80 C50 80 75 65 75 45 C75 32 65 20 50 20" fill="#ffffff"/>
-  <rect x="42" y="35" width="16" height="30" rx="2" fill="#2563eb"/>
-  <rect x="35" y="45" width="30" height="10" rx="2" fill="#2563eb"/>
+  <!-- Soft rounded teal background -->
+  <rect width="100" height="100" rx="24" fill="#0D9488"/>
+
+  <!-- Gentle gradient overlay for warmth -->
+  <defs>
+    <linearGradient id="warmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#14B8A6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0D9488;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="24" fill="url(#warmGrad)"/>
+
+  <!-- Caring hands cradling a pill -->
+  <!-- Left hand curve -->
+  <path d="M20 55 Q15 45 25 38 Q35 32 45 38" stroke="#ffffff" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- Right hand curve -->
+  <path d="M80 55 Q85 45 75 38 Q65 32 55 38" stroke="#ffffff" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- Pill shape in center -->
+  <rect x="35" y="42" width="30" height="18" rx="9" fill="#ffffff"/>
+  <line x1="50" y1="42" x2="50" y2="60" stroke="#0D9488" stroke-width="2"/>
+
+  <!-- Small heart above -->
+  <path d="M50 30 C47 27 42 28 42 33 C42 37 50 42 50 42 C50 42 58 37 58 33 C58 28 53 27 50 30" fill="#ffffff" opacity="0.9"/>
 </svg>

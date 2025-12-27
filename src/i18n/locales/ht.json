@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "Jwenn medikaman bon mache tou pre w"
+  },
+  "nav": {
+    "home": "Akèy",
+    "search": "Chèche Medikaman",
+    "pharmacies": "Jwenn Famasi",
+    "about": "Konsènan"
+  },
+  "home": {
+    "title": "Jwenn Medikaman Bon Mache",
+    "subtitle": "Konpare pri, jwenn famasi tou pre w, epi ekonomize sou preskripsyon w yo",
+    "searchPlaceholder": "Antre non medikaman an...",
+    "searchButton": "Chèche",
+    "popularSearches": "Rechèch Popilè",
+    "recentSearches": "Rechèch Resan"
+  },
+  "search": {
+    "results": "Rezilta Rechèch",
+    "resultsFor": "Rezilta pou",
+    "noResults": "Pa jwenn okenn medikaman",
+    "tryDifferent": "Eseye yon lòt mo rechèch",
+    "loading": "Ap chèche medikaman...",
+    "filters": "Filtè",
+    "sortBy": "Triye pa",
+    "priceLowest": "Pri: Pi ba a pi wo",
+    "priceHighest": "Pri: Pi wo a pi ba",
+    "nameAZ": "Non: A a Z"
+  },
+  "drug": {
+    "genericName": "Non Jenerik",
+    "brandName": "Non Mak",
+    "manufacturer": "Manifakti",
+    "description": "Deskripsyon",
+    "commonUses": "Itilizasyon Komen",
+    "sideEffects": "Efè Segondè",
+    "prices": "Pri",
+    "cashPrice": "Pri Kach",
+    "withInsurance": "Avèk Asirans",
+    "withCoupon": "Avèk Koupon",
+    "genericAlternative": "Altènatif Jenerik Disponib",
+    "savings": "Ou ka ekonomize",
+    "assistancePrograms": "Pwogram Asistans Pasyan",
+    "findPharmacy": "Jwenn Famasi"
+  },
+  "pharmacy": {
+    "title": "Jwenn Famasi Tou Pre",
+    "subtitle": "Lokalize famasi ki gen pi bon pri yo tou pre w",
+    "useLocation": "Itilize Pozisyon Mwen",
+    "enterZip": "Oswa antre kòd postal",
+    "search": "Chèche",
+    "filters": {
+      "all": "Tout",
+      "open24": "Ouvè 24 Èdtan",
+      "delivery": "Livrezon Disponib",
+      "driveThru": "Drive-Thru"
+    },
+    "distance": "mil",
+    "hours": "Orè",
+    "phone": "Telefòn",
+    "getDirections": "Jwenn Direksyon",
+    "viewPrices": "Wè Pri"
+  },
+  "prices": {
+    "title": "Konparezon Pri",
+    "noInsurance": "San Asirans",
+    "withInsurance": "Avèk Asirans",
+    "discountPrograms": "Pwogram Rabè",
+    "perMonth": "pa mwa",
+    "perPill": "pa grenn",
+    "quantity": "Kantite",
+    "priceVaries": "Pri yo ka varye selon pozisyon",
+    "lastUpdated": "Dènye mizajou"
+  },
+  "accessibility": {
+    "settings": "Paramèt Aksesibilite",
+    "largeText": "Gwo Tèks",
+    "highContrast": "Kontras Elve",
+    "screenReader": "Optimize pou Lektè Ekran",
+    "skipToMain": "Ale nan kontni prensipal la"
+  },
+  "common": {
+    "loading": "Ap chaje...",
+    "error": "Yon erè fèt",
+    "tryAgain": "Eseye Ankò",
+    "back": "Retounen",
+    "next": "Pwochen",
+    "close": "Fèmen",
+    "save": "Sovgade",
+    "cancel": "Anile",
+    "learnMore": "Aprann Plis",
+    "viewAll": "Wè Tout",
+    "noData": "Pa gen done disponib"
+  },
+  "footer": {
+    "about": "Konsènan PublicRx",
+    "aboutText": "Yon resous piblik gratis pou ede w jwenn medikaman bon mache.",
+    "disclaimer": "Pri ki afiche yo se estimasyon. Toujou verifye ak famasi w la.",
+    "privacy": "Règleman Konfidansyalite",
+    "terms": "Kondisyon Itilizasyon",
+    "contact": "Kontakte Nou",
+    "language": "Lang"
+  }
+}

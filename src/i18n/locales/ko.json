@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "PublicRx",
+    "tagline": "근처에서 저렴한 약을 찾으세요"
+  },
+  "nav": {
+    "home": "홈",
+    "search": "약 검색",
+    "pharmacies": "약국 찾기",
+    "about": "소개"
+  },
+  "home": {
+    "title": "저렴한 약을 찾으세요",
+    "subtitle": "가격을 비교하고, 근처 약국을 찾고, 처방전 비용을 절약하세요",
+    "searchPlaceholder": "약 이름을 입력하세요...",
+    "searchButton": "검색",
+    "popularSearches": "인기 검색어",
+    "recentSearches": "최근 검색"
+  },
+  "search": {
+    "results": "검색 결과",
+    "resultsFor": "검색 결과:",
+    "noResults": "약을 찾을 수 없습니다",
+    "tryDifferent": "다른 검색어를 시도해보세요",
+    "loading": "약 검색 중...",
+    "filters": "필터",
+    "sortBy": "정렬 기준",
+    "priceLowest": "가격: 낮은순",
+    "priceHighest": "가격: 높은순",
+    "nameAZ": "이름: 가나다순"
+  },
+  "drug": {
+    "genericName": "일반명",
+    "brandName": "브랜드명",
+    "manufacturer": "제조사",
+    "description": "설명",
+    "commonUses": "일반적인 용도",
+    "sideEffects": "부작용",
+    "prices": "가격",
+    "cashPrice": "현금 가격",
+    "withInsurance": "보험 적용 시",
+    "withCoupon": "쿠폰 적용 시",
+    "genericAlternative": "제네릭 대안 가능",
+    "savings": "절약 가능 금액",
+    "assistancePrograms": "환자 지원 프로그램",
+    "findPharmacy": "약국 찾기"
+  },
+  "pharmacy": {
+    "title": "근처 약국 찾기",
+    "subtitle": "최저가 약국을 찾으세요",
+    "useLocation": "내 위치 사용",
+    "enterZip": "또는 우편번호 입력",
+    "search": "검색",
+    "filters": {
+      "all": "전체",
+      "open24": "24시간 영업",
+      "delivery": "배달 가능",
+      "driveThru": "드라이브스루"
+    },
+    "distance": "마일 거리",
+    "hours": "영업시간",
+    "phone": "전화",
+    "getDirections": "길찾기",
+    "viewPrices": "가격 보기"
+  },
+  "prices": {
+    "title": "가격 비교",
+    "noInsurance": "보험 없이",
+    "withInsurance": "보험 적용 시",
+    "discountPrograms": "할인 프로그램",
+    "perMonth": "월",
+    "perPill": "알당",
+    "quantity": "수량",
+    "priceVaries": "가격은 위치에 따라 다를 수 있습니다",
+    "lastUpdated": "최종 업데이트"
+  },
+  "accessibility": {
+    "settings": "접근성 설정",
+    "largeText": "큰 글씨",
+    "highContrast": "고대비",
+    "screenReader": "스크린 리더 최적화",
+    "skipToMain": "본문으로 건너뛰기"
+  },
+  "common": {
+    "loading": "로딩 중...",
+    "error": "오류가 발생했습니다",
+    "tryAgain": "다시 시도",
+    "back": "뒤로",
+    "next": "다음",
+    "close": "닫기",
+    "save": "저장",
+    "cancel": "취소",
+    "learnMore": "자세히 보기",
+    "viewAll": "전체 보기",
+    "noData": "데이터가 없습니다"
+  },
+  "footer": {
+    "about": "PublicRx 소개",
+    "aboutText": "저렴한 약을 찾을 수 있도록 도와주는 무료 공공 서비스입니다.",
+    "disclaimer": "표시된 가격은 추정치입니다. 약국에서 확인하세요.",
+    "privacy": "개인정보 처리방침",
+    "terms": "이용약관",
+    "contact": "문의하기",
+    "language": "언어"
+  }
+}
