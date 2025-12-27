@@ -34,3 +34,13 @@ dist-ssr
 # scraping artifacts
 drugs_data.json
 scrape_progress.json
+scrapefornames.py
+
+# utility scripts
+*.ps1
+
+# scripts with credentials
+scripts/
+
+# claude code
+.claude/
